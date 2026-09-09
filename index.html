@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黄仁勋信号雷达 · 动态与日历</title>
+<style>
+:root{
+  --bg:#f5f6f8; --card:#ffffff; --card2:#fafbfc;
+  --line:#e4e7ec; --line2:#cdd3dc;
+  --txt:#1c2333; --mut:#5b6472; --dim:#8a93a3;
+  --pri:#2f6fb3; --pribg:#eaf2fa;
+  --red:#c0392b; --redbg:#fbeeed;
+  --green:#1e7e34; --greenbg:#edf7ef;
+  --amber:#b45309; --amberbg:#fdf3e3;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:13px; line-height:1.6;
+}
+a{color:var(--pri);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px 50px}
+.hd{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:14px 0 12px;border-bottom:2px solid var(--txt);background:var(--bg);position:sticky;top:0;z-index:50}
+.brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.brand b{font-size:17px;letter-spacing:.3px}
+.brand small{font-size:12px;color:var(--mut);font-weight:400}
+.live-badge{font-size:11px;border-radius:3px;padding:1px 7px;border:1px solid var(--green);color:var(--green);background:var(--greenbg)}
+.live-badge.demo{border-color:var(--amber);color:var(--amber);background:var(--amberbg)}
+.hd .upd{font-size:12px;color:var(--dim);white-space:nowrap}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:start;margin-top:16px}
+.col-h{display:flex;align-items:baseline;gap:8px;margin-bottom:10px}
+.col-h h2{font-size:15px;font-weight:600}
+.col-h .sub{font-size:12px;color:var(--mut)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px 16px}
+.card h3{font-size:14px;font-weight:600;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.card h3 .tag{font-size:11px;color:var(--dim);font-weight:400;margin-left:auto}
+/* 信息流 */
+.fd{border:1px solid var(--line);border-radius:6px;padding:13px 15px;margin-bottom:12px;background:var(--card)}
+.fd:hover{border-color:var(--line2)}
+.fd-head{display:flex;align-items:flex-start;gap:9px;flex-wrap:wrap}
+.fd-type{font-size:11px;font-weight:600;border-radius:3px;padding:1px 7px;border:1px solid;white-space:nowrap;margin-top:2px}
+.fd-type.er{color:var(--red);border-color:var(--red);background:var(--redbg)}
+.fd-type.sp{color:var(--pri);border-color:var(--pri);background:var(--pribg)}
+.fd-type.iv{color:var(--amber);border-color:var(--amber);background:var(--amberbg)}
+.fd-type.mt{color:var(--mut);border-color:var(--line2);background:var(--card2)}
+.fd-type.co{color:var(--pri);border-color:var(--pri);background:var(--pribg)}
+.fd-type.op{color:#7c3aed;border-color:#7c3aed;background:#f3eefe}
+.fd-title{font-size:14px;font-weight:600;flex:1;min-width:220px}
+.fd-meta{font-size:12px;color:var(--dim);margin-top:5px}
+.fd-meta a{color:var(--pri)}
+.fd-sigs{list-style:none;margin-top:9px}
+.fd-sigs li{position:relative;padding-left:14px;margin-bottom:6px;font-size:13.5px;line-height:1.65}
+.fd-sigs li::before{content:"";position:absolute;left:2px;top:9px;width:5px;height:5px;border-radius:50%;background:var(--pri)}
+.fd-note{margin-top:7px;font-size:12px;color:var(--amber);background:var(--amberbg);border:1px solid var(--amber);border-radius:4px;padding:5px 9px}
+.fd-imgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin-top:10px}
+.fd-imgs img{display:block;width:100%;height:150px;object-fit:cover;background:var(--card2);border-radius:5px;border:1px solid var(--line);cursor:zoom-in;transition:opacity .15s}
+.fd-imgs img:hover{opacity:.85}
+#imgViewer{position:fixed;inset:0;z-index:999;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;cursor:zoom-out;padding:24px}
+#imgViewer.show{display:flex}
+#imgViewer img{max-width:100%;max-height:100%;border-radius:6px;box-shadow:0 8px 40px rgba(0,0,0,.5)}
+.morebar{text-align:center;padding:8px 0 2px}
+.morebtn{font-size:12px;color:var(--pri);background:var(--card);border:1px solid var(--line2);border-radius:4px;padding:6px 18px;cursor:pointer}
+.morebtn:hover{background:var(--pribg);border-color:var(--pri)}
+.empty{padding:30px 0;text-align:center;color:var(--dim);font-size:13px}
+/* 分类筛选 */
+.catbar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.cattab{font-size:12px;border:1px solid var(--line2);border-radius:14px;padding:3px 12px;background:var(--card);color:var(--mut);cursor:pointer}
+.cattab:hover{border-color:var(--pri);color:var(--pri)}
+.cattab.on{background:var(--txt);border-color:var(--txt);color:#fff}
+.cattab .n{font-size:11px;opacity:.75;margin-left:2px}
+.cat-tag{font-size:10px;border-radius:3px;padding:1px 5px;border:1px solid;white-space:nowrap;margin-top:2px}
+.cat-tag.jensen{color:var(--red);border-color:var(--red);background:var(--redbg)}
+.cat-tag.nvda{color:var(--green);border-color:var(--green);background:var(--greenbg)}
+.cat-tag.nvnews{color:#376b00;border-color:#76b900;background:#eaf7df}
+.cat-tag.kol{color:#7c3aed;border-color:#7c3aed;background:#f3eefe}
+.cat-tag.media{color:var(--amber);border-color:var(--amber);background:var(--amberbg)}
+.cat-tag.sellside{color:#2563eb;border-color:#2563eb;background:#eff6ff}
+.cat-tag.media-op{color:#0e7490;border-color:#0e7490;background:#ecfeff}
+.cat-tag.xtweet{color:#0f1419;border-color:#0f1419;background:#eef0f2}
+/* 观点（混排于信息流） */
+.stance{font-size:10px;border-radius:3px;padding:1px 6px;border:1px solid;white-space:nowrap}
+.stance.bull{color:var(--red);border-color:var(--red);background:var(--redbg)}
+.stance.bear{color:var(--green);border-color:var(--green);background:var(--greenbg)}
+.stance.neutral{color:var(--mut);border-color:var(--line2);background:var(--card2)}
+.stance.caution{color:var(--amber);border-color:var(--amber);background:var(--amberbg)}
+.op-fd{border-color:var(--line);background:var(--card)}
+.op-fd:hover{border-color:var(--line2)}
+.op-author{font-size:12.5px;font-weight:600;flex:1;min-width:200px;color:var(--txt)}
+.op-q-wrap{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin-top:9px}
+.op-q{display:block;font-size:13px;line-height:1.6;color:var(--txt);border-left:3px solid #7c3aed;background:var(--card2);padding:5px 9px;border-radius:0 4px 4px 0;width:100%}
+.op-q b{color:var(--txt)}
+/* 日历 */
+.cal-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+.cal-range{font-size:13px;font-weight:600}
+.cal-todaybtn{font-size:11px;color:var(--pri);background:var(--pribg);border:1px solid var(--pri);border-radius:4px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.cal-todaybtn:hover{background:#dcebfa}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.cal-wd{font-size:10px;color:var(--dim);text-align:center;padding:2px 0 4px}
+.cal-cell{min-height:138px;border:1px solid var(--line);border-radius:4px;padding:3px 4px;background:var(--card);cursor:pointer;overflow:hidden}
+.cal-cell:hover{border-color:var(--pri)}
+.cal-cell.sel{border-color:var(--pri);box-shadow:0 0 0 1px var(--pri)}
+.cal-cell.today{background:var(--pribg)}
+.cal-dn{font-size:11px;color:var(--mut);font-variant-numeric:tabular-nums;line-height:1.4;margin-bottom:1px}
+.cal-cell.today .cal-dn{color:var(--pri);font-weight:700}
+.cal-dn .cal-m{font-size:9px;color:var(--dim);margin-left:1px}
+.cal-chip{font-size:10px;line-height:1.45;border-radius:2px;padding:1px 4px;margin-top:2px;display:-webkit-box;-webkit-line-clamp:6;line-clamp:6;-webkit-box-orient:vertical;overflow:hidden;word-break:break-word}
+.cal-chip.past{background:var(--pribg);color:#24578c}
+.cal-chip.future{background:var(--amberbg);color:var(--amber)}
+.cal-more{font-size:10px;color:var(--dim);margin-top:2px}
+.cal-detail{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.cd-title{font-size:12px;color:var(--mut);margin-bottom:4px}
+.cd-item{padding:7px 0;border-bottom:1px dashed var(--line)}
+.cd-item:last-child{border-bottom:none}
+.cd-ev{font-size:13px;font-weight:600}
+.cd-who{font-size:12px;color:var(--pri);margin-top:2px}
+.cd-p{font-size:12px;color:var(--mut);margin-top:1px}
+.cd-note{font-size:12px;color:var(--mut);margin-top:1px}
+.tbd-item{padding:7px 0;border-bottom:1px dashed var(--line)}
+.tbd-item:last-child{border-bottom:none}
+.disc{margin-top:24px;padding:12px 16px;border:1px solid var(--line2);border-radius:6px;font-size:12px;color:var(--mut);line-height:1.8;background:var(--card)}
+.disc b{color:var(--txt)}
+.ft{text-align:center;font-size:11px;color:var(--dim);padding:18px 0 4px}
+@media(max-width:1000px){
+  .layout{grid-template-columns:1fr}
+  .fd-imgs img{height:120px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hd">
+  <div class="brand">
+    <b>黄仁勋信号雷达</b>
+    <small>公开动态 · 行程日历</small>
+    <span class="live-badge" id="modeBadge" style="display:none"></span>
+  </div>
+  <div class="upd" id="upd">数据更新：加载中…</div>
+</header>
+
+<div class="layout">
+  <!-- 左：信息流 -->
+  <section>
+    <div class="col-h"><h2>信息流</h2><span class="sub">黄仁勋公开动态与各方观点，每日自动更新</span></div>
+    <div class="catbar" id="catbar"></div>
+    <div id="feed"></div>
+  </section>
+  <!-- 右：日历 -->
+  <aside>
+    <div class="col-h"><h2>日历</h2><span class="sub">近 30 天足迹 · 点击日期查看详情</span></div>
+    <div class="card" style="margin-bottom:14px">
+      <div class="cal-head">
+        <span class="cal-range" id="calRange"></span>
+        <button class="cal-todaybtn" id="calToday">回到今天</button>
+      </div>
+      <div class="cal-grid" id="calWd"></div>
+      <div class="cal-grid" id="calGrid"></div>
+      <div class="cal-detail" id="calDetail"></div>
+    </div>
+    <div class="card">
+      <h3>后续安排 <span class="tag">未发生行程，以官方公布为准</span></h3>
+      <div id="tbdList"></div>
+    </div>
+  </aside>
+</div>
+
+<div class="disc" id="disc"></div>
+<div class="ft">黄仁勋信号雷达</div>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const CAT_TXT = {jensen:'公开采访', xtweet:'X原贴', nvnews:'官网发布', nvda:'公司动态', kol:'大V观点', media:'媒体观点', sellside:'卖方研报', 'media-op':'媒体观点'};
+const OP_CAT_CLS = {kol:'kol', sellside:'sellside', media:'media-op'};
+let sigExpanded = false;
+const INIT_EVENTS = 5;
+let DATA = null, selDate = null, curCat = '全部';
+
+function catOf(item){ return item.type === 'op' ? (item.cat || 'kol') : (item.cat || 'nvda'); }
+
+function renderCatbar(){
+  const items = streamItems();
+  const counts = {全部: items.length};
+  items.forEach(it => { const c = catOf(it); counts[c] = (counts[c] || 0) + 1; });
+  const order = ['全部','xtweet','jensen','nvnews','nvda','media','kol','sellside'];
+  $('#catbar').innerHTML = order.map(c =>
+    `<button class="cattab${curCat === c ? ' on' : ''}" data-cat="${c}">${c === '全部' ? '全部' : CAT_TXT[c]}<span class="n">${counts[c] || 0}</span></button>`).join('');
+  document.querySelectorAll('.cattab').forEach(b => b.onclick = () => { curCat = b.dataset.cat; renderFeed(); });
+}
+
+function stanceCls(s){ return s === '看多' ? 'bull' : s === '看空' ? 'bear' : s === '审慎' ? 'caution' : 'neutral'; }
+
+function opCard(o){
+  return `<div class="fd op-fd">
+    <div class="fd-head">
+      <span class="cat-tag ${OP_CAT_CLS[o.cat] || esc(o.cat)}">${CAT_TXT[o.cat] || (o.cat === 'media' ? '媒体评论' : '观点')}</span>
+      <span class="op-author">${esc(o.author)}</span>
+    </div>
+    <div class="fd-title">${esc(o.title)}</div>
+    <div class="op-q-wrap">
+      <span class="stance ${stanceCls(o.stance)}">${esc(o.stance || '解读')}</span>
+      ${(o.quotes || []).map(q => `<span class="op-q">${esc(q)}</span>`).join('')}
+    </div>
+    <div class="fd-meta">观点发表：${esc(o.date)} · <a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.src)} ↗</a></div>
+  </div>`;
+}
+
+function eventCard(ev){
+  const sigs = (ev.signals || []).map(t => `<li>${esc(t)}</li>`).join('');
+  const imgs = (ev.images || []).map((u, i) =>
+    `<img src="${esc(u)}" alt="" loading="lazy" referrerpolicy="no-referrer" onclick="showImg(this.src)" onerror="this.style.display='none'">`).join('');
+  const cat = ev.cat || 'nvda';
+  return `<div class="fd">
+    <div class="fd-head">
+      <span class="cat-tag ${esc(cat)}">${CAT_TXT[cat] || '公司动态'}</span>
+      <span class="fd-title">${esc(ev.title)}</span>
+    </div>
+    <div class="fd-meta">${esc(ev.date)} · ${esc(ev.place)} · <a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.src)} ↗</a></div>
+    ${sigs ? `<ul class="fd-sigs">${sigs}</ul>` : ''}
+    ${imgs ? `<div class="fd-imgs">${imgs}</div>` : ''}
+  </div>`;
+}
+
+function streamItems(){
+  const evs = (DATA.events || []).map(e => ({...e, type: 'ev'}));
+  const ops = (DATA.opinions || []).map(o => ({...o, type: 'op'}));
+  return [...evs, ...ops].sort((a,b) => b.date.localeCompare(a.date));
+}
+
+function renderFeed(){
+  if(!DATA) return;
+  renderCatbar();
+  const all = streamItems();
+  const items = curCat === '全部' ? all : all.filter(it => catOf(it) === curCat);
+  const filtered = curCat !== '全部';
+  const shown = (!filtered && !sigExpanded) ? items.slice(0, INIT_EVENTS) : items;
+  let bar = '';
+  if(!filtered && items.length > INIT_EVENTS){
+    bar = `<div class="morebar"><button class="morebtn" id="sigMore">${sigExpanded ? '收起 ▴' : `展开全部 ${items.length - INIT_EVENTS} 条 ▾`}</button></div>`;
+  }
+  $('#feed').innerHTML = (shown.map(it => it.type === 'ev' ? eventCard(it) : opCard(it)).join('') || '<div class="empty">暂无该分类内容</div>') + bar;
+  const b = $('#sigMore');
+  if(b) b.onclick = () => { sigExpanded = !sigExpanded; renderFeed(); };
+}
+
+function renderCalendar(){
+  if(!DATA) return;
+  const tl = DATA.timeline || [];
+  // 以数据里的 today 为锚点；缺失则用本地日期
+  const todayStr = DATA.today || new Date().toISOString().slice(0,10);
+  const T = new Date(todayStr + 'T12:00:00');
+  const fmt = d => d.toISOString().slice(0,10);
+  // 近 30 天：从 T-30 到 T；前面用空白补齐到周一，保持表头对齐
+  const cutoff = new Date(T); cutoff.setDate(T.getDate() - 30);
+  const start = new Date(cutoff);
+  const end = new Date(T);
+  // 有确切日期的条目按日期分组；未来条目与模糊时间的进"后续安排"
+  const byDate = {};
+  tl.forEach(t => {
+    if(/^\d{4}-\d{2}-\d{2}$/.test(t.date) && !t.future) (byDate[t.date] = byDate[t.date] || []).push(t);
+  });
+  // 星期表头
+  $('#calWd').innerHTML = ['一','二','三','四','五','六','日'].map(w => `<div class="cal-wd">${w}</div>`).join('');
+  if(!selDate || selDate > todayStr) selDate = todayStr;
+  // 网格：补齐 T-30 所在周的前置空白，使周一到周日对齐
+  const cells = [];
+  const pad = ((start.getDay() + 6) % 7);
+  for(let i = 0; i < pad; i++) cells.push('<div class="cal-cell" style="visibility:hidden"></div>');
+  for(let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)){
+    const ds = fmt(d);
+    const items = byDate[ds] || [];
+    const isToday = ds === todayStr;
+    const showM = d.getDate() === 1 || ds === fmt(start);
+    const chips = items.slice(0,3).map(t =>
+      `<div class="cal-chip past" title="${esc(t.ev)}">${esc(t.ev)}</div>`).join('');
+    const more = items.length > 3 ? `<div class="cal-more">+${items.length - 3}</div>` : '';
+    cells.push(`<div class="cal-cell${isToday ? ' today' : ''}${ds === selDate ? ' sel' : ''}" data-date="${ds}">
+      <div class="cal-dn">${d.getDate()}${showM ? `<span class="cal-m">${d.getMonth()+1}月</span>` : ''}</div>
+      ${chips}${more}
+    </div>`);
+  }
+  $('#calGrid').innerHTML = cells.join('');
+  $('#calRange').textContent = `${fmt(cutoff).slice(5).replace('-','/')} — ${fmt(end).slice(5).replace('-','/')}`;
+  // 选中日详情
+  const selItems = byDate[selDate] || [];
+  const wk = ['日','一','二','三','四','五','六'][new Date(selDate + 'T12:00:00').getDay()];
+  $('#calDetail').innerHTML = `<div class="cd-title">${selDate} · 周${wk}${selDate === todayStr ? '（今天）' : ''}${selItems.length ? '' : ' · 无记录'}</div>` +
+    selItems.map(t => `<div class="cd-item">
+      <div class="cd-ev">${esc(t.ev)}${t.future ? '<span style="font-size:10px;color:var(--amber);margin-left:6px">预测</span>' : ''}</div>
+      ${t.who ? `<div class="cd-who">人物：${esc(t.who)}</div>` : ''}
+      ${t.place ? `<div class="cd-p">地点：${esc(t.place)}</div>` : ''}
+      ${t.note ? `<div class="cd-note">${esc(t.note)}</div>` : ''}
+    </div>`).join('');
+  // 点击选日
+  $('#calGrid').onclick = e => {
+    const c = e.target.closest('.cal-cell');
+    if(c && c.dataset.date){ selDate = c.dataset.date; renderCalendar(); }
+  };
+  $('#calToday').onclick = () => { selDate = todayStr; renderCalendar(); };
+  // 后续安排：未来确切日期 + 模糊时间
+  const isFuzzy = t => !/^\d{4}-\d{2}-\d{2}$/.test(t.date);
+  const tbd = tl.filter(t => t.future || isFuzzy(t))
+    .sort((a,b) => (isFuzzy(a) ? '9999' : a.date).localeCompare(isFuzzy(b) ? '9999' : b.date));
+  $('#tbdList').innerHTML = tbd.map(t => `<div class="tbd-item">
+      <div class="cd-ev">${esc(t.ev)}<span style="font-size:10px;color:var(--amber);margin-left:6px">${esc(t.date)}${/^\d{4}-\d{2}-\d{2}$/.test(t.date) ? ' · 已定档' : ''}</span></div>
+      ${t.who ? `<div class="cd-who">人物：${esc(t.who)}</div>` : ''}
+      ${t.place ? `<div class="cd-p">地点：${esc(t.place)}</div>` : ''}
+      ${t.note ? `<div class="cd-note">${esc(t.note)}</div>` : ''}
+    </div>`).join('') || '<div class="empty">暂无</div>';
+}
+
+function renderChrome(){
+  const auto = DATA && DATA.mode === 'auto';
+  const badge = $('#modeBadge');
+  badge.style.display = '';
+  badge.textContent = auto ? '实时数据' : '演示数据';
+  badge.classList.toggle('demo', !auto);
+  $('#upd').textContent = `数据更新：${DATA && DATA.updatedAt ? DATA.updatedAt : '--'}`;
+  $('#disc').innerHTML = auto
+    ? '<b>声明：</b>本页由自动任务每日抓取黄仁勋公开动态自动更新。<b>信息流仅收录客观新闻事实</b>（黄仁勋可溯源发言、英伟达官方动态、媒体报道的事实）；<b>观点流</b>为大V、媒体与卖方机构对事实的解读，仅代表发言者自身立场，不构成投资建议。文中公司/人物信息以官方披露为准。'
+    : '<b>声明：</b>本页为产品演示版，内容均为示例数据，不构成投资建议。';
+}
+
+(async function boot(){
+  try{
+    const r = await fetch('data.json', {cache:'no-store'});
+    if(!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    if(!Array.isArray(d.events)) throw new Error('bad data');
+    DATA = d;
+    window.__DATA_MODE__ = d.mode || 'auto';
+  }catch(e){
+    window.__DATA_MODE__ = 'error';
+    $('#feed').innerHTML = `<div class="empty">数据加载失败：${esc(e.message)}</div>`;
+    $('#calDetail').innerHTML = '<div class="empty">--</div>';
+    $('#tbdList').innerHTML = '';
+    $('#upd').textContent = '数据更新：失败';
+  }
+  renderChrome();
+  if(DATA){ renderFeed(); renderCalendar(); }
+})();
+</script>
+<div id="imgViewer" onclick="this.classList.remove('show')"><img alt=""></div>
+<script>
+function showImg(src){
+  const v = document.getElementById('imgViewer');
+  v.querySelector('img').src = src;
+  v.classList.add('show');
+}
+document.addEventListener('keydown', e => { if(e.key === 'Escape') document.getElementById('imgViewer').classList.remove('show'); });
+</script>
+<style>
+.feat{background:linear-gradient(120deg,#1f3a5f,#2f6fb3);border-radius:10px;padding:16px 20px;margin:0 0 16px;color:#fff;position:relative;overflow:hidden}
+.feat::after{content:"";position:absolute;right:-30px;top:-30px;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.08)}
+.feat-tag{display:inline-block;font-size:11px;font-weight:700;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);border-radius:99px;padding:2px 11px;margin-bottom:8px}
+.feat h2{font-size:18px;font-weight:700;margin:0 0 6px;position:relative}
+.feat p{font-size:13px;line-height:1.65;color:rgba(255,255,255,.88);max-width:780px;margin:0;position:relative}
+.feat-acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:13px;position:relative}
+.feat-btn{font-size:13px;font-weight:600;border-radius:8px;padding:8px 16px;cursor:pointer;border:1px solid #fff;background:#fff;color:#1f3a5f;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.feat-btn:hover{text-decoration:none;opacity:.92}
+.feat-btn.ghost{background:transparent;color:#fff}
+.feat-toggle{font-size:12px;color:rgba(255,255,255,.9);cursor:pointer;margin-top:11px;display:inline-block;text-decoration:underline;position:relative}
+.feat-frame{margin-top:12px;border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,.35);background:#fff;display:none;position:relative}
+.feat-frame.show{display:block}
+.feat-frame iframe{width:100%;height:380px;border:0;display:block}
+@media(max-width:1000px){ .feat-frame iframe{height:300px} }
+</style>
+<script>
+(function(){
+  var DEF = { label:'特色指标', title:'黄仁勋信号雷达 · 自包含产物', desc:'一份可离线打开、单文件运行的完整雷达快照（含全部信号、观点与行程），便于分享与归档。', productUrl:'jensen-radar-standalone.html', liveUrl:'https://e95f89a499854893b6b9a4575d01390b.app.workbuddy.link', embed:true };
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function build(f){
+    var h = '<span class="feat-tag">★ '+esc(f.label||'特色指标')+'</span>'
+      + '<h2>'+esc(f.title||'')+'</h2>'
+      + '<p>'+esc(f.desc||'')+'</p>'
+      + '<div class="feat-acts">'
+      + '<a class="feat-btn" href="'+esc(f.productUrl||'#')+'" target="_blank" rel="noopener">打开自包含产物 ↗</a>'
+      + (f.liveUrl?'<a class="feat-btn ghost" href="'+esc(f.liveUrl)+'" target="_blank" rel="noopener">打开线上实时雷达 ↗</a>':'')
+      + '</div>';
+    if(f.embed && f.productUrl){
+      h += '<span class="feat-toggle" onclick="window.__toggleFeat&&window.__toggleFeat(this)">▾ 预览产物</span>'
+        + '<div class="feat-frame" id="featFrame"><iframe src="'+esc(f.productUrl)+'" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.style.display=\'none\'"></iframe></div>';
+    }
+    return h;
+  }
+  function mount(f){
+    var old=document.getElementById('feat'); if(old) old.remove();
+    var wrap=document.querySelector('.wrap'); var layout=document.querySelector('.layout');
+    var sec=document.createElement('section'); sec.className='feat'; sec.id='feat';
+    sec.innerHTML=build(f);
+    if(wrap&&layout) wrap.insertBefore(sec, layout); else if(wrap) wrap.appendChild(sec);
+    window.__toggleFeat=function(t){ var fr=document.getElementById('featFrame'); if(!fr) return; var open=fr.classList.toggle('show'); t.textContent=open?'▴ 收起预览':'▾ 预览产物'; };
+  }
+  mount(DEF);
+  fetch('data.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).then(function(d){ if(d&&d.featured) mount(d.featured); }).catch(function(){});
+})();
+</script>
+</body>
+</html>
