@@ -353,51 +353,5 @@ function showImg(src){
 }
 document.addEventListener('keydown', e => { if(e.key === 'Escape') document.getElementById('imgViewer').classList.remove('show'); });
 </script>
-<style>
-.feat{background:linear-gradient(120deg,#1f3a5f,#2f6fb3);border-radius:10px;padding:16px 20px;margin:0 0 16px;color:#fff;position:relative;overflow:hidden}
-.feat::after{content:"";position:absolute;right:-30px;top:-30px;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.08)}
-.feat-tag{display:inline-block;font-size:11px;font-weight:700;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);border-radius:99px;padding:2px 11px;margin-bottom:8px}
-.feat h2{font-size:18px;font-weight:700;margin:0 0 6px;position:relative}
-.feat p{font-size:13px;line-height:1.65;color:rgba(255,255,255,.88);max-width:780px;margin:0;position:relative}
-.feat-acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:13px;position:relative}
-.feat-btn{font-size:13px;font-weight:600;border-radius:8px;padding:8px 16px;cursor:pointer;border:1px solid #fff;background:#fff;color:#1f3a5f;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
-.feat-btn:hover{text-decoration:none;opacity:.92}
-.feat-btn.ghost{background:transparent;color:#fff}
-.feat-toggle{font-size:12px;color:rgba(255,255,255,.9);cursor:pointer;margin-top:11px;display:inline-block;text-decoration:underline;position:relative}
-.feat-frame{margin-top:12px;border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,.35);background:#fff;display:none;position:relative}
-.feat-frame.show{display:block}
-.feat-frame iframe{width:100%;height:380px;border:0;display:block}
-@media(max-width:1000px){ .feat-frame iframe{height:300px} }
-</style>
-<script>
-(function(){
-  var DEF = { label:'特色指标', title:'黄仁勋信号雷达 · 自包含产物', desc:'一份可离线打开、单文件运行的完整雷达快照（含全部信号、观点与行程），便于分享与归档。', productUrl:'jensen-radar-standalone.html', liveUrl:'https://e95f89a499854893b6b9a4575d01390b.app.workbuddy.link', embed:true };
-  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  function build(f){
-    var h = '<span class="feat-tag">★ '+esc(f.label||'特色指标')+'</span>'
-      + '<h2>'+esc(f.title||'')+'</h2>'
-      + '<p>'+esc(f.desc||'')+'</p>'
-      + '<div class="feat-acts">'
-      + '<a class="feat-btn" href="'+esc(f.productUrl||'#')+'" target="_blank" rel="noopener">打开自包含产物 ↗</a>'
-      + (f.liveUrl?'<a class="feat-btn ghost" href="'+esc(f.liveUrl)+'" target="_blank" rel="noopener">打开线上实时雷达 ↗</a>':'')
-      + '</div>';
-    if(f.embed && f.productUrl){
-      h += '<span class="feat-toggle" onclick="window.__toggleFeat&&window.__toggleFeat(this)">▾ 预览产物</span>'
-        + '<div class="feat-frame" id="featFrame"><iframe src="'+esc(f.productUrl)+'" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.style.display=\'none\'"></iframe></div>';
-    }
-    return h;
-  }
-  function mount(f){
-    var old=document.getElementById('feat'); if(old) old.remove();
-    var wrap=document.querySelector('.wrap'); var layout=document.querySelector('.layout');
-    var sec=document.createElement('section'); sec.className='feat'; sec.id='feat';
-    sec.innerHTML=build(f);
-    if(wrap&&layout) wrap.insertBefore(sec, layout); else if(wrap) wrap.appendChild(sec);
-    window.__toggleFeat=function(t){ var fr=document.getElementById('featFrame'); if(!fr) return; var open=fr.classList.toggle('show'); t.textContent=open?'▴ 收起预览':'▾ 预览产物'; };
-  }
-  mount(DEF);
-  fetch('data.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).then(function(d){ if(d&&d.featured) mount(d.featured); }).catch(function(){});
-})();
-</script>
 </body>
 </html>

@@ -2,14 +2,6 @@
   "mode": "auto",
   "today": "2026-09-08",
   "updatedAt": "2026-09-09 09:40",
-  "featured": {
-    "label": "特色指标",
-    "title": "黄仁勋信号雷达 · 自包含产物",
-    "desc": "一份可离线打开、单文件运行的完整雷达快照（含全部信号、观点与行程），便于分享与归档。",
-    "productUrl": "jensen-radar-standalone.html",
-    "liveUrl": "https://e95f89a499854893b6b9a4575d01390b.app.workbuddy.link",
-    "embed": true
-  },
   "events": [
     {
       "id": "ev20260908c",
