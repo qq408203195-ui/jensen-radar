@@ -341,11 +341,48 @@ function renderChrome(){
     : '<b>声明：</b>本页为产品演示版，内容均为示例数据，不构成投资建议。';
 }
 
-<script id="radar-data" type="application/json">{
+<script id="radar-data" type="application/json">
+{
   "mode": "auto",
   "today": "2026-09-10",
-  "updatedAt": "2026-09-10 00:21",
+  "updatedAt": "2026-09-10 12:33",
   "events": [
+    {
+      "id": "ev20260910b",
+      "date": "2026-09-10",
+      "type": "mt",
+      "src": "新浪财经（环球市场播报）/ 路透社",
+      "title": "美司法部调查英伟达与 Groq 的 170–200 亿美元授权交易是否规避反垄断审查",
+      "place": "美国（监管调查）",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-09-10/doc-inirihnu8566892.shtml",
+      "images": [],
+      "signals": [
+        "美国司法部正在调查英伟达 2025 年 12 月与 AI 芯片初创 Groq 达成的授权交易，重点是其是否通过“非独家技术许可 + 聘用核心高管”的结构刻意规避更严格的反垄断并购审查",
+        "交易结构：英伟达支付约 170–200 亿美元获得 Groq 芯片技术的非独家许可，同时 Groq 创始人兼 CEO Jonathan Ross 与 COO Sunny Madra 转投英伟达，Groq 本身维持独立公司地位",
+        "据《纽约时报》报道，司法部在交易公布后不久即启动调查并已正式要求英伟达提交相关信息；若认定交易处理方式有问题，英伟达可能面临罚款，但报道称司法部大概率不会要求撤销该交易",
+        "美国国会议员曾指该交易“实质上是一起扼杀竞争的收购”；这把 AI 行业“不买公司、只拿技术与人才”的交易方式推入反垄断监管视野（与 ev20260824b Groq 3 LPX 量产同源主体，本条为针对授权交易的监管调查，独立成条）"
+      ],
+      "cat": "nvda",
+      "note": "事件日 9/10（路透社/新浪财经环球市场播报/格隆汇 9/10 报道，引述 NYT 与知情人士）；金额各源口径不一（凤凰/财闻引 NYT 称 170 亿美元、新浪引格隆汇称 200 亿美元），以区间记录。官方一手源未直接抓取，以新浪财经（正规 tier-3）为溯源代理；url 指向新浪原文页"
+    },
+    {
+      "id": "ev20260909b",
+      "date": "2026-09-09",
+      "type": "mt",
+      "src": "财联社 / 路透社（NVIDIA 9/9 官宣）",
+      "title": "英伟达宣布支持澳大利亚到 2027 年建设最高 2GW AI 基础设施，联手八大本土伙伴",
+      "place": "澳大利亚",
+      "url": "https://www.cls.cn/detail/2478832",
+      "images": [],
+      "signals": [
+        "英伟达 9/9 宣布扩大与澳大利亚数据中心及云生态合作，目标到 2027 年交付最高 2GW 的 AI 基础设施容量；合作伙伴含 Firmus、Sharon AI、IREN、ResetData、Megaport、CDC、NEXTDC、AirTrunk",
+        "合作围绕 NVIDIA DSX 平台建设 full-stack AI factories，明确把“land、power and shell capacity”（土地、电力、机房）写进合作内容——标志英伟达从卖 GPU 进一步延伸到 AI 工厂标准制定",
+        "Reuters 9/10 报道称，澳大利亚现有数据中心行业总容量约 1.6GW，英伟达及伙伴规划新增的 AI 容量超过其现有总和；NEXTDC 本周拟发约 11 亿澳元（约 7.96 亿美元）可转债扩建设施",
+        "2GW 为合作伙伴面向 2027 年的建设目标，非当前已投运容量；反映 AI 基建瓶颈正从“有没有 GPU”转向“有没有地方给 GPU 通电”，延续黄仁勋“AI 工厂”叙事"
+      ],
+      "cat": "nvda",
+      "note": "官宣日 9/9（智算通鉴引 NVIDIA 9/9 澳大利亚 AI 基础设施合作公告；财联社 9/10 08:07 电、Reuters 9/10 跟进）。官方 nvidia.com 一手 URL 本轮未抓到，暂归公司动态（nvda）并以财联社为溯源；若后续确认官网首发应升级为 nvnews。与 ev20260908b（Firmus×OpenAI 马来西亚）同属 AI 工厂生态区域扩张"
+    },
     {
       "id": "ev20260909a",
       "date": "2026-09-09",
@@ -1358,6 +1395,25 @@ function renderChrome(){
   ],
   "opinions": [
     {
+      "id": "op20260910a",
+      "date": "2026-09-10",
+      "cat": "media",
+      "author": "SemiAnalysis（经 36氪 / 新智元 转载）",
+      "stance": "审慎",
+      "title": "SemiAnalysis 实测：谷歌 TPU Ironwood 每美元推理性能最高领先英伟达 B300 约 96%，黄仁勋“TPU 不敢跑分”断言遭反证",
+      "quotes": [
+        "SemiAnalysis 发布谷歌第七代 TPU Ironwood 首份第三方推理测算：完全对等负载下 TPU 每百万 token 成本仅 0.181 美元，B200 为 0.222、B300 为 0.276；单用户吞吐基准下 TPU 比 B200 便宜 19%、比 B300 便宜 34%",
+        "文章指黄仁勋 4 月 Dwarkesh 播客的三次断言（极度渴望对手证明 TPU 成本优势、TPU 优势从第一性原理说不通、Anthropic 只是特例）被实测反证；谷歌借 PyTorch PrivateUse1 接口让 TPU 成为原生 Torch 设备，填平 CUDA 生态护城河",
+        "Anthropic 已吞下超 100 万颗 TPU（约 40 万买断、60 万租赁），到 2029 年将超越 DeepMind 成最大单一 TPU 用户——ASIC 路线对英伟达推理份额的侵蚀正在从叙事变为数据"
+      ],
+      "url": "https://www.36kr.com/p/3976975500227072",
+      "src": "36氪（新智元）",
+      "related": [
+        "ev20260830b"
+      ],
+      "note": "SemiAnalysis 为权威半导体分析机构，原文 newsletter.semianalysis.com；36氪经授权转载（2026-09-10 10:53）。属对黄仁勋“XPU 竞争”表态（ev20260830b）的反方技术验证，立场审慎（揭示推理性价比护城河受挑战）。非 Jensen 本人立场"
+    },
+    {
       "id": "op20260909a",
       "date": "2026-09-09",
       "cat": "kol",
@@ -1642,6 +1698,7 @@ function renderChrome(){
     }
   ]
 }
+
 </script>
 (function boot(){
   try{
