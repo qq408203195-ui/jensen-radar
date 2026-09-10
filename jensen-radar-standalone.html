@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>黄仁勋信号雷达 · 自包含版（含全部数据）</title>
+<title>黄仁勋信号雷达 · 动态与日历</title>
 <style>
 :root{
   /* ── 韭菜说设计令牌 ── */
@@ -341,12 +341,31 @@ function renderChrome(){
     : '<b>声明：</b>本页为产品演示版，内容均为示例数据，不构成投资建议。';
 }
 
-<script id="radar-data" type="application/json">
-{
+const DATA_INLINE = {
   "mode": "auto",
-  "today": "2026-09-10",
-  "updatedAt": "2026-09-10 12:33",
+  "today": "2026-09-11",
+  "updatedAt": "2026-09-11 00:44",
   "events": [
+    {
+      "id": "ev20260910c",
+      "date": "2026-09-10",
+      "type": "sp",
+      "src": "华尔街见闻（黄仁勋高盛炉边对话全文实录）",
+      "title": "黄仁勋高盛炉边对话：Q4 扩大 Blackwell 产能、明年继续扩，需求“每个人都想抢”",
+      "place": "美国·旧金山（高盛 Communacopia + Technology 大会，线上音频直播 8:50 a.m. PT）",
+      "url": "https://wallstreetcn.com/life-and-art/articles/cn/3727764",
+      "images": [],
+      "signals": [
+        "【炉边对话原话（9/10，与高盛 CEO David Solomon 对谈）】黄仁勋称英伟达“将在第四季度发货，并在第四季度扩大产能，明年继续扩大”，Blackwell 现已全面投产",
+        "【原话】对 Blackwell 的需求“实在太大了，每个人都想成为第一个拥有它的公司，每个人都想拥有最多的产能，每个人都想领先”",
+        "【原话】“世界上价值数万亿美元的通用数据中心将被升级为加速计算型数据中心。这一定会发生”",
+        "【原话】过去 10 年英伟达把计算能力“提高了 100 万倍”；通过开发 7 种不同芯片、每两年推一个全新架构，约每年交付一代更强的 AI 集群",
+        "谈竞争壁垒：Blackwell 系统由 7 类芯片组成（Blackwell 只是其一），整机含约 35000 个零件、重约 80 磅、电流 10000 安培；强调架构一致性让“昨天开发的软件明天仍可运行”",
+        "谈供应链：亚洲（尤其台积电）供应链庞大交织，英伟达拥有足够 IP 可在必要时切换供应商；台积电“绝对领先”，去年收入爆发式增长离不开其敏捷扩产"
+      ],
+      "cat": "jensen",
+      "note": "事件日 9/10（高盛 Communacopia + Technology 大会炉边对话 8:50 a.m. PT；NVIDIA 8/27 官宣该出席）。源 华尔街见闻《黄仁勋挽救美股的讲话，到底说了啥》全文实录（9/11 刊，事件日 9/10；多源确认 9/10 当日确有此炉边对话）。该文对“讲话后 NVDA 107→116.9、+8.15%、+2158 亿美元市值”的描述与 9/10 实际收盘 $218.58（-2.17%）严重冲突，疑套用旧框架/笔误，故正文不收录任何股价变动数字，仅录黄仁勋本人定性表述。右兜/雪球流传的“1993 创立 31 年”英文逐字稿实为 2024 年同主题对话模板，非本场，已排除"
+    },
     {
       "id": "ev20260910b",
       "date": "2026-09-10",
@@ -1381,8 +1400,8 @@ function renderChrome(){
       "place": "美国·旧金山（线上音频直播 8:50 a.m. PT）",
       "who": "黄仁勋（NVIDIA 创始人兼 CEO）",
       "ev": "高盛 Communacopia + Technology 大会 演讲",
-      "note": "NVIDIA 8/27 官宣；议题预期含 Vera Rubin 量产、Vera CPU 业务、HBM 内存供应与对华芯片管制；市场聚焦 Q3 指引",
-      "future": true
+      "note": "炉边对话 David Solomon：Q4 扩大 Blackwell 产能、明年继续扩，Blackwell 需求极大；数万亿美元通用数据中心将转向加速计算；谈架构一致性与供应链韧性",
+      "future": false
     },
     {
       "date": "2026-09-09",
@@ -1698,17 +1717,19 @@ function renderChrome(){
     }
   ]
 }
-
-</script>
-(function boot(){
+;
+(async function boot(){
   try{
-    const d = JSON.parse(document.getElementById('radar-data').textContent);
+    const d = DATA_INLINE;
     if(!Array.isArray(d.events)) throw new Error('bad data');
     DATA = d;
     window.__DATA_MODE__ = d.mode || 'auto';
   }catch(e){
     window.__DATA_MODE__ = 'error';
-    const f=document.getElementById('feed'); if(f) f.innerHTML='<div class="empty">数据加载失败：'+e.message+'</div>';
+    $('#feed').innerHTML = `<div class="empty">数据加载失败：${esc(e.message)}</div>`;
+    $('#calDetail').innerHTML = '<div class="empty">--</div>';
+    $('#tbdList').innerHTML = '';
+    $('#upd').textContent = '数据更新：失败';
   }
   renderChrome();
   if(DATA){ renderFeed(); renderCalendar(); }
