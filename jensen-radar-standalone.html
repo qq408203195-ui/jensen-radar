@@ -6,26 +6,42 @@
 <title>黄仁勋信号雷达 · 自包含版（含全部数据）</title>
 <style>
 :root{
-  --bg:#f5f6f8; --card:#ffffff; --card2:#fafbfc;
-  --line:#e4e7ec; --line2:#cdd3dc;
-  --txt:#1c2333; --mut:#5b6472; --dim:#8a93a3;
-  --pri:#2f6fb3; --pribg:#eaf2fa;
-  --red:#c0392b; --redbg:#fbeeed;
-  --green:#1e7e34; --greenbg:#edf7ef;
-  --amber:#b45309; --amberbg:#fdf3e3;
+  /* ── 韭菜说设计令牌 ── */
+  --brand:#ff4713; --brand-deep:#d93a0e; --brand-light:#ff6b35;
+  --brand-soft:#fff1ec; --brand-soft2:#ffe6df;
+  --blue:#005eb8; --blue-light:#0078e0; --blue-dark:#003d7a; --bluebg:#eaf3fb;
+  --rose:#e82e5c; --teal:#089981;
+  --grad:linear-gradient(135deg,#ff4713 0%,#ff6b35 30%,#e82e5c 60%,#005eb8 100%);
+  /* 中性 */
+  --bg:#fafafa; --card:#ffffff; --card2:#fafafa;
+  --line:#e8e8e8; --line2:#d4d4d4;
+  --txt:#111111; --mut:#4d4d4d; --dim:#8c8c8c;
+  /* 语义（沿用原变量名） */
+  --pri:#ff4713; --pribg:#fff1ec;
+  --red:#ff4713; --redbg:#fff1ec;
+  --green:#00875a; --greenbg:#e9f6f0;
+  --amber:#d97706; --amberbg:#fdf3e7;
+  /* 形状与阴影 */
+  --r-sm:6px; --r-md:10px; --r-lg:16px;
+  --sh-sm:0 1px 3px rgba(0,0,0,.06);
+  --sh-md:0 4px 16px rgba(0,0,0,.08);
+  --sh-lg:0 12px 40px rgba(0,0,0,.12);
+  --glow:0 0 14px rgba(255,71,19,.55);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{
   background:var(--bg); color:var(--txt);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;
   font-size:13px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
 }
-a{color:var(--pri);text-decoration:none}
+a{color:var(--blue);text-decoration:none}
 a:hover{text-decoration:underline}
 .wrap{max-width:1200px;margin:0 auto;padding:0 20px 50px}
-.hd{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:14px 0 12px;border-bottom:2px solid var(--txt);background:var(--bg);position:sticky;top:0;z-index:50}
+.hd{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:14px 0 12px;background:rgba(255,255,255,.94);backdrop-filter:saturate(180%) blur(8px);position:sticky;top:0;z-index:50;box-shadow:var(--sh-sm)}
+.hd::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--grad)}
 .brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-.brand b{font-size:17px;letter-spacing:.3px}
+.brand b{font-size:18px;letter-spacing:.3px;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .brand small{font-size:12px;color:var(--mut);font-weight:400}
 .live-badge{font-size:11px;border-radius:3px;padding:1px 7px;border:1px solid var(--green);color:var(--green);background:var(--greenbg)}
 .live-badge.demo{border-color:var(--amber);color:var(--amber);background:var(--amberbg)}
@@ -34,20 +50,20 @@ a:hover{text-decoration:underline}
 .col-h{display:flex;align-items:baseline;gap:8px;margin-bottom:10px}
 .col-h h2{font-size:15px;font-weight:600}
 .col-h .sub{font-size:12px;color:var(--mut)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:14px 16px;box-shadow:var(--sh-sm)}
 .card h3{font-size:14px;font-weight:600;margin-bottom:10px;display:flex;align-items:center;gap:8px}
 .card h3 .tag{font-size:11px;color:var(--dim);font-weight:400;margin-left:auto}
 /* 信息流 */
-.fd{border:1px solid var(--line);border-radius:6px;padding:13px 15px;margin-bottom:12px;background:var(--card)}
-.fd:hover{border-color:var(--line2)}
+.fd{border:1px solid var(--line);border-radius:var(--r-md);padding:13px 15px;margin-bottom:12px;background:var(--card);box-shadow:var(--sh-sm);transition:box-shadow .15s,border-color .15s}
+.fd:hover{border-color:var(--line2);box-shadow:var(--sh-md)}
 .fd-head{display:flex;align-items:flex-start;gap:9px;flex-wrap:wrap}
 .fd-type{font-size:11px;font-weight:600;border-radius:3px;padding:1px 7px;border:1px solid;white-space:nowrap;margin-top:2px}
 .fd-type.er{color:var(--red);border-color:var(--red);background:var(--redbg)}
-.fd-type.sp{color:var(--pri);border-color:var(--pri);background:var(--pribg)}
+.fd-type.sp{color:var(--blue);border-color:var(--blue);background:var(--bluebg)}
 .fd-type.iv{color:var(--amber);border-color:var(--amber);background:var(--amberbg)}
 .fd-type.mt{color:var(--mut);border-color:var(--line2);background:var(--card2)}
-.fd-type.co{color:var(--pri);border-color:var(--pri);background:var(--pribg)}
-.fd-type.op{color:#7c3aed;border-color:#7c3aed;background:#f3eefe}
+.fd-type.co{color:var(--blue);border-color:var(--blue);background:var(--bluebg)}
+.fd-type.op{color:var(--rose);border-color:var(--rose);background:#fdeef2}
 .fd-title{font-size:14px;font-weight:600;flex:1;min-width:220px}
 .fd-meta{font-size:12px;color:var(--dim);margin-top:5px}
 .fd-meta a{color:var(--pri)}
@@ -69,17 +85,17 @@ a:hover{text-decoration:underline}
 .catbar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
 .cattab{font-size:12px;border:1px solid var(--line2);border-radius:14px;padding:3px 12px;background:var(--card);color:var(--mut);cursor:pointer}
 .cattab:hover{border-color:var(--pri);color:var(--pri)}
-.cattab.on{background:var(--txt);border-color:var(--txt);color:#fff}
+.cattab.on{background:var(--pri);border-color:var(--pri);color:#fff;box-shadow:var(--sh-sm)}
 .cattab .n{font-size:11px;opacity:.75;margin-left:2px}
 .cat-tag{font-size:10px;border-radius:3px;padding:1px 5px;border:1px solid;white-space:nowrap;margin-top:2px}
-.cat-tag.jensen{color:var(--red);border-color:var(--red);background:var(--redbg)}
-.cat-tag.nvda{color:var(--green);border-color:var(--green);background:var(--greenbg)}
-.cat-tag.nvnews{color:#376b00;border-color:#76b900;background:#eaf7df}
-.cat-tag.kol{color:#7c3aed;border-color:#7c3aed;background:#f3eefe}
-.cat-tag.media{color:var(--amber);border-color:var(--amber);background:var(--amberbg)}
-.cat-tag.sellside{color:#2563eb;border-color:#2563eb;background:#eff6ff}
-.cat-tag.media-op{color:#0e7490;border-color:#0e7490;background:#ecfeff}
-.cat-tag.xtweet{color:#0f1419;border-color:#0f1419;background:#eef0f2}
+.cat-tag.xtweet{color:#ff4713;border-color:#ff4713;background:#fff1ec}
+.cat-tag.jensen{color:#d93a0e;border-color:#d93a0e;background:#ffe6df}
+.cat-tag.nvnews{color:#005eb8;border-color:#005eb8;background:#eaf3fb}
+.cat-tag.nvda{color:#00875a;border-color:#00875a;background:#e9f6f0}
+.cat-tag.media{color:#d97706;border-color:#d97706;background:#fdf3e7}
+.cat-tag.kol{color:#e82e5c;border-color:#e82e5c;background:#fdeef2}
+.cat-tag.sellside{color:#003d7a;border-color:#003d7a;background:#e8eef5}
+.cat-tag.media-op{color:#089981;border-color:#089981;background:#e6f6f3}
 /* 观点（混排于信息流） */
 .stance{font-size:10px;border-radius:3px;padding:1px 6px;border:1px solid;white-space:nowrap}
 .stance.bull{color:var(--red);border-color:var(--red);background:var(--redbg)}
@@ -90,13 +106,13 @@ a:hover{text-decoration:underline}
 .op-fd:hover{border-color:var(--line2)}
 .op-author{font-size:12.5px;font-weight:600;flex:1;min-width:200px;color:var(--txt)}
 .op-q-wrap{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin-top:9px}
-.op-q{display:block;font-size:13px;line-height:1.6;color:var(--txt);border-left:3px solid #7c3aed;background:var(--card2);padding:5px 9px;border-radius:0 4px 4px 0;width:100%}
+.op-q{display:block;font-size:13px;line-height:1.6;color:var(--txt);border-left:3px solid var(--rose);background:var(--card2);padding:5px 9px;border-radius:0 4px 4px 0;width:100%}
 .op-q b{color:var(--txt)}
 /* 日历 */
 .cal-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
 .cal-range{font-size:13px;font-weight:600}
 .cal-todaybtn{font-size:11px;color:var(--pri);background:var(--pribg);border:1px solid var(--pri);border-radius:4px;padding:2px 10px;cursor:pointer;white-space:nowrap}
-.cal-todaybtn:hover{background:#dcebfa}
+.cal-todaybtn:hover{background:var(--brand-soft2)}
 .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
 .cal-wd{font-size:10px;color:var(--dim);text-align:center;padding:2px 0 4px}
 .cal-cell{min-height:138px;border:1px solid var(--line);border-radius:4px;padding:3px 4px;background:var(--card);cursor:pointer;overflow:hidden}
@@ -107,7 +123,7 @@ a:hover{text-decoration:underline}
 .cal-cell.today .cal-dn{color:var(--pri);font-weight:700}
 .cal-dn .cal-m{font-size:9px;color:var(--dim);margin-left:1px}
 .cal-chip{font-size:10px;line-height:1.45;border-radius:2px;padding:1px 4px;margin-top:2px;display:-webkit-box;-webkit-line-clamp:6;line-clamp:6;-webkit-box-orient:vertical;overflow:hidden;word-break:break-word}
-.cal-chip.past{background:var(--pribg);color:#24578c}
+.cal-chip.past{background:var(--bluebg);color:#003d7a}
 .cal-chip.future{background:var(--amberbg);color:var(--amber)}
 .cal-more{font-size:10px;color:var(--dim);margin-top:2px}
 .cal-detail{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
@@ -1625,7 +1641,8 @@ function renderChrome(){
       "note": "Mollick 评价对象为 GPT-6/OpenAI，未点名黄仁勋或英伟达；但因黄仁勋 9/6-9/7 的“AGI 已到来”发文正是庆祝 GPT-6 Astra，二者同处一波 AGI 叙事，故列入同窗参考。其具体“jagged AGI 反驳”说法未获一手来源证实，不录入"
     }
   ]
-}</script>
+}
+</script>
 (function boot(){
   try{
     const d = JSON.parse(document.getElementById('radar-data').textContent);
