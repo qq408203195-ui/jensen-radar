@@ -1,8 +1,44 @@
 {
   "mode": "auto",
-  "today": "2026-09-13",
-  "updatedAt": "2026-09-13 13:48",
+  "today": "2026-09-15",
+  "updatedAt": "2026-09-15 02:14",
   "events": [
+    {
+      "id": "ev20260914a",
+      "date": "2026-09-14",
+      "type": "mt",
+      "src": "英伟达官方新闻室（nvidianews.nvidia.com）",
+      "title": "英伟达扩展开源 CUDA-Q 平台，新增容错量子计算编排层",
+      "place": "美国·圣克拉拉",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-open-source-cuda-q-platform-for-fault-tolerant-quantum-computing",
+      "images": [
+        "https://iprsoftwaremedia.com/219/files/202609/8f5f4e6e5f17070f1bcf2fd75581d07e/6aa46b373d6332e22de500bb_nvidia-cuda-q-quantum-computing/nvidia-cuda-q-quantum-computing_62fa9332-597d-41db-af52-fce2ff0d404a-prv.jpg?v=62fa9332-597d-41db-af52-fce2ff0d404a"
+      ],
+      "signals": [
+        "英伟达宣布扩展开源 CUDA-Q 平台，新增 CUDA-Q Logical 编排层，用于以可编程、可验证的方式开发容错量子计算机的实际应用（官方新闻室 9/14）",
+        "CUDA-Q Logical 提供量子纠错与逻辑量子比特的编排能力，将英伟达加速计算栈延伸至量子-经典混合工作流；官方称这是通往实用量子计算的关键一步"
+      ],
+      "cat": "nvnews",
+      "note": "英伟达官方新闻室 9/14 发布；正文未录得黄仁勋本人引语，归 nvnews 因其为 nvidia.com 官方域发布"
+    },
+    {
+      "id": "ev20260914b",
+      "date": "2026-09-14",
+      "type": "mt",
+      "src": "英伟达官方博客（blogs.nvidia.com）",
+      "title": "Perplexity 便携电脑登陆 Windows，由英伟达 RTX GPU 驱动",
+      "place": "美国·圣克拉拉",
+      "url": "https://blogs.nvidia.com/blog/local-ai-perplexity-windows-pcs/",
+      "images": [
+        "https://blogs.nvidia.com/wp-content/uploads/2026/09/Local-AI_Perplexity-on-Windows_Blog_Feature.jpg"
+      ],
+      "signals": [
+        "Perplexity Portable Computer 现已支持在 Windows 上运行，由 NVIDIA RTX GPU 驱动，可在本地运行常驻 AI 智能体工作流（官方博客 9/14）",
+        "英伟达称该设备可在本地模型与云模型间切换、无需消耗云端 token 额度，主打本地隐私 AI；是 DGX Spark 本地 AI 生态的延伸"
+      ],
+      "cat": "nvnews",
+      "note": "英伟达官方博客 9/14 发布；归 nvnews 因其为 blogs.nvidia.com 官方域发布"
+    },
     {
       "id": "ev20260911a",
       "date": "2026-09-11",
@@ -68,7 +104,8 @@
         "【原话·应用拐点】预计基于推理的机器人操作技术将在约两年后迎来重大拐点（搜狐/财联社 9/12 转述 9/10 高盛同场）",
         "【原话·增速天花板】重申 2027 财年约 70% 营收同比增长是「供应上限、非需求上限」——若不受供应约束，增速会更高（华尔街见闻 9/12 转述 9/10 高盛同场半导体分析师 James Schneider 访谈）",
         "【原话·架构哲学】称「摩尔定律已终结」、晶体管微缩红利消失，英伟达以 CoWoS 多芯片封装与 NVLink 纵向扩展实现极端协同设计；「若没有 NVLink、没有出色的纵向扩展，你就死定了，因为摩尔定律是你的敌人」（华尔街见闻 9/12 转述 9/10 高盛同场）",
-        "【原话·回击“循环融资”】面对外界对英伟达投资属“循环融资”的质疑，黄仁勋回击：“投 1 块拿回 100 块？那就多来点”（华尔街见闻 9/13 转述 9/10 高盛同场炉边对话）"
+        "【原话·回击“循环融资”】面对外界对英伟达投资属“循环融资”的质疑，黄仁勋回击：“投 1 块拿回 100 块？那就多来点”（华尔街见闻 9/13 转述 9/10 高盛同场炉边对话）",
+        "【原话·回击 AI 末日论】面对前 Anthropic 研究员 Jacob Coxon 的「AI 或在本十年内灭绝人类」警告，黄仁勋以「complete nonsense（完全胡说）」「outlandish（离谱）」「deeply untrue（极不属实）」回击，称其傲慢且低估了行业已投入的安全工作（Axios / Brad Gerstner 转述 9/10 高盛同场；India Today 9/11）"
       ],
       "cat": "jensen",
       "note": "事件日 9/10（高盛 Communacopia + Technology 大会炉边对话 8:50 a.m. PT；NVIDIA 8/27 官宣该出席）。源 华尔街见闻《黄仁勋挽救美股的讲话，到底说了啥》全文实录（9/11 刊，事件日 9/10；多源确认 9/10 当日确有此炉边对话）。该文对“讲话后 NVDA 107→116.9、+8.15%、+2158 亿美元市值”的描述与 9/10 实际收盘 $218.58（-2.17%）严重冲突，疑套用旧框架/笔误，故正文不收录任何股价变动数字，仅录黄仁勋本人定性表述。右兜/雪球流传的“1993 创立 31 年”英文逐字稿实为 2024 年同主题对话模板，非本场，已排除；9/11 补录同场 cybersecurity 与“循环交易”回应信号（源 财联社/TechCrunch，均指向 9/10 高盛同场）。；9/12 续跑据 9/11 详细实录补充同场 3 条新信号（3–4万亿长期预测、系统均价梯度/850万美元GPU/27%月环比、算力资产化+physical AI 四阶段），均为 9/10 高盛同场原话，非新事件"
