@@ -1,7 +1,7 @@
 {
   "mode": "auto",
   "today": "2026-09-16",
-  "updatedAt": "2026-09-16 08:54",
+  "updatedAt": "2026-09-16 21:26",
   "events": [
     {
       "id": "ev20260915a",
@@ -17,10 +17,14 @@
         "【原话】「两者绝对可以兼得。你可以控制开发节奏，直到有信心推出被市场认可的产品。市场力量在其间会发挥作用」",
         "【原话】「如果你研发一款产品或服务，却对它的功能、性能、安全性没有信心，那就不要发布它」——主张企业自行管控节奏，而非等政府干预",
         "【原话】称 AI 将大量取代人类岗位的担忧「完全是无稽之谈」（complete nonsense）",
-        "【背景】此番表态使其与特朗普同阵营；就在前一天（9/14）All-In Summit 现场他接到特朗普来电、二人同批 AI 末日论。与此同时 Anthropic 的 Dario Amodei 上周末呼吁放缓前沿模型、OpenAI 的 Altman 与马斯克声援，行业在 AI 安全上明显分裂"
+        "【背景】此番表态使其与特朗普同阵营；就在前一天（9/14）All-In Summit 现场他接到特朗普来电、二人同批 AI 末日论。与此同时 Anthropic 的 Dario Amodei 上周末呼吁放缓前沿模型、OpenAI 的 Altman 与马斯克声援，行业在 AI 安全上明显分裂",
+        "【官网博客补充·Koa 发布（blogs.nvidia.com 9/15）】Salesforce 与 NVIDIA 在 Dreamforce 同台发布 Koa——Salesforce 首个 CRM 推理模型，基于 NVIDIA Nemotron 3 Super 后训练，用近 27 年 Salesforce CRM 数据合成集训练，完全跑在 Salesforce 自有基础设施内（Rohan Kumar 称「没有一字节客户数据被使用」）",
+        "【黄仁勋原话·主题】「有了电力，我们能驱动一切；有了互联网，你能找到一切；现在，AI 作为覆盖全球的基础设施层，我们能知道一切、做成一切」（Now we can know everything and do anything）",
+        "【黄仁勋原话·AI 企业】「每家公司、每个企业、每个国家都会成为 AI 公司，这将是一个智能体企业（agentic enterprise）」",
+        "【数据·官方博客】黄仁勋称开放模型占比从去年初约 30% 升至如今约 70%；Koa 在 CRM 基准上错误率较领先模型低约 3 倍；10 月进客户试点（F1、UChicago Medicine、Baxter Credit Union 等），2026 冬季美国区 GA"
       ],
       "cat": "jensen",
-      "note": "事件日 2026-09-15（周二，旧金山 Dreamforce；财联社 9/16 刊发，中国时区晚于美西当日）。归 jensen：黄仁勋本人可溯源公开对话原话（与 Marc Benioff 同台）。与 ev20260914c（9/14 All-In Summit 接特朗普来电）为不同日期、不同场合、不同对话对象的独立事件；本次聚焦 AI 监管立法立场。财联社 og:image 不可抓（curl 无返回），images 留空。"
+      "note": "事件日 2026-09-15（周二，旧金山 Dreamforce；财联社 9/16 刊发，中国时区晚于美西当日）。归 jensen：黄仁勋本人可溯源公开对话原话（与 Marc Benioff 同台）。与 ev20260914c（9/14 All-In Summit 接特朗普来电）为不同日期、不同场合、不同对话对象的独立事件；本次聚焦 AI 监管立法立场。财联社 og:image 不可抓（curl 无返回），images 留空。另：英伟达官方博客 9/15 发布同名回顾《Now We Can Know Everything and Do Anything, Jensen Huang Says at Dreamforce》（blogs.nvidia.com/blog/jensen-huang-dreamforce/），补充 Koa 模型发布与「know everything and do anything」主题原话，已并入本事件 signals，不另立 nvnews 条目（同事件不重复）。"
     },
     {
       "id": "ev20260914c",
