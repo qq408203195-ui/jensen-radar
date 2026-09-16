@@ -1,8 +1,27 @@
 {
   "mode": "auto",
-  "today": "2026-09-15",
-  "updatedAt": "2026-09-15 14:24",
+  "today": "2026-09-16",
+  "updatedAt": "2026-09-16 08:54",
   "events": [
+    {
+      "id": "ev20260915a",
+      "date": "2026-09-15",
+      "type": "sp",
+      "src": "财联社（记者 卞纯）/ Salesforce Dreamforce 2026",
+      "title": "黄仁勋 Dreamforce 与 Benioff 同台：AI 不需要新法律，安全与速度可兼得",
+      "place": "美国·旧金山（Salesforce Dreamforce 2026）",
+      "url": "https://www.cls.cn/detail/2484303",
+      "images": [],
+      "signals": [
+        "【事件（9/15 旧金山 Salesforce Dreamforce 2026，与 Salesforce CEO Marc Benioff 对话）】黄仁勋称 AI 行业「不需要任何新法律、不需要新的监管」，与美国总统特朗普立场一致（财联社 9/16 报道，事件日 9/15）",
+        "【原话】「两者绝对可以兼得。你可以控制开发节奏，直到有信心推出被市场认可的产品。市场力量在其间会发挥作用」",
+        "【原话】「如果你研发一款产品或服务，却对它的功能、性能、安全性没有信心，那就不要发布它」——主张企业自行管控节奏，而非等政府干预",
+        "【原话】称 AI 将大量取代人类岗位的担忧「完全是无稽之谈」（complete nonsense）",
+        "【背景】此番表态使其与特朗普同阵营；就在前一天（9/14）All-In Summit 现场他接到特朗普来电、二人同批 AI 末日论。与此同时 Anthropic 的 Dario Amodei 上周末呼吁放缓前沿模型、OpenAI 的 Altman 与马斯克声援，行业在 AI 安全上明显分裂"
+      ],
+      "cat": "jensen",
+      "note": "事件日 2026-09-15（周二，旧金山 Dreamforce；财联社 9/16 刊发，中国时区晚于美西当日）。归 jensen：黄仁勋本人可溯源公开对话原话（与 Marc Benioff 同台）。与 ev20260914c（9/14 All-In Summit 接特朗普来电）为不同日期、不同场合、不同对话对象的独立事件；本次聚焦 AI 监管立法立场。财联社 og:image 不可抓（curl 无返回），images 留空。"
+    },
     {
       "id": "ev20260914c",
       "date": "2026-09-14",
@@ -982,6 +1001,14 @@
     }
   ],
   "timeline": [
+    {
+      "date": "2026-09-15",
+      "place": "美国·旧金山",
+      "who": "Marc Benioff（Salesforce CEO）",
+      "ev": "Dreamforce 2026 炉边对话",
+      "note": "谈 AI 监管：无需新法律、安全与速度可兼得",
+      "future": false
+    },
     {
       "date": "预计10月",
       "place": "美国·圣克拉拉",
