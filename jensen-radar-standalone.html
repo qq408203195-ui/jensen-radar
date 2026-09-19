@@ -341,27 +341,49 @@ function renderChrome(){
     : '<b>声明：</b>本页为产品演示版，内容均为示例数据，不构成投资建议。';
 }
 
-<script id="radar-data" type="application/json">{
+<script id="radar-data" type="application/json">
+{
   "mode": "auto",
   "today": "2026-09-19",
-  "updatedAt": "2026-09-19 10:22",
+  "updatedAt": "2026-09-19 22:34",
   "events": [
+    {
+      "id": "ev20260919b",
+      "date": "2026-09-19",
+      "type": "iv",
+      "src": "CBS News Sunday Morning（经 Bloomberg / 凤凰网科技 / CNBC TV18 / Economic Times 转引）",
+      "title": "黄仁勋 CBS 专访：2030 年世界末日概率「为零」，主张全速推进但产品不安全绝不发布",
+      "place": "美国（CBS Sunday Morning 专访，主持人 Jo Ling Kent）",
+      "url": "https://www.cnbctv18.com/technology/nvidia-ceo-jensen-huang-says-ai-wont-end-world-by-2030-there-is-zero-per-cent-chance-19993993.htm",
+      "images": [],
+      "signals": [
+        "【事件（CBS News Sunday Morning 专访，主持人 Jo Ling Kent；片段 9/18 由 CBS News 放出、9/19 多家媒体刊发，完整版 9/20 播出）】黄仁勋再度驳斥 AI 末日论，称「2030 年不会是世界末日，这种可能性是零」（zero percent chance）",
+        "【原话·提速】「我们应当尽最大可能提速，不管其他人怎么做」（We should go as fast as we can irrespective of anybody else）——在被问及是否应因与中国的 AI 竞赛而减速时，明确反对放缓",
+        "【原话·安全】「我们绝不会、也绝不应该在产品尚未准备好时就发布、交付不安全的产品」（we would never, ever, and never should ship products before they're ready）——延续「安全是工程问题、产品不安全就暂缓发布」一贯立场",
+        "【原话·动机】质疑末日论预测者的动机，「也许出于政治、也许为了博眼球、也许只为拿到一次好采访」，称这类说法「毫无道理」",
+        "【背景】采访正值 Anthropic 的 Dario Amodei（9/12 长文）、前研究员 Jacob Coxon（9/9 辞职）推动的「放缓前沿 AI」阵营与黄仁勋「无需新监管、企业自管」立场公开对立；Altman、Hassabis 等表态支持放缓"
+      ],
+      "cat": "jensen",
+      "note": "事件日 2026-09-19（CBS News 9/18 放出片段、Bloomberg/凤凰网科技/CNBC TV18/Economic Times/Livemint 9/19 集中刊发；完整 CBS Sunday Morning 专访 9/20 播出）。归 jensen：黄仁勋本人可溯源专访原话（与 9/14 All-In、9/15 Dreamforce、9/17 英王峰会为不同日期、不同场合、不同对话对象的独立专访）。本事件聚焦「2030 末日概率为零 + 全速推进但产品不安全不发布」这一在 CBS 专访中的新表述，以及对末日论者动机的质疑。id 内嵌 9/19 取片段/报道集中公开日；note 注明完整播出 9/20、片段 9/18。CBS 为正规权威媒体（tier-2），多家一线媒体交叉确认，非劣质源；og:image 受外媒渲染限制 curl 不可抓，依规则留空。"
+    },
     {
       "id": "ev20260919a",
       "date": "2026-09-19",
       "type": "mt",
-      "src": "财联社（经新浪财经转引）",
-      "title": "黄仁勋据 SEC 披露出售约 4.6 万股英伟达股票，成交价约每股 212 美元",
+      "src": "证券时报 / 澎湃新闻（经 SEC Form 4 文件）",
+      "title": "黄仁勋据 SEC 披露以每股 212.17 美元处置 4.57 万股英伟达股票（代扣税），家族信托另捐出 43.8 万股",
       "place": "",
-      "url": "https://finance.sina.com.cn/wm/2026-09-19/doc-inisinhk7800903.shtml",
+      "url": "https://www.stcn.com/article/detail/4191719.html",
       "images": [],
       "signals": [
-        "【事件（9/19，SEC 披露文件）】据财联社消息，英伟达多名高管向美国 SEC 披露近期股票交易，包括 CEO 黄仁勋在内的 5 名高管合计出售近 15 万股；黄仁勋本人出售约 4.6 万股，成交价约每股 212 美元",
-        "【细节】CFO 科莱特·克雷斯（Colette Kress）除因缴税出售股票外，另通过此前设定的交易计划出售约 3.5 万股；5 人合计规模接近 15 万股",
-        "【口径】成交价约每股 212 美元、黄仁勋约 4.6 万股为披露文件公开数字；减持原因与后续安排披露文件未说明，不解读、不推算"
+        "【事件（SEC Form 4 披露，9/16 交易、9/18 提交）】黄仁勋 9/16 因限制性股票单位（RSU）归属产生税务义务，被英伟达代扣 45728 股普通股，每股计价 212.17 美元，对应价值约 970 万美元；文件交易代码为「F」（公司代扣股票以支付税款，非公开市场出售）",
+        "【其他高管同日均被代扣】首席运营官 Debora Shoquist 35008 股、总法律顾问 Timothy Teter 35738 股、首席会计官 Scott Gawel 2932 股，均按每股 212.17 美元代扣；5 名高管合计约 16 万股因税务被代扣",
+        "【CFO 克雷斯另有实际出售】Colette Kress 9/16 处置 40747 股缴税，另于 9/17 通过 2026-06-16 制定的 Rule 10b5-1 交易计划分三笔实际出售 34918 股，每股约 218—220 美元，合计约 764.9 万美元",
+        "【家族信托捐赠】9/17 黄仁勋夫妇的 Jen-Hsun & Lori Huang Living Trust 无偿转让 43.8 万股英伟达股票，其中 29.2 万股捐给 The Jen-Hsun & Lori Huang Foundation 基金会，14.6 万股转入捐赠者建议基金（DAF）",
+        "【口径】45728 股 / 212.17 美元 / 34918 股 / 218—220 美元 / 43.8 万股均为披露文件公开数字；减持与捐赠均按预设计划/信托安排执行，非本人主动公开市场买卖，不推算套现总额、不解读动机"
       ],
       "cat": "nvda",
-      "note": "事件日 2026-09-19（SEC 披露经财联社 9/19 报道、新浪财经/网易转引）。归 nvda：公司高管股票交易事实（经媒体首报的客观事实，非官网首发）。源为财联社（tier-2 正规媒体，经新浪财经转引）；网易号「算力游侠北京」为禁用自媒体、仅作二次转述已弃用。属高管按预设交易计划的常规减持披露，非本人公开表态/演讲/行程，按「客观事实」口径入库；不含股价涨跌解读、不推算套现总额。og:image 受新浪访客墙限制 curl 不可抓，依规则留空。"
+      "note": "事件日 2026-09-19（SEC 文件 9/18 提交、财联社 9/19 早间首报、证券时报 9/19 17:52 与澎湃新闻 9/19 22:20 披露精确数字与家族信托捐赠细节）。归 nvda：公司高管/创始人持股变动客观事实（经媒体首报，非官网首发）。源为证券时报/澎湃（tier-2 正规媒体，基于 SEC Form 4）；早间财联社首报仅给「约4.6万股@约212」模糊口径，本轮以 Form 4 精确数字（45728@212.17）修正、并补入家族信托捐赠 43.8 万股。属预设税务代扣与信托捐赠的常规披露，非本人公开表态/演讲/行程，按「客观事实」口径入库；不含股价涨跌解读。og:image 受访客墙限制 curl 不可抓，依规则留空。证券时报另提英伟达参股的 AI 云公司 Nscale 在 IPO 申报文件中披露 2026 上半年营收同比 +1252%（英伟达身兼股东/供应商/债权人）——属第三方公司财务披露、非 Huang 本人动作，未单列事件，记为待人工复核。"
     },
     {
       "id": "ev20260917a",
@@ -1612,6 +1634,14 @@ function renderChrome(){
       "ev": "英王查尔斯 AI 闭门峰会",
       "note": "黄仁勋发表 AI 监管（监管产品而非技术）与 2027 芯片销量约两倍于今年表态",
       "future": false
+    },
+    {
+      "date": "2026-09-19",
+      "place": "美国（CBS Sunday Morning 专访，主持人 Jo Ling Kent）",
+      "who": "Jo Ling Kent（CBS 资深商业科技记者）",
+      "ev": "CBS Sunday Morning 专访（片段 9/18 释出、完整版 9/20 播出）",
+      "note": "谈 AI 末日论：2030 年世界末日概率「为零」；主张全速推进 AI 但产品不安全绝不发布；质疑末日论者动机。与 9/14 All-In、9/15 Dreamforce、9/17 英王峰会为不同专场",
+      "future": false
     }
   ],
   "opinions": [
@@ -1918,7 +1948,8 @@ function renderChrome(){
       "note": "Mollick 评价对象为 GPT-6/OpenAI，未点名黄仁勋或英伟达；但因黄仁勋 9/6-9/7 的“AGI 已到来”发文正是庆祝 GPT-6 Astra，二者同处一波 AGI 叙事，故列入同窗参考。其具体“jagged AGI 反驳”说法未获一手来源证实，不录入"
     }
   ]
-}</script>
+}
+</script>
 (function boot(){
   try{
     const d = JSON.parse(document.getElementById('radar-data').textContent);
