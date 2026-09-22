@@ -341,11 +341,10 @@ function renderChrome(){
     : '<b>声明：</b>本页为产品演示版，内容均为示例数据，不构成投资建议。';
 }
 
-<script id="radar-data" type="application/json">
-{
+<script id="radar-data" type="application/json">{
   "mode": "auto",
   "today": "2026-09-19",
-  "updatedAt": "2026-09-21 23:15",
+  "updatedAt": "2026-09-22 23:26",
   "events": [
     {
       "id": "ev20260919b",
@@ -365,7 +364,8 @@ function renderChrome(){
         "【CBS 完整版 9/20 补充·同场新信号】称 2026 年 AI「已真正变得有用」、token 生成「incredibly profitable（利润极其丰厚）」，行业进入盈利拐点",
         "【原话·产能】称 Vera Rubin 芯片「已步入量产」（volume production），且比中国替代品「领先好几年」（several years ahead of Chinese alternatives）",
         "【原话·对华】反对对美国 AI 产品销往中国实施「一刀切禁令」（blanket ban），主张美国先拿最先进硬件、但应在华竞争而非把市场让给对手",
-        "【原话·数据中心】为行业数据中心扩张「节奏过快、未及早与社区沟通」致歉，并称新建设施耗水更少"
+        "【原话·数据中心】为行业数据中心扩张「节奏过快、未及早与社区沟通」致歉，并称新建设施耗水更少",
+        "【CBS 完整版 9/22 媒体整理新细节】回应加州「亿万富翁税」称「5 年内付得起 80 亿美元税款是一种特权，不怕交税只怕变穷」（彭博亿万富翁指数显示其净资产约 1820 亿美元、全球第八）；称数据中心耗水是「误会」，新型数据中心用热循环水冷却、耗水比泳池一年蒸发还少；自述约有三四十件黑色皮衣、每天同款穿搭为减少决策"
       ],
       "cat": "jensen",
       "note": "事件日 2026-09-19（CBS News 9/18 放出片段、Bloomberg/凤凰网科技/CNBC TV18/Economic Times/Livemint 9/19 集中刊发；完整 CBS Sunday Morning 专访 9/20 播出）。归 jensen：黄仁勋本人可溯源专访原话（与 9/14 All-In、9/15 Dreamforce、9/17 英王峰会为不同日期、不同场合、不同对话对象的独立专访）。本事件聚焦「2030 末日概率为零 + 全速推进但产品不安全不发布」这一在 CBS 专访中的新表述，以及对末日论者动机的质疑。id 内嵌 9/19 取片段/报道集中公开日；note 注明完整播出 9/20、片段 9/18。CBS 为正规权威媒体（tier-2），多家一线媒体交叉确认，非劣质源；og:image 受外媒渲染限制 curl 不可抓，依规则留空。"
@@ -1646,6 +1646,14 @@ function renderChrome(){
       "ev": "CBS Sunday Morning 专访（片段 9/18 释出、完整版 9/20 播出）",
       "note": "谈 AI 末日论：2030 年世界末日概率「为零」；主张全速推进 AI 但产品不安全绝不发布；质疑末日论者动机。与 9/14 All-In、9/15 Dreamforce、9/17 英王峰会为不同专场",
       "future": false
+    },
+    {
+      "date": "2026-09-24",
+      "place": "美国（中美领导人国宴，据报华盛顿）",
+      "who": "中美领导人；同场科技巨头 CEO：Sam Altman / Satya Nadella / Tim Cook / 马斯克 / Sundar Pichai / 克里斯蒂亚诺·阿蒙",
+      "ev": "中美领导人国宴（据报将出席）",
+      "note": "据多家媒体（援引路透/侨报等）报道黄仁勋已确认出席 9/24 中美领导人国宴，市场关注英伟达 GPU 对华出口管制能否松动；截至发稿官方最终名单未确认，以媒体报道为准、待 9/24 现场确认。属未来安排",
+      "future": true
     }
   ],
   "opinions": [
@@ -1952,8 +1960,7 @@ function renderChrome(){
       "note": "Mollick 评价对象为 GPT-6/OpenAI，未点名黄仁勋或英伟达；但因黄仁勋 9/6-9/7 的“AGI 已到来”发文正是庆祝 GPT-6 Astra，二者同处一波 AGI 叙事，故列入同窗参考。其具体“jagged AGI 反驳”说法未获一手来源证实，不录入"
     }
   ]
-}
-</script>
+}</script>
 (function boot(){
   try{
     const d = JSON.parse(document.getElementById('radar-data').textContent);
