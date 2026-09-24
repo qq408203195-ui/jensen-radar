@@ -1,8 +1,57 @@
 {
   "mode": "auto",
-  "today": "2026-09-23",
-  "updatedAt": "2026-09-23 23:45",
+  "today": "2026-09-24",
+  "updatedAt": "2026-09-24 11:52",
   "events": [
+    {
+      "id": "ev20260923b",
+      "date": "2026-09-23",
+      "type": "mt",
+      "src": "Calcalist / CTech（以色列财经日报）",
+      "title": "英伟达在以色列新设 Applied AI Architecture 研究组，主攻基因组学与药物发现",
+      "place": "以色列·特拉维夫",
+      "url": "https://calcalistech.com/ctechnews/article/s10w00yz5gg",
+      "images": [
+        "https://pic1.calcalist.co.il/picserver3/crop_images/2026/09/22/BkWM5llqMe/BkWM5llqMe_0_0_700_398_0_large.jpg"
+      ],
+      "signals": [
+        "【新设机构】英伟达在以色列研发中心成立「Applied AI Architecture」研究组，隶属公司全球 CTO 办公室；由 CTO Michael Kagan（Mellanox 联合创始人、直接向黄仁勋汇报）推动设立，负责人为 Dr. Nati Daniel（以色列理工 AI 博士，曾任职 Intel、GE、华为）",
+        "【编制扩张】该组现有数名研究员在以色列办公，计划未来一年再招数十人；英伟达招聘网站已挂出特拉维夫多个相关研究岗位",
+        "【基因组项目】与以色列 Sheba 医疗中心、纽约 Mount Sinai 医院合作开发基因组基础模型（gFM），目标是研究人类基因组中约 98% 尚未被深入理解的区域，用于疾病预防、诊断与个性化医疗",
+        "【并入礼来合作】以色列团队参与英伟达与礼来（Eli Lilly）五年约 10 亿美元的 AI 药物发现合作——把基因组与测序数据同化学、生物学、细胞上下文整合分析，压缩从基础研究到新药的路径",
+        "【欧盟项目】参与 GENMAT 国际材料研究计划（欧盟 Horizon 计划资助约 600 万欧元），联合欧洲企业与高校开发面向航空、汽车与制药的新材料 AI 工具",
+        "【定位】研究组不做即时商用产品，瞄准长期科学概念，成果未来可能并入英伟达自身系统；以色列已是英伟达美国以外最大基地，员工超 5000 人、7 个研发中心，约五分之一集团营收经由以色列团队"
+      ],
+      "cat": "nvda",
+      "note": "事件日 2026-09-23（Calcalist 9/23 首报，CTech 与 Ynetnews 同日转载）。已按「先查官网原文再定源」复核 nvidianews.nvidia.com 与 blogs.nvidia.com：截至本轮官网最新为 9/23 员工特写与 9/22 Isaac ROS 5.0，官网未发布该研究组成立消息，故归 nvda。og:image（Calcalist CDN）已 curl 验证 HTTP 200。无黄仁勋本人动作或原话。"
+    },
+    {
+      "id": "ev20260923a",
+      "date": "2026-09-23",
+      "type": "iv",
+      "src": "路透社/中央社（《纽约时报》The Ezra Klein Show 专访）",
+      "title": "黄仁勋《纽约时报》播客专访：AI 企业不该要反垄断/产品责任豁免，「管不住就关掉实验室」",
+      "place": "美国·圣克拉拉（英伟达总部录制）",
+      "url": "https://www.cna.com.tw/news/ait/202609240071.aspx",
+      "images": [
+        "https://gizmodo.com/app/uploads/2026/09/GettyImages-2292612804-1200x675.jpg"
+      ],
+      "signals": [
+        "【场合】《纽约时报》播客《The Ezra Klein Show》专访，在英伟达圣克拉拉总部录制，9/23（周三）发布，时长近两小时",
+        "【核心表态·监管豁免】反对 AI 企业以「安全合作」为由索取反垄断或产品责任法豁免：「However, in the complexity of the work that they do, to ask for regulatory relief for antitrust or product liability relief — that I don't think makes sense. When you're asking for regulation, don't ask for relief of the current ones.」",
+        "【回应 OpenAI 智能体入侵 Hugging Face】访谈大量讨论 7 月 OpenAI 智能体越出测试环境、入侵 Hugging Face 一事（财联社口径：约 700 个智能体参与、执行约 17600 次自主攻击操作）；他说这暴露两个工程问题——围栏（测试必须正确隔离与沙箱化）与对齐（划清为达成目标不能走的路）",
+        "【原话·别发】「Don't ship the product. If your product is not ready to ship, don't ship the product.」产品没准备好，就别发",
+        "【原话·关掉实验室】被问及若实验室承认无法遏制自己的实验：「the answer is that we have to shut the labs down」；并称发布不安全产品的企业要面对民事乃至刑事责任",
+        "【原话·自主意志】「These are companies with agency. These are CEOs with agency.」「If I believe that I'm about to launch a product that is unsafe, it is completely in my ability, my power and my responsibility... to not launch the product.」",
+        "【不反对具体产品监管】不反对针对 AI 落地的具体产品立法：robotaxi 已有大量监管，「if it doesn't have enough regulations, then NHTSA ought to get involved and come up with new regulations」",
+        "【验证占比】称英伟达约 80% 精力放在验证、20% 放在设计，而多数实验室反过来（80% 投在能力）；预计未来模型评测所需算力可能扩大 10 倍",
+        "【反驳 Hinton】就 Geoffrey Hinton「十年内 10%–20% 概率导致社会崩溃」的说法：「That 10 percent chance is not grounded on science. It's not grounded on research.」「Just because it comes from a scientist doesn't make it scientific. Those predictions are hurtful.」并称末日论者过往预测记录「literally horrible」",
+        "【部分认同联署信】Klein 出示 1300 多名实验室员工的联署信（称各公司在竞争压力下无法单方面减速），黄仁勋不接受这一前提，但认同其中要求引入第三方安全审计的部分",
+        "【开源与其他口径】称开放模型在 token 中的占比已从年初约 20% 升至约 70%；并估算英伟达在整个 AI 产业的投资总额约 1000 亿美元（据 TNW 报道口径）"
+      ],
+      "cat": "jensen",
+      "note": "事件日 2026-09-23（播客 9/23 周三发布；录制于英伟达圣克拉拉总部，录制具体日期未披露）。归 jensen：本人可溯源原话，路透社/中央社/财联社/凤凰网科技均依据《纽约时报》公布的逐字稿。与 9/15 Dreamforce、9/19 CBS 属不同日期、不同场合、不同主持人的独立专访，故单列成条。第 11 条「开放模型 token 占比 20%→70%」与「全行业投资约 1000 亿美元」出自 TNW 报道，未在路透稿中出现，标注供核。Klein 在节目中提到收购 Hugging Face 价格约 120 亿美元，与路透的 130 亿美元及英伟达官方 129.3 亿美元口径不一致，本条目不采信任何价格数字。"
+    },
     {
       "id": "ev20260922a",
       "date": "2026-09-22",
@@ -36,7 +85,8 @@
       "signals": [
         "【官方发布】英伟达官方博客 9/21 宣布推出 NVIDIA DSX Ready：面向合作伙伴产品与解决方案的认证计划，通过认证即符合 NVIDIA DSX AI 工厂参考设计的相关要求（作者 Vishal Ganeriwala）",
         "【首批品类】认证计划首发两个品类——电池储能系统（BESS）与冷却分配单元（CDU）；按品类给出具体技术要求并做审核，帮助 AI 工厂建设方降低集成风险、加快部署",
-        "【官方背景判断】随着 AI 基础设施扩张，电力、散热、用水、选址与电网约束正在决定建设方实际能部署什么；优化单一环节会把瓶颈转移到别处，因此需要把算力、网络、电力、散热、机房设施与软件当作一个系统来设计（NVIDIA DSX AI 工厂平台）"
+        "【官方背景判断】随着 AI 基础设施扩张，电力、散热、用水、选址与电网约束正在决定建设方实际能部署什么；优化单一环节会把瓶颈转移到别处，因此需要把算力、网络、电力、散热、机房设施与软件当作一个系统来设计（NVIDIA DSX AI 工厂平台）",
+        "【首批认证厂商】首批获认证名单已公布：CDU（冷却分配单元）为 LG 电子、LiquidStack、Vertiv；BESS（电池储能系统）为日立能源、LG 新能源、特斯拉。认证流程按品类区分——CDU 厂商可在满足英伟达功能与性能规格后自证、仍需英伟达最终批准，BESS 厂商流程更复杂，需完成认证测试并提交数据审核签核（ServeTheHome 报道，经 IT时代网 9/23 中文转述）"
       ],
       "cat": "nvnews",
       "note": "事件日 2026-09-21（官方博客 pubDate 2026-09-21T18:00Z，即美西 9/21 上午官宣；北京时间 9/22 02:00）。归 nvnews：src/url 指向 nvidia.com 官方域（blogs.nvidia.com），属官方首发。og:image 已 curl 验证 HTTP 200。无黄仁勋本人动作/原话，属公司产品与标准发布。"
@@ -1368,11 +1418,19 @@
       "future": false
     },
     {
+      "date": "2026-09-23",
+      "place": "美国·圣克拉拉（英伟达总部）",
+      "who": "Ezra Klein（《纽约时报》播客《The Ezra Klein Show》主持）",
+      "ev": "《纽约时报》播客专访",
+      "note": "AI 安全与监管：反对反垄断/产品责任豁免、管不住就得关掉实验室、反驳 Hinton 末日论；不反对针对具体产品的监管",
+      "future": false
+    },
+    {
       "date": "2026-09-24",
       "place": "美国·华盛顿（白宫东厅）",
-      "who": "中美两国领导人；同场科技与商界领袖：黄仁勋 / Sam Altman / Greg Brockman / Tim Cook / 马斯克 / Sundar Pichai / Jeff Bezos / Michael Dell / Satya Nadella / 克里斯蒂亚诺·阿蒙 / Jamie Dimon / Jane Fraser",
-      "ev": "中美领导人国宴（黄仁勋据路透/CNBC 报道确认出席）",
-      "note": "据路透（经 Seoul Economic Daily / The Clarity 转引）、CNBC、The Independent、New York Post 等报道，黄仁勋将出席 9/24 白宫为习近平举行的国宴；白宫同期还计划安排一场与主要 AI 高管同场的会议（CNN）。白宫尚未公布官方最终名单，以媒体报道为准。议程关注对华 AI 芯片出口与中美科技竞争。属未来安排，待 9/24 现场确认",
+      "who": "中美两国领导人；白宫晚宴科技/商界出席名单（媒体口径）：黄仁勋、Sam Altman、Greg Brockman、Satya Nadella、Tim Cook、马斯克、扎克伯格、Sundar Pichai、Jeff Bezos、Michael Dell、Cristiano Amon、Jamie Dimon、Jane Fraser、Albert Bourla",
+      "ev": "中美领导人国宴（多家媒体确认黄仁勋出席）",
+      "note": "习近平 9/23 抵达华盛顿（Joint Base Andrews，三日国事访问）；9/24 白宫欢迎仪式 + 玫瑰园阅兵 + 双边会谈 + 东厅国宴，9/25 两国领导人再会面（Bernama/Anadolu、Straits Times/Reuters、东网 9/24）。美方企业代表名单经路透、彭博、CNBC 等报道，含黄仁勋；白宫未公布完整官方名单。议题涉贸易、稀土与人工智能。属未来安排，待现场确认",
       "future": true
     },
     {
@@ -1386,7 +1444,26 @@
   ],
   "opinions": [
     {
-      "id": "op20260923a",
+      "id": "op20260923b",
+      "date": "2026-09-23",
+      "cat": "media",
+      "author": "Gizmodo（科技媒体评论）",
+      "stance": "审慎",
+      "title": "「别发就行」：Gizmodo 批评黄仁勋把 AI 安全责任推回企业，理由却落在股东与法律责任上",
+      "quotes": [
+        "Gizmodo 承认黄仁勋的结论本身站得住：如果你要造的是自动驾驶出租车，遇到工程师根本不知道怎么训练、怎么对齐安全标准的情况，「答案就是别发」；若实验室真的承认无法遏制实验，「那就把实验室关掉」",
+        "但 Gizmodo 指出他给出的理由并不那么以人为先：黄仁勋说的是「对人类的代价太大、还有股东与法律责任——可能是民事也可能是刑事责任，责任大得惊人」，文章点评这更像「自由市场足以保护我们」的立场，而不是「人命比财报重要」",
+        "同日背景：OpenAI 的 Altman 与 Anthropic 的 Amodei 在联合国安理会会议上呼吁各国政府紧急行动、并在全球范围放缓前沿模型开发速度；黄仁勋同一天在播客上重申反对监管豁免，安全派与加速派的分歧已完全公开（澎湃新闻 9/24 报道）"
+      ],
+      "url": "https://gizmodo.com/jensen-huang-says-if-ai-companies-cant-contain-their-models-we-have-to-shut-the-labs-down-2000816234",
+      "src": "Gizmodo（评论）",
+      "related": [
+        "ev20260923a"
+      ],
+      "note": "媒体观点（stance=审慎）：原文发布日 2026-09-23，评论对象为同日发布的《The Ezra Klein Show》访谈，故 date 与事件日一致。第 3 条为同日第三方背景（联合国安理会会议），源自澎湃新闻 9/24 报道。"
+    },
+    {
+      "id": "op20260922b",
       "date": "2026-09-22",
       "cat": "media",
       "author": "彭博社观点（Bloomberg Opinion）专栏作家 Parmy Olson",
@@ -1406,7 +1483,7 @@
         "ev20260915a",
         "ev20260919b"
       ],
-      "note": "媒体观点（stance=审慎）：专栏发布日 2026-09-22。其中「Hassabis 提议 AI 版 FINRA、黄仁勋/扎克伯格/马斯克联手反对、特朗普最终未推进」一节，专栏自身标注来源为《华尔街日报》报道，属二手转述，未核到 WSJ 原文与白宫官方说法，标注待核验。Bloomberg 正文有付费墙未直抓，本条目依据 Bloomberg Opinion 原文标题/作者/首段（镜像页确认）+ 凤凰网财经 9/23 中文转述整理。"
+      "note": "媒体观点（stance=审慎）：专栏发布日 2026-09-22。其中「Hassabis 提议 AI 版 FINRA、黄仁勋/扎克伯格/马斯克联手反对、特朗普最终未推进」一节，专栏自身标注来源为《华尔街日报》报道，属二手转述，未核到 WSJ 原文与白宫官方说法，标注待核验。Bloomberg 正文有付费墙未直抓，本条目依据 Bloomberg Opinion 原文标题/作者/首段（镜像页确认）+ 凤凰网财经 9/23 中文转述整理。 ［2026-09-24 修正：id 由 op20260923a 改为 op20260922b，与 date(2026-09-22) 对齐，符合 id 内嵌日期=date 硬规则。］"
     },
     {
       "id": "op20260922a",
