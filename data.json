@@ -1,8 +1,53 @@
 {
   "mode": "auto",
-  "today": "2026-09-24",
-  "updatedAt": "2026-09-24 11:52",
+  "today": "2026-09-25",
+  "updatedAt": "2026-09-25 00:01",
   "events": [
+    {
+      "id": "ev20260923d",
+      "date": "2026-09-23",
+      "type": "mt",
+      "src": "英伟达官方 Hugging Face 博客",
+      "title": "英伟达开源 Nemotron 3 Diarization：1 亿参数解决 8 人重叠语音的说话人分离",
+      "place": "线上发布（Hugging Face / NVIDIA）",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+      "images": [
+        "https://cdn-uploads.huggingface.co/production/uploads/688d4bdfdeb55432d90e546d/d_xBvPVTwTB_Rt9yxmp_0.png"
+      ],
+      "signals": [
+        "Nemotron 3 Diarization 是 1 亿（100M）参数的开源权重模型，解决「谁在什么时候说话」，在 VoiceArena 的 Diarization-Bench 上以 14.72% 的说话人错误率（DER）排名第一",
+        "最多支持 8 位说话人通道（前代 Streaming Sortformer 为 4 位），同一套权重同时覆盖离线批处理与流式实时推理",
+        "输入缓冲延迟四档可选：30.4 秒、1.04 秒、0.64 秒、0.32 秒；离线 30.4 秒档 DER 12.73%，实时 0.32 秒档 13.55%",
+        "相对排第二的系统（19.3%）DER 相对降低约 24%；相对前代 Streaming Sortformer 在 1.04 秒档平均相对降低约 40%，且说话人数越多改善越明显",
+        "模型结构：16 kHz 单声道音频 → 10 毫秒步长 Mel 频谱、8 倍堆叠为 80 毫秒帧 → 31 层 Transformer 编码器（RoPE 位置编码）→ 输出 [T, 8] 的说话人活跃概率张量，同一帧可多通道同时激活，天然支持重叠语音",
+        "许可为 OpenMDW 1.1（允许商用），支持 NVIDIA Ampere 及之后架构 GPU，权重发布于 Hugging Face，配套 NVIDIA NeMo 工具包使用"
+      ],
+      "cat": "nvda",
+      "note": "官方首发渠道为 NVIDIA 官方 Hugging Face 组织博客（域名非 nvidia.com），按字段模板「非官网首发」口径归 nvda。日期取官方发布日 2026-09-23（博客页标注 Published September 23, 2026）。"
+    },
+    {
+      "id": "ev20260923c",
+      "date": "2026-09-23",
+      "type": "mt",
+      "src": "英伟达开发者博客（NVIDIA Technical Blog）",
+      "title": "英伟达发布 NV-Reason-CT 开源 3D CT 视觉语言模型：把放射科医生的思维链推理搬进体积影像",
+      "place": "线上发布（英伟达开发者博客）",
+      "url": "https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning/",
+      "images": [
+        "https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/ct-scan-image.webp"
+      ],
+      "signals": [
+        "NV-Reason-CT 是专为 3D CT 分析打造的视觉语言模型，把思维链推理扩展到完整体积 CT：生成结构化诊断报告、模拟放射科医生逐步排查的内在思考，并支持胸腹部多轮追问对话",
+        "架构为专用全 3D 视觉 Transformer 编码器 + Qwen3.5-4B 语言模型；CT 体积重采样为 192³ 体素（2 毫米各向同性），切成非重叠 8×8×8 patch、共 13,824 个视觉 token，不打折不降采样，全部连同 3D 网格坐标送入语言模型，经 3D MRoPE 让语言模型感知 token 之间的三维空间关系",
+        "官方称一次腹部 CT 检查可达 300–600 个轴位切片；构建的本体覆盖 30 种胸部异常与 29 种腹部异常（肺结节、气胸、肝病灶、肾囊肿等），输出格式对接临床文书流程",
+        "CT-RATE 基准成绩：Macro-F1 0.614、Macro-AUROC 0.871，官方称超过已发表的 3D 对比学习与融合 2D/3D 基线",
+        "两阶段训练：先用在约 55 万个结构化问答样本（CT-RATE、NIH CT 数据集、CancerVerse + 专家标注接地的合成推理数据）上做监督微调，再用 GRPO 强化学习打磨推理质量，奖励按解剖区域分别计准确性",
+        "美国国立卫生研究院（NIH）放射科医生核验了生成报告与推理链的临床合理性；NIH 高级临床医师 Baris Turkbey 表示，能审查模型的思考过程而不只是结论，「正是让人有可能信任并据此行动的原因」",
+        "英伟达明确其定位：这是开放的研究与开发基础模型，面向要针对自身场景做后训练的研究者与开发者，不是自主诊断系统，也不是获批的临床产品",
+        "延续 NV-Reason-CXR 的推理方法论（该多读者临床研究已被 RSNA 2026 接收），与 NV-Generate-CTMR、NV-Segment-CTMR 共同构成英伟达放射 AI 流程的组件"
+      ],
+      "cat": "nvnews"
+    },
     {
       "id": "ev20260923b",
       "date": "2026-09-23",
@@ -47,7 +92,11 @@
         "【验证占比】称英伟达约 80% 精力放在验证、20% 放在设计，而多数实验室反过来（80% 投在能力）；预计未来模型评测所需算力可能扩大 10 倍",
         "【反驳 Hinton】就 Geoffrey Hinton「十年内 10%–20% 概率导致社会崩溃」的说法：「That 10 percent chance is not grounded on science. It's not grounded on research.」「Just because it comes from a scientist doesn't make it scientific. Those predictions are hurtful.」并称末日论者过往预测记录「literally horrible」",
         "【部分认同联署信】Klein 出示 1300 多名实验室员工的联署信（称各公司在竞争压力下无法单方面减速），黄仁勋不接受这一前提，但认同其中要求引入第三方安全审计的部分",
-        "【开源与其他口径】称开放模型在 token 中的占比已从年初约 20% 升至约 70%；并估算英伟达在整个 AI 产业的投资总额约 1000 亿美元（据 TNW 报道口径）"
+        "【开源与其他口径】称开放模型在 token 中的占比已从年初约 20% 升至约 70%；并估算英伟达在整个 AI 产业的投资总额约 1000 亿美元（据 TNW 报道口径）",
+        "【原话·干扰论】「I'm saying that we have lots of laws and regulations. Apply it.」「I'm not against laws and regulations. I'm against, currently, the distraction.」——反对的并非监管本身，而是当下把这当成干扰项（Tom's Hardware 9/23 现场报道口径）",
+        "【本场重述·五层蛋糕】在访谈中把 AI 产业拆成五层：能源 → AI 工厂（芯片、服务器与云） → 模型层（语言，以及化学、生物、物理、机器人操控等模型） → 应用层（法律、医疗、制造） → 产业转型（钜亨网 9/24 整理）",
+        "【任务不是使命】称 AI 自动化的是「任务（task）」而不是「使命（purpose）」，会重塑劳动市场；同时表态力挺开放模型与能源转型，认为算力需求会推动全球数据中心与能源投资（钜亨网 9/24）",
+        "【历史类比与责任归属】把当下类比为 200 年前学会用电驱动万物、30 年前用互联网连接信息，称 AI 让人「理解一切并完成一切」；主张企业的责任是把疑虑转化为可解决的工程问题，用恐慌论转移责任或拖延交付都不对（钜亨网 9/24）"
       ],
       "cat": "jensen",
       "note": "事件日 2026-09-23（播客 9/23 周三发布；录制于英伟达圣克拉拉总部，录制具体日期未披露）。归 jensen：本人可溯源原话，路透社/中央社/财联社/凤凰网科技均依据《纽约时报》公布的逐字稿。与 9/15 Dreamforce、9/19 CBS 属不同日期、不同场合、不同主持人的独立专访，故单列成条。第 11 条「开放模型 token 占比 20%→70%」与「全行业投资约 1000 亿美元」出自 TNW 报道，未在路透稿中出现，标注供核。Klein 在节目中提到收购 Hugging Face 价格约 120 亿美元，与路透的 130 亿美元及英伟达官方 129.3 亿美元口径不一致，本条目不采信任何价格数字。"
