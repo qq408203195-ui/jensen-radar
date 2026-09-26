@@ -1,7 +1,7 @@
 {
  "mode": "auto",
- "today": "2026-09-26",
- "updatedAt": "2026-09-26 12:41",
+ "today": "2026-09-27",
+ "updatedAt": "2026-09-27 01:01",
  "events": [
   {
    "id": "ev20260925c",
@@ -1653,6 +1653,47 @@
   }
  ],
  "opinions": [
+  {
+   "id": "op20260925a",
+   "date": "2026-09-25",
+   "cat": "sellside",
+   "author": "Seaport Research Partners · 分析师 Jay Goldberg（杰伊·戈德堡）",
+   "stance": "看空",
+   "title": "Seaport 重申英伟达「卖出」：台积电产能与大数法则封住上行空间，对博通同样谨慎",
+   "quotes": [
+    "英文原话（CNBC 汇总）：\"We remain cautious on Nvidia. They have no easy way to surprise to the upside - limited by TSMC capacity and the law of large numbers. And time is not on their side, the competition is growing, to the point that Nvidia is now leaning heavily on its balance sheet and a bundling of its products to drive numbers.\"",
+    "中文译文（新浪财经·环球市场播报）：「我们对 NVDA 维持谨慎态度。公司很难再交出超预期的亮眼业绩——台积电产能受限，叠加大数法则约束。时间并不站在他们这边，竞争对手不断崛起，英伟达如今高度依靠资产负债表以及产品捆绑销售来拉动业绩。」",
+    "对博通同样怀疑（新浪财经译文）：「博通或许能拿下新的定制专用集成电路（ASIC）客户，从而带来惊喜；但除此之外，目前很难看到业绩还有多大上行空间。」",
+    "同日 CNBC 汇总的华尔街评级整体偏正面：美银重申 AMD 为 CPU 首选并把目标价从 620 上调至 720 美元、德银上调 Meta 目标价至 820 美元、HSBC 上调 BP 至买入；Seaport 的 NVDA 卖出是当天少数看空方"
+   ],
+   "url": "https://www.cnbc.com/2026/09/25/biggest-wall-street-analyst-calls-friday.html",
+   "src": "CNBC《Here are Friday's biggest analyst calls》(2026-09-25) / 新浪财经·环球市场播报（2026-09-26 00:55 转载）",
+   "related": [
+    "ev20260826"
+   ],
+   "note": "卖方观点（stance=看空，依据 CNBC 原文 \"reiterates Nvidia as sell\"）：Seaport 为美国中型投研机构，本次为「重申」卖出而非新下调；公司未发布公告，属机构对英伟达增长斜率的判断，非黄仁勋本人立场。完整研报为付费内容不公开，以 CNBC 公开汇总 + 中文媒体转载为溯源代理。date 取 CNBC 首发汇总日 2026-09-25；中文媒体表述为「周四研报」，与 CNBC「周五」汇总存在一天出入，按 CNBC 首发日为准。关联事件 ev20260826（FY27Q2 财报及 FY2028 约 +70% 指引）——Seaport 的看空逻辑正是针对该指引的可兑现性。"
+  },
+  {
+   "id": "op20260924a",
+   "date": "2026-09-24",
+   "cat": "media",
+   "author": "SemiAnalysis（独立半导体研究机构）· 研究员 Sam Harshe、Jordan Nanos 等",
+   "stance": "看多",
+   "title": "SemiAnalysis ClusterMAX 3.0：GPU 需求紧到「连烂基础设施都能卖出高价」，四年期 H100 合同反驳折旧空头",
+   "quotes": [
+    "报告规模：对 77 家 neocloud（GPU 云）做全量实测，追踪覆盖扩至 323 家服务商、访谈 200+ 真实用户；仅 19 家拿到白金→青铜的 Medallion 推荐评级（上一版为 41 家），另有 15 家落入新增的 Participation Ribbon 层级",
+    "研究员 Sam Harshe：「只要有 GPU，买家就会买单」——即便某服务商的 Kubernetes「完全瘫痪」、存储「几乎不能正常工作」，依然能找到愿意支付高毛利的客户；市场出现「ridiculous backwardation（荒谬的现货溢价）」，能数周内交付的算力被加价抢购，而数月后的产能反而更便宜",
+    "评级变动：CoreWeave 保持白金、Nebius 新晋白金；Google Cloud 与 Oracle 黄金；微软 Azure 从黄金降至白银；AWS 与 Crusoe 青铜（SemiAnalysis 称 Crusoe 一个 H100 集群五天内产生的真实 GPU 报错量，超过其其余全部测试的总和，Crusoe 事后已修复部分问题）；Fluidstack 被判为 Unavailable",
+    "折旧争议：企业正在为 H100 容量签为期四年的合同，说明旧世代 GPU 在算力短缺期仍能保留可观盈利能力——与投资人 Michael Burry「AI 公司折旧计提太慢」的空头论点方向相反",
+    "报告同时引述：英伟达上季数据中心收入 890 亿美元、同比增长 117%，CEO 黄仁勋称 AI 需求正在「accelerating（加速）」"
+   ],
+   "url": "https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard",
+   "src": "SemiAnalysis ClusterMAX 3.0（newsletter.semianalysis.com，2026-09-24）/ Benzinga 报道（2026-09-25）",
+   "related": [
+    "ev20260826"
+   ],
+   "note": "研究机构观点（SemiAnalysis 为付费研究机构，本条按库内既有 SemiAnalysis 条目 op20260910a 的口径归入 media）。报告发布日为 2026-09-24（SemiAnalysis 存档页标注 Sep 24），Benzinga/OpenBell 等媒体集中转述于 9/25–9/26；本条目 date 取报告发布日，属对前一轮（9/26 12:41）遗漏的补录。立场判断为看多（需求端证据强化算力短缺与旧卡残值，直接削弱折旧空头论），但报告本身亦给出多项服务商负面评级，非对英伟达股价的评级观点。引用的 890 亿/117% 与「accelerating」为既有财报事实（见 ev20260826），非本报告新增。"
+  },
   {
    "id": "op20260923b",
    "date": "2026-09-23",
