@@ -1,7 +1,7 @@
 {
  "mode": "auto",
  "today": "2026-09-27",
- "updatedAt": "2026-09-27 01:01",
+ "updatedAt": "2026-09-27 13:17",
  "events": [
   {
    "id": "ev20260925c",
@@ -84,6 +84,26 @@
    "note": "依据 LinkedIn 资料与媒体报道，**英伟达未官方公告**，具体入职日期未披露，date 取首报日 2026-09-25。原文页配图为台股行情看板，与本事件无关，故 images 留空。"
   },
   {
+   "id": "ev20260924d",
+   "date": "2026-09-24",
+   "type": "mt",
+   "src": "首尔经济日报/KIPOST（经科创板日报、财联社、腾讯新闻编译）",
+   "title": "英伟达评估玻璃基板方案并催供应链两年内交卷，黄仁勋被指已与 SK 崔泰源讨论该技术",
+   "place": "韩国（首尔经济日报报道）/ 德国（SCHMID）",
+   "url": "https://www.chinastarmarket.cn/detail/2493349",
+   "images": [],
+   "signals": [
+    "【核心】据韩国《首尔经济日报》报道，英伟达正在评估采用玻璃基板（glass substrate）方案，并与德国设备厂商 SCHMID 等企业开展合作；另据韩国科技媒体 KIPOST 报道，英伟达要求韩国、日本及中国台湾地区的基板厂商两年内完成玻璃基板开发，最快 2028 年前落地",
+    "【设备侧披露】SCHMID 在 2026 财年第二季财报会上披露，公司正与英特尔、英伟达、AMD 各自供应链内的核心供应商合作，共同研发玻璃基板设备；首席战略官/销售负责人 Roland Rettenmaier 表示，玻璃通孔（Through-Glass Via, TGV）的金属化环节仍存在技术难点，客户认证尚未完成",
+    "【黄仁勋相关】报道称黄仁勋此前与 SK 集团会长崔泰源会面，双方探讨了包含玻璃基板在内的下一代半导体合作；报道同时称英伟达正推动台积电开发玻璃基板技术（两点均为韩媒转述，英伟达与台积电均未公开确认）",
+    "【市场反应】受此消息提振，SCHMID 美股 9/25（周五）盘中大涨近 20%，盘后续涨超 3%",
+    "【技术背景】玻璃基板被视为新一代半导体封装材料、用于替代有机基板：可把芯片运行速度提升约 40%、功耗降低近一半，并可替代硅中介层、支持更大尺寸封装与更多 HBM 堆叠；当前全球玻璃基板正由技术验证加速走向中试、客户认证与量产导入，海外量产节点多集中在 2028 年前后",
+    "【既有基础】2026 年 5 月，英伟达与玻璃基板大厂康宁宣布达成多年期战略合作：英伟达向康宁投资最高 27 亿美元并获配认股权证，康宁在美国新建三座先进制造厂、将本土光学连接产能扩大十倍"
+   ],
+   "cat": "nvda",
+   "note": "事件日取韩媒首报日 2026-09-24（中文媒体 9/27 集中转载，文中标注\"《首尔经济日报》24日报道\"；另有券商渠道纪要将股价异动记为 9/25 周五）。英伟达官网未就玻璃基板发布任何公告，本条为韩媒报道 + SCHMID 财报会自述；黄仁勋与崔泰源讨论一节亦为韩媒转述、无官方确认，故不据此单列行程。**待核验**：市场上存在分歧意见——有渠道方对该报道的信源提出质疑，并认为英伟达更可能经 Ibiden、欣兴（Unimicron）等既有基板厂推进，量产不早于 2029–2030 年。"
+  },
+  {
    "id": "ev20260924c",
    "date": "2026-09-24",
    "type": "iv",
@@ -96,10 +116,12 @@
    ],
    "signals": [
     "【场合】CNN 于美东 9/24 17:46 发布专访片段：安德森·库珀（Anderson Cooper）与黄仁勋坐下来对谈，主题为其「与 AI 监管的关系」，并追问他对科技公司 CEO 担忧 AI 一事的回应",
-    "【播出】完整专访于当晚 20:00（美东）在《Anderson Cooper 360°》播出，完整版需 CNN All Access 订阅"
+    "【播出】完整专访于当晚 20:00（美东）在《Anderson Cooper 360°》播出，完整版需 CNN All Access 订阅",
+    "【教育/AI 观点 · 据多家媒体转述本场专访】被问到 AI 时代孩子该学什么，黄仁勋称他并不知道哪个职业会最成功，但给他的孩子两点建议：一是\"go to school（去上学）\"，二是\"engage AI（用起 AI）\"。他说，任何让孩子们觉得不必再去上学的事，\"我认为是对社会的伤害\"（\"a disservice to society\"）；上学的意义不止于为某个职业做准备——\"它提升你的教养、提升你对世界的理解，并消除偏见与成见\"，\"知识越多、越有见识，就越好\"",
+    "【同段原话】\"The two things that I tell my kids: engage AI, learn what it can do, don't give up on it, and make it work for you.\"（我告诉孩子的两件事：用起 AI，搞清它能做什么，别放弃它，让它为你所用。）他认为应避免向孩子传递\"你的努力将不再重要、上学是浪费时间和金钱\"这类信息，形容这种说法\"horrible, horrible, absolutely horrible\""
    ],
    "cat": "jensen",
-   "note": "事件日取 CNN 发布/播出日 2026-09-24。**待核验**：除 CNN 官方页面描述外，本场对话的具体原话细节目前仅见于 AI 聚合站点，未在权威媒体找到逐字稿，故 signals 只保留可核实的场合与播出信息，不得当作定论引用。与 ev20260919b（CBS 9/20）、ev20260923a（NYT 播客 9/23）为不同电视台、不同主持人的独立专访。"
+   "note": "事件日取 CNN 发布/播出日 2026-09-24。原话核实进展：CNN 官网（us.cnn.com/2026/09/24/us/video/achuangsot1）迄今仍只放出页面描述（场合 + 播出时间），未公开逐字稿；本场对话中\"教育/AI 建议\"一节的具体原话，现由《印度时报》（Times of India）等多家媒体以直接引语形式转述，故本轮据此补入 signals 并保留转述出处。仍属**媒体转述、非 CNN 官方文本**，引用时不得当作 CNN 逐字稿使用。与 ev20260919b（CBS 9/20）、ev20260923a（NYT 播客 9/23）为不同电视台、不同主持人的独立专访。"
   },
   {
    "id": "ev20260924a",
@@ -1560,7 +1582,7 @@
    "place": "韩国·首尔（SK 瑞麟大厦 / LG 双子塔 / 现代 / Naver 1784 / 新罗酒店）",
    "who": "SK 崔泰源/郭鲁正、SKT 郑载宪、LG 具光谟、现代 郑义宣、Naver 李海珍、三星 全永贤",
    "ev": "访韩第四日收官：与 SK/三星/LG/现代/Naver 敲定 AI 与物理 AI 合作同盟",
-   "note": "SK 海力士次世代内存联合开发、SKT DSX 全栈 AI 云、LG 机器人+AIDC、现代自主移动/新万金、Naver GW 级 AI Factory、三星内存/代工；当晚或 9/9 离韩",
+   "note": "SK 海力士次世代内存联合开发、SKT DSX 全栈 AI 云、LG 机器人+AIDC、现代自主移动/新万金、Naver GW 级 AI Factory、三星内存/代工；当晚或 9/9 离韩；韩媒后续报道称，黄仁勋与 SK 崔泰源在下一代半导体合作议题中亦讨论过玻璃基板技术（首尔经济日报，2026-09-24 报道）",
    "future": false
   },
   {
@@ -1653,6 +1675,26 @@
   }
  ],
  "opinions": [
+  {
+   "id": "op20260924b",
+   "date": "2026-09-24",
+   "cat": "media",
+   "author": "The Verge · Justine Calma（科技记者）",
+   "stance": "审慎",
+   "title": "黄仁勋谈 AI 与气候「像超级反派」：先制造痛苦，再谈拯救",
+   "quotes": [
+    "被引原话（黄仁勋在《The Ezra Klein Show》中）：\"It's kind of like, in order to save you, they've got to hurt you first — that's the nature of surgery. They've got to cut you open to save you. They've got to inflict an enormous amount of pain and suffering on you so that they can save you. And so I think AI's kind of like that.\"（大意：为了救你，得先伤你——这是手术的性质。得先把你切开才能救你，得先让你承受巨大的痛苦与折磨，才能救你。我觉得 AI 差不多就是这样。）",
+    "黄仁勋同场另一句：黄仁勋先抱怨美国没有建够化石燃料电厂，随后说\"Over the next several years we have to unfortunately use fossil fuels, because we just don't have enough sustainable energy to make a difference.\"（未来几年我们不得不使用化石燃料，因为可持续能源还不够多到能改变局面。）",
+    "The Verge 的批评：这套说法与特朗普及多位科技领袖的\"加速主义\"叙事同源——先承诺 AI 是给人类的厚礼，再要求公众接受数据中心当下烧脏电造成的代价；文章认为黄仁勋个人净资产约 1926 亿美元，不会承担芯片工厂与数据中心能耗带来的污染后果，并以珊瑚礁、海平面上升、美国西部野火等具体气候代价作为对照",
+    "文章落点：文章并未主张停掉 AI，而是指出把气候损害包装成\"必经的手术痛苦\"，等于把一个可以选择的技术路线说成不可抗力"
+   ],
+   "url": "https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain",
+   "src": "The Verge（2026-09-24 18:04 UTC 发布）",
+   "related": [
+    "ev20260923a"
+   ],
+   "note": "属对前一轮（9/27 01:01）遗漏的补录，date 取文章发布日 2026-09-24（The Verge 页面 article:published_time 实测值）。立场判为审慎：文章未给出股价/估值多空判断，批评集中于 AI 扩张的能源与气候代价被正常化。所引两段黄仁勋原话出自 ev20260923a 同场访谈，本条目为 The Verge 文章内的逐字引述。"
+  },
   {
    "id": "op20260925a",
    "date": "2026-09-25",
