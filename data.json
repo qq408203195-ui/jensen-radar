@@ -1,8 +1,71 @@
 {
  "mode": "auto",
- "today": "2026-10-01",
- "updatedAt": "2026-10-01 15:20",
+ "today": "2026-10-02",
+ "updatedAt": "2026-10-02 03:45",
  "events": [
+  {
+   "id": "ev20261001a",
+   "date": "2026-10-01",
+   "type": "mt",
+   "cat": "nvda",
+   "src": "路透社（Saeed Azhar / Max A. Cherney / Isla Binnie / Stephen Nellis，纽约）",
+   "title": "路透：英伟达 5000 亿美元芯片抵押融资遭华尔街「压价」——银行按 3–4 年折旧承销，原定残值担保上限仅 25%",
+   "place": "美国·纽约",
+   "url": "https://www.investing.com/news/stock-market-news/nvidias-bet-that-its-chips-can-finance-the-ai-boom-gets-a-wall-street-reality-check-4926816",
+   "images": [],
+   "signals": [
+    "核心分歧是芯片能用几年：黄仁勋主张最顶级的 AI 芯片可以产生长达 10 年的收入，而银行与信用投资者通常按 3–4 年的折旧周期给 GPU 承销，这个差距直接决定 AI 算力的融资成本",
+    "英伟达 8 月与黑石、阿波罗、KKR 等金融方联合公布该 5000 亿美元融资计划，设想用芯片作抵押、提供有限担保，让 AI 开发者更容易拿到算力，模式对标飞机租赁；英伟达称部分交易的残值担保不超过 25%，这个水平被认为低于近期其他 AI 融资deal",
+    "三名熟悉情况、但未参与原融资团的银行界人士告诉路透：英伟达可能需要对全部交易提供担保，或者让贷款由投资级客户（如大型科技公司）的营收流背书；他们表示市场目前还没准备好把「算力」当作飞机那样的可投资资产",
+    "路透称英伟达正试图打消这些顾虑，并给出此前未报道的细节：已在管道中的数百亿美元贷款交易可能带有更强的担保与合同；初始交易以英伟达自有芯片作抵押，并由客户合同加上英伟达本身的担保背书；消息人士强调融资需求依旧旺盛",
+    "英伟达发言人回应：\"AI compute is a productive, durable and fungible asset that can support long-term financing. Our financing partners independently assess each opportunity, including customer commitments, expected cash flow and residual value.\"，并称「融资结构会随市场发展而变化」；对是否扩大担保范围，发言人没有正面回应路透的提问",
+    "晨星分析师在近期报告中对私人信贷、供应商融资以及「循环交易」提出质疑——后两者在 25 年前的互联网泡沫中扮演过角色",
+    "黄仁勋的定位是把英伟达算力做成 \"an investable infrastructure asset\"（可投资的基础设施资产），而不是让客户向 AI 公司买订阅合同来换取算力；他在 8 月的博客中称这 5000 亿美元计划正是为了回应外界对循环融资的担忧"
+   ],
+   "note": "路透社 2026-10-01 06:02（ET）发稿，本条 url 取 Investing.com 对路透原稿的全文转载（正文保留「NEW YORK, Oct 1 (Reuters)」抬头与四位署名记者）。该稿与 9/29《金融时报》报道（ev20260929d，英伟达与保险公司洽谈分担芯片抵押贷款风险）是同一融资议题的不同侧面，故单独成条。另有 Crypto Briefing 称「截至 10/1 该平台尚无交易落地」，未获路透/彭博等权威源印证，未写入 signals。"
+  },
+  {
+   "id": "ev20261001b",
+   "date": "2026-10-01",
+   "type": "mt",
+   "cat": "nvda",
+   "src": "The Information（经财联社转述）/ 软银集团声明",
+   "title": "英伟达与软银各自完成对 OpenAI 上一轮融资的最后一笔 100 亿美元，双方 300 亿美元出资承诺全部兑现",
+   "place": "美国·旧金山 / 日本·东京",
+   "url": "https://www.cls.cn/detail/2497098",
+   "images": [],
+   "signals": [
+    "据 The Information 援引知情人士及软银声明报道，英伟达与软银已分别完成对 OpenAI 上一轮融资的最后一笔 100 亿美元投资，各自 300 亿美元的出资承诺全部兑现（两家这一轮合计 200 亿美元）",
+    "OpenAI 今年 3 月披露，该轮融资共获得 1220 亿美元投资承诺，投后估值 8520 亿美元；亚马逊此前承诺最多投资 500 亿美元，并已于 7 月完成全部投资",
+    "软银表示，完成这笔投资后其对 OpenAI 的累计投资达到 646 亿美元，持股比例约 13%；最后一笔资金部分来自软银 9 月底完成的 111 亿美元高收益债券发行",
+    "软银另在声明中称，截至 9 月 30 日，已取消 3 月 27 日与 OpenAI 签订的过桥融资协议项下剩余 100 亿美元未提取额度，该协议项下的所有借款均已偿还、已无任何未提取的承诺额度",
+    "报道称随着上一轮融资收官，OpenAI 或为下一轮私募融资铺路，目标融资规模约 300 亿美元，估值可能达到约 1.4 万亿美元"
+   ],
+   "note": "首报方为 The Information（付费墙，未核到原文页），本条 url 取财联社快讯（https://www.cls.cn/detail/2497098 ，北京 10/2 发布，对应美东 10/1）。date 按事件发生地取 2026-10-01。软银侧口径由新浪财经 7×24 于北京 10/2 02:21 的快讯独立印证（「已完成对 OpenAI 追加投资的第三期，也是最后一期款项，金额 100 亿美元」）。"
+  },
+  {
+   "id": "ev20261001c",
+   "date": "2026-10-01",
+   "type": "mt",
+   "cat": "nvnews",
+   "src": "英伟达官方博客（blogs.nvidia.com，作者 Shruti Koparkar）",
+   "title": "英伟达官方博客：AI 工厂靠「能赚、耐用、通用」撑回报——Vera Rubin 每兆瓦吞吐是 GB300 的 30 倍以上",
+   "place": "",
+   "url": "https://blogs.nvidia.com/blog/productive-durable-fungible-ai-factories/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/09/fungibility-blog-1280x680-1.jpg"
+   ],
+   "signals": [
+    "官方给出的成本锚点：AI 工厂按兆瓦甚至吉瓦建设，每兆瓦造价约 6000 万美元；官方把回报拆成三个变量——赚钱能力（每兆瓦吞吐与单 token 成本）、有效寿命、需求",
+    "引 SemiAnalysis AgentX 数据：NVIDIA Vera Rubin NVL72 的每兆瓦吞吐是 NVIDIA GB300 NVL72 的 30 倍以上，在 DeepSeek V4 Pro 模型上每百万 token 成本最多低 45 倍",
+    "针对折旧争议，官方举证：2020 年出货的 A100 六年后的今天仍在商用，CoreWeave 最近把 2020 年首次投入的机器预订延长到 2029 年；微软的 V100 机队实际跑了 8.4 年，而其账面折旧年限为 6 年",
+    "第三方估值口径：Barkr 给 8 卡 H100 系统的有效寿命是 5–6 年、GB300 NVL72 是 9–10 年；Silicon Data 称六年机龄的 A100 仍值原始成本的四分之一；Ornn Data 发现五年期合同租 A100 的价格是一个月期合同的 80%",
+    "官方把「通用性」当作护城河论证：CUDA 跨代兼容，现有硬件不会因新架构到来而被搁置；CUDA-X 库超过 1000 个、开发者超过 1000 万，同一平台同时跑机器学习、生成式 AI、推理、智能体 AI 与物理 AI",
+    "客户例证：礼来在 1016 卡的本地集群上跑蛋白质、小分子与基因组模型；Pinterest 在超大规模云上跨 14000 张 GPU（含 Blackwell、Hopper 及更早架构）做后训练与推理；Texas A&M 在 26 个项目、7 家机构之间维持 95–98% 利用率；Dassault Systèmes 用虚拟孪生支撑飞机认证，联合利华用数字孪生替代实拍把生产成本砍掉一半",
+    "文末把话题引向 10 月 21 日（欧洲中部时间上午 11 点）的 GTC Berlin 黄仁勋主题演讲"
+   ],
+   "note": "英伟达官方博客 2026-10-01 13:00 GMT 发布，为官方署名论证类文章（无黄仁勋直接引语），按 cat 口径归 nvnews。发稿时点与同日路透社报道的「华尔街质疑芯片残值」形成对冲，官方在文中直接回应 GPU 折旧年限争议。配图取原文页 og:image（fungibility 主题图，已校验 HTTP 200）。"
+  },
   {
    "id": "ev20260930c",
    "date": "2026-09-30",
@@ -216,9 +279,10 @@
     "【李在镕致辞】三星电子会长李在镕上台祝贺并称其父李健熙 2006 年拿过同一奖项；他说 \"Jensen has built NVIDIA into a company at the center of everything happening in AI today.\"（黄仁勋把英伟达建成了今天 AI 一切事情的中心），并称「我们两家公司都在 AI 上押上了一切」（Both of our companies are betting everything on AI）；他提到两人相识约 25 年（首次见面在 CES），还转述黄仁勋最近对他说的一句话：\"I want to die working.\"",
     "【崔泰源致辞】SK 集团会长崔泰源祝酒时把两家关系概括为「英伟达设计大脑，SK 制造记忆」（NVIDIA designs the brain, and SK makes the memory）；称每次见面黄仁勋第一句都是「能不能再快一点？」；他把美韩同盟的「前线」从战场改写成数据中心，说领跑者 \"wears a black leather jacket instead of a military uniform\"（穿的是皮夹克而不是军装），并引用被他戏称为「Jensen's Law」的「买得越多省得越多」",
     "【同行观察】产业简报（The CODEW 9/29）称三人 9/28–9/29 在纽约的会面议题以 HBM 产能锁定为主，三星正推进 HBM4 量产、HBM4E 送样，并试图把代工与先进封装一起打包进合作；三星电子还在纽约时代广场投放祝贺黄仁勋获奖的视频，关键词为 Pioneer / Architect / Builder / Friend",
-    "【领奖后记者会】据韩国《首尔经济日报》英文版报道，黄仁勋在领奖后的记者会上表示「英伟达的繁荣还在我们前面，所以我鼓励股东继续持有」，并称公司股票「目前被明显低估、且处在容易持有的水平」；同一报道提到，他把一件现场签名的皮衣拍卖，成交 13.2 万美元（约 1.8 亿韩元），所得捐给 The Korea Society"
+    "【领奖后记者会】据韩国《首尔经济日报》英文版报道，黄仁勋在领奖后的记者会上表示「英伟达的繁荣还在我们前面，所以我鼓励股东继续持有」，并称公司股票「目前被明显低估、且处在容易持有的水平」；同一报道提到，他把一件现场签名的皮衣拍卖，成交 13.2 万美元（约 1.8 亿韩元），所得捐给 The Korea Society",
+    "【英伟达官方口径 · 10/1 通稿】英伟达（韩国）10 月 1 日发布官方新闻稿确认黄仁勋获 2026 年 Van Fleet 奖，并补充领奖演说与典礼后对谈内容：他把韩国几十年的转变称为 \"a remarkable miracle\"（非凡的奇迹），强调韩国人「拥抱技术并把技术迅速扩散到产业与社会」的能力；他把 AI 描述为继电力与互联网之后的新一代基础设施，说韩国正在建设 \"intelligence factories\"（智能工厂）「而且是与英伟达一起建」，并表示 \"It is a great honor to stand at the meeting point of two great nations and to join the journey in which the two countries are building the future together.\""
    ],
-   "note": "获奖事实的一手来源是主办方 The Korea Society 官网（koreasociety.org 与晚宴专站 tksgala.org，2026 Van Fleet Award Honoree — JENSEN HUANG）；本条 url 取现场特派报道（韩国 Financial News 英文版，含黄仁勋获奖后对话的逐字引语）。中文媒体（新浪财经 9/28、科创板日报 9/28）在晚宴举行前只做前瞻报道，不含现场内容。事件发生在美东 9/28 晚，韩国媒体发稿时间为 9/29 上午（时差所致），date 按事件发生地取 2026-09-28。配图取自 fnnews 原文页 og:image（黄仁勋获奖后在台上对话的现场照，已目视确认切题）。 2026-10-01 补充：记者会表态与皮衣拍卖细节来自韩国《首尔经济日报》（en.sedaily.com，AI 英译稿）与 BigGo 财经的相互印证，两句引语为英译转述、非原文逐字，不得当作英文原话直接引用。"
+   "note": "获奖事实的一手来源是主办方 The Korea Society 官网（koreasociety.org 与晚宴专站 tksgala.org，2026 Van Fleet Award Honoree — JENSEN HUANG）；本条 url 取现场特派报道（韩国 Financial News 英文版，含黄仁勋获奖后对话的逐字引语）。中文媒体（新浪财经 9/28、科创板日报 9/28）在晚宴举行前只做前瞻报道，不含现场内容。事件发生在美东 9/28 晚，韩国媒体发稿时间为 9/29 上午（时差所致），date 按事件发生地取 2026-09-28。配图取自 fnnews 原文页 og:image（黄仁勋获奖后在台上对话的现场照，已目视确认切题）。 2026-10-01 补充：记者会表态与皮衣拍卖细节来自韩国《首尔经济日报》（en.sedaily.com，AI 英译稿）与 BigGo 财经的相互印证，两句引语为英译转述、非原文逐字，不得当作英文原话直接引用。 2026-10-02 补充：英伟达官方（韩国）已于 10/1 发布通稿确认获奖与演说要点（韩媒 AJU Press 2026-10-01 转述页 https://m.ajupress.com/view/20261001150870715 ；官方通稿页面地址未核到，故未替换 url）。本条 url 仍取现场特派报道。"
   },
   {
    "id": "ev20260928f",
@@ -2074,6 +2138,14 @@
    "who": "黄仁勋（NVIDIA 创始人兼 CEO，2026 年新任委员）、苏姿丰（AMD 董事长兼 CEO，新任委员）、百达铭（瑞士百达集团高级管理合伙人，新任委员）；委员会主席蒂姆·库克（苹果董事会执行董事长）",
    "ev": "清华大学经济管理学院顾问委员会 2026 年会议（第 27 次年度会议）",
    "note": "清华经管学院 9/29 官宣：会议 10/13、10/14 在北京召开，今年新增委员 3 人（黄仁勋、苏姿丰、百达铭）、新增接任委员 5 人。黄仁勋本人是否到场尚未公布，以官方最终安排为准。详见事件 ev20260929b",
+   "future": true
+  },
+  {
+   "date": "2026-11-30～12-03",
+   "place": "美国·华盛顿（Ronald Reagan Building and International Trade Center 及全城多个场地）",
+   "who": "黄仁勋（NVIDIA 创始人兼 CEO，主题演讲）",
+   "ev": "NVIDIA GTC Washington, D.C. 2026 · 黄仁勋主题演讲（12 月 1 日 14:00 ET）",
+   "note": "官网口径：会期 11/30–12/3，黄仁勋 keynote 定于 12 月 1 日 14:00（ET），会前有 GTC Live 预热；官网称议程覆盖开放模型、AI 工厂、物理 AI、高性能计算与美国科研，并列出美国参议员 Todd Young、Skild AI 的 Deepak Pathak、纳斯达克 John Zecca、Salesforce Kathy Baxter 等讲者；session 目录 10 月中旬开放（nvidia.com/gtc/dc）",
    "future": true
   }
  ],
