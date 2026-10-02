@@ -1,8 +1,31 @@
 {
  "mode": "auto",
  "today": "2026-10-02",
- "updatedAt": "2026-10-02 03:45",
+ "updatedAt": "2026-10-02 15:35",
  "events": [
+  {
+   "id": "ev20261002a",
+   "date": "2026-10-02",
+   "type": "mt",
+   "cat": "nvda",
+   "src": "IT之家 10 月 2 日报道（腾讯新闻转载）；原始信源为微软开发者账号 @windowsdev 在 X 发布的预告",
+   "title": "微软官宣 10 月 7 日开发者活动：黄仁勋受邀与纳德拉同台，主推 RTX Spark 与 Surface Laptop Ultra",
+   "place": "美国·旧金山（活动地点；本轮为线上官宣）",
+   "url": "https://news.qq.com/rain/a/20261002A034WD00",
+   "images": [
+    "https://inews.gtimg.com/om_ls/Ob69xS0Vws84DK0awGDTh_xZAv1EmZleZYH9zdlCwTUQ0AA_640330/0"
+   ],
+   "signals": [
+    "微软开发者账号 @windowsdev 于 10 月 2 日在 X 发布预告：将于太平洋时间 10 月 7 日上午 10 点（北京时间 10 月 8 日凌晨 1 点）举办一场面向开发者与构建者的线上活动，主题是「本地 AI 如何塑造 PC 的下一阶段」",
+    "预告称将携手英伟达介绍 RTX Spark 的新体验，并为开发者与 Builder 带来更多工具与功能",
+    "出席阵容：微软 CEO 萨提亚·纳德拉、Windows 与 Surface 负责人帕万·达武鲁里，英伟达 CEO 黄仁勋受邀参与",
+    "预计公布的硬件包括 Surface Laptop Ultra（搭载 RTX Spark、最高 128GB 统一内存、完整 CUDA 支持，官方口径可在本地运行最高 1200 亿参数的 AI 模型）与 Surface RTX Spark Dev Box 开发主机",
+    "RTX Spark 是英伟达为 Windows 轻薄本与小尺寸台式机打造的「超级芯片」平台：把 Grace Arm CPU 与 Blackwell 架构 RTX GPU 封装在同一芯片／基板上，经 NVLink-C2C 高速互连，并采用 CPU 与 GPU 共享同一块 LPDDR5X 内存池的统一内存架构",
+    "已列入首批 RTX Spark 笔记本阵容的机型为华硕 ProArt P16、戴尔 XPS 16、惠普 OmniBook Ultra 16、联想 Yoga Pro 9n、微软 Surface Laptop Ultra、微星 Prestige N16 Flip AI+；截至报道时各机型定价与上市日期尚未公布",
+    "这是微软两年多来首次举办大型 Windows 与 Surface 硬件活动，上一场是 2024 年 5 月的 Copilot+ PC 发布"
+   ],
+   "note": "事件日为官宣日 2026-10-02；活动本身在 2026-10-07 太平洋时间 10:00。原始信源为微软 @windowsdev 的 X 预告（本轮 x.com 不可直读），中文侧由 IT之家 10/2 报道、腾讯新闻转载，英文侧由 BigGo Finance 等转述，三处信息一致。配图取本条 url 页面 og:image（微软「07」+ 笔记本的官方预热主视觉，已下载目视确认切题）。尚未有黄仁勋本人发言，故不入 cat=jensen。"
+  },
   {
    "id": "ev20261001a",
    "date": "2026-10-01",
@@ -65,6 +88,29 @@
     "文末把话题引向 10 月 21 日（欧洲中部时间上午 11 点）的 GTC Berlin 黄仁勋主题演讲"
    ],
    "note": "英伟达官方博客 2026-10-01 13:00 GMT 发布，为官方署名论证类文章（无黄仁勋直接引语），按 cat 口径归 nvnews。发稿时点与同日路透社报道的「华尔街质疑芯片残值」形成对冲，官方在文中直接回应 GPU 折旧年限争议。配图取原文页 og:image（fungibility 主题图，已校验 HTTP 200）。"
+  },
+  {
+   "id": "ev20261001d",
+   "date": "2026-10-01",
+   "type": "mt",
+   "cat": "nvnews",
+   "src": "英伟达官方博客（blogs.nvidia.com，作者 Dion Harris）",
+   "title": "英伟达官方博客：OpenAI GPT-6 Astra Ultrafast 跑在 Blackwell 上，token 生成最高快 8 倍",
+   "place": "",
+   "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/09/twitter-gif-2104993966043320759-v5.png"
+   ],
+   "signals": [
+    "官方口径：GPT-6 Astra Ultrafast 运行在 NVIDIA Blackwell GPU 上，现已通过 OpenAI API 开放，并向符合条件的 ChatGPT Work 与 Codex 用户开放；相对 Astra 标准模式，token 生成最高快 8 倍",
+    "OpenAI 推理负责人 Philippe Tillet 原话：\"NVIDIA's deep investment in tooling and documentation has enabled us to make our models exceptionally good at programming Blackwell and Rubin GPUs.\"；他称 Astra 能把这类知识转成高性能算子，使英伟达硬件在延迟、吞吐与成本三端都有吸引力",
+    "OpenAI 计算首席技术官 Uday Ruddarraju 原话：\"We used our internal models to optimize inference on NVIDIA GPUs, and NVIDIA's programmability helped us deliver the acceleration behind Astra Ultrafast.\"",
+    "官方称提速受益最大的是智能体循环：编程智能体写代码、调用工具、检查结果、再决定下一步，每一步生成变快会缩短「编辑—测试—调试」周期，也减少工具调用之间的等待，让交互式应用更跟手",
+    "官方强调优化不止于部署那一刻：OpenAI 正用自家模型持续优化跑在英伟达 GPU 上的推理软件；可编程平台让团队在训练、推理与强化学习之间复用同一套基础设施，减少按工作负载分别超配",
+    "文中配图为官方对比卡片：标准模式 17.0 秒对 Ultrafast 6.4 秒，底部标注 \"Running on NVIDIA AI Infrastructure\"",
+    "文末把话题引向 10 月 20–22 日 GTC Berlin（黄仁勋主题演讲 10 月 21 日）"
+   ],
+   "note": "英伟达官方博客 2026-10-01 23:44 GMT 发布（美东 10/1 晚、北京时间 10/2 早），署名作者 Dion Harris，按 cat 口径归 nvnews；date 取文章署名日期 10/1。原文无黄仁勋直接引语。配图取原文页 og:image（Standard 17.0s vs Ultrafast 6.4s 对比卡片，已下载目视确认切题）。中文侧由 IT时代网（腾讯新闻 10/02）等转载。"
   },
   {
    "id": "ev20260930c",
@@ -1814,36 +1860,6 @@
    ],
    "cat": "jensen",
    "note": "路演及大摩纪要（分析师 Joseph Moore）发布于美东 7/11，财联社 7/13 中文报道；date 按事件发生日改为 7/11，id 同步改"
-  },
-  {
-   "id": "ev20260616",
-   "date": "2026-06-16",
-   "type": "mt",
-   "src": "Coherent 官方新闻稿 / 集邦咨询",
-   "title": "Coherent 谢尔曼磷化铟工厂奠基 · 光芯片产能扩张",
-   "place": "美国·德州谢尔曼",
-   "url": "https://www.coherent.com/news/press-releases/a-chip-letter-of-intent-for-50m-to-expand-world-leading-manufacturing-facility-for-ai-infrastructure",
-   "images": [],
-   "signals": [
-    "黄仁勋出席 Coherent 全球首座大规模 6 英寸磷化铟晶圆厂奠基（累计投资 6.5 亿美元），产能将翻四倍；磷化铟是 1.6T 光模块核心材料"
-   ],
-   "cat": "nvda",
-   "note": "原链接为垃圾抓取站 huskybyte.com 已弃用，换 Coherent 官方新闻稿（6/16 奠基当日）"
-  },
-  {
-   "id": "ev20260608a",
-   "date": "2026-06-08",
-   "type": "mt",
-   "src": "路透社 Reuters",
-   "title": "访韩签斗山 Enerbility · AI 工厂供电合作",
-   "place": "韩国·首尔",
-   "url": "https://en.aletihad.ae/news/business/4670985/nvidia-clinches-deals-with-south-korean-giants-to-advance-ai",
-   "images": [],
-   "signals": [
-    "黄仁勋访韩与斗山集团合作：斗山 Enerbility（燃气轮机/汽轮机/小型核反应堆/氢燃料电池）为 AI 工厂供电；黄仁勋称\"没有能源增长就没有工业增长\"，SK 电讯将建吉瓦级 AI 云（2027 上线）"
-   ],
-   "cat": "nvda",
-   "note": "斗山 Enerbility 等合作属 6/8 路透社报道的访韩合作官宣，date 由 6/5 改判为 6/8；原雪球帖为二手转述已弃用；路透电稿经 Aletihad 转载"
   }
  ],
  "timeline": [
@@ -2146,6 +2162,14 @@
    "who": "黄仁勋（NVIDIA 创始人兼 CEO，主题演讲）",
    "ev": "NVIDIA GTC Washington, D.C. 2026 · 黄仁勋主题演讲（12 月 1 日 14:00 ET）",
    "note": "官网口径：会期 11/30–12/3，黄仁勋 keynote 定于 12 月 1 日 14:00（ET），会前有 GTC Live 预热；官网称议程覆盖开放模型、AI 工厂、物理 AI、高性能计算与美国科研，并列出美国参议员 Todd Young、Skild AI 的 Deepak Pathak、纳斯达克 John Zecca、Salesforce Kathy Baxter 等讲者；session 目录 10 月中旬开放（nvidia.com/gtc/dc）",
+   "future": true
+  },
+  {
+   "date": "2026-10-07",
+   "place": "美国·旧金山（线上直播；太平洋时间 10:00 / 北京时间 10-08 01:00）",
+   "who": "黄仁勋（NVIDIA 创始人兼 CEO，受邀出席）· 萨提亚·纳德拉（微软 CEO）· 帕万·达武鲁里（微软 Windows 与 Surface 负责人）",
+   "ev": "微软 Windows & Surface 开发者活动 · 主推 RTX Spark 与 Surface Laptop Ultra",
+   "note": "微软开发者账号 @windowsdev 于 10/2 在 X 官宣，官方主题为「本地 AI 如何塑造 PC 的下一阶段」。预计公布 Surface Laptop Ultra（RTX Spark、最高 128GB 统一内存、完整 CUDA 支持，可本地跑最高 1200 亿参数模型）与 Surface RTX Spark Dev Box 开发主机。这是微软两年多来首场大型 Windows/Surface 硬件活动。",
    "future": true
   }
  ],
