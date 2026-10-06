@@ -1,8 +1,32 @@
 {
  "mode": "auto",
  "today": "2026-10-06",
- "updatedAt": "2026-10-06 04:55",
+ "updatedAt": "2026-10-06 16:50",
  "events": [
+  {
+   "id": "ev20261005d",
+   "date": "2026-10-05",
+   "type": "co",
+   "src": "Fortune",
+   "title": "英伟达风投 NVentures 参投 Reactor 的 A 轮，后者总融资升至 7400 万美元，主打世界模型实时推理基础设施",
+   "place": "美国·旧金山",
+   "url": "https://fortune.com/2026/10/05/nvidia-backs-startup-reactor-buzz-grows-world-models/",
+   "images": [
+    "https://fortune.com/img-assets/wp-content/uploads/2026/10/Alberto-and-BryceReactor.jpg?resize=1200,600",
+    "https://inc-reactor-static.b-cdn.net/assets/opengraph-image.png"
+   ],
+   "signals": [
+    "旧金山初创公司 Reactor 于 10 月 5 日宣布，英伟达风投部门 NVentures 与 Sapphire Ventures 加入其 A 轮，公司累计融资额由此升至 7400 万美元；该轮由 Lightspeed Venture Partners 领投，公司 5 月 28 日结束隐身状态时累计融资为 5900 万美元（Fortune 10 月 5 日首报）",
+    "Reactor 不做世界模型本身，做的是让别人跑得起世界模型的中间层：自研推理引擎 + 全球 GPU 云 + 流媒体分发层，以 SDK 和 API 形式出售；公司称其平台可让交互式 3D 环境以每秒 60 帧以上渲染、时延低于 40 毫秒",
+    "客户方向分两块：一是影视娱乐，公司称好莱坞制片厂、广告平台和流媒体服务已有在跑的项目；二是物理 AI 与机器人，创始人认为机器人测试若用传统仿真，需人工搭建三维物体与场景，成本高耗时长，而世界模型可由提示词直接生成环境",
+    "创始团队背景：CEO Alberto Taiuti 是 AI 视频生成公司 Luma AI 的联合创始人、曾任其 CTO；CTO Bryce Schmidtchen 曾是苹果 Vision Pro 的技术负责人，两人均参与过 Vision Pro；团队来自苹果、Meta、谷歌、Netflix、Adobe、Replicate、微软",
+    "公司另与 AWS 及世界模型研究机构 Overworld 建立合作；资金用途为锁定更多算力、扩充团队、采购机器人硬件用于测试",
+    "英伟达自身已有 Cosmos 系列世界模型、用于机器人仿真的 Isaac 工具链，以及让机器人在本地跑 AI 的 Jetson 计算平台，此次投资使其在「跑世界模型」这一基础设施层也持有权益",
+    "同周内，AMD 宣布以 82 亿美元换股方式收购世界模型公司 World Labs，AI 视频公司 Runway 发布其世界模型的首个开源权重版本；此前英伟达还投过 Reflection AI、AMI（Yann LeCun 创立）、World Labs 等世界模型方向公司"
+   ],
+   "cat": "nvda",
+   "note": ""
+  },
   {
    "id": "ev20261005a",
    "date": "2026-10-05",
