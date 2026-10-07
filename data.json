@@ -1,8 +1,91 @@
 {
  "mode": "auto",
- "today": "2026-10-07",
- "updatedAt": "2026-10-07 17:20",
+ "today": "2026-10-08",
+ "updatedAt": "2026-10-08 05:35",
  "events": [
+  {
+   "id": "ev20261008a",
+   "date": "2026-10-08",
+   "type": "mt",
+   "src": "IT之家（引微软中国商城）",
+   "title": "微软中国商城上架 Surface Laptop Ultra：搭载英伟达 RTX Spark，起售价 21,988 元、128GB 顶配 48,388 元",
+   "place": "中国（微软中国商城线上上架）",
+   "url": "https://www.ithome.com/1/010/320.htm",
+   "images": [
+    "https://img.ithome.com/newsuploadfiles/2026/10/07ce5ab4-4d57-491e-9288-cd8aa779c2bd.png"
+   ],
+   "signals": [
+    "IT之家 10 月 8 日消息：微软中国商城于 10 月 8 日上架 Surface Laptop Ultra，提供亮铂金与夜幕色两种配色，起售价 21,988 元，128GB 内存顶配售价 48,388 元；定价页未显示国行发售日期，海外市场显示 10 月 16 日发售",
+    "国行定价梯度（IT之家附售价表）：18 核 CPU + 5120 核 RTX Spark N1X、24GB 统一内存 + 512GB 售 21,988 元；同配置 1TB 售 25,188 元；32GB 统一内存 + 1TB 售 27,588 元；20 核 CPU + 6144 核 RTX Spark N1X、32GB 统一内存 + 1TB 售 30,788 元；同芯片 48GB 统一内存 + 1TB 售 33,188 元",
+    "官方产品页口径：Surface Laptop Ultra 从芯片层面全新设计，搭载 NVIDIA RTX Spark，把高效 CPU 与 NVIDIA Blackwell RTX GPU 结合，提供最高一千万亿次浮点运算的 AI 算力，可本地运行高达 1200 亿参数的模型",
+    "该机型是 RTX Spark 平台的首款消费级产品。英伟达与微软在 10 月 7 日旧金山活动上宣布其 10 月 16 日起出货，同批机型还来自宏碁、华硕、戴尔、惠普、联想、微星等厂商（详见事件 ev20261007a）"
+   ],
+   "cat": "nvda",
+   "note": "date 取微软中国商城上架日 2026-10-08（北京时间），非产品发布日（10/07 活动、10/16 出货），三者不可混用。配图取原文页正文产品图（Surface Laptop Ultra 官方渲染图），已下载目视确认切题。"
+  },
+  {
+   "id": "ev20261007a",
+   "date": "2026-10-07",
+   "type": "co",
+   "src": "英伟达官方博客（blogs.nvidia.com）",
+   "title": "黄仁勋与纳德拉同台：RTX Spark 笔记本即日开启预售、微软 MXC 全面可用，DGX Station for Windows 首次亮相",
+   "place": "美国·旧金山 Dogpatch Studios",
+   "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/10/nv-blog-preview-1280x680-1.jpg"
+   ],
+   "signals": [
+    "【官方发布 · 博文发布 2026-10-07 18:45 GMT】英伟达官网博客：在旧金山微软 Windows AI 与 Surface 活动上，英伟达创始人兼 CEO 黄仁勋与微软 CEO 萨提亚·纳德拉说明两家公司如何协同设计硬件与软件，让 AI 智能体在 Windows PC 上运行",
+    "【产品节奏】RTX Spark 把整套英伟达 AI 栈装进 Windows 笔记本与紧凑台式机：笔记本 10 月 7 日开启预售、10 月 16 日发货；紧凑台式机 11 月开售。系统来自宏碁、华硕、戴尔、惠普、联想、微软、微星、技嘉，形态从轻薄本到为常驻智能体设计的小型主机",
+    "【平台规格】RTX Spark 结合最多 6,144 核的 Blackwell RTX GPU 与最多 20 核的 NVIDIA Grace CPU（600 GB/s 互联），提供 1 PFLOPS FP4 AI 性能与最高 128GB 统一内存；官方称可本地运行 1200 亿参数级模型（举例 Qwen 3.8 Flash Next，125B 模型 / 51B n-gram），不上传云端也不限量；游戏侧以 DLSS 5 在 1440p 下跑 100 帧以上",
+    "【微软侧发布】微软宣布 Microsoft Execution Containers（MXC）全面可用——这项操作系统级基础设施让智能体在系统管控下安全、持续地在后台运行；Windows 与设备执行副总裁 Pavan Davuluri 称 Surface Laptop Ultra 围绕 RTX Spark 打造，最高 128GB 统一内存与 1 PFLOPS AI 算力",
+    "【新品预览】英伟达同步预览 DGX Station for Windows——首台面向 Windows 企业桌面的「桌边 AI 超级计算机」，把上一代前沿算力搬上桌面（DGX 系列此前仅面向 Linux）",
+    "【媒体补充事实】据 Tom’s Hardware、MarketWatch 与 IT之家现场报道：Surface Laptop Ultra 起售价 2,599 美元、Surface RTX Spark Dev Box 起售价 5,999 美元，均自 10 月 16 日发货；微软称相较苹果 MacBook Pro（M5 Pro），首 token 最快 2.1 倍、图像生成 4.3 倍、视频生成 6.2 倍"
+   ],
+   "cat": "nvnews",
+   "note": "事件日取活动当日 2026-10-07；官网博文发布时间为 2026-10-07 18:45 GMT（北京 10/08 02:45），发布日晚于活动日，按口径取事件日。黄仁勋现场引语另立 ev20261007b；国行上架定价另立 ev20261008a，三条同源互注。配图取原文页 og:image（英伟达官方产品渲染图），已下载目视确认切题。"
+  },
+  {
+   "id": "ev20261007b",
+   "date": "2026-10-07",
+   "type": "iv",
+   "src": "IT之家（现场报道）／英伟达官方博客（引语互证）",
+   "title": "黄仁勋在旧金山炉边对话：英伟达当初正是因 Windows 而诞生，没有 Windows 就不会有 GeForce",
+   "place": "美国·旧金山 Dogpatch Studios",
+   "url": "https://www.ithome.com/1/010/315.htm",
+   "images": [
+    "https://img.ithome.com/newsuploadfiles/2026/10/69d76a50-c701-47c1-84ab-382400518ba7.jpg"
+   ],
+   "signals": [
+    "【Windows 缘起】「英伟达的创立是因为 Windows 系统。Windows 95 让 GPU 连接到 PC 成为可能，DirectX 对 PC 图形技术的早期发展至关重要。」（同日另一篇现场报道另记：「如果没有 Windows，就不会有 GeForce；如果没有 GeForce，CUDA 并不会问世，深度学习等技术也就无从谈起。」英伟达官方博文英译：「If not for Windows there would be no GeForce.」）",
+    "【对 MXC 的判断】「萨提亚刚才说的这些，将成为我们所知的下一代 IT 的基础。就像 Windows 和 DirectX 改变了应用程序的构建方式，MXC 将改变智能体的构建与部署方式。」（官方博文原文：Just as Windows and DirectX revolutionized how applications were built, MXC is going to revolutionize how agents are built and deployed.）",
+    "【本地 AI 定位】「这是全球唯一一台能够在设备端原生运行一切应用的电脑。」他称 RTX Spark 超级芯片「非常出色——它是唯一能运行 DirectX 及其所有应用程序、OpenGL…… 并且能完美运行所有 CUDA 应用程序的计算机」",
+    "【软件适配】英伟达已测试超过 1200 款应用在 RTX Spark 上的性能与兼容性；黄仁勋称「我们将要推出的软件数量…… 永无止境」，并表示几乎所有笔记本电脑、台式机与工作站厂商都已加入英伟达的合作阵营",
+    "【个人电脑的角色】「个人电脑是终极工具，是我的终极工具，对整整一代人来说都是终极工具。到了智能体时代，当智能体在你的电脑上时，它就变成了你的个人助理。」（官方博文原文）",
+    "【同台与对谈】炉边对话由前白宫人工智能高级政策顾问斯里拉姆·克里希南（Sriram Krishnan）主持；纳德拉称黄仁勋最值得称道的是「对这件事能走到哪一步的愿景始终如一——不是今天、不是明天，而是作为一个长期趋势」，并称「我们需要让桌面成为智能体执行任务最安全的地方」"
+   ],
+   "cat": "jensen",
+   "note": "引语经英伟达官方博客（英文原文）与 IT之家现场报道（中文）双向比对，中文译文以 IT之家为准、未做自行改写。活动时间：太平洋时间 2026-10-07 10:00（北京 10/08 01:00），地点旧金山 Dogpatch Studios。配图取原文页正文现场照（黄仁勋、纳德拉、克里希南三人炉边对话），已下载目视确认切题。"
+  },
+  {
+   "id": "ev20261007c",
+   "date": "2026-10-07",
+   "type": "mt",
+   "src": "路透社 Reuters（盘面）／富途牛牛、雪球（结算口径）",
+   "title": "英伟达 10 月 7 日收跌 0.74% 报 237.47 美元，费城半导体指数跌 2.3%",
+   "place": "美国·纽约（纳斯达克）",
+   "url": "https://www.kitco.com/news/off-the-wire/2026-10-07/nasdaq-sp-500-slip-record-highs-yields-and-oil-rebound",
+   "images": [],
+   "signals": [
+    "英伟达 10 月 7 日（周三）开盘 237.69、最高 239.08、最低 236.38、收 237.47 美元，跌 1.77 美元（-0.74%），成交 8101.87 万股、成交额 192.40 亿美元，振幅 1.13%（富途牛牛与雪球结算口径逐项一致，前收 239.24 美元）",
+    "收盘总市值约 5.72 万亿美元，市盈率（TTM）29.67–30.02（富途牛牛 / 雪球口径）",
+    "路透社 10 月 7 日：纳斯达克与标普 500 从纪录高位回落，美债收益率与油价反弹，投资者等待美联储 9 月会议纪要；芯片股领跌——美光跌 2.3%、英伟达跌 0.7%、费城半导体指数跌 2.3%",
+    "路透社：SpaceX 跌 1.7%，此前《金融时报》报道其寻求 400 亿美元融资用于采购英伟达芯片（见事件 ev20261006b）；30 年期美债收益率升至 2002 年以来最高、报 5.72%；布伦特原油重回 100 美元/桶上方",
+    "背景：截至 10 月 6 日收盘，英伟达已连续三个交易日创收盘新高（10/2 收 233.95、10/5 收 238.90、10/6 收 239.24），10 月 7 日为近期首次明显回调；当日标普 500 十一大板块有八个下跌，能源与医疗保健各涨 0.6%（路透社）"
+   ],
+   "cat": "nvda",
+   "note": "行情数字取结算口径（富途牛牛与雪球逐项一致），与路透社盘中口径（英伟达跌约 0.7%）相互印证。路透社该稿为盘中快讯（9:43 ET），其大盘指数涨跌幅为盘中值、非收盘值，故未采录。未配图：原文页（Kitco 转发路透社稿）og:image 抓取受阻，按口径留空，不配无关图。"
+  },
   {
    "id": "ev20261006b",
    "date": "2026-10-06",
@@ -2405,10 +2488,10 @@
   {
    "date": "2026-10-07",
    "place": "美国·旧金山（线上直播；太平洋时间 10:00 / 北京时间 10-08 01:00）",
-   "who": "黄仁勋（NVIDIA 创始人兼 CEO，受邀出席）· 萨提亚·纳德拉（微软 CEO）· 帕万·达武鲁里（微软 Windows 与 Surface 负责人）",
+   "who": "黄仁勋（NVIDIA 创始人兼 CEO）· 萨提亚·纳德拉（微软 CEO）· 帕万·达武鲁里（微软 Windows 与设备执行副总裁）· 斯里拉姆·克里希南（对谈主持，前白宫 AI 高级政策顾问）",
    "ev": "微软 Windows & Surface 开发者活动 · 主推 RTX Spark 与 Surface Laptop Ultra",
-   "note": "微软开发者账号 @windowsdev 于 10/2 在 X 官宣，官方主题为「本地 AI 如何塑造 PC 的下一阶段」。预计公布 Surface Laptop Ultra（RTX Spark、最高 128GB 统一内存、完整 CUDA 支持，可本地跑最高 1200 亿参数模型）与 Surface RTX Spark Dev Box 开发主机。这是微软两年多来首场大型 Windows/Surface 硬件活动。",
-   "future": true
+   "note": "已如期举行（当地 10/07 上午 10:00，旧金山 Dogpatch Studios）：黄仁勋与纳德拉炉边对话，达武鲁里讲 Windows 更新。要点——RTX Spark 笔记本当日起预售、10/16 出货（起售价 2,599 美元；国行 10/08 上架、起售 21,988 元、128GB 顶配 48,388 元），紧凑台式机 11 月开售；微软宣布 MXC（Microsoft Execution Containers）全面可用；英伟达预览 DGX Station for Windows。详见事件 ev20261007a / ev20261007b / ev20261008a。",
+   "future": false
   },
   {
    "date": "2026-10-23",
@@ -2420,6 +2503,26 @@
   }
  ],
  "opinions": [
+  {
+   "id": "op20261007a",
+   "date": "2026-10-07",
+   "cat": "sellside",
+   "author": "Anshel Sag（Moor Insights & Strategy 分析师，路透社采访）",
+   "stance": "审慎",
+   "title": "Moor Insights 分析师 Sag：本地 AI 的软件终于准备好了，硬件却太贵，只有预算充足的人才跑得起",
+   "quotes": [
+    "「两年前，软件还没准备好，但硬件准备好了。现在软件准备好了，硬件却太贵，没法真正在本地跑起来。」（The software wasn't ready, but the hardware was. Now the software is ready and the hardware is too expensive to actually run it locally.）",
+    "「于是这事就变成了——只有预算够的人，才真的负担得起在本地跑 AI。」（So it's becoming this thing where only the people who have the budget can really afford to run AI locally.）",
+    "背景数字：英伟达近几周把 AI 台式机 DGX Spark 的价格上调约 75% 至 6,950 美元，原因是其 128GB 内存成本飙升；微软两年前推动 PC 本地 AI 时，这类笔记本定价多在 2,000 美元以下",
+    "Sag 指出这轮涨价源于全球内存短缺，苹果与微软在这条路上的推进都受影响；这可能限制新品的普及速度，尤其是缺乏 IT 预算的中小企业"
+   ],
+   "url": "https://news.cnyes.com/news/id/6624388",
+   "src": "路透社 Reuters（Stephen Nellis 报道）／鉅亨網（中文编译）",
+   "related": [
+    "ev20261007a"
+   ],
+   "note": "date 取路透社采访报道日 2026-10-07（活动当日盘前发布）。中文引语取自鉅亨網编译稿，英文原文见路透社 Stephen Nellis 旧金山报道（AOL 同步转载）。"
+  },
   {
    "id": "op20261005c",
    "date": "2026-10-05",
