@@ -1,8 +1,83 @@
 {
  "mode": "auto",
- "today": "2026-10-10",
- "updatedAt": "2026-10-10 18:40",
+ "today": "2026-10-11",
+ "updatedAt": "2026-10-11 06:45",
  "events": [
+  {
+   "id": "ev20261010c",
+   "date": "2026-10-10",
+   "type": "mt",
+   "src": "路透社 Reuters（经 AOL / 亚洲新闻台 CNA 转载）／彭博社 Bloomberg",
+   "title": "英伟达据报洽谈收购或加码投资开放权重模型公司 Reflection AI：已投 8 亿美元，3 月估值 250 亿",
+   "place": "美国·圣克拉拉（英伟达总部）/ 美国",
+   "url": "https://www.channelnewsasia.com/business/nvidia-in-talks-invest-further-in-reflection-ai-or-buy-it-ft-reports-6449691",
+   "images": [
+    "https://dam.mediacorp.sg/image/upload/s--FB6G_7WQ--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-10-10T193237Z_1_LYNXMPEM990LJ_RTROPTP_3_REFLECTION-AI-M-A-NVIDIA.JPG?itok=G8juEzLj"
+   ],
+   "signals": [
+    "英国《金融时报》10 月 10 日（周六）首报，路透社同日转发：英伟达正洽谈加深对开源初创公司 Reflection AI 的投资，或直接收购该公司；谈判仍处早期阶段",
+    "路透社原文口径：交易可能采取多种形式，包括所谓「人才收购」（acqui-hire）——英伟达聘用对方员工并获得技术许可，而不追求整体收购，从而可能避开冗长的监管审查；一名路透社记者未能在报道当时独立核实该报道，英伟达与 Reflection 在非工作时段均未立即回应置评请求",
+    "英伟达已是 Reflection AI 的主要出资方与战略投资方，据 FT 报道此前已向其投资 8 亿美元；Reflection AI 首席执行官 Misha Laskin 今年 4 月对 CNBC 称，公司正以 250 亿美元投前估值募集新资金",
+    "Reflection AI 成立于 2024 年，由前谷歌 DeepMind 研究员 Misha Laskin 与 Ioannis Antonoglou 创办，开发自动化软件开发的工具；该公司 10 月 5 日（周一）发布首个开放权重模型 Beam，对标中国低成本模型 DeepSeek 与 Kimi 在编程与智能体任务上的表现，Beam 含 5010 亿总参数、每个任务仅激活 230 亿参数（对照：Z.ai 的 GLM-5.2 为约 7440 亿总参数、400 亿激活参数）",
+    "彭博社同日（美东 10/10）独立报道，援引一名知情人士：英伟达正洽谈加大对 Reflection AI 的投资，或向该公司提供算力，此举将加强与这家开放权重模型关键开发者的关系；讨论处于早期阶段、尚未达成任何条款，英伟达未立即回应、Reflection 拒绝置评",
+    "背景：英伟达今年 7 月曾强调美国必须建立自己的本土开放 AI 生态系统，称这对「在全美创造创新与繁荣的机遇」至关重要；Reflection AI 还与 SpaceX 及云服务商 Nebius 签署了数十亿美元算力协议，其投资者包括红杉资本、DST Global、Lightspeed Venture Partners 与 1789 Capital"
+   ],
+   "cat": "nvda",
+   "note": "date 取 FT/彭博首报日 2026-10-10（FT 报道日为当日周六，美东时间；路透社电头日期亦为 Oct 10）。**待核验**：交易结构、金额与是否成交均无官方确认，英伟达与 Reflection AI 均未置评，报道明确「谈判可能破裂」，故 signals 仅写报道口径、不作定论。本机 theinformation.com 与 bloomberg.com 正文不可直连（bloomberg 经 origin 镜像页取到标题与摘要，正文付费墙）；事实链以路透社（经 AOL 与 CNA 转载）为主源、彭博社摘要为并列印证。images 取 CNA（路透社供稿）原文页 og:image 一张。中文媒体（财联社 10/11、腾讯网环球市场播报 10/11、cnBeta、网易）均为 10/11 转载，只作二级。"
+  },
+  {
+   "id": "ev20261010d",
+   "date": "2026-10-10",
+   "type": "mt",
+   "src": "新浪财经（美股行情）／腾讯自选股行情（qt.gtimg.cn）",
+   "title": "英伟达 10 月 10 日收跌 0.52% 报 229.28 美元，总市值 5.53 万亿美元：连续两日小幅走低，日成交额约 195 亿美元",
+   "place": "美国·纽约（纳斯达克）",
+   "url": "https://finance.sina.com.cn/stock/usstock/quotes/NVDA.shtml",
+   "images": [],
+   "signals": [
+    "英伟达（NVDA）2026 年 10 月 9 日美股交易日收报 229.28 美元，较前一交易日收盘 230.48 美元下跌 1.20 美元、跌幅 0.52%；当日开盘 233.84 美元、最高 233.83 美元、最低 229.11 美元，全天振幅约 2.05%",
+    "总市值 5.53 万亿美元；当日成交量 8,464 万 5,559 股、成交额约 194.9 亿美元；盘后价 229.33 美元，微跌 0.02%；52 周区间 164.02（低）—243.37（高）美元",
+    "前一交易日（10/08）收盘 230.48 美元、跌 2.94%；两个交易日合计回落约 3.4%，均未出现单日大跌",
+    "口径：中国行情接口的「2026-10-10」为北京时间标注日，对应美股 10 月 9 日（周五）交易日——美东收盘时间为 Oct 09 16:00 EDT、盘后 19:59 EDT。若按美东日期计，本条对应美股 10/09 交易；下一交易日为美东 10/12（周一）"
+   ],
+   "cat": "nvda",
+   "note": "date 与 id 内嵌日期取中国行情源标注日 2026-10-10（北京时间），与本报此前行情条（ev20261009d「10 月 9 日收跌 0.52%」）采用同一口径，保证信息流时序一致；**美股当地交易日为 10/09**，已在 signals 与 note 中显式说明，避免误读。data 经新浪财经（hq.sinajs.cn/gb_nvda）与腾讯自选股（qt.gtimg.cn/usNVDA）两个独立接口交叉核对，逐字段一致（收盘 229.28、涨跌 -1.20/-0.52%、昨收 230.48、最高 233.92、最低 229.11、成交量 84,645,559、市值 5,525.65 亿美元）。原文页无可取 og:image → images 留空。"
+  },
+  {
+   "id": "ev20261010e",
+   "date": "2026-10-10",
+   "type": "mt",
+   "src": "CNBC（2026 年 10 月 10 日）",
+   "title": "CNBC：英伟达 GPU 已无处不在，超大规模云、Neocloud 与本地数据中心三条获取路径并行",
+   "place": "美国",
+   "url": "https://www.cnbc.com/2026/10/10/nvidia-gpus-are-everywhere-here-are-the-ways-companies-are-accessing-them.html",
+   "images": [],
+   "signals": [
+    "CNBC 2026 年 10 月 10 日报道：一份关于企业如何获取英伟达处理器的调查显示，其芯片同时流向超大规模云厂商（hyperscalers）、所谓「Neocloud」（新兴 AI 云）以及本地部署数据中心三类买家",
+    "报道同时提及：今年 9 月的一份英伟达 GPU 供应商统计较不到 11 个月前的 209 家有所增加；黄仁勋在高盛科技会议上表示，一批新的供应商正在涌现"
+   ],
+   "cat": "nvda",
+   "note": "date 取 CNBC 发布日 2026-10-10。**待核验**：本机直取该 URL 返回 HTTP 404（CNBC 页面路径可能已变更或对无头请求不友好），本条事实链来自 Active Investor Magazine 2026-10-10 摘要页对其的引述，**未见 CNBC 原文逐字核对**；核心事实（三类获取路径）与白宫峰会前后多家媒体的口径方向一致，但**具体报道措辞与统计数字未经原文验证**，发布播报时须明说未核到原文。images 留空（原文页未取到，404 页 og:image 为 CNBC 通用分享卡，非本条配图，不采用）。"
+  },
+  {
+   "id": "ev20261008j",
+   "date": "2026-10-08",
+   "type": "sp",
+   "src": "微软 Windows & Surface 开发者活动（黄仁勋×纳德拉炉边对话，经 36 氪、钜亨网、CSDN 转述现场记录）",
+   "title": "黄仁勋回溯 Windows 来源：RTX Spark 累计投入超 4000 工程人年、算力 1 PFLOPS，已测超 1200 款应用",
+   "place": "美国·旧金山（Dogpatch Studios；线上直播）",
+   "url": "https://36kr.com/p/4019964542521225",
+   "images": [],
+   "signals": [
+    "黄仁勋在 10 月 7 日微软 Windows & Surface 开发者活动的炉边对话中谈 RTX Spark 的研发投入：「参与这个项目的工程师数量惊人——超过了 4000 个工程年（engineering years）。这是一项真正重构 PC 的宏大工程。」",
+    "关于算力与封装：「我们有史以来第一次，将游戏 PC、笔记本、工作站以及云端超级计算机所具备的顶尖计算能力，彻底统一并封装进一颗超级芯片中。这颗芯片是一头真正的算力怪兽：它将两颗巨型芯片融合封装在一起，提供高达 1 Petaflop 的算力。」",
+    "关于对比口径：「当年开启现代 AI 革命的第一代 DGX-1 超级计算机，整机算力也就是 1 Petaflop，重达 500 磅、售价 25 万美元；而如今，同样的算力被完整封装在了一台轻薄的笔记本电脑中。」（注：活动现场另有口径称 DGX-1 价值 2.5 亿美元、官方系统重量约 134 磅，两处表述不一致）",
+    "关于兼容性：「这是全球唯一一台能够原生运行完整 DirectX、Direct3D、各版本 OpenGL、并无缝跑通所有 CUDA 应用程序与 Unreal Engine 的 PC。」「目前，我们已经对超过 1200 款应用进行了测试，其中包括全球最复杂、对性能要求最高的一批应用。」",
+    "关于英伟达的起点（回答主持人 Sriram Krishnan 关于与微软合作往事的提问）：「英伟达其实是因为 Windows 才创立的。那是 1992 年底，当时 Windows 3.1 刚推出……如果没有 Windows，英伟达根本就不会诞生。」他并表示 1995 年 Windows 95「真正重新定义了一切」"
+   ],
+   "cat": "jensen",
+   "note": "date 取对话发生日 2026-10-08（北京时间；活动为美东/太平洋时间 10 月 7 日上午），id 内嵌日期同。**与 ev20261007a / ev20261007b 同场合**：那两条主体分别为「微软×英伟达 RTX Spark 官宣与产品事实」（nvnews）与「旧金山炉边对话整体」（jensen），本条为该场对话中黄仁勋本人关于 RTX Spark 研发投入与规格的**具体发言引语**，signals 保留原话，不重复官宣事实。**注意口径冲突**：黄仁勋称 DGX-1「售价 25 万美元」，现场另有中方记录称「2.5 亿美元」、官方系统重量亦有 500 磅/134 磅两说，signals 已并列标注两处表述，不作取舍。中文转录（36 氪、钜亨网、CSDN）为转述稿，非官方逐字稿；英文原始录像未核。images 留空（转述页无可取 og:image）。"
+  },
   {
    "id": "ev20261010a",
    "date": "2026-10-10",
@@ -2494,6 +2569,14 @@
  "timeline": [
   {
    "date": "2026-10-10",
+   "place": "美国·圣克拉拉（英伟达总部）/ 美国",
+   "who": "黄仁勋（NVIDIA CEO）；Misha Laskin、Ioannis Antonoglou（Reflection AI 联合创始人）",
+   "ev": "英伟达据报洽谈收购或加码投资 Reflection AI（开放权重模型公司，3 月估值 250 亿美元）",
+   "note": "英国《金融时报》2026-10-10 首报、路透社同日转发：谈判处早期阶段，方案含全面收购、人才收购（聘用员工+技术许可）、追加股权投资、扩大芯片与算力供应四种可能；英伟达已投 8 亿美元。双方均未置评、条款未定，谈判亦可能破裂。详见事件 ev20261010c",
+   "future": false
+  },
+  {
+   "date": "2026-10-10",
    "place": "印度·海得拉巴 / 马来西亚",
    "who": "Anil Chalamalasetty（AM Intelligence 董事长，Greenko 发起人）；Vishal Dhupar（NVIDIA 南亚区董事总经理）",
    "ev": "AM Intelligence 追加两笔约 2 万颗 NVIDIA Rubin GPU 约束性订单 · Vera Rubin AI 工厂扩至印度与马来西亚",
@@ -2509,6 +2592,78 @@
    "future": false
   },
   {
+   "date": "2026-10-07",
+   "place": "美国·旧金山（线上直播；太平洋时间 10:00 / 北京时间 10-08 01:00）",
+   "who": "黄仁勋（NVIDIA 创始人兼 CEO）· 萨提亚·纳德拉（微软 CEO）· 帕万·达武鲁里（微软 Windows 与设备执行副总裁）· 斯里拉姆·克里希南（对谈主持，前白宫 AI 高级政策顾问）",
+   "ev": "微软 Windows & Surface 开发者活动 · 主推 RTX Spark 与 Surface Laptop Ultra",
+   "note": "已如期举行（当地 10/07 上午 10:00，旧金山 Dogpatch Studios）：黄仁勋与纳德拉炉边对话，达武鲁里讲 Windows 更新。要点——RTX Spark 笔记本当日起预售、10/16 出货（起售价 2,599 美元；国行 10/08 上架、起售 21,988 元、128GB 顶配 48,388 元），紧凑台式机 11 月开售；微软宣布 MXC（Microsoft Execution Containers）全面可用；英伟达预览 DGX Station for Windows。详见事件 ev20261007a / ev20261007b / ev20261008a。",
+   "future": false
+  },
+  {
+   "date": "2026-09-29",
+   "place": "美国·华盛顿（Andrew W. Mellon Auditorium）",
+   "who": "特朗普（总统）、万斯（副总统）、黄仁勋（NVIDIA CEO）、马斯克（特斯拉/SpaceX/xAI）；同场另有 Tom Brown（Anthropic 联合创始人）、Dave Limp（蓝色起源 CEO）、Gavin Baker（Atreides Management，对谈主持）、Joe Gebbia（美国首席设计官）、卢比奥（国务卿）等",
+   "ev": "America.gov 发布活动 · 黄仁勋出席",
+   "note": "已如期举行（当地 9/29 上午，Andrew W. Mellon Auditorium）：特朗普发布联邦政务服务 AI 门户 America.gov，把分散在各机构的政府信息整合为统一入口；黄仁勋与马斯克在发布活动上同台对谈约 25 分钟（Gavin Baker 主持，Tom Brown 后半段加入），黄仁勋提出以后不该叫数据中心、应叫「超级智能工厂（SI 工厂）」，并估算这套基建每年新增 10–20 吉瓦、可创造约一百万个岗位。详见事件 ev20260929a / ev20260929c",
+   "future": false
+  },
+  {
+   "date": "2026-09-29",
+   "place": "美国·华盛顿（白宫）",
+   "who": "特朗普（美国总统）、约翰逊（众议院议长）、黄仁勋（NVIDIA CEO）；同场另有马斯克（xAI）、扎克伯格（Meta）、皮查伊（Alphabet）、纳德拉（微软）、贝索斯（亚马逊）、苏姿丰（AMD）、陈福阳（博通）、阿莫代伊（Anthropic）、布罗克曼（OpenAI）、卡普（Palantir）、桑卡尔（Palantir CTO）、Chamath Palihapitiya、Nikesh Arora（Palo Alto Networks）、Bill McDermott（ServiceNow）、Sanjay Mehrotra（美光）等约 31 人",
+   "ev": "白宫 AI 午餐会 · 黄仁勋出席",
+   "note": "已如期举行（当地 9/29 12:30，白宫东厅）：座位图（特朗普发布于 Truth Social）显示黄仁勋坐在特朗普右手边、马斯克在其左手边；会后特朗普与皮查伊、阿莫代伊、扎克伯格、布罗克曼、马斯克、黄仁勋六人共同签署一页纸的《白宫超级智能协定：前沿责任联合承诺》（四层管控与审计机制，自愿性质、无罚则），特朗普称其「具有道德约束力」；同日另签行政令，要求联邦机构以「超级智能（SI）」取代「人工智能（AI）」。黄仁勋答记者问称「我们将以负责任且安全的方式推进这项工作」。；同日会后在罗斯福厅的小范围会议上，黄仁勋等高管当面质疑 Anthropic CEO 阿莫代伊对 AI 风险的公开警告口径，据 WSJ 报道该环节另有白宫助手与顾问在场。详见事件 ev20260929a / ev20260929e。",
+   "future": false
+  },
+  {
+   "date": "2026-09-28",
+   "place": "美国·纽约 Cipriani South Street（10 South St, New York, NY 10004）",
+   "who": "黄仁勋（NVIDIA 创始人兼 CEO）、李在镕（三星电子会长）、崔泰源（SK 集团会长）",
+   "ev": "The Korea Society 2026 年度晚宴 · 黄仁勋获 Van Fleet 奖并发表演说",
+   "note": "已如期举行：黄仁勋获 2026 年范弗利特奖并发表获奖演说（谈韩国 AI、制造与「负责任的乐观」），李在镕、崔泰源上台致辞；三星电子同期在纽约时代广场投放祝贺视频。会面议题以 HBM 产能锁定（HBM4/HBM4E/HBM5 协同设计与路线图）为主。详见事件 ev20260928e",
+   "future": false
+  },
+  {
+   "date": "2026-09-24",
+   "place": "美国·华盛顿（白宫东厅）",
+   "who": "黄仁勋（携妻子 Lori Huang）／主桌同席：马斯克（特斯拉·SpaceX）、苏姿丰（AMD，及丈夫 Daniel Lin）、库克（苹果）；同桌另有奥尔特曼（OpenAI）、扎克伯格（Meta）",
+   "ev": "白宫国宴（黄仁勋坐主桌，现场确认）",
+   "note": "白宫当地 9/24 晚举办，逾 130 位宾客；黄仁勋与妻子 Lori Huang 被安排在主桌，路透/法新社现场图与白宫宾客名单互证（联合早报/中央社/Forbes-Yahoo）。出席科技领袖另有纳德拉、皮查伊、布林、贝索斯、阿蒙、梅赫罗特拉等；Anthropic 无代表出席。",
+   "future": false
+  },
+  {
+   "date": "2026-09-24",
+   "place": "美国（CNN《Anderson Cooper 360°》播出）",
+   "who": "安德森·库珀（Anderson Cooper，CNN 主播）",
+   "ev": "CNN《Anderson Cooper 360°》专访",
+   "note": "谈其与 AI 监管的关系，并回应科技公司 CEO 对 AI 的担忧；完整版当晚 20:00（美东）播出，具体原话待核",
+   "future": false
+  },
+  {
+   "date": "2026-09-23",
+   "place": "美国·圣克拉拉（英伟达总部）",
+   "who": "Ezra Klein（《纽约时报》播客《The Ezra Klein Show》主持）",
+   "ev": "《纽约时报》播客专访",
+   "note": "AI 安全与监管：反对反垄断/产品责任豁免、管不住就得关掉实验室、反驳 Hinton 末日论；不反对针对具体产品的监管",
+   "future": false
+  },
+  {
+   "date": "2026-09-19",
+   "place": "美国（CBS Sunday Morning 专访，主持人 Jo Ling Kent）",
+   "who": "Jo Ling Kent（CBS 资深商业科技记者）",
+   "ev": "CBS Sunday Morning 专访（片段 9/18 释出、完整版 9/20 播出）",
+   "note": "谈 AI 末日论：2030 年世界末日概率「为零」；主张全速推进 AI 但产品不安全绝不发布；质疑末日论者动机。与 9/14 All-In、9/15 Dreamforce、9/17 英王峰会为不同专场",
+   "future": false
+  },
+  {
+   "date": "2026-09-17",
+   "place": "英国·苏格兰艾尔郡邓弗里斯庄园（Dumfries House）",
+   "who": "查尔斯三世（英王）、Demis Hassabis（DeepMind）、OpenAI/Anthropic 代表",
+   "ev": "英王查尔斯 AI 闭门峰会",
+   "note": "黄仁勋发表 AI 监管（监管产品而非技术）与 2027 芯片销量约两倍于今年表态",
+   "future": false
+  },
+  {
    "date": "2026-09-15",
    "place": "美国·旧金山",
    "who": "Marc Benioff（Salesforce CEO）",
@@ -2517,27 +2672,59 @@
    "future": false
   },
   {
-   "date": "2026-11-17",
-   "place": "",
-   "who": "",
-   "ev": "英伟达 2027 财年 Q3 财报（预计）",
-   "note": "雅虎财经行情页显示财报日为 2026 年 11 月 17 日（原为「2026Q4 预计」口径，本轮据行情页细化为具体日期）。指引 1080 亿美元，观察液冷/PCB 业绩兑现",
-   "future": true
-  },
-  {
-   "date": "2026秋",
-   "place": "",
-   "who": "",
-   "ev": "Vera Rubin 大规模出货启动",
-   "note": "财报确认 2026 年秋季开始大规模出货",
-   "future": true
-  },
-  {
    "date": "2026-09-14",
    "place": "美国·洛杉矶",
    "who": "特朗普（美国总统，现场来电）/ All-In Podcast（Chamath Palihapitiya 等）",
    "ev": "All-In Summit 2026 · 炉边对话（特朗普现场来电）",
    "note": "黄仁勋台上与主持人讨论时接到特朗普来电并开免提；两人谈 AI 发展与监管。黄仁勋称「AI末日论」缺乏科学依据、部分领域超级智能已到来，但主张失控应暂停、称赞吹哨人；特朗普称数据中心是「未来 20–25 年石油」、AI 接管世界是骗局"
+  },
+  {
+   "date": "2026-09-10",
+   "place": "美国·旧金山（线上音频直播 8:50 a.m. PT）",
+   "who": "黄仁勋（NVIDIA 创始人兼 CEO）",
+   "ev": "高盛 Communacopia + Technology 大会 演讲",
+   "note": "炉边对话 David Solomon：Q4 扩大 Blackwell 产能、明年继续扩，Blackwell 需求极大；数万亿美元通用数据中心将转向加速计算；谈架构一致性与供应链韧性",
+   "future": false
+  },
+  {
+   "date": "2026-09-09",
+   "place": "韩国·首尔（金浦商务航空中心）",
+   "who": "黄仁勋 / SK崔泰源·现代郑义宣·LG具光谟·Naver李海珍等",
+   "ev": "结束五天访韩行程离首尔",
+   "note": "离韩前对记者称“期待很快再回来”；访韩系列收官",
+   "future": false
+  },
+  {
+   "date": "2026-09-08",
+   "place": "韩国·首尔（SK 瑞麟大厦 / LG 双子塔 / 现代 / Naver 1784 / 新罗酒店）",
+   "who": "SK 崔泰源/郭鲁正、SKT 郑载宪、LG 具光谟、现代 郑义宣、Naver 李海珍、三星 全永贤",
+   "ev": "访韩第四日收官：与 SK/三星/LG/现代/Naver 敲定 AI 与物理 AI 合作同盟",
+   "note": "SK 海力士次世代内存联合开发、SKT DSX 全栈 AI 云、LG 机器人+AIDC、现代自主移动/新万金、Naver GW 级 AI Factory、三星内存/代工；当晚或 9/9 离韩；韩媒后续报道称，黄仁勋与 SK 崔泰源在下一代半导体合作议题中亦讨论过玻璃基板技术（首尔经济日报，2026-09-24 报道）",
+   "future": false
+  },
+  {
+   "date": "2026-09-07",
+   "place": "韩国·首尔（蚕室棒球场 + 江南 PC 房 + 乙支路/江南餐叙）",
+   "who": "Krafton 张柄圭 / NCSoft 金泽辰 / 现代郑义宣 / SK 崔泰源 / Doosan 朴正元",
+   "ev": "访韩第三日：蚕室棒球开球 + 游戏业 PC 房会晤 + 现代/SK 餐叙",
+   "note": "穿 93 号道奇熊球衣主罚开球，喊话『Go, Korea!』；与 Krafton/NCSoft 会长在 PC 房见玩家、抽奖 RTX 5090/RTX Spark；午餐与现代郑义宣吃平壤冷面（前瞻 9/8 现代之行），晚与 SK 崔泰源再聚炸鸡店谈 AI 半导体供应链",
+   "future": false
+  },
+  {
+   "date": "2026-09-06",
+   "place": "韩国·首尔（tvN 摄影棚）",
+   "who": "刘在锡（Yoo Jae-suk，国民 MC）",
+   "ev": "录制韩综《刘QUIZ ON THE BLOCK》首秀",
+   "note": "首次出演韩国及海外综艺，9/10 晚播出；与刘在锡同框、随《Golden》起舞；女儿 Madison Huang 随行",
+   "future": false
+  },
+  {
+   "date": "2026-09-05",
+   "place": "韩国·首尔（金浦机场入境）",
+   "who": "SK 崔泰源 / LG 具光谟 / Naver 李海珍（9/5 宴）；后续将晤现代/三星等",
+   "ev": "黄仁勋时隔7个月再访韩 · 约5天行程开启",
+   "note": "机场称“为韩国带来大量商机、还有惊喜礼物”；确认三星/SK海力士/美光 HBM4 均通过 Vera Rubin 认证；多项合作（SK海力士多年存储、SK Telecom 吉瓦级 AI 云、Naver AI 工厂等）预计 9/7–9/8 官宣",
+   "future": false
   },
   {
    "date": "2026-09-02",
@@ -2652,6 +2839,14 @@
    "note": "SK 电讯将建吉瓦级 AI 云（2027 上线）；称机器人是韩国下一个主要增长领域"
   },
   {
+   "date": "2026-06-03 ~ 10-11",
+   "place": "美国（线上）",
+   "who": "黄仁勋（NVIDIA CEO，@JensenHuang）；Elon Musk（@elonmusk）",
+   "ev": "Elon Musk 在 X 上回复他人帖文时称特斯拉 Digital Optimus 的算力使用「相对节省」——间接指向英伟达硬件成本",
+   "note": "Musk 2026-10-10 在 X 回复中描述 Digital Optimus（又称 Macrohard，Tesla 与 xAI 联合项目）时说该系统对 xAI 更昂贵的英伟达硬件使用「相对节省」（relatively frugal），并称其运行于特斯拉 AI4 芯片（自报单价 650 美元）。**他方言论、非英伟达动态**，无独立证据、Musk 未附视频或基准，故仅记入日历作背景，不单独立事件条。",
+   "future": false
+  },
+  {
    "date": "2026-06-02",
    "place": "中国台湾·台北",
    "who": "施崇棠（华硕董事长）、梁次震（广达副董事长）",
@@ -2666,100 +2861,20 @@
    "note": ""
   },
   {
-   "date": "2026-09-05",
-   "place": "韩国·首尔（金浦机场入境）",
-   "who": "SK 崔泰源 / LG 具光谟 / Naver 李海珍（9/5 宴）；后续将晤现代/三星等",
-   "ev": "黄仁勋时隔7个月再访韩 · 约5天行程开启",
-   "note": "机场称“为韩国带来大量商机、还有惊喜礼物”；确认三星/SK海力士/美光 HBM4 均通过 Vera Rubin 认证；多项合作（SK海力士多年存储、SK Telecom 吉瓦级 AI 云、Naver AI 工厂等）预计 9/7–9/8 官宣",
-   "future": false
+   "date": "2026-11-17",
+   "place": "",
+   "who": "",
+   "ev": "英伟达 2027 财年 Q3 财报（预计）",
+   "note": "雅虎财经行情页显示财报日为 2026 年 11 月 17 日（原为「2026Q4 预计」口径，本轮据行情页细化为具体日期）。指引 1080 亿美元，观察液冷/PCB 业绩兑现",
+   "future": true
   },
   {
-   "date": "2026-09-07",
-   "place": "韩国·首尔（蚕室棒球场 + 江南 PC 房 + 乙支路/江南餐叙）",
-   "who": "Krafton 张柄圭 / NCSoft 金泽辰 / 现代郑义宣 / SK 崔泰源 / Doosan 朴正元",
-   "ev": "访韩第三日：蚕室棒球开球 + 游戏业 PC 房会晤 + 现代/SK 餐叙",
-   "note": "穿 93 号道奇熊球衣主罚开球，喊话『Go, Korea!』；与 Krafton/NCSoft 会长在 PC 房见玩家、抽奖 RTX 5090/RTX Spark；午餐与现代郑义宣吃平壤冷面（前瞻 9/8 现代之行），晚与 SK 崔泰源再聚炸鸡店谈 AI 半导体供应链",
-   "future": false
-  },
-  {
-   "date": "2026-09-06",
-   "place": "韩国·首尔（tvN 摄影棚）",
-   "who": "刘在锡（Yoo Jae-suk，国民 MC）",
-   "ev": "录制韩综《刘QUIZ ON THE BLOCK》首秀",
-   "note": "首次出演韩国及海外综艺，9/10 晚播出；与刘在锡同框、随《Golden》起舞；女儿 Madison Huang 随行",
-   "future": false
-  },
-  {
-   "date": "2026-09-08",
-   "place": "韩国·首尔（SK 瑞麟大厦 / LG 双子塔 / 现代 / Naver 1784 / 新罗酒店）",
-   "who": "SK 崔泰源/郭鲁正、SKT 郑载宪、LG 具光谟、现代 郑义宣、Naver 李海珍、三星 全永贤",
-   "ev": "访韩第四日收官：与 SK/三星/LG/现代/Naver 敲定 AI 与物理 AI 合作同盟",
-   "note": "SK 海力士次世代内存联合开发、SKT DSX 全栈 AI 云、LG 机器人+AIDC、现代自主移动/新万金、Naver GW 级 AI Factory、三星内存/代工；当晚或 9/9 离韩；韩媒后续报道称，黄仁勋与 SK 崔泰源在下一代半导体合作议题中亦讨论过玻璃基板技术（首尔经济日报，2026-09-24 报道）",
-   "future": false
-  },
-  {
-   "date": "2026-09-10",
-   "place": "美国·旧金山（线上音频直播 8:50 a.m. PT）",
-   "who": "黄仁勋（NVIDIA 创始人兼 CEO）",
-   "ev": "高盛 Communacopia + Technology 大会 演讲",
-   "note": "炉边对话 David Solomon：Q4 扩大 Blackwell 产能、明年继续扩，Blackwell 需求极大；数万亿美元通用数据中心将转向加速计算；谈架构一致性与供应链韧性",
-   "future": false
-  },
-  {
-   "date": "2026-09-09",
-   "place": "韩国·首尔（金浦商务航空中心）",
-   "who": "黄仁勋 / SK崔泰源·现代郑义宣·LG具光谟·Naver李海珍等",
-   "ev": "结束五天访韩行程离首尔",
-   "note": "离韩前对记者称“期待很快再回来”；访韩系列收官",
-   "future": false
-  },
-  {
-   "date": "2026-09-28",
-   "place": "美国·纽约 Cipriani South Street（10 South St, New York, NY 10004）",
-   "who": "黄仁勋（NVIDIA 创始人兼 CEO）、李在镕（三星电子会长）、崔泰源（SK 集团会长）",
-   "ev": "The Korea Society 2026 年度晚宴 · 黄仁勋获 Van Fleet 奖并发表演说",
-   "note": "已如期举行：黄仁勋获 2026 年范弗利特奖并发表获奖演说（谈韩国 AI、制造与「负责任的乐观」），李在镕、崔泰源上台致辞；三星电子同期在纽约时代广场投放祝贺视频。会面议题以 HBM 产能锁定（HBM4/HBM4E/HBM5 协同设计与路线图）为主。详见事件 ev20260928e",
-   "future": false
-  },
-  {
-   "date": "2026-09-17",
-   "place": "英国·苏格兰艾尔郡邓弗里斯庄园（Dumfries House）",
-   "who": "查尔斯三世（英王）、Demis Hassabis（DeepMind）、OpenAI/Anthropic 代表",
-   "ev": "英王查尔斯 AI 闭门峰会",
-   "note": "黄仁勋发表 AI 监管（监管产品而非技术）与 2027 芯片销量约两倍于今年表态",
-   "future": false
-  },
-  {
-   "date": "2026-09-19",
-   "place": "美国（CBS Sunday Morning 专访，主持人 Jo Ling Kent）",
-   "who": "Jo Ling Kent（CBS 资深商业科技记者）",
-   "ev": "CBS Sunday Morning 专访（片段 9/18 释出、完整版 9/20 播出）",
-   "note": "谈 AI 末日论：2030 年世界末日概率「为零」；主张全速推进 AI 但产品不安全绝不发布；质疑末日论者动机。与 9/14 All-In、9/15 Dreamforce、9/17 英王峰会为不同专场",
-   "future": false
-  },
-  {
-   "date": "2026-09-23",
-   "place": "美国·圣克拉拉（英伟达总部）",
-   "who": "Ezra Klein（《纽约时报》播客《The Ezra Klein Show》主持）",
-   "ev": "《纽约时报》播客专访",
-   "note": "AI 安全与监管：反对反垄断/产品责任豁免、管不住就得关掉实验室、反驳 Hinton 末日论；不反对针对具体产品的监管",
-   "future": false
-  },
-  {
-   "date": "2026-09-24",
-   "place": "美国·华盛顿（白宫东厅）",
-   "who": "黄仁勋（携妻子 Lori Huang）／主桌同席：马斯克（特斯拉·SpaceX）、苏姿丰（AMD，及丈夫 Daniel Lin）、库克（苹果）；同桌另有奥尔特曼（OpenAI）、扎克伯格（Meta）",
-   "ev": "白宫国宴（黄仁勋坐主桌，现场确认）",
-   "note": "白宫当地 9/24 晚举办，逾 130 位宾客；黄仁勋与妻子 Lori Huang 被安排在主桌，路透/法新社现场图与白宫宾客名单互证（联合早报/中央社/Forbes-Yahoo）。出席科技领袖另有纳德拉、皮查伊、布林、贝索斯、阿蒙、梅赫罗特拉等；Anthropic 无代表出席。",
-   "future": false
-  },
-  {
-   "date": "2026-09-24",
-   "place": "美国（CNN《Anderson Cooper 360°》播出）",
-   "who": "安德森·库珀（Anderson Cooper，CNN 主播）",
-   "ev": "CNN《Anderson Cooper 360°》专访",
-   "note": "谈其与 AI 监管的关系，并回应科技公司 CEO 对 AI 的担忧；完整版当晚 20:00（美东）播出，具体原话待核",
-   "future": false
+   "date": "2026秋",
+   "place": "",
+   "who": "",
+   "ev": "Vera Rubin 大规模出货启动",
+   "note": "财报确认 2026 年秋季开始大规模出货",
+   "future": true
   },
   {
    "date": "2026-10-23",
@@ -2778,22 +2893,6 @@
    "future": true
   },
   {
-   "date": "2026-09-29",
-   "place": "美国·华盛顿（Andrew W. Mellon Auditorium）",
-   "who": "特朗普（总统）、万斯（副总统）、黄仁勋（NVIDIA CEO）、马斯克（特斯拉/SpaceX/xAI）；同场另有 Tom Brown（Anthropic 联合创始人）、Dave Limp（蓝色起源 CEO）、Gavin Baker（Atreides Management，对谈主持）、Joe Gebbia（美国首席设计官）、卢比奥（国务卿）等",
-   "ev": "America.gov 发布活动 · 黄仁勋出席",
-   "note": "已如期举行（当地 9/29 上午，Andrew W. Mellon Auditorium）：特朗普发布联邦政务服务 AI 门户 America.gov，把分散在各机构的政府信息整合为统一入口；黄仁勋与马斯克在发布活动上同台对谈约 25 分钟（Gavin Baker 主持，Tom Brown 后半段加入），黄仁勋提出以后不该叫数据中心、应叫「超级智能工厂（SI 工厂）」，并估算这套基建每年新增 10–20 吉瓦、可创造约一百万个岗位。详见事件 ev20260929a / ev20260929c",
-   "future": false
-  },
-  {
-   "date": "2026-09-29",
-   "place": "美国·华盛顿（白宫）",
-   "who": "特朗普（美国总统）、约翰逊（众议院议长）、黄仁勋（NVIDIA CEO）；同场另有马斯克（xAI）、扎克伯格（Meta）、皮查伊（Alphabet）、纳德拉（微软）、贝索斯（亚马逊）、苏姿丰（AMD）、陈福阳（博通）、阿莫代伊（Anthropic）、布罗克曼（OpenAI）、卡普（Palantir）、桑卡尔（Palantir CTO）、Chamath Palihapitiya、Nikesh Arora（Palo Alto Networks）、Bill McDermott（ServiceNow）、Sanjay Mehrotra（美光）等约 31 人",
-   "ev": "白宫 AI 午餐会 · 黄仁勋出席",
-   "note": "已如期举行（当地 9/29 12:30，白宫东厅）：座位图（特朗普发布于 Truth Social）显示黄仁勋坐在特朗普右手边、马斯克在其左手边；会后特朗普与皮查伊、阿莫代伊、扎克伯格、布罗克曼、马斯克、黄仁勋六人共同签署一页纸的《白宫超级智能协定：前沿责任联合承诺》（四层管控与审计机制，自愿性质、无罚则），特朗普称其「具有道德约束力」；同日另签行政令，要求联邦机构以「超级智能（SI）」取代「人工智能（AI）」。黄仁勋答记者问称「我们将以负责任且安全的方式推进这项工作」。；同日会后在罗斯福厅的小范围会议上，黄仁勋等高管当面质疑 Anthropic CEO 阿莫代伊对 AI 风险的公开警告口径，据 WSJ 报道该环节另有白宫助手与顾问在场。详见事件 ev20260929a / ev20260929e。",
-   "future": false
-  },
-  {
    "date": "2026-10-13～14",
    "place": "中国·北京（清华大学）",
    "who": "黄仁勋（NVIDIA 创始人兼 CEO，2026 年新任委员）、苏姿丰（AMD 董事长兼 CEO，新任委员）、百达铭（瑞士百达集团高级管理合伙人，新任委员）；委员会主席蒂姆·库克（苹果董事会执行董事长）",
@@ -2808,14 +2907,6 @@
    "ev": "NVIDIA GTC Washington, D.C. 2026 · 黄仁勋主题演讲（12 月 1 日 14:00 ET）",
    "note": "官网口径：会期 11/30–12/3，黄仁勋 keynote 定于 12 月 1 日 14:00（ET），会前有 GTC Live 预热；官网称议程覆盖开放模型、AI 工厂、物理 AI、高性能计算与美国科研，并列出美国参议员 Todd Young、Skild AI 的 Deepak Pathak、纳斯达克 John Zecca、Salesforce Kathy Baxter 等讲者；session 目录 10 月中旬开放（nvidia.com/gtc/dc）",
    "future": true
-  },
-  {
-   "date": "2026-10-07",
-   "place": "美国·旧金山（线上直播；太平洋时间 10:00 / 北京时间 10-08 01:00）",
-   "who": "黄仁勋（NVIDIA 创始人兼 CEO）· 萨提亚·纳德拉（微软 CEO）· 帕万·达武鲁里（微软 Windows 与设备执行副总裁）· 斯里拉姆·克里希南（对谈主持，前白宫 AI 高级政策顾问）",
-   "ev": "微软 Windows & Surface 开发者活动 · 主推 RTX Spark 与 Surface Laptop Ultra",
-   "note": "已如期举行（当地 10/07 上午 10:00，旧金山 Dogpatch Studios）：黄仁勋与纳德拉炉边对话，达武鲁里讲 Windows 更新。要点——RTX Spark 笔记本当日起预售、10/16 出货（起售价 2,599 美元；国行 10/08 上架、起售 21,988 元、128GB 顶配 48,388 元），紧凑台式机 11 月开售；微软宣布 MXC（Microsoft Execution Containers）全面可用；英伟达预览 DGX Station for Windows。详见事件 ev20261007a / ev20261007b / ev20261008a。",
-   "future": false
   },
   {
    "date": "2026-10-23",
@@ -2843,6 +2934,61 @@
   }
  ],
  "opinions": [
+  {
+   "id": "op20261010a",
+   "date": "2026-10-10",
+   "cat": "media",
+   "author": "在线聚合摘要页（Active Investor Magazine，AI 自动汇编，非人工撰稿）",
+   "stance": "中性",
+   "title": "对 Reflection AI 交易的审慎提示：报道口径不一致，市场已按「已完成 250 亿美元收购」传播是不准确的",
+   "quotes": [
+    "报道之间对交易确定程度的表述并不一致：两家描述为「洽谈」，一家标题直接写成英伟达「将收购」该公司。",
+    "（VentureCapitalTracker 同题综述）这些是并列的备选方案，不是一笔交易的四项已宣布组成部分。把这条新闻当成一笔已完成的 250 亿美元收购，是不准确的。",
+    "真正该盯的不是产品公告，而是信贷市场——问题不在于处理器的需求（报道称需求广泛），而在于谁有能力为围绕它们展开的建设融资。",
+    "250 亿美元是 Reflection AI 最新的私募市场估值，不是报道出来的收购价格。"
+   ],
+   "url": "http://activeinvestormag.com/story/2026-10-10-pm-nvidia-is-in-talks-to-buy-an-open-model-start-up-and-to-back",
+   "src": "Active Investor Magazine / VentureCapitalTracker（2026-10-10）",
+   "related": [
+    "ev20261010c"
+   ]
+  },
+  {
+   "id": "op20261010b",
+   "date": "2026-10-10",
+   "cat": "media",
+   "author": "路透社（记者 Rishabh Jaiswal 等，班加罗尔）",
+   "stance": "审慎",
+   "title": "路透社在转发 FT 报道时明确标注：无法独立核实该报道，双方均未回应",
+   "quotes": [
+    "路透社无法立即核实该报道。",
+    "在一次惯例工作时间之外的时段，英伟达与 Reflection 均未立即回应置评请求。",
+    "（报道原述）谈判处于早期阶段，交易可能采取多种形式，包括所谓「人才收购」——英伟达聘用员工并许可技术，而非寻求全面收购，从而可能避开冗长的监管审查。"
+   ],
+   "url": "https://www.aol.com/articles/nvidia-talks-invest-further-reflection-193237000.html",
+   "src": "路透社 Reuters（经 AOL 转载，2026-10-10）",
+   "related": [
+    "ev20261010c"
+   ]
+  },
+  {
+   "id": "op20261010c",
+   "date": "2026-10-10",
+   "cat": "media",
+   "author": "钜亨网（cnyes）／CSDN《最话》整理",
+   "stance": "中性",
+   "title": "现场记录的细节回踩：黄仁勋口述的 DGX-1 价格与官方规格对不上，转录稿需打折看",
+   "quotes": [
+    "（钜亨网现场记录）那台机器价值 2.5 亿美元，重达 500 磅——但初代 DGX-1 在 2016 年的官方售价为 12.9 万美元，官方系统重量约 134 磅。",
+    "（CSDN 转述）黄仁勋：当年开启现代 AI 革命的第一代 DGX-1 超级计算机，整机算力也就是 1 Petaflop，重达 500 磅、售价 25 万美元。",
+    "（独立观察）同一场对话的两个中文转录版本分别写下「25 万美元」与「2.5 亿美元」，差三个数量级；官方规格则是 12.9 万美元、约 134 磅——三方均不一致。"
+   ],
+   "url": "https://m.cnyes.com/news/id/6627216",
+   "src": "钜亨网 cnyes（现场记录，2026-10-10）",
+   "related": [
+    "ev20261008j"
+   ]
+  },
   {
    "id": "op20261008b",
    "date": "2026-10-08",
