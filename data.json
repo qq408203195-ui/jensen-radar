@@ -1,8 +1,51 @@
 {
  "mode": "auto",
  "today": "2026-10-10",
- "updatedAt": "2026-10-10 06:10",
+ "updatedAt": "2026-10-10 18:40",
  "events": [
+  {
+   "id": "ev20261010a",
+   "date": "2026-10-10",
+   "type": "mt",
+   "src": "CNA 中央社（工商时报/腾讯网转载）",
+   "title": "AM Intelligence 再下两笔约 2 万颗 Rubin GPU 约束性订单：Vera Rubin 算力规模扩至约 2.9 万颗、近 100 兆瓦，落子印度与马来西亚",
+   "place": "印度·海得拉巴 / 马来西亚",
+   "url": "https://news.pchome.com.tw/living/cna/20261010/index-17916251236801018009.html",
+   "images": [],
+   "signals": [
+    "AM Intelligence（AMI，由 Greenko 发起人设立的 AI 基础设施平台）10 月 10 日宣布新增两笔确定且具约束力的采购订单，共约 2 万颗 NVIDIA Rubin GPU，将部署为 NVIDIA Vera Rubin NVL72 机架级系统",
+    "两笔订单合计约 70 兆瓦装机容量，部署于印度与马来西亚，计划 2027 年第二季度交付；叠加 2026 年 8 月 25 日宣布的海得拉巴首座 AI 工厂 9,000 颗 Rubin GPU（首期 30 兆瓦）承诺，AMI 累计承诺采购约 29,000 颗 Rubin GPU、接近 100 兆瓦",
+    "AMI 称由此成为北美以外最早且规模最大的 Rubin GPU 承诺采购方之一；并计划在未来 15 个月内向市场新增 300 兆瓦容量，在已为第一期 100 兆瓦项目承诺的 60 亿美元之外，再增加 200 多亿美元资本支出",
+    "AMI 董事长 Anil Chalamalasetty：「这两处设施都将按照与海得拉巴 AI 工厂相同的架构标准进行建设，整合 NVIDIA Vera Rubin 平台和高吞吐量 RDMA over Converged Ethernet (RoCE) 网络……每个站点都是为高机架功率密度设计的，并全面采用液冷技术」",
+    "NVIDIA 南亚区董事总经理 Vishal Dhupar：「AM Intelligence 正携手 NVIDIA Vera Rubin，将新一代 AI 工厂引入印度和马来西亚。通过将加速计算与高性能网络及液冷基础设施相结合，AMI 正在为开发者和企业构建更宏大的 AI 系统奠定基础」",
+    "AMI 的全球开发管线约 400 兆瓦，覆盖印度、美国、欧洲与马来西亚；更远期目标为面向 AI 负载交付 1 吉瓦的 Compute-as-a-Service 容量，底层属于在印度、美国与欧洲布局 5 吉瓦 AI 数据中心的更大计划"
+   ],
+   "cat": "nvda",
+   "note": "date 取稿件发布日 2026-10-10（中央社訊息服務 10/10 17:39 发布，美国商业资讯/Business Wire 同步）。本条为第三方采购方（AMI）宣布的英伟达芯片订单事实，非英伟达官网首发，故归 nvda；NVIDIA 南亚区 MD 具名表态见于同一稿件。原稿无可用 og:image → images 留空。"
+  },
+  {
+   "id": "ev20261009e",
+   "date": "2026-10-09",
+   "type": "mt",
+   "src": "TrendForce（引 The Elec / ZDNet / Newsis / EDAILY）",
+   "title": "TrendForce：英伟达 NVHBM 重塑 HBM 基础裸片格局——美光、三星双双转向外部代工，台积电成最大受益方",
+   "place": "美国·圣克拉拉 / 韩国·首尔",
+   "url": "https://www.trendforce.com/news/2026/10/09/news-nvidias-nvhbm-reshapes-memory-makers-base-die-strategies-as-micron-samsung-turn-to-external-foundries/",
+   "images": [
+    "https://img.trendforce.com/blog/wp-content/uploads/2026/08/27095303/NVIDIA-NVHBM-624x332.jpg"
+   ],
+   "signals": [
+    "英伟达 8 月随 NVLink Fusion 生态发布的 NVHBM 把内存控制器从 XPU 计算裸片移入 HBM 堆栈的基础裸片，基础裸片从此承担更大角色，并开始重塑存储厂商的采购格局（TrendForce 2026-10-09 报道）",
+    "美光：据 The Elec，与英伟达联合设计的 NVHBM 以及符合 JEDEC 标准的 HBM4E，都将采用外部代工厂制造的基础裸片，台积电预计接手。HBM4 阶段美光仍用 1β 工艺核心裸片配自研基础裸片，HBM4E 核心裸片转向 1γ 工艺（大致对标三星与 SK 海力士的 1c 代）",
+    "美光 COO Manish Bhatia 经 The Elec 表示：HBM 本身已带溢价，NVHBM 的定制化创造更大价值，预计 NVHBM 将有更高 ASP 与更强毛利率",
+    "三星：据 ZDNet，三星正对 NVHBM 这类定制 HBM 采取双轨策略——HBM 核心裸片可搭配由三星晶圆代工或台积电制造的基础裸片，视客户需求而定；台积电基础裸片的芯片设计与优化支持由三星存储业务部门负责，脱离其传统依赖 System LSI 与三星晶圆代工的模式",
+    "SK 海力士：据 Newsis，正与英伟达密切合作开发定制 HBM；据 EDAILY，其 HBM4 基础裸片已采用台积电 12nm 逻辑工艺，更先进的 3nm 工艺被优先用于 HBM4E 与未来定制 HBM 产品",
+    "官方性能口径：相比标准 HBM4E，NVHBM 可提升内存带宽最高 30%、降低 HBM 功耗 15%、释放 XPU 计算裸片面积最高 25%；定制 I/O PHY 可把 I/O 所占封装面积最多减少 67%（据 The Elec）",
+    "亚马逊 Annapurna Labs 将成为该技术首个采用方，用于下一代 Trainium 4 AI 加速器（据 ZDNet）"
+   ],
+   "cat": "nvda",
+   "note": "date 取 TrendForce 报道日 2026-10-09（原文 URL 内嵌日期亦为 2026/10/09）。本条事实主体为存储厂商的基础裸片采购策略与 NVHBM 的官方性能口径，属英伟达产品生态的供应链事实；性能数字（带宽+30%/功耗-15%/面积+25%/I-O 面积-67%）系英伟达官方口径经 TrendForce 转述，非本文推算。"
+  },
   {
    "id": "ev20261009b",
    "date": "2026-10-09",
@@ -80,6 +123,48 @@
    ],
    "cat": "jensen",
    "note": "本轮已核到出处并改写注：本条引语出自快科技/新浪科技 10 月 9 日《黄仁勋获颁国家科学奖章 老爸老妈到场见证》一文，该文实为对 10/08 白宫授奖仪式的整合稿，「华人式严苛教育」「这是爱的表现，我也这样管理英伟达」等说法均系作者对其『过往公开访谈』的回顾，并非 10 月 9 日的新发言，确切发言场合仍未核到英文原文。date 取中文见报日 2026-10-09，不可当作当日新表态。"
+  },
+  {
+   "id": "ev20261008i",
+   "date": "2026-10-08",
+   "type": "mt",
+   "src": "路透社（腾讯科技/经济观察/中国新闻网等转载）",
+   "title": "路透：英伟达把 DGX Spark 128GB 官方价上调约 75% 至 6950 美元，内存涨价成为本地 AI 硬件普及的成本瓶颈",
+   "place": "美国·旧金山",
+   "url": "http://www.chinanews.net/news/279358260/microsoft-unveils-ai-powered-surface-laptop-with-nvidia-chips",
+   "images": [
+    "https://chitra-api.kreatio.com/api/v1/wps/93282c7/8869c0d7-c236-4f8c-9216-098fcbdbbc0c/1/Microsoft-4-600x315.jpg"
+   ],
+   "signals": [
+    "据路透报道（事件于 10 月 8 日旧金山微软 Windows AI and Surface 活动期间由英伟达确认）：英伟达近几周把名为 DGX Spark 的 AI 桌面机官方价格上调约 75% 至 6950 美元，原因是其 128GB 内存成本飙升",
+    "价格背景：DGX Spark 128GB 最初于 2025 年推出时官方售价 3999 美元；英伟达 2026 年 2 月已把 128GB Founders Edition 提价至 4699 美元，本轮再调至 6950 美元",
+    "对照：同批发布的 DGX Spark 64GB 版本起售价 4999 美元、10 月 23 日由六家 OEM 出货（详见事件 ev20261002c）——内存容量减半，但定价低于 128GB 版 1951 美元",
+    "Moor Insights & Strategy 分析师 Anshel Sag：「两年前软件没准备好，硬件准备好了；现在软件准备好了，硬件却贵到没法在本地跑」，内存价格同时影响苹果与微软的相关布局，「正在变成只有有预算的人才真的能在本地跑 AI」",
+    "背景对照：微软两年前推广 PC 本地跑 AI 以省成本时，相关笔记本定价多在 2000 美元以下；Tom's Hardware 指出市场上 128GB GB10 系统实际售价甚至已达约 7000 至 9000 美元"
+   ],
+   "cat": "nvda",
+   "note": "date 取事件发生日 2026-10-08（路透在微软旧金山活动期间采访确认，与 ev20261007a/ev20261008a 同源场合）；中国新闻网英文转载稿发布日为 2026-10-10 09:40 GMT+。本条只保留价格上调这一新增事实与分析师评论框架，微软 Surface Laptop Ultra 发布本身已由 ev20261007a（官网）与 ev20261008a（国行上架）收录，不重复采集。"
+  },
+  {
+   "id": "ev20261008h",
+   "date": "2026-10-08",
+   "type": "mt",
+   "src": "金斯瑞官方新闻稿（美通社 PRNewswire，界面新闻/动脉网转载）",
+   "title": "金斯瑞携手英伟达启动全球生命科学初创企业 PitchFest：赛事定于 2027 年 1 月 JPM 周，胜出者可获英伟达 Brev 云服务额度",
+   "place": "美国·新泽西州皮斯卡塔韦 / 加州圣克拉拉",
+   "url": "https://www.genscript.com/genscript-launches-life-sciences-startup-pitchfest-with-nvidia-to-accelerate-biotech-innovation.html",
+   "images": [],
+   "signals": [
+    "金斯瑞生物科技（HK.1548）2026 年 10 月 8 日宣布与英伟达共同启动「金斯瑞与英伟达生命科学初创企业 PitchFest」（GenScript and NVIDIA Life Sciences Startup PitchFest），面向将人工智能应用于治疗发现与生命科学的初创企业的全球性竞赛",
+    "赛程：申请已开放，入围企业将于 2026 年 12 月确定；最多遴选六家入围企业，参加 2027 年 1 月摩根大通医疗健康大会（JPM Week）期间由金斯瑞主办的路演活动，接受评委小组评审",
+    "资源投入：金斯瑞提供湿实验验证与数据生成能力（sequence-to-data）、以及实验验证专家支持；英伟达提供加速计算平台与初创企业生态资源，入选企业将获得参与 NVIDIA Inception 项目的机会（该项目对初创企业免费开放）",
+    "获胜企业将获得金斯瑞提供的湿实验数据额度，以及英伟达提供的 Brev 云服务额度，用于支持后续开发与部署",
+    "竞赛覆盖方向：AI 驱动的抗体与蛋白质设计，以及加速「设计—构建—测试—学习」（design-build-test-learn）循环的相关技术",
+    "金斯瑞生命科学事业群总裁 Ray Chen（陈睿）：「要释放 AI 在生命科学领域的真正潜力，我们必须构建一个生态体系，让世界一流的计算能力与值得信赖、可规模化的生物学验证能力相结合。PitchFest 为数字生物学初创企业提供整合支持，帮助它们快速测试模型、生成证据并加速突破性疗法」",
+    "入围企业还将受邀参加金斯瑞生物科技全球产业论坛（GenScript Biotech Global Forum），与生物科技企业高管、战略合作伙伴及行业领袖交流。评审标准、讲者与投资人参与细节将于未来数周公布"
+   ],
+   "cat": "nvda",
+   "note": "date 取官方新闻稿发布日 2026-10-08（金斯瑞官网原稿标注 PISCATAWAY, N.J. and SANTA CLARA, Calif., Oct. 8, 2026；美通社同日发布）。本条为金斯瑞主导的赛事官宣，英伟达作为合作方参与，src/url 指向 genscript.com 而非 nvidia.com 官方域，故按口径归 nvda 而非 nvnews。中文见报日 2026-10-10（界面新闻 17:35），已在正文体现发布时间差。"
   },
   {
    "id": "ev20261008f",
@@ -2407,6 +2492,14 @@
   }
  ],
  "timeline": [
+  {
+   "date": "2026-10-10",
+   "place": "印度·海得拉巴 / 马来西亚",
+   "who": "Anil Chalamalasetty（AM Intelligence 董事长，Greenko 发起人）；Vishal Dhupar（NVIDIA 南亚区董事总经理）",
+   "ev": "AM Intelligence 追加两笔约 2 万颗 NVIDIA Rubin GPU 约束性订单 · Vera Rubin AI 工厂扩至印度与马来西亚",
+   "note": "AMI 10/10 宣布两笔确定且具约束力的采购订单，共约 2 万颗 Rubin GPU、约 70 兆瓦，2027 年第二季度交付；叠加 8/25 海得拉巴首座 AI 工厂 9,000 颗（首期 30 兆瓦），累计约 29,000 颗 Rubin GPU、近 100 兆瓦。站点按海得拉巴同架构标准建设，整合 Vera Rubin 与 RoCE 网络、全场液冷。详见事件 ev20261010a",
+   "future": false
+  },
   {
    "date": "2026-10-08",
    "who": "特朗普（美国总统）／黄仁勋、马斯克、布林、苏姿丰、戴尔、纳德拉",
