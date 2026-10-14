@@ -344,8 +344,82 @@ function renderChrome(){
 <script id="radar-data" type="application/json">{
  "mode": "auto",
  "today": "2026-10-14",
- "updatedAt": "2026-10-14 08:05",
+ "updatedAt": "2026-10-14 20:35",
  "events": [
+  {
+   "id": "ev20261014a",
+   "date": "2026-10-14",
+   "type": "mt",
+   "src": "NVIDIA 官方新闻室（nvidianews.nvidia.com）",
+   "title": "英伟达承诺五年向英国捐赠 2.5 亿美元算力：每年 5000 万美元，专供智能体安全与安全研究",
+   "place": "英国·伦敦",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-commits-250-million-to-advance-uk-agentic-safety-and-security-research-over-the-next-five-years",
+   "images": [
+    "https://iprsoftwaremedia.com/219/files/20224/6296531eb3aed3741918b6b5_DH1L4415-HDR-20220527-r5/DH1L4415-HDR-20220527-r5_dba29dde-5a9b-4ac8-bf58-a0b78da89547-prv.jpg"
+   ],
+   "signals": [
+    "官网新闻稿：英伟达宣布一项为期五年的算力捐赠，价值 2.5 亿美元，用于加强英国的智能体（agentic）安全与安全研究能力；折算为每年 5000 万美元的算力接入",
+    "多数算力将面向英国更广泛的 AI 安全与安全研究社区，其中一部分用于三家机构：英国开放学习与发现实验室 BOLD（牛津大学牵头）、基础 AI 研究科学实验室 SOFAIR（伦敦大学学院牵头）、帝国理工学院（方向含安全工程与机器人）",
+    "黄仁勋原话：「AI capability and safety must advance together」（AI 的能力与安全必须同步推进）；「The U.K. brings world-class scientific rigor to this essential engineering challenge」；称这笔投入将把加速计算交到英国研究者手中，用于开发、测试并强化日益强大的 AI 的安全防线",
+    "算力通过英国本土的 NVIDIA Cloud Partners 采购与交付，基础设施托管在英国境内；供应商选择、技术架构与商业条款尚待商定——官网明确这部分仍是「to be agreed」",
+    "研究方向：安全智能体、开源模型安全、真实世界威胁缓解；将支撑安全沙箱、可复现研究与安全评估基准，研究中使用 NVIDIA OpenShell 开源安全运行时与 NVIDIA Sentry 参考设计——二者属英伟达 9 月 28 日发布的 Open Agent Safety Platform（见 ev20260928a / ev20260928c）",
+    "英国方面表态：AI 部长 Kanishka Narayan 称这是对英国 AI 研究实力的「a vote of confidence」，并称该目标将是他所看重的英国 G20 主席国议程核心；商业大臣 Jonathan Reynolds 称「人们需要先感到技术是安全的，才谈得上把握 AI 的机会」",
+    "建立在既有合作之上：英伟达此前已参与布里斯托大学 Isambard-AI 超算（采用 Grace Hopper 超级芯片）",
+    "路透社（伦敦，10 月 14 日）报道口径：英国虽没有大型 AI 模型开发商，但正争取在 AI 测评与风险治理上占据全球领先位置，其中英国 AI 安全研究院（AI Security Institute）是全球最早由政府支持的评估机构之一"
+   ],
+   "cat": "nvnews",
+   "note": "日期口径：GlobeNewswire 通稿电头为「LONDON, Oct. 14, 2026」、路透社伦敦 10/14 电、道琼斯 10/14 报道均称其于周三（10/14）宣布 → 事件日取 10-14；nvidianews 页面自身署名日期为 October 13, 2026（美国太平洋时区口径），特此说明。图片：og:image 取自官网新闻稿原文页，为英伟达官方通稿配图（总部楼体，非本次事件现场图）"
+  },
+  {
+   "id": "ev20261014b",
+   "date": "2026-10-14",
+   "type": "mt",
+   "src": "NVIDIA 官方博客（blogs.nvidia.com）",
+   "title": "英伟达官网盘点英国生态落地：从企业到 Earthshot，同时成为 Earthshot Prize 全球联盟创始伙伴",
+   "place": "英国（伦敦等地）",
+   "url": "https://blogs.nvidia.com/blog/uk-ecosystem-deployment/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/10/uk-ecosystem-industries-1280x720.png"
+   ],
+   "signals": [
+    "官网博客《From Enterprise to Earthshot: UK’s Ecosystem Moves From Ambition to Application With NVIDIA》：英国医疗、金融、地方政府与气候科学领域的机构正把英伟达全栈投入实际运行",
+    "英伟达成为 Earthshot Prize（为地球奋斗奖）的 Global Alliance Founding Partner，为该奖项的创新者提供算力与技术专家支持",
+    "能源：Fuse Energy 把客服 AI 搬到自建基础设施上，基于 NVIDIA B300 Blackwell Ultra，服务英国超过 45 万户家庭",
+    "主权 AI：Locai Labs 发布 Nemotron-Personas-UK，一套 100 万条合成人设的开源数据集，覆盖英国人口、地区与文化多样性；利物浦城市区域在建英伟达驱动的「City Brain」，作为英国数十个单一制地方政府的样板；Digital Jersey、贝尔法斯特创新城、Tees Valley 联合管理局各自探索可信 AI 算力服务社区与公共服务",
+    "医疗：OneAdvanced 部署其称为英国首个且最先进的基层医疗 AI 分诊微调大模型（基于 NVIDIA Agent Toolkit 与开放模型），服务数百万 NHS 患者；Heidi 集成 Nemotron 开放模型以加快临床证据获取；Speechmatics 部署多语种医疗语音识别模型 Oak（基于 NVIDIA Triton Inference）；Apian、SYNLAB 与英伟达合作用 Cosmos 做数字仿真，让医院机器人承担运送检验样本的重活",
+    "科研：Danaher 与英伟达合作推进自主科学，其新公布的 AI 自主实验室号称可把亲和试剂发现速度提升至多 8 倍，采用 BioNeMo 开放模型",
+    "金融：LSEG 与英伟达把 GPU 加速的市场分析带给全球机构；Revolut 年内推出 PRAGMA（基于 2600 万条匿名用户历史预训练的银行业务事件序列基础模型），已从研究转入实时规模化；劳埃德银行集团建成 ATUM 交易基础模型，把数十亿笔银行交易转为可复用 AI；Starling 正在 Civo 的英国主权云上训练银行基础模型；NatWest 与英伟达合作 Nemotron Voice；Modulr 在支付运营各环节部署 Nemotron 智能体网络",
+    "量子：Riverlane 展示了 GPU 如何加速量子纠错中的解码器重校准工作流；英伟达称英国正处在「量子从研究走向可与经典 AI 并排部署」的转折中心",
+    "规模：英国已有超过 3,100 家公司加入 NVIDIA Inception 初创计划；文末再次导流黄仁勋 GTC Berlin 主题演讲（10 月 21 日 11:00 CEST）"
+   ],
+   "cat": "nvnews",
+   "note": "RSS pubDate 为 2026-10-14 06:04 GMT（北京时间 10/14 14:04），与 2.5 亿美元算力捐赠新闻稿同一批次发布 → 取 10-14。og:image 取自原文页"
+  },
+  {
+   "id": "ev20261014c",
+   "date": "2026-10-14",
+   "type": "mt",
+   "src": "NVIDIA 官方博客（blogs.nvidia.com）",
+   "title": "英伟达官网：欧洲多城把 AI 智能体投入城市运营，法国一省 500 多栋公共建筑运营成本降 10%",
+   "place": "欧洲（英国、法国、意大利、比利时、瑞典等）",
+   "url": "https://blogs.nvidia.com/blog/european-cities-agents-urban-operations/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/10/gtc-berlin-smart-cities-blog-1680x945.jpg"
+   ],
+   "signals": [
+    "官网博客《European Cities Deploy NVIDIA-Powered AI Agents to Run Smarter Urban Operations》：EMEA 地区的城市与本地软件、基础设施、集成伙伴正用英伟达加速计算搭建物理 AI 智能体与数字孪生，用于预判维护需求、指导城市规划、提升公共服务响应",
+    "软件伙伴名单：ABA Technology、Akila、Galene AI、Honeywell Technologies、K2K、Linker Vision、Milestone、Onetera、ThinkDeep、Younite；技术底座为 NVIDIA Cosmos 开放模型、Metropolis Blueprint 的视频搜索与摘要（VSS）、Nemotron 开放模型与 Omniverse 库",
+    "法国 Côte-d’Or 省：与 Akila、ThinkDeep 共建主权数字孪生上的运营智能体，覆盖 500 多栋公共建筑，支持能源、合规、安全与气候韧性；文件检索时间从数周缩短到数分钟，总运营成本降低 10%，规模化目标 30%",
+    "法国 Sète 的 Port Sud de France：与 ThinkDeep 的智能体平台合作，用 Cosmos 与 Nemotron 分析货物与安全数据、协调作业并指导危险品安全处置",
+    "意大利米兰地区：Galene.AI 与戴尔科技、TD Synnex 部署本地运营的英伟达 AI 工厂，从 Cinisello Balsamo 起步，计划扩展到另外四市；服务含实时翻译、市民聊天机器人与采购/资金申请辅助，把获取市政数据的时间从数小时缩到数秒",
+    "英国：利物浦城市区域与 K2K 用加速计算、Cosmos 与 VSS blueprint 探索 AI 工厂支撑城市规划与公共服务；泽西岛与 K2K 强化决策、交通与城市规划；贝尔法斯特创新城与 K2K 试点智慧出行、交通系统、市民安全与事件响应",
+    "比利时安特卫普-布鲁日港：Milestone 与戴尔科技试用基于 Cosmos 与 VSS 的智能体视觉 AI，用合成数据训练模型以应对漏油预警等真实数据稀缺的场景；瑞典哥德堡由 Younite 基于 Omniverse 构建数字孪生体验（EU Citiverse 计划）",
+    "基础设施侧：思科、戴尔科技、HPE、联想、Supermicro 把加速计算、网络与存储打包成本地运营的 AI 工厂；Nebius 与 Net Zero Compute 参与建设；EY 与埃森哲提供集成与运营能力",
+    "官网导流：11 月 3–5 日在巴塞罗那举行的 Smart City Expo World Congress"
+   ],
+   "cat": "nvnews",
+   "note": "RSS pubDate 为 2026-10-14 06:00 GMT（北京时间 10/14 14:00），与英国批次同批发布 → 取 10-14。og:image 取自原文页"
+  },
   {
    "id": "ev20261013a",
    "date": "2026-10-13",
@@ -469,17 +543,18 @@ function renderChrome(){
    "date": "2026-10-13",
    "type": "mt",
    "cat": "nvda",
-   "src": "新浪财经 7×24 快讯（引述英伟达官方表态）",
+   "src": "凤凰网（引马克龙本人社媒帖文）／新浪财经 7×24（引述英伟达）",
    "title": "黄仁勋在爱丽舍宫会见法国总统马克龙：谈英伟达对法国 AI 产业的投资、开源与 AI 安全",
    "place": "法国·巴黎·爱丽舍宫",
    "url": "https://wap.cj.sina.cn/pc/7x24/5143053",
    "images": [],
    "signals": [
+    "法国总统马克龙 10 月 13 日在社媒发帖确认会见黄仁勋，帖文称：「今天标志着一个新的里程碑：英伟达不仅将投资法国企业，还将致力于支持我们旨在推动欧洲开放式研究的法德联合倡议」，并称自「选择法国」峰会以来双方合作不断加速，「尤为可贵的是，我们共同秉持着同样的理念：致力于发展开放、安全且服务于国家主权的人工智能」",
     "新浪财经 7×24 快讯（标注来源为英伟达）：马克龙与黄仁勋探讨了人工智能安全，以及英伟达近期推出的开源智能体安全平台",
-    "英文侧转述（Crypto Briefing 等）称会见于 10 月 13 日在爱丽舍宫进行，议题涵盖英伟达对法国 AI 产业的投资、开源与 AI 安全三项",
-    "会见发生在黄仁勋巴黎行程当日；英伟达同期宣布向 Doctolib、Genesis AI、Pigment、Entalpic 四家法国初创企业投资，并预告一周内公布 20 亿美元欧洲投资（见 ev20261013f）"
+    "智通财经引彭博社：英伟达称黄仁勋与马克龙会晤时，双方讨论了英伟达在法国的投资，以及开源软件和 AI 安全等议题",
+    "会见发生在黄仁勋巴黎行程当日（10/13，爱丽舍宫）；同日英伟达宣布向 Doctolib、Genesis AI、Pigment、Entalpic 四家法国初创企业投资，并预告一周内公布 20 亿美元欧洲投资（见 ev20261013f）"
    ],
-   "note": "【待核验】本条仅见新浪财经 7×24 快讯（引英伟达）与英文聚合转述，未在 nvidia.com 官网、彭博／路透原文核到官方文稿；会见日 10/13 与巴黎行程一致。原页面无可抓取 og:image → images 留空"
+   "note": "【2026-10-14 补核】马克龙本人社媒发帖确认会见（凤凰网 10/13 转述其帖文原文），会见事实已可采信；唯 nvidia.com 官网仍未发布对应文稿，英伟达侧仅经由彭博社等媒体转述。原页面无可抓取 og:image → images 留空"
   },
   {
    "id": "ev20261013h",
@@ -557,6 +632,26 @@ function renderChrome(){
     "美联储波士顿联储主席柯林斯称年内可能需要再小幅加息，通胀风险仍处高位，能源价格与数据中心建设对通胀构成压力"
    ],
    "note": "date 取美股 10/13 交易日。收盘价 228.52 美元 / +0.97% 经腾讯自选股行情与 Investing.com 两源一致（Investing.com 显示 228.51）。当日成交额/成交量各源不一（腾讯 190.65 亿美元 / 8402.6 万股；富途 189.06 亿美元 / 8332.86 万股），故 signals 不写具体成交额。原页面无可抓取 og:image → images 留空"
+  },
+  {
+   "id": "ev20261012a",
+   "date": "2026-10-12",
+   "type": "mt",
+   "src": "格隆汇 / 证券之星（引 SemiAnalysis 对英伟达 10-Q 的拆解）",
+   "title": "英伟达 10-Q 表外财务承诺与担保升至约 5300 亿美元、单季增逾 180%：首现 360 亿美元 AI 云服务协议与约 200 亿美元数据中心租约两个科目",
+   "place": "美国·圣克拉拉",
+   "url": "https://m.gelonghui.com/live/2705728",
+   "images": [],
+   "signals": [
+    "英伟达在 2027 财年第二季度 10-Q 中披露的表外财务承诺与担保总额约 5300 亿美元，较上一季度约 1840 亿美元跃增、单季增幅逾 180%，横跨供应承诺、云服务协议、未开始的数据中心租约、股权投资、资本支出及额外担保六大类（格隆汇 2026-10-12 首轮报道，SemiAnalysis 拆解）",
+    "按 SemiAnalysis 拆出的算术：供应与产能承诺 2790 亿美元居首；对软银旗下 SB Energy 俄亥俄 PORTS-Pike 园区的担保 1085 亿美元（该园区一期 4.25GW、以 20 年租约定向供给 OpenAI）；本季首次单列的两个科目为 360 亿美元 AI 云服务（take-or-pay）协议，以及约 200 亿美元、预计转租出去的数据中心租约",
+    "AI 云伙伴（AICP）安排下的 take-or-pay 下限已披露三笔：Firmus 211 亿美元（印尼巴淡 360MW 项目）、SharonAI 42 亿美元、GMI 约 22 亿美元；报告称下限费率约每 GPU 小时 2.35 美元，而 SemiAnalysis 估算的市场价约 4.50–4.60 美元",
+    "SemiAnalysis 对这套结构的判断：「上行时需求兑现，英伟达赚两次——按满毛利卖出 GPU，再分走下限以上的收入；下行时 Neocloud 不赚钱但能活着。」并称只要资产负债表保持强劲，这个风险回报对英伟达是不对称有利的",
+    "同一份拆解给出的对照：表内负债 910 亿美元（其中总债务 334 亿美元）、现金 220 亿美元，投资账面由 450 亿美元增至 1280 亿美元；残值担保在资本合伙结构下上限 25%，当前 550 亿美元，模型预计到 2031 财年升至 3730 亿美元",
+    "风险侧口径：SemiAnalysis 预计其截至 2028 年 1 月财年 EBITDA 约 4500 亿美元，并强调 5300 亿美元是「承接上限框架」而非盈余预测；压力情景是客户无法履行租赁与算力采购承诺、恰与英伟达自身销售与现金流减速同时发生（格隆汇、证券之星转述）"
+   ],
+   "cat": "nvda",
+   "note": "date 取中文财经媒体首轮报道日 2026-10-12；数据源为英伟达此前披露的 2027 财年 Q2 10-Q（对比基数 1840 亿美元），SemiAnalysis 研究在 10/10–10/11 周末传出、10/12 经中文财经媒体集中报道。5300 亿美元及各科目拆分均为机构对 10-Q 的解读与转述，未获英伟达官方就具体数字的确认。images 留空（格隆汇/证券之星页面无对应 og:image，不配无关图）。"
   },
   {
    "id": "ev20261012b",
@@ -645,82 +740,24 @@ function renderChrome(){
    "note": "date 取美股 10/12 交易日。收盘 226.32 美元 / -1.29% 经同花顺、腾讯行情、雪球、Yahoo Finance 四源交叉一致；成交额与成交量各源略有差异（同花顺 158.86 亿 / 7013.37 万股，雪球 158.36 亿 / 6991.19 万股，Yahoo 成交量 6990.88 万股），正文取同花顺口径并标注差异。页面无可用 og:image → images 留空。"
   },
   {
-   "id": "ev20261012a",
-   "date": "2026-10-12",
-   "type": "mt",
-   "src": "格隆汇 / 证券之星（引 SemiAnalysis 对英伟达 10-Q 的拆解）",
-   "title": "英伟达 10-Q 表外财务承诺与担保升至约 5300 亿美元、单季增逾 180%：首现 360 亿美元 AI 云服务协议与约 200 亿美元数据中心租约两个科目",
-   "place": "美国·圣克拉拉",
-   "url": "https://m.gelonghui.com/live/2705728",
-   "images": [],
-   "signals": [
-    "英伟达在 2027 财年第二季度 10-Q 中披露的表外财务承诺与担保总额约 5300 亿美元，较上一季度约 1840 亿美元跃增、单季增幅逾 180%，横跨供应承诺、云服务协议、未开始的数据中心租约、股权投资、资本支出及额外担保六大类（格隆汇 2026-10-12 首轮报道，SemiAnalysis 拆解）",
-    "按 SemiAnalysis 拆出的算术：供应与产能承诺 2790 亿美元居首；对软银旗下 SB Energy 俄亥俄 PORTS-Pike 园区的担保 1085 亿美元（该园区一期 4.25GW、以 20 年租约定向供给 OpenAI）；本季首次单列的两个科目为 360 亿美元 AI 云服务（take-or-pay）协议，以及约 200 亿美元、预计转租出去的数据中心租约",
-    "AI 云伙伴（AICP）安排下的 take-or-pay 下限已披露三笔：Firmus 211 亿美元（印尼巴淡 360MW 项目）、SharonAI 42 亿美元、GMI 约 22 亿美元；报告称下限费率约每 GPU 小时 2.35 美元，而 SemiAnalysis 估算的市场价约 4.50–4.60 美元",
-    "SemiAnalysis 对这套结构的判断：「上行时需求兑现，英伟达赚两次——按满毛利卖出 GPU，再分走下限以上的收入；下行时 Neocloud 不赚钱但能活着。」并称只要资产负债表保持强劲，这个风险回报对英伟达是不对称有利的",
-    "同一份拆解给出的对照：表内负债 910 亿美元（其中总债务 334 亿美元）、现金 220 亿美元，投资账面由 450 亿美元增至 1280 亿美元；残值担保在资本合伙结构下上限 25%，当前 550 亿美元，模型预计到 2031 财年升至 3730 亿美元",
-    "风险侧口径：SemiAnalysis 预计其截至 2028 年 1 月财年 EBITDA 约 4500 亿美元，并强调 5300 亿美元是「承接上限框架」而非盈余预测；压力情景是客户无法履行租赁与算力采购承诺、恰与英伟达自身销售与现金流减速同时发生（格隆汇、证券之星转述）"
-   ],
-   "cat": "nvda",
-   "note": "date 取中文财经媒体首轮报道日 2026-10-12；数据源为英伟达此前披露的 2027 财年 Q2 10-Q（对比基数 1840 亿美元），SemiAnalysis 研究在 10/10–10/11 周末传出、10/12 经中文财经媒体集中报道。5300 亿美元及各科目拆分均为机构对 10-Q 的解读与转述，未获英伟达官方就具体数字的确认。images 留空（格隆汇/证券之星页面无对应 og:image，不配无关图）。"
-  },
-  {
-   "id": "ev20261010h",
+   "id": "ev20261010a",
    "date": "2026-10-10",
    "type": "mt",
-   "src": "新浪财经 / NE时代新能源",
-   "title": "8 月国内乘用车辅助驾驶域控芯片装机 81 万颗：英伟达 24.6 万颗、30.2% 居首，地平线 19.8% 追近至 10.4 个百分点",
-   "place": "中国",
-   "url": "https://finance.sina.com.cn/jjxw/2026-10-10/doc-iniutqmf2055196.shtml",
+   "src": "CNA 中央社（工商时报/腾讯网转载）",
+   "title": "AM Intelligence 再下两笔约 2 万颗 Rubin GPU 约束性订单：Vera Rubin 算力规模扩至约 2.9 万颗、近 100 兆瓦，落子印度与马来西亚",
+   "place": "印度·海得拉巴 / 马来西亚",
+   "url": "https://news.pchome.com.tw/living/cna/20261010/index-17916251236801018009.html",
    "images": [],
    "signals": [
-    "NE时代新能源数据：2026 年 8 月国内乘用车辅助驾驶域控芯片装机总量约 81 万颗",
-    "英伟达装机量 24.6 万颗、市场份额 30.2%，排名第一；地平线 16.1 万颗、19.8% 排名第二；华为 14.8%、特斯拉 12.3%。英伟达与地平线合计约占 50% 份额",
-    "份额差距：1—2 月英伟达、地平线分别为 45.1%、9.3%，相差 35.8 个百分点；8 月收窄至 10.4 个百分点，年内缩小约 25 个百分点。地平线排名由 1—2 月第四位升至 4 月第二位，装机量自 3 月起连续六个月环比正增长",
-    "月度对比：与 7 月相比，地平线与英伟达的装机量差距由 10.3 万颗缩小至 8.4 万颗；地平线与第三名华为的差距由 1.07 万颗扩大至 4 万颗",
-    "另一组口径（新华社中国经济信息社《中国自动驾驶规模化应用蓝皮书》）：2026 年上半年自主品牌乘用车全阶智驾芯片市场，地平线份额 31.94% 居首；城区 NOA 高阶市场地平线份额 22.82% 居第二"
+    "AM Intelligence（AMI，由 Greenko 发起人设立的 AI 基础设施平台）10 月 10 日宣布新增两笔确定且具约束力的采购订单，共约 2 万颗 NVIDIA Rubin GPU，将部署为 NVIDIA Vera Rubin NVL72 机架级系统",
+    "两笔订单合计约 70 兆瓦装机容量，部署于印度与马来西亚，计划 2027 年第二季度交付；叠加 2026 年 8 月 25 日宣布的海得拉巴首座 AI 工厂 9,000 颗 Rubin GPU（首期 30 兆瓦）承诺，AMI 累计承诺采购约 29,000 颗 Rubin GPU、接近 100 兆瓦",
+    "AMI 称由此成为北美以外最早且规模最大的 Rubin GPU 承诺采购方之一；并计划在未来 15 个月内向市场新增 300 兆瓦容量，在已为第一期 100 兆瓦项目承诺的 60 亿美元之外，再增加 200 多亿美元资本支出",
+    "AMI 董事长 Anil Chalamalasetty：「这两处设施都将按照与海得拉巴 AI 工厂相同的架构标准进行建设，整合 NVIDIA Vera Rubin 平台和高吞吐量 RDMA over Converged Ethernet (RoCE) 网络……每个站点都是为高机架功率密度设计的，并全面采用液冷技术」",
+    "NVIDIA 南亚区董事总经理 Vishal Dhupar：「AM Intelligence 正携手 NVIDIA Vera Rubin，将新一代 AI 工厂引入印度和马来西亚。通过将加速计算与高性能网络及液冷基础设施相结合，AMI 正在为开发者和企业构建更宏大的 AI 系统奠定基础」",
+    "AMI 的全球开发管线约 400 兆瓦，覆盖印度、美国、欧洲与马来西亚；更远期目标为面向 AI 负载交付 1 吉瓦的 Compute-as-a-Service 容量，底层属于在印度、美国与欧洲布局 5 吉瓦 AI 数据中心的更大计划"
    ],
    "cat": "nvda",
-   "note": "事件日取第三方数据发布日 2026-10-10（NE时代新能源）；中文媒体于 10/10—10/11 报道（新浪财经 10/10 15:16、南方财经网/观点网 10/11、同花顺）。原文页 og:image 为空，images 留空。本条为第三方统计口径，非英伟达官方披露，未经英伟达确认。"
-  },
-  {
-   "id": "ev20261010g",
-   "date": "2026-10-10",
-   "type": "mt",
-   "src": "Benzinga / 美国司法部（Super Micro 服务器走私案）",
-   "title": "超微服务器走私案承包商认罪：约 25 亿美元英伟达芯片被非法转运至中国终端用户，英伟达未被指控",
-   "place": "美国·华盛顿（联邦法院）",
-   "url": "https://www.benzinga.com/news/legal/26/10/rep-ting-wei-sun-pleads-guilty-in-2-5-billion-nvidia-server-smuggling-case",
-   "images": [],
-   "signals": [
-    "据 Benzinga 2026 年 10 月报道，与超微电脑（Super Micro Computer）相关的一名承包商 Ting-Wei \"Willy\" Sun 就一桩 25 亿美元案作出认罪答辩；该案指控搭载英伟达芯片的 AI 服务器被非法转运至中国终端用户",
-    "Sun 是本案三名被起诉个人之一。报道明确指出：英伟达在本案中未被指控任何不当行为（Nvidia has not been accused of wrongdoing）",
-    "本案为美国出口管制执法层面的进展，属英伟达供应链间接销售渠道的政策与合规风险变量，非英伟达自身被立案调查"
-   ],
-   "cat": "nvda",
-   "note": "date 取该案认罪报道日（美东 2026-10-10 前后）。**二次核验状态**：本条事实链来自 Benzinga 报道 + 行业分析站 Slicast 2026-10-10 综述的并列引述，两源对「Sun 认罪、涉案约 25 亿美元、英伟达未被指控」三点一致；美国司法部原始公告页本机未直连核到，故 note 标注供人工复核。**不涉中美政治评价**，仅陈述出口管制执法事实。原文页无可取 og:image → images 留空。"
-  },
-  {
-   "id": "ev20261010f",
-   "date": "2026-10-10",
-   "type": "mt",
-   "src": "VideoCardz / TechPowerUp（硬件爆料，经 Tom's Hardware、Frandroid 转述）",
-   "title": "爆料：英伟达停供 RTX 5090 的 GB202 芯片、产能全数转给 RTX PRO 专业卡，GeForce 旗舰或降至 RTX 5080 24GB",
-   "place": "美国·圣克拉拉",
-   "url": "https://videocardz.com/newz/nvidia-reportedly-discontinuing-rtx-5090-gb202-gpus-to-be-reserved-for-rtx-pro-series",
-   "images": [
-    "https://img.frandroid.com/images.frandroid.com/wp-content/uploads/2025/01/nvidia-geforce-rtx-5090-boitier.jpeg?resize=1600,900&key=770f8547",
-    "https://tsnmedia.org/wp-content/uploads/2026/10/rumour-nvidia-stops-allocating-gb202-rtx-5090-leakers-say-unconfirmed.jpg"
-   ],
-   "signals": [
-    "2026 年 10 月 10 日，硬件爆料者 MEGAsizeGPU（@Zed__Wang）在 X 发文称「No more GB202 for 5090, confirmed」，随后补充「All future GB202 supplies are RTX Pro exclusive」；另一位爆料者 @hongxing2020 贴出一张据称来自工厂的通知，称英伟达将不再销售任何 RTX 5090 型号（含中国特供 D 版本），未来最高端的 GeForce 将是 RTX 5080 24GB，而 RTX 5080 16GB 版本将停产",
-    "VideoCardz 与 TechPowerUp 于 10 月 10 日均转述该传闻，并明确标注为 **rumor（未经证实）**；Tom's Hardware 称「英伟达尚未回应」。截至发稿，英伟达官方未确认，也未公布任何停产日期",
-    "芯片口径：GB202 是英伟达 Blackwell 架构最大的桌面 GPU，RTX 5090 用的是其削减版（21,760 个 CUDA 核心、32GB GDDR7）；同一颗芯片也用于 RTX PRO 6000 Blackwell（24,064 CUDA 核心、96GB GDDR7）与 RTX PRO 5000 系列。TechPowerUp 观点（非事实）：英伟达大概率不会正式称其为 EOL，因为芯片只是被调到利润更高的产品线",
-    "价格侧事实（与传闻相互印证但非证据）：VideoCardz 指出 RTX 5090 近期市场价已达 7,000 至 9,600 美元，而官方建议零售价为 1,999 美元；德国市场零售价从 2025 年 11 月的约 2,600–2,900 欧元升至 2026 年 10 月的 6,000–6,800 欧元",
-    "风险提示：本事件为爆料与工厂通知传闻，**未经英伟达证实**，且爆料者未给出停产日期与库存状态；此前 2025 年 11 月出现过类似传闻并被英伟达发言人否认"
-   ],
-   "cat": "nvda",
-   "note": "date 取爆料与媒体首报日 2026-10-10（VideoCardz、TechPowerUp、Tom's Hardware 同日）。**待核验**：事件核心主张（GB202 不再供 RTX 5090）为未经英伟达确认的爆料，发布播报时须明说「尚未核到官方确认」。images 两张分别取自 Frandroid 原文页 og:image（RTX 5090 产品图）与 TSNMedia 原文页 og:image（该传闻配图），已 curl 验证均返回 200 image/jpeg；VideoCardz 页面 og:image（cdn.videocardz.com）本机返回 403，故未采用。"
+   "note": "date 取稿件发布日 2026-10-10（中央社訊息服務 10/10 17:39 发布，美国商业资讯/Business Wire 同步）。本条为第三方采购方（AMI）宣布的英伟达芯片订单事实，非英伟达官网首发，故归 nvda；NVIDIA 南亚区 MD 具名表态见于同一稿件。原稿无可用 og:image → images 留空。"
   },
   {
    "id": "ev20261010c",
@@ -764,70 +801,80 @@ function renderChrome(){
    "note": "date 取 CNBC 发布日 2026-10-10（美东周五）。**url 已于 2026-10-13 修正**：原记录路径 /nvidia-gpus-are-everywhere-here-are-the-ways-companies-are-accessing-them.html 实测 HTTP 404，经检索定位到真实路径 /nvidia-gpus-are-everywhere-heres-how-companies-access-them.html（Node https.get 200），signals 同步按原文逐条复核补全。原文页无可用 og:image → images 留空。"
   },
   {
-   "id": "ev20261010a",
+   "id": "ev20261010f",
    "date": "2026-10-10",
    "type": "mt",
-   "src": "CNA 中央社（工商时报/腾讯网转载）",
-   "title": "AM Intelligence 再下两笔约 2 万颗 Rubin GPU 约束性订单：Vera Rubin 算力规模扩至约 2.9 万颗、近 100 兆瓦，落子印度与马来西亚",
-   "place": "印度·海得拉巴 / 马来西亚",
-   "url": "https://news.pchome.com.tw/living/cna/20261010/index-17916251236801018009.html",
+   "src": "VideoCardz / TechPowerUp（硬件爆料，经 Tom's Hardware、Frandroid 转述）",
+   "title": "爆料：英伟达停供 RTX 5090 的 GB202 芯片、产能全数转给 RTX PRO 专业卡，GeForce 旗舰或降至 RTX 5080 24GB",
+   "place": "美国·圣克拉拉",
+   "url": "https://videocardz.com/newz/nvidia-reportedly-discontinuing-rtx-5090-gb202-gpus-to-be-reserved-for-rtx-pro-series",
+   "images": [
+    "https://img.frandroid.com/images.frandroid.com/wp-content/uploads/2025/01/nvidia-geforce-rtx-5090-boitier.jpeg?resize=1600,900&key=770f8547",
+    "https://tsnmedia.org/wp-content/uploads/2026/10/rumour-nvidia-stops-allocating-gb202-rtx-5090-leakers-say-unconfirmed.jpg"
+   ],
+   "signals": [
+    "2026 年 10 月 10 日，硬件爆料者 MEGAsizeGPU（@Zed__Wang）在 X 发文称「No more GB202 for 5090, confirmed」，随后补充「All future GB202 supplies are RTX Pro exclusive」；另一位爆料者 @hongxing2020 贴出一张据称来自工厂的通知，称英伟达将不再销售任何 RTX 5090 型号（含中国特供 D 版本），未来最高端的 GeForce 将是 RTX 5080 24GB，而 RTX 5080 16GB 版本将停产",
+    "VideoCardz 与 TechPowerUp 于 10 月 10 日均转述该传闻，并明确标注为 **rumor（未经证实）**；Tom's Hardware 称「英伟达尚未回应」。截至发稿，英伟达官方未确认，也未公布任何停产日期",
+    "芯片口径：GB202 是英伟达 Blackwell 架构最大的桌面 GPU，RTX 5090 用的是其削减版（21,760 个 CUDA 核心、32GB GDDR7）；同一颗芯片也用于 RTX PRO 6000 Blackwell（24,064 CUDA 核心、96GB GDDR7）与 RTX PRO 5000 系列。TechPowerUp 观点（非事实）：英伟达大概率不会正式称其为 EOL，因为芯片只是被调到利润更高的产品线",
+    "价格侧事实（与传闻相互印证但非证据）：VideoCardz 指出 RTX 5090 近期市场价已达 7,000 至 9,600 美元，而官方建议零售价为 1,999 美元；德国市场零售价从 2025 年 11 月的约 2,600–2,900 欧元升至 2026 年 10 月的 6,000–6,800 欧元",
+    "风险提示：本事件为爆料与工厂通知传闻，**未经英伟达证实**，且爆料者未给出停产日期与库存状态；此前 2025 年 11 月出现过类似传闻并被英伟达发言人否认"
+   ],
+   "cat": "nvda",
+   "note": "date 取爆料与媒体首报日 2026-10-10（VideoCardz、TechPowerUp、Tom's Hardware 同日）。**待核验**：事件核心主张（GB202 不再供 RTX 5090）为未经英伟达确认的爆料，发布播报时须明说「尚未核到官方确认」。images 两张分别取自 Frandroid 原文页 og:image（RTX 5090 产品图）与 TSNMedia 原文页 og:image（该传闻配图），已 curl 验证均返回 200 image/jpeg；VideoCardz 页面 og:image（cdn.videocardz.com）本机返回 403，故未采用。"
+  },
+  {
+   "id": "ev20261010g",
+   "date": "2026-10-10",
+   "type": "mt",
+   "src": "Benzinga / 美国司法部（Super Micro 服务器走私案）",
+   "title": "超微服务器走私案承包商认罪：约 25 亿美元英伟达芯片被非法转运至中国终端用户，英伟达未被指控",
+   "place": "美国·华盛顿（联邦法院）",
+   "url": "https://www.benzinga.com/news/legal/26/10/rep-ting-wei-sun-pleads-guilty-in-2-5-billion-nvidia-server-smuggling-case",
    "images": [],
    "signals": [
-    "AM Intelligence（AMI，由 Greenko 发起人设立的 AI 基础设施平台）10 月 10 日宣布新增两笔确定且具约束力的采购订单，共约 2 万颗 NVIDIA Rubin GPU，将部署为 NVIDIA Vera Rubin NVL72 机架级系统",
-    "两笔订单合计约 70 兆瓦装机容量，部署于印度与马来西亚，计划 2027 年第二季度交付；叠加 2026 年 8 月 25 日宣布的海得拉巴首座 AI 工厂 9,000 颗 Rubin GPU（首期 30 兆瓦）承诺，AMI 累计承诺采购约 29,000 颗 Rubin GPU、接近 100 兆瓦",
-    "AMI 称由此成为北美以外最早且规模最大的 Rubin GPU 承诺采购方之一；并计划在未来 15 个月内向市场新增 300 兆瓦容量，在已为第一期 100 兆瓦项目承诺的 60 亿美元之外，再增加 200 多亿美元资本支出",
-    "AMI 董事长 Anil Chalamalasetty：「这两处设施都将按照与海得拉巴 AI 工厂相同的架构标准进行建设，整合 NVIDIA Vera Rubin 平台和高吞吐量 RDMA over Converged Ethernet (RoCE) 网络……每个站点都是为高机架功率密度设计的，并全面采用液冷技术」",
-    "NVIDIA 南亚区董事总经理 Vishal Dhupar：「AM Intelligence 正携手 NVIDIA Vera Rubin，将新一代 AI 工厂引入印度和马来西亚。通过将加速计算与高性能网络及液冷基础设施相结合，AMI 正在为开发者和企业构建更宏大的 AI 系统奠定基础」",
-    "AMI 的全球开发管线约 400 兆瓦，覆盖印度、美国、欧洲与马来西亚；更远期目标为面向 AI 负载交付 1 吉瓦的 Compute-as-a-Service 容量，底层属于在印度、美国与欧洲布局 5 吉瓦 AI 数据中心的更大计划"
+    "据 Benzinga 2026 年 10 月报道，与超微电脑（Super Micro Computer）相关的一名承包商 Ting-Wei \"Willy\" Sun 就一桩 25 亿美元案作出认罪答辩；该案指控搭载英伟达芯片的 AI 服务器被非法转运至中国终端用户",
+    "Sun 是本案三名被起诉个人之一。报道明确指出：英伟达在本案中未被指控任何不当行为（Nvidia has not been accused of wrongdoing）",
+    "本案为美国出口管制执法层面的进展，属英伟达供应链间接销售渠道的政策与合规风险变量，非英伟达自身被立案调查"
    ],
    "cat": "nvda",
-   "note": "date 取稿件发布日 2026-10-10（中央社訊息服務 10/10 17:39 发布，美国商业资讯/Business Wire 同步）。本条为第三方采购方（AMI）宣布的英伟达芯片订单事实，非英伟达官网首发，故归 nvda；NVIDIA 南亚区 MD 具名表态见于同一稿件。原稿无可用 og:image → images 留空。"
+   "note": "date 取该案认罪报道日（美东 2026-10-10 前后）。**二次核验状态**：本条事实链来自 Benzinga 报道 + 行业分析站 Slicast 2026-10-10 综述的并列引述，两源对「Sun 认罪、涉案约 25 亿美元、英伟达未被指控」三点一致；美国司法部原始公告页本机未直连核到，故 note 标注供人工复核。**不涉中美政治评价**，仅陈述出口管制执法事实。原文页无可取 og:image → images 留空。"
   },
   {
-   "id": "ev20261009f",
-   "date": "2026-10-09",
+   "id": "ev20261010h",
+   "date": "2026-10-10",
    "type": "mt",
-   "src": "Counterpoint Research（经《韩国先驱报》Korea Herald、Businesskorea 转述）",
-   "title": "Counterpoint：英伟达 Vera Rubin 大部分产品将用 12 层 HBM4、而非传闻的 8 层，\"内存需求放缓是误读\"",
-   "place": "韩国·首尔（研究机构口径）",
-   "url": "https://www.koreaherald.com/article/10897751",
-   "images": [
-    "https://wimg.heraldcorp.com/news/cms/2026/10/09/news-p.v1.20261009.e77ad10b47a846b5955a53787de29a2e_P1.jpg",
-    "https://www.businesskorea.co.kr/news/thumbnail/202610/278536_286202_104_v150.jpg"
-   ],
+   "src": "新浪财经 / NE时代新能源",
+   "title": "8 月国内乘用车辅助驾驶域控芯片装机 81 万颗：英伟达 24.6 万颗、30.2% 居首，地平线 19.8% 追近至 10.4 个百分点",
+   "place": "中国",
+   "url": "https://finance.sina.com.cn/jjxw/2026-10-10/doc-iniutqmf2055196.shtml",
+   "images": [],
    "signals": [
-    "市场研究机构 Counterpoint Research 于 2026 年 10 月 8 日发布内部评估（Businesskorea 10/08 19:11 KST 首报，《韩国先驱报》10/09 11:51 KST 跟进）：英伟达下一代 AI 加速平台 Vera Rubin 的大部分产品将采用 12 层 HBM4，而非业界此前传闻的 8 层配置",
-    "Counterpoint 原话（经 Businesskorea 转述）：「关于内存需求放缓的担忧是一种误读」（\"The concern about slowing memory demand is a misunderstanding\"），并称对内存需求增长的信心在 10 月实际上有所增强",
-    "该判断修正了 Counterpoint 自己 8 月报告中的预测——此前其曾指向英伟达将为 Rubin 采用 8 层 HBM4 变体。此前传闻称英伟达要求内存供应商把 HBM4 堆叠层数从 12 层削减至 8 层，市场一度担忧 HBM 需求下滑会让产能回流传统 DRAM、进而压低内存价格",
-    "Counterpoint 给出的理由：在 AI 计算中，保障数据处理所需的内存带宽与容量比降本更重要；该机构并称在 ASIC 市场也未观察到 4 层产品。其进一步判断：HBM 生产所需产能是普通 DRAM 的三倍以上，若 HBM 需求维持，普通 DRAM 的供应短缺也很可能持续，形成支撑内存价格的结构",
-    "供应侧事实：SK 海力士于今年 1 月 CES 首次展出 48GB、16 层 HBM4（容量较 36GB 的 12 层版本多三分之一），二季度起已向主要客户批量供应 HBM4；三星自 2 月起出货商用 HBM4，12 层产品最高 36GB 容量。今年 9 月 Silicon Analysts 报告称 SK 海力士已开始为 Rubin 量产出货 16 层 HBM4，但该公司未公开确认交付",
-    "业内匿名人士（《韩国先驱报》引述）：「若 Rubin 继续主要依赖 12 层 HBM4，推进 16 层芯片与其说是为了短期增加出货，不如说是为未来 AI 系统所需的更高内存容量做准备」；「率先开发 16 层技术，不如达到客户真正需要的良率与封装兼容性重要。供应扩张的速度最终取决于内存厂商的能力与台积电封装产能的匹配程度」"
+    "NE时代新能源数据：2026 年 8 月国内乘用车辅助驾驶域控芯片装机总量约 81 万颗",
+    "英伟达装机量 24.6 万颗、市场份额 30.2%，排名第一；地平线 16.1 万颗、19.8% 排名第二；华为 14.8%、特斯拉 12.3%。英伟达与地平线合计约占 50% 份额",
+    "份额差距：1—2 月英伟达、地平线分别为 45.1%、9.3%，相差 35.8 个百分点；8 月收窄至 10.4 个百分点，年内缩小约 25 个百分点。地平线排名由 1—2 月第四位升至 4 月第二位，装机量自 3 月起连续六个月环比正增长",
+    "月度对比：与 7 月相比，地平线与英伟达的装机量差距由 10.3 万颗缩小至 8.4 万颗；地平线与第三名华为的差距由 1.07 万颗扩大至 4 万颗",
+    "另一组口径（新华社中国经济信息社《中国自动驾驶规模化应用蓝皮书》）：2026 年上半年自主品牌乘用车全阶智驾芯片市场，地平线份额 31.94% 居首；城区 NOA 高阶市场地平线份额 22.82% 居第二"
    ],
    "cat": "nvda",
-   "note": "date 取 Counterpoint 发布评估日 2026-10-09（《韩国先驱报》首发日；Businesskorea 首报为 10/08 晚间，两源日期有一日出入，取较广传播的 10-09 并在 note 说明）。本条主体为第三方研究机构的预测口径 + 存储厂商的供应事实，非英伟达官方表态，故归 nvda；Counterpoint 观点本身具分析性质，其预测已连同机构名写进 signals。**注意**：此为预测（\"most\"/\"likely\"），不是英伟达的内存配置决定；截至报道，英伟达未就层数置评。images 两张分别取自 Korea Herald 与 Businesskorea 原文页 og:image（均为 SK 海力士/三星 HBM4 产品图），已 curl 验证 200 image/jpeg。"
+   "note": "事件日取第三方数据发布日 2026-10-10（NE时代新能源）；中文媒体于 10/10—10/11 报道（新浪财经 10/10 15:16、南方财经网/观点网 10/11、同花顺）。原文页 og:image 为空，images 留空。本条为第三方统计口径，非英伟达官方披露，未经英伟达确认。"
   },
   {
-   "id": "ev20261009e",
+   "id": "ev20261009a",
    "date": "2026-10-09",
-   "type": "mt",
-   "src": "TrendForce（引 The Elec / ZDNet / Newsis / EDAILY）",
-   "title": "TrendForce：英伟达 NVHBM 重塑 HBM 基础裸片格局——美光、三星双双转向外部代工，台积电成最大受益方",
-   "place": "美国·圣克拉拉 / 韩国·首尔",
-   "url": "https://www.trendforce.com/news/2026/10/09/news-nvidias-nvhbm-reshapes-memory-makers-base-die-strategies-as-micron-samsung-turn-to-external-foundries/",
-   "images": [
-    "https://img.trendforce.com/blog/wp-content/uploads/2026/08/27095303/NVIDIA-NVHBM-624x332.jpg"
-   ],
+   "type": "iv",
+   "src": "快科技／腾讯新闻（转述黄仁勋公开访谈内容）",
+   "title": "黄仁勋谈父母「华人式严苛教育」：他们永远不轻易夸奖，但这是爱的表现，我也这样管理英伟达",
+   "place": "中国（媒体转述其公开访谈内容）",
+   "url": "https://news.mydrivers.com/1/1156/1156196.htm",
+   "images": [],
    "signals": [
-    "英伟达 8 月随 NVLink Fusion 生态发布的 NVHBM 把内存控制器从 XPU 计算裸片移入 HBM 堆栈的基础裸片，基础裸片从此承担更大角色，并开始重塑存储厂商的采购格局（TrendForce 2026-10-09 报道）",
-    "美光：据 The Elec，与英伟达联合设计的 NVHBM 以及符合 JEDEC 标准的 HBM4E，都将采用外部代工厂制造的基础裸片，台积电预计接手。HBM4 阶段美光仍用 1β 工艺核心裸片配自研基础裸片，HBM4E 核心裸片转向 1γ 工艺（大致对标三星与 SK 海力士的 1c 代）",
-    "美光 COO Manish Bhatia 经 The Elec 表示：HBM 本身已带溢价，NVHBM 的定制化创造更大价值，预计 NVHBM 将有更高 ASP 与更强毛利率",
-    "三星：据 ZDNet，三星正对 NVHBM 这类定制 HBM 采取双轨策略——HBM 核心裸片可搭配由三星晶圆代工或台积电制造的基础裸片，视客户需求而定；台积电基础裸片的芯片设计与优化支持由三星存储业务部门负责，脱离其传统依赖 System LSI 与三星晶圆代工的模式",
-    "SK 海力士：据 Newsis，正与英伟达密切合作开发定制 HBM；据 EDAILY，其 HBM4 基础裸片已采用台积电 12nm 逻辑工艺，更先进的 3nm 工艺被优先用于 HBM4E 与未来定制 HBM 产品",
-    "官方性能口径：相比标准 HBM4E，NVHBM 可提升内存带宽最高 30%、降低 HBM 功耗 15%、释放 XPU 计算裸片面积最高 25%；定制 I/O PHY 可把 I/O 所占封装面积最多减少 67%（据 The Elec）",
-    "亚马逊 Annapurna Labs 将成为该技术首个采用方，用于下一代 Trainium 4 AI 加速器（据 ZDNet）"
+    "黄仁勋在谈及父母时说，父母的「华人式严苛教育」让他养成不抗拒批评、谦逊好学的特质，他也把这种态度融入了英伟达的管理",
+    "黄仁勋原话（媒体转述）：「这是爱的表现，我也这样管理英伟达。」他称父母属于典型的华人家长，习惯以批评表达期许，在他们眼中事情永远可以做得更好；即便如今他年过六旬、已是行业巨头掌舵人，父亲依旧会不断给他提出建议",
+    "家庭背景（媒体整理）：父亲黄兴泰是化工工程师，母亲罗彩秀曾是小学教师；早年全家计划赴美时母亲英语并不流利，靠一本字典每天挑十个英文单词督促黄仁勋练习拼写与释义",
+    "背景：该表述在 10/08 白宫颁奖典礼后被中文媒体再度集中引用（其父母当天到场见证领奖），非 10/08 现场新增发言"
    ],
-   "cat": "nvda",
-   "note": "date 取 TrendForce 报道日 2026-10-09（原文 URL 内嵌日期亦为 2026/10/09）。本条事实主体为存储厂商的基础裸片采购策略与 NVHBM 的官方性能口径，属英伟达产品生态的供应链事实；性能数字（带宽+30%/功耗-15%/面积+25%/I-O 面积-67%）系英伟达官方口径经 TrendForce 转述，非本文推算。"
+   "cat": "jensen",
+   "note": "本轮已核到出处并改写注：本条引语出自快科技/新浪科技 10 月 9 日《黄仁勋获颁国家科学奖章 老爸老妈到场见证》一文，该文实为对 10/08 白宫授奖仪式的整合稿，「华人式严苛教育」「这是爱的表现，我也这样管理英伟达」等说法均系作者对其『过往公开访谈』的回顾，并非 10 月 9 日的新发言，确切发言场合仍未核到英文原文。date 取中文见报日 2026-10-09，不可当作当日新表态。"
   },
   {
    "id": "ev20261009b",
@@ -890,145 +937,50 @@ function renderChrome(){
    "note": "date 取美股 10/09 交易日。收盘价 229.28 美元 / -0.52% 经腾讯自选股行情、Investing.com、MarketWatch、富途牛牛四源交叉一致；成交额各源略异（东方财富 194.18 亿、腾讯新闻 194.04 亿），取东方财富口径。页面无可用 og:image → images 留空。 【2026-10-11 晚轮复核】新浪日K（US_MinKService.getDailyK）明确：10/09 收 229.28、前收 230.48；腾讯 qt.gtimg.cn 时间戳为 2026-10-09 16:00:01 → 本条 date=2026-10-09 正确无误。"
   },
   {
-   "id": "ev20261009a",
+   "id": "ev20261009e",
    "date": "2026-10-09",
-   "type": "iv",
-   "src": "快科技／腾讯新闻（转述黄仁勋公开访谈内容）",
-   "title": "黄仁勋谈父母「华人式严苛教育」：他们永远不轻易夸奖，但这是爱的表现，我也这样管理英伟达",
-   "place": "中国（媒体转述其公开访谈内容）",
-   "url": "https://news.mydrivers.com/1/1156/1156196.htm",
-   "images": [],
-   "signals": [
-    "黄仁勋在谈及父母时说，父母的「华人式严苛教育」让他养成不抗拒批评、谦逊好学的特质，他也把这种态度融入了英伟达的管理",
-    "黄仁勋原话（媒体转述）：「这是爱的表现，我也这样管理英伟达。」他称父母属于典型的华人家长，习惯以批评表达期许，在他们眼中事情永远可以做得更好；即便如今他年过六旬、已是行业巨头掌舵人，父亲依旧会不断给他提出建议",
-    "家庭背景（媒体整理）：父亲黄兴泰是化工工程师，母亲罗彩秀曾是小学教师；早年全家计划赴美时母亲英语并不流利，靠一本字典每天挑十个英文单词督促黄仁勋练习拼写与释义",
-    "背景：该表述在 10/08 白宫颁奖典礼后被中文媒体再度集中引用（其父母当天到场见证领奖），非 10/08 现场新增发言"
-   ],
-   "cat": "jensen",
-   "note": "本轮已核到出处并改写注：本条引语出自快科技/新浪科技 10 月 9 日《黄仁勋获颁国家科学奖章 老爸老妈到场见证》一文，该文实为对 10/08 白宫授奖仪式的整合稿，「华人式严苛教育」「这是爱的表现，我也这样管理英伟达」等说法均系作者对其『过往公开访谈』的回顾，并非 10 月 9 日的新发言，确切发言场合仍未核到英文原文。date 取中文见报日 2026-10-09，不可当作当日新表态。"
-  },
-  {
-   "id": "ev20261008j",
-   "date": "2026-10-08",
-   "type": "sp",
-   "src": "微软 Windows & Surface 开发者活动（黄仁勋×纳德拉炉边对话，经 36 氪、钜亨网、CSDN 转述现场记录）",
-   "title": "黄仁勋回溯 Windows 来源：RTX Spark 累计投入超 4000 工程人年、算力 1 PFLOPS，已测超 1200 款应用",
-   "place": "美国·旧金山（Dogpatch Studios；线上直播）",
-   "url": "https://36kr.com/p/4019964542521225",
-   "images": [],
-   "signals": [
-    "黄仁勋在 10 月 7 日微软 Windows & Surface 开发者活动的炉边对话中谈 RTX Spark 的研发投入：「参与这个项目的工程师数量惊人——超过了 4000 个工程年（engineering years）。这是一项真正重构 PC 的宏大工程。」",
-    "关于算力与封装：「我们有史以来第一次，将游戏 PC、笔记本、工作站以及云端超级计算机所具备的顶尖计算能力，彻底统一并封装进一颗超级芯片中。这颗芯片是一头真正的算力怪兽：它将两颗巨型芯片融合封装在一起，提供高达 1 Petaflop 的算力。」",
-    "关于对比口径：「当年开启现代 AI 革命的第一代 DGX-1 超级计算机，整机算力也就是 1 Petaflop，重达 500 磅、售价 25 万美元；而如今，同样的算力被完整封装在了一台轻薄的笔记本电脑中。」（注：活动现场另有口径称 DGX-1 价值 2.5 亿美元、官方系统重量约 134 磅，两处表述不一致）",
-    "关于兼容性：「这是全球唯一一台能够原生运行完整 DirectX、Direct3D、各版本 OpenGL、并无缝跑通所有 CUDA 应用程序与 Unreal Engine 的 PC。」「目前，我们已经对超过 1200 款应用进行了测试，其中包括全球最复杂、对性能要求最高的一批应用。」",
-    "关于英伟达的起点（回答主持人 Sriram Krishnan 关于与微软合作往事的提问）：「英伟达其实是因为 Windows 才创立的。那是 1992 年底，当时 Windows 3.1 刚推出……如果没有 Windows，英伟达根本就不会诞生。」他并表示 1995 年 Windows 95「真正重新定义了一切」"
-   ],
-   "cat": "jensen",
-   "note": "date 取对话发生日 2026-10-08（北京时间；活动为美东/太平洋时间 10 月 7 日上午），id 内嵌日期同。**与 ev20261007a / ev20261007b 同场合**：那两条主体分别为「微软×英伟达 RTX Spark 官宣与产品事实」（nvnews）与「旧金山炉边对话整体」（jensen），本条为该场对话中黄仁勋本人关于 RTX Spark 研发投入与规格的**具体发言引语**，signals 保留原话，不重复官宣事实。**注意口径冲突**：黄仁勋称 DGX-1「售价 25 万美元」，现场另有中方记录称「2.5 亿美元」、官方系统重量亦有 500 磅/134 磅两说，signals 已并列标注两处表述，不作取舍。中文转录（36 氪、钜亨网、CSDN）为转述稿，非官方逐字稿；英文原始录像未核。images 留空（转述页无可取 og:image）。"
-  },
-  {
-   "id": "ev20261008i",
-   "date": "2026-10-08",
    "type": "mt",
-   "src": "路透社（腾讯科技/经济观察/中国新闻网等转载）",
-   "title": "路透：英伟达把 DGX Spark 128GB 官方价上调约 75% 至 6950 美元，内存涨价成为本地 AI 硬件普及的成本瓶颈",
-   "place": "美国·旧金山",
-   "url": "http://www.chinanews.net/news/279358260/microsoft-unveils-ai-powered-surface-laptop-with-nvidia-chips",
+   "src": "TrendForce（引 The Elec / ZDNet / Newsis / EDAILY）",
+   "title": "TrendForce：英伟达 NVHBM 重塑 HBM 基础裸片格局——美光、三星双双转向外部代工，台积电成最大受益方",
+   "place": "美国·圣克拉拉 / 韩国·首尔",
+   "url": "https://www.trendforce.com/news/2026/10/09/news-nvidias-nvhbm-reshapes-memory-makers-base-die-strategies-as-micron-samsung-turn-to-external-foundries/",
    "images": [
-    "https://chitra-api.kreatio.com/api/v1/wps/93282c7/8869c0d7-c236-4f8c-9216-098fcbdbbc0c/1/Microsoft-4-600x315.jpg"
+    "https://img.trendforce.com/blog/wp-content/uploads/2026/08/27095303/NVIDIA-NVHBM-624x332.jpg"
    ],
    "signals": [
-    "据路透报道（事件于 10 月 8 日旧金山微软 Windows AI and Surface 活动期间由英伟达确认）：英伟达近几周把名为 DGX Spark 的 AI 桌面机官方价格上调约 75% 至 6950 美元，原因是其 128GB 内存成本飙升",
-    "价格背景：DGX Spark 128GB 最初于 2025 年推出时官方售价 3999 美元；英伟达 2026 年 2 月已把 128GB Founders Edition 提价至 4699 美元，本轮再调至 6950 美元",
-    "对照：同批发布的 DGX Spark 64GB 版本起售价 4999 美元、10 月 23 日由六家 OEM 出货（详见事件 ev20261002c）——内存容量减半，但定价低于 128GB 版 1951 美元",
-    "Moor Insights & Strategy 分析师 Anshel Sag：「两年前软件没准备好，硬件准备好了；现在软件准备好了，硬件却贵到没法在本地跑」，内存价格同时影响苹果与微软的相关布局，「正在变成只有有预算的人才真的能在本地跑 AI」",
-    "背景对照：微软两年前推广 PC 本地跑 AI 以省成本时，相关笔记本定价多在 2000 美元以下；Tom's Hardware 指出市场上 128GB GB10 系统实际售价甚至已达约 7000 至 9000 美元"
+    "英伟达 8 月随 NVLink Fusion 生态发布的 NVHBM 把内存控制器从 XPU 计算裸片移入 HBM 堆栈的基础裸片，基础裸片从此承担更大角色，并开始重塑存储厂商的采购格局（TrendForce 2026-10-09 报道）",
+    "美光：据 The Elec，与英伟达联合设计的 NVHBM 以及符合 JEDEC 标准的 HBM4E，都将采用外部代工厂制造的基础裸片，台积电预计接手。HBM4 阶段美光仍用 1β 工艺核心裸片配自研基础裸片，HBM4E 核心裸片转向 1γ 工艺（大致对标三星与 SK 海力士的 1c 代）",
+    "美光 COO Manish Bhatia 经 The Elec 表示：HBM 本身已带溢价，NVHBM 的定制化创造更大价值，预计 NVHBM 将有更高 ASP 与更强毛利率",
+    "三星：据 ZDNet，三星正对 NVHBM 这类定制 HBM 采取双轨策略——HBM 核心裸片可搭配由三星晶圆代工或台积电制造的基础裸片，视客户需求而定；台积电基础裸片的芯片设计与优化支持由三星存储业务部门负责，脱离其传统依赖 System LSI 与三星晶圆代工的模式",
+    "SK 海力士：据 Newsis，正与英伟达密切合作开发定制 HBM；据 EDAILY，其 HBM4 基础裸片已采用台积电 12nm 逻辑工艺，更先进的 3nm 工艺被优先用于 HBM4E 与未来定制 HBM 产品",
+    "官方性能口径：相比标准 HBM4E，NVHBM 可提升内存带宽最高 30%、降低 HBM 功耗 15%、释放 XPU 计算裸片面积最高 25%；定制 I/O PHY 可把 I/O 所占封装面积最多减少 67%（据 The Elec）",
+    "亚马逊 Annapurna Labs 将成为该技术首个采用方，用于下一代 Trainium 4 AI 加速器（据 ZDNet）"
    ],
    "cat": "nvda",
-   "note": "date 取事件发生日 2026-10-08（路透在微软旧金山活动期间采访确认，与 ev20261007a/ev20261008a 同源场合）；中国新闻网英文转载稿发布日为 2026-10-10 09:40 GMT+。本条只保留价格上调这一新增事实与分析师评论框架，微软 Surface Laptop Ultra 发布本身已由 ev20261007a（官网）与 ev20261008a（国行上架）收录，不重复采集。"
+   "note": "date 取 TrendForce 报道日 2026-10-09（原文 URL 内嵌日期亦为 2026/10/09）。本条事实主体为存储厂商的基础裸片采购策略与 NVHBM 的官方性能口径，属英伟达产品生态的供应链事实；性能数字（带宽+30%/功耗-15%/面积+25%/I-O 面积-67%）系英伟达官方口径经 TrendForce 转述，非本文推算。"
   },
   {
-   "id": "ev20261008h",
-   "date": "2026-10-08",
+   "id": "ev20261009f",
+   "date": "2026-10-09",
    "type": "mt",
-   "src": "金斯瑞官方新闻稿（美通社 PRNewswire，界面新闻/动脉网转载）",
-   "title": "金斯瑞携手英伟达启动全球生命科学初创企业 PitchFest：赛事定于 2027 年 1 月 JPM 周，胜出者可获英伟达 Brev 云服务额度",
-   "place": "美国·新泽西州皮斯卡塔韦 / 加州圣克拉拉",
-   "url": "https://www.genscript.com/genscript-launches-life-sciences-startup-pitchfest-with-nvidia-to-accelerate-biotech-innovation.html",
-   "images": [],
-   "signals": [
-    "金斯瑞生物科技（HK.1548）2026 年 10 月 8 日宣布与英伟达共同启动「金斯瑞与英伟达生命科学初创企业 PitchFest」（GenScript and NVIDIA Life Sciences Startup PitchFest），面向将人工智能应用于治疗发现与生命科学的初创企业的全球性竞赛",
-    "赛程：申请已开放，入围企业将于 2026 年 12 月确定；最多遴选六家入围企业，参加 2027 年 1 月摩根大通医疗健康大会（JPM Week）期间由金斯瑞主办的路演活动，接受评委小组评审",
-    "资源投入：金斯瑞提供湿实验验证与数据生成能力（sequence-to-data）、以及实验验证专家支持；英伟达提供加速计算平台与初创企业生态资源，入选企业将获得参与 NVIDIA Inception 项目的机会（该项目对初创企业免费开放）",
-    "获胜企业将获得金斯瑞提供的湿实验数据额度，以及英伟达提供的 Brev 云服务额度，用于支持后续开发与部署",
-    "竞赛覆盖方向：AI 驱动的抗体与蛋白质设计，以及加速「设计—构建—测试—学习」（design-build-test-learn）循环的相关技术",
-    "金斯瑞生命科学事业群总裁 Ray Chen（陈睿）：「要释放 AI 在生命科学领域的真正潜力，我们必须构建一个生态体系，让世界一流的计算能力与值得信赖、可规模化的生物学验证能力相结合。PitchFest 为数字生物学初创企业提供整合支持，帮助它们快速测试模型、生成证据并加速突破性疗法」",
-    "入围企业还将受邀参加金斯瑞生物科技全球产业论坛（GenScript Biotech Global Forum），与生物科技企业高管、战略合作伙伴及行业领袖交流。评审标准、讲者与投资人参与细节将于未来数周公布"
-   ],
-   "cat": "nvda",
-   "note": "date 取官方新闻稿发布日 2026-10-08（金斯瑞官网原稿标注 PISCATAWAY, N.J. and SANTA CLARA, Calif., Oct. 8, 2026；美通社同日发布）。本条为金斯瑞主导的赛事官宣，英伟达作为合作方参与，src/url 指向 genscript.com 而非 nvidia.com 官方域，故按口径归 nvda 而非 nvnews。中文见报日 2026-10-10（界面新闻 17:35），已在正文体现发布时间差。"
-  },
-  {
-   "id": "ev20261008f",
-   "date": "2026-10-08",
-   "type": "mt",
-   "src": "The Information（经新浪财经、国际电子商情转载）",
-   "title": "The Information：英伟达拟投资 AI 推理芯片初创 d-Matrix，为 Groq 授权协议后首次同类出手",
-   "place": "美国·圣克拉拉 / 美国",
-   "url": "https://finance.sina.com.cn/stock/estate/integration/2026-10-09/doc-iniuquqf7218995.shtml",
-   "images": [],
-   "signals": [
-    "The Information 援引三位知情人士消息（美东 10 月 8 日周四首报）：英伟达计划投资 AI 服务器芯片开发商 d-Matrix，后者本身就是英伟达在推理芯片上的竞争对手；财务条款尚不明确",
-    "这是英伟达自去年 12 月与 Groq 签署 200 亿美元技术授权协议后，首次投资 AI 推理芯片初创企业——被解读为「不只押注一家」，而是把竞品芯片设计商纳入自己主导的硬件生态、让自家技术与其兼容",
-    "双方合作已先行：三个月前英伟达宣布与 d-Matrix 合作，让两家芯片协同处理同一项 AI 推理任务的不同环节；上月进一步明确，d-Matrix 下一代 Raptor XPU 将原生支持英伟达 NVLink Fusion 并接入 MGX 机架架构，首批系统预计 2027 年第四季度推出",
-    "d-Matrix 背景：2019 年由前 Marvell 高管 Sid Sheth、Sudeep Bhoja 创立，累计融资约 5 亿美元、估值约 20 亿美元；微软旗下风投 M12 与淡马锡为股东，去年 11 月完成 2.75 亿美元 C 轮。产品走 Corsair 异构架构，专攻推理场景的内存墙（计算核心与内存之间的连接），而非堆通用浮点算力"
-   ],
-   "cat": "nvda",
-   "note": "date 取 The Information 首报日（美东 2026-10-08 周四晚间），中文媒体 10/09 转载——按「以事件首报为准、中文过期转载取外媒首报日」口径定日。theinformation.com 有付费墙且本机不可直连，细节经国际电子商情编译版转述；核心事实与新浪财经、网易科技、观点网三源一致。原文页无可取 og:image → images 留空。"
-  },
-  {
-   "id": "ev20261008g",
-   "date": "2026-10-08",
-   "type": "mt",
-   "src": "The Information（经新浪财经、红商网转载）",
-   "title": "The Information：黄仁勋女儿黄敏珊夏威夷完婚，女婿 Nico Caprez 入职两年升任全球 AI 基础设施增长副总裁",
-   "place": "美国·夏威夷（婚礼）/ 美国·圣克拉拉",
-   "url": "https://finance.sina.com.cn/roll/2026-10-08/doc-iniunmir4000630.shtml",
+   "src": "Counterpoint Research（经《韩国先驱报》Korea Herald、Businesskorea 转述）",
+   "title": "Counterpoint：英伟达 Vera Rubin 大部分产品将用 12 层 HBM4、而非传闻的 8 层，\"内存需求放缓是误读\"",
+   "place": "韩国·首尔（研究机构口径）",
+   "url": "https://www.koreaherald.com/article/10897751",
    "images": [
-    "https://n.sinaimg.cn/front20261008ac/652/w1018h434/20261008/594d-19b53e3a194bc2fd2e9dd40f8d874baf.jpg"
+    "https://wimg.heraldcorp.com/news/cms/2026/10/09/news-p.v1.20261009.e77ad10b47a846b5955a53787de29a2e_P1.jpg",
+    "https://www.businesskorea.co.kr/news/thumbnail/202610/278536_286202_104_v150.jpg"
    ],
    "signals": [
-    "The Information 报道、经新浪财经与红商网转述：黄仁勋 35 岁的长女黄敏珊（Madison Huang）上月底在夏威夷举行婚礼，新郎为同龄的 Nico Caprez——两人是伦敦商学院 MBA 同学，婚后也成为英伟达同事。婚讯此前由三星电子会长李在镕在纽约一场颁奖礼致辞中「顺嘴」透露",
-    "人事事实：35 岁的 Caprez 是瑞士人、前瑞士国家高山滑雪队成员，退役后进波士顿咨询集团苏黎世办公室，2024 年 2 月经黄敏珊引荐加入英伟达、从企业发展经理做起；2026 年 1 月入职不到两年即跳过资深总监职级，直接升任全球 AI 基础设施增长副总裁（VP of Global AI Infrastructure Growth），向新任全球业务执行副总裁尼克·帕克汇报、帕克再向黄仁勋汇报",
-    "职责范围：Caprez 主导英伟达与新兴云厂商、数据中心企业及投资机构的合作，包括以 GPU 为抵押品的融资安排（黑石—CoreWeave 的 23 亿与 75 亿美元信贷额度），并参与推动英伟达与黑石、布鲁克菲尔德等机构目标超 5000 亿美元的 AI 基础设施融资计划；布鲁克菲尔德全球 AI 基础设施主管拉希德回忆，黄仁勋介绍他时只说了一句「有事找尼科」",
-    "家族分踞三条赛道：黄敏珊 2020 年入职英伟达，2026 年 3 月升任物理 AI 产品营销高级总监（负责 Omniverse 平台与 3D 世界模型、机器人模型、仿真模型及开源项目的市场推广）；36 岁的儿子黄胜斌（Spencer）2022 年入职，任机器人方向产品管理总监，2026 财年总薪酬 132 万美元（上一财年 53 万美元）",
-    "英伟达在文件中说明：两位子女的薪酬评定与黄仁勋无关，不与黄仁勋同住、也不直接向他汇报，所获股权激励与同岗位无亲属关系的员工一致"
+    "市场研究机构 Counterpoint Research 于 2026 年 10 月 8 日发布内部评估（Businesskorea 10/08 19:11 KST 首报，《韩国先驱报》10/09 11:51 KST 跟进）：英伟达下一代 AI 加速平台 Vera Rubin 的大部分产品将采用 12 层 HBM4，而非业界此前传闻的 8 层配置",
+    "Counterpoint 原话（经 Businesskorea 转述）：「关于内存需求放缓的担忧是一种误读」（\"The concern about slowing memory demand is a misunderstanding\"），并称对内存需求增长的信心在 10 月实际上有所增强",
+    "该判断修正了 Counterpoint 自己 8 月报告中的预测——此前其曾指向英伟达将为 Rubin 采用 8 层 HBM4 变体。此前传闻称英伟达要求内存供应商把 HBM4 堆叠层数从 12 层削减至 8 层，市场一度担忧 HBM 需求下滑会让产能回流传统 DRAM、进而压低内存价格",
+    "Counterpoint 给出的理由：在 AI 计算中，保障数据处理所需的内存带宽与容量比降本更重要；该机构并称在 ASIC 市场也未观察到 4 层产品。其进一步判断：HBM 生产所需产能是普通 DRAM 的三倍以上，若 HBM 需求维持，普通 DRAM 的供应短缺也很可能持续，形成支撑内存价格的结构",
+    "供应侧事实：SK 海力士于今年 1 月 CES 首次展出 48GB、16 层 HBM4（容量较 36GB 的 12 层版本多三分之一），二季度起已向主要客户批量供应 HBM4；三星自 2 月起出货商用 HBM4，12 层产品最高 36GB 容量。今年 9 月 Silicon Analysts 报告称 SK 海力士已开始为 Rubin 量产出货 16 层 HBM4，但该公司未公开确认交付",
+    "业内匿名人士（《韩国先驱报》引述）：「若 Rubin 继续主要依赖 12 层 HBM4，推进 16 层芯片与其说是为了短期增加出货，不如说是为未来 AI 系统所需的更高内存容量做准备」；「率先开发 16 层技术，不如达到客户真正需要的良率与封装兼容性重要。供应扩张的速度最终取决于内存厂商的能力与台积电封装产能的匹配程度」"
    ],
    "cat": "nvda",
-   "note": "「接班人」属员工观察与外界推测，黄仁勋本人今年 3 月在 Lex Fridman 播客中明确表示从未制定任何接班计划——故推测部分不入 signals，signals 只保留可核实的人事与报道事实。date 取 The Information 首报的中文见报日 2026-10-08（新浪财经页面日期）。"
-  },
-  {
-   "id": "ev20261008e",
-   "date": "2026-10-08",
-   "type": "mt",
-   "src": "白宫官方新闻稿（whitehouse.gov）／NBC News（现场报道）",
-   "title": "特朗普在白宫「科学：新黄金时代」峰会向黄仁勋颁授美国国家科学奖章：表彰其把 GPU 发展为通用计算架构，黄仁勋父母到场见证",
-   "place": "美国·华盛顿（美国和平研究所 U.S. Institute of Peace）",
-   "url": "https://www.whitehouse.gov/releases/2026/10/president-trump-presents-national-medals-of-science-and-national-medals-of-technology-and-innovation/",
-   "images": [
-    "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-10/261008-musk-trump-vsb-1649-35ce09.jpg",
-    "https://s7d2.scene7.com/is/image/TWCNews/trump_musk_gold_age_of_innovation_medals"
-   ],
-   "signals": [
-    "白宫 10 月 8 日官方新闻稿：特朗普当天在「科学：新黄金时代」（Science: A New Golden Age）峰会上颁授国家科学奖章（National Medal of Science）与国家技术与创新奖章（National Medal of Technology and Innovation）。国家科学奖章 4 位得主为马斯克、谢尔盖·布林、黄仁勋、苏姿丰；国家技术与创新奖章 2 位得主为迈克尔·戴尔、萨提亚·纳德拉",
-    "白宫对黄仁勋的授奖词原文：「通过处理器设计与软件方面的创新，把图形处理器（GPU）推进为通用计算架构，变革了大规模并行计算，并为科学计算与超级智能的突破提供动力。」（For advancing the graphics processing unit into a general-purpose computing architecture through innovations in processor design and software, transforming massively parallel computation and powering breakthroughs in scientific computing and super intelligence.）",
-    "黄仁勋在走出会场时对 NBC News 表示：「我是一名移民，我的父母带我们来这里追寻美国梦。这是一份不可思议的荣誉，也是只有在美国才会发生的事情。」（\"I was an immigrant, and my parents brought us here to pursue the American dream. It's an incredible honor and something that could only happen here in America.\"）",
-    "NBC News 现场报道：黄仁勋当天与父母一同走过会场，其父母（黄兴泰、罗彩秀）到场见证领奖；授奖时特朗普称黄仁勋「其决心为超级智能的爆发奠定了基础，并让美国走在这场竞赛的前列」，并称英伟达芯片已成为全球超算与前沿超级智能的骨干",
-    "典礼同场信息：特朗普在活动上称马斯克为「当代托马斯·爱迪生」「国之瑰宝」；这是特朗普首次颁授国家科学奖章。国家科学奖章自 1963 年起颁发，国家技术与创新奖章自 1985 年起颁发。白宫称 6 位获奖者「在通用并行计算与半导体设计的基础进展、到在美国／全球乃至太空建设超大规模基础设施的工程与商业领导力」方面开创新局",
-    "同日背景：颁奖数小时前，副总统万斯与劳工部长桑德林宣布暂停微软等多家大型科技公司参与「永久劳工认证」计划，称微软「存在欺诈行为」；6 位获奖者中有 5 位出生于美国以外"
-   ],
-   "cat": "nvda",
-   "note": "date 取颁奖典礼发生日 2026-10-08（当地时间周四）。**源定级说明**：白宫官方 release 页为本事件唯一官方原文（含逐字授奖词），故 src 标白宫；NBC News 提供现场细节（父母到场、黄仁勋原话）与 AP 照片，作并列一级源。中文媒体（腾讯新闻、澎湃、快科技、网易）均为 10/09 转载，只作二级。本事件与 ev20261008b（英伟达 10 亿美元科研投入官宣）**同一场合、同一天，但主体不同**（一为总统颁奖事实、一为公司资金承诺），故分立两条，互不重复。images 两张均为 AP 现场照片：第 1 张取自 NBC News 原文页 og:image、第 2 张取自 NY1（Spectrum News，AP 供稿）原文页 og:image。白宫页 og:image 为其通用社交分享卡（WH47-Social-Share-Card.jpg），非本次活动照片，故未采用。"
+   "note": "date 取 Counterpoint 发布评估日 2026-10-09（《韩国先驱报》首发日；Businesskorea 首报为 10/08 晚间，两源日期有一日出入，取较广传播的 10-09 并在 note 说明）。本条主体为第三方研究机构的预测口径 + 存储厂商的供应事实，非英伟达官方表态，故归 nvda；Counterpoint 观点本身具分析性质，其预测已连同机构名写进 signals。**注意**：此为预测（\"most\"/\"likely\"），不是英伟达的内存配置决定；截至报道，英伟达未就层数置评。images 两张分别取自 Korea Herald 与 Businesskorea 原文页 og:image（均为 SK 海力士/三星 HBM4 产品图），已 curl 验证 200 image/jpeg。"
   },
   {
    "id": "ev20261008a",
@@ -1107,6 +1059,129 @@ function renderChrome(){
    ],
    "cat": "nvda",
    "note": "路透社原文经 The Star（马来西亚星报）转载，reuters.com 本机不可直取；src 标路透社。The Star 页 og:image 未能可靠提取 → images 留空。date 取发布日 2026-10-08。"
+  },
+  {
+   "id": "ev20261008e",
+   "date": "2026-10-08",
+   "type": "mt",
+   "src": "白宫官方新闻稿（whitehouse.gov）／NBC News（现场报道）",
+   "title": "特朗普在白宫「科学：新黄金时代」峰会向黄仁勋颁授美国国家科学奖章：表彰其把 GPU 发展为通用计算架构，黄仁勋父母到场见证",
+   "place": "美国·华盛顿（美国和平研究所 U.S. Institute of Peace）",
+   "url": "https://www.whitehouse.gov/releases/2026/10/president-trump-presents-national-medals-of-science-and-national-medals-of-technology-and-innovation/",
+   "images": [
+    "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-10/261008-musk-trump-vsb-1649-35ce09.jpg",
+    "https://s7d2.scene7.com/is/image/TWCNews/trump_musk_gold_age_of_innovation_medals"
+   ],
+   "signals": [
+    "白宫 10 月 8 日官方新闻稿：特朗普当天在「科学：新黄金时代」（Science: A New Golden Age）峰会上颁授国家科学奖章（National Medal of Science）与国家技术与创新奖章（National Medal of Technology and Innovation）。国家科学奖章 4 位得主为马斯克、谢尔盖·布林、黄仁勋、苏姿丰；国家技术与创新奖章 2 位得主为迈克尔·戴尔、萨提亚·纳德拉",
+    "白宫对黄仁勋的授奖词原文：「通过处理器设计与软件方面的创新，把图形处理器（GPU）推进为通用计算架构，变革了大规模并行计算，并为科学计算与超级智能的突破提供动力。」（For advancing the graphics processing unit into a general-purpose computing architecture through innovations in processor design and software, transforming massively parallel computation and powering breakthroughs in scientific computing and super intelligence.）",
+    "黄仁勋在走出会场时对 NBC News 表示：「我是一名移民，我的父母带我们来这里追寻美国梦。这是一份不可思议的荣誉，也是只有在美国才会发生的事情。」（\"I was an immigrant, and my parents brought us here to pursue the American dream. It's an incredible honor and something that could only happen here in America.\"）",
+    "NBC News 现场报道：黄仁勋当天与父母一同走过会场，其父母（黄兴泰、罗彩秀）到场见证领奖；授奖时特朗普称黄仁勋「其决心为超级智能的爆发奠定了基础，并让美国走在这场竞赛的前列」，并称英伟达芯片已成为全球超算与前沿超级智能的骨干",
+    "典礼同场信息：特朗普在活动上称马斯克为「当代托马斯·爱迪生」「国之瑰宝」；这是特朗普首次颁授国家科学奖章。国家科学奖章自 1963 年起颁发，国家技术与创新奖章自 1985 年起颁发。白宫称 6 位获奖者「在通用并行计算与半导体设计的基础进展、到在美国／全球乃至太空建设超大规模基础设施的工程与商业领导力」方面开创新局",
+    "同日背景：颁奖数小时前，副总统万斯与劳工部长桑德林宣布暂停微软等多家大型科技公司参与「永久劳工认证」计划，称微软「存在欺诈行为」；6 位获奖者中有 5 位出生于美国以外"
+   ],
+   "cat": "nvda",
+   "note": "date 取颁奖典礼发生日 2026-10-08（当地时间周四）。**源定级说明**：白宫官方 release 页为本事件唯一官方原文（含逐字授奖词），故 src 标白宫；NBC News 提供现场细节（父母到场、黄仁勋原话）与 AP 照片，作并列一级源。中文媒体（腾讯新闻、澎湃、快科技、网易）均为 10/09 转载，只作二级。本事件与 ev20261008b（英伟达 10 亿美元科研投入官宣）**同一场合、同一天，但主体不同**（一为总统颁奖事实、一为公司资金承诺），故分立两条，互不重复。images 两张均为 AP 现场照片：第 1 张取自 NBC News 原文页 og:image、第 2 张取自 NY1（Spectrum News，AP 供稿）原文页 og:image。白宫页 og:image 为其通用社交分享卡（WH47-Social-Share-Card.jpg），非本次活动照片，故未采用。"
+  },
+  {
+   "id": "ev20261008f",
+   "date": "2026-10-08",
+   "type": "mt",
+   "src": "The Information（经新浪财经、国际电子商情转载）",
+   "title": "The Information：英伟达拟投资 AI 推理芯片初创 d-Matrix，为 Groq 授权协议后首次同类出手",
+   "place": "美国·圣克拉拉 / 美国",
+   "url": "https://finance.sina.com.cn/stock/estate/integration/2026-10-09/doc-iniuquqf7218995.shtml",
+   "images": [],
+   "signals": [
+    "The Information 援引三位知情人士消息（美东 10 月 8 日周四首报）：英伟达计划投资 AI 服务器芯片开发商 d-Matrix，后者本身就是英伟达在推理芯片上的竞争对手；财务条款尚不明确",
+    "这是英伟达自去年 12 月与 Groq 签署 200 亿美元技术授权协议后，首次投资 AI 推理芯片初创企业——被解读为「不只押注一家」，而是把竞品芯片设计商纳入自己主导的硬件生态、让自家技术与其兼容",
+    "双方合作已先行：三个月前英伟达宣布与 d-Matrix 合作，让两家芯片协同处理同一项 AI 推理任务的不同环节；上月进一步明确，d-Matrix 下一代 Raptor XPU 将原生支持英伟达 NVLink Fusion 并接入 MGX 机架架构，首批系统预计 2027 年第四季度推出",
+    "d-Matrix 背景：2019 年由前 Marvell 高管 Sid Sheth、Sudeep Bhoja 创立，累计融资约 5 亿美元、估值约 20 亿美元；微软旗下风投 M12 与淡马锡为股东，去年 11 月完成 2.75 亿美元 C 轮。产品走 Corsair 异构架构，专攻推理场景的内存墙（计算核心与内存之间的连接），而非堆通用浮点算力"
+   ],
+   "cat": "nvda",
+   "note": "date 取 The Information 首报日（美东 2026-10-08 周四晚间），中文媒体 10/09 转载——按「以事件首报为准、中文过期转载取外媒首报日」口径定日。theinformation.com 有付费墙且本机不可直连，细节经国际电子商情编译版转述；核心事实与新浪财经、网易科技、观点网三源一致。原文页无可取 og:image → images 留空。"
+  },
+  {
+   "id": "ev20261008g",
+   "date": "2026-10-08",
+   "type": "mt",
+   "src": "The Information（经新浪财经、红商网转载）",
+   "title": "The Information：黄仁勋女儿黄敏珊夏威夷完婚，女婿 Nico Caprez 入职两年升任全球 AI 基础设施增长副总裁",
+   "place": "美国·夏威夷（婚礼）/ 美国·圣克拉拉",
+   "url": "https://finance.sina.com.cn/roll/2026-10-08/doc-iniunmir4000630.shtml",
+   "images": [
+    "https://n.sinaimg.cn/front20261008ac/652/w1018h434/20261008/594d-19b53e3a194bc2fd2e9dd40f8d874baf.jpg"
+   ],
+   "signals": [
+    "The Information 报道、经新浪财经与红商网转述：黄仁勋 35 岁的长女黄敏珊（Madison Huang）上月底在夏威夷举行婚礼，新郎为同龄的 Nico Caprez——两人是伦敦商学院 MBA 同学，婚后也成为英伟达同事。婚讯此前由三星电子会长李在镕在纽约一场颁奖礼致辞中「顺嘴」透露",
+    "人事事实：35 岁的 Caprez 是瑞士人、前瑞士国家高山滑雪队成员，退役后进波士顿咨询集团苏黎世办公室，2024 年 2 月经黄敏珊引荐加入英伟达、从企业发展经理做起；2026 年 1 月入职不到两年即跳过资深总监职级，直接升任全球 AI 基础设施增长副总裁（VP of Global AI Infrastructure Growth），向新任全球业务执行副总裁尼克·帕克汇报、帕克再向黄仁勋汇报",
+    "职责范围：Caprez 主导英伟达与新兴云厂商、数据中心企业及投资机构的合作，包括以 GPU 为抵押品的融资安排（黑石—CoreWeave 的 23 亿与 75 亿美元信贷额度），并参与推动英伟达与黑石、布鲁克菲尔德等机构目标超 5000 亿美元的 AI 基础设施融资计划；布鲁克菲尔德全球 AI 基础设施主管拉希德回忆，黄仁勋介绍他时只说了一句「有事找尼科」",
+    "家族分踞三条赛道：黄敏珊 2020 年入职英伟达，2026 年 3 月升任物理 AI 产品营销高级总监（负责 Omniverse 平台与 3D 世界模型、机器人模型、仿真模型及开源项目的市场推广）；36 岁的儿子黄胜斌（Spencer）2022 年入职，任机器人方向产品管理总监，2026 财年总薪酬 132 万美元（上一财年 53 万美元）",
+    "英伟达在文件中说明：两位子女的薪酬评定与黄仁勋无关，不与黄仁勋同住、也不直接向他汇报，所获股权激励与同岗位无亲属关系的员工一致"
+   ],
+   "cat": "nvda",
+   "note": "「接班人」属员工观察与外界推测，黄仁勋本人今年 3 月在 Lex Fridman 播客中明确表示从未制定任何接班计划——故推测部分不入 signals，signals 只保留可核实的人事与报道事实。date 取 The Information 首报的中文见报日 2026-10-08（新浪财经页面日期）。"
+  },
+  {
+   "id": "ev20261008h",
+   "date": "2026-10-08",
+   "type": "mt",
+   "src": "金斯瑞官方新闻稿（美通社 PRNewswire，界面新闻/动脉网转载）",
+   "title": "金斯瑞携手英伟达启动全球生命科学初创企业 PitchFest：赛事定于 2027 年 1 月 JPM 周，胜出者可获英伟达 Brev 云服务额度",
+   "place": "美国·新泽西州皮斯卡塔韦 / 加州圣克拉拉",
+   "url": "https://www.genscript.com/genscript-launches-life-sciences-startup-pitchfest-with-nvidia-to-accelerate-biotech-innovation.html",
+   "images": [],
+   "signals": [
+    "金斯瑞生物科技（HK.1548）2026 年 10 月 8 日宣布与英伟达共同启动「金斯瑞与英伟达生命科学初创企业 PitchFest」（GenScript and NVIDIA Life Sciences Startup PitchFest），面向将人工智能应用于治疗发现与生命科学的初创企业的全球性竞赛",
+    "赛程：申请已开放，入围企业将于 2026 年 12 月确定；最多遴选六家入围企业，参加 2027 年 1 月摩根大通医疗健康大会（JPM Week）期间由金斯瑞主办的路演活动，接受评委小组评审",
+    "资源投入：金斯瑞提供湿实验验证与数据生成能力（sequence-to-data）、以及实验验证专家支持；英伟达提供加速计算平台与初创企业生态资源，入选企业将获得参与 NVIDIA Inception 项目的机会（该项目对初创企业免费开放）",
+    "获胜企业将获得金斯瑞提供的湿实验数据额度，以及英伟达提供的 Brev 云服务额度，用于支持后续开发与部署",
+    "竞赛覆盖方向：AI 驱动的抗体与蛋白质设计，以及加速「设计—构建—测试—学习」（design-build-test-learn）循环的相关技术",
+    "金斯瑞生命科学事业群总裁 Ray Chen（陈睿）：「要释放 AI 在生命科学领域的真正潜力，我们必须构建一个生态体系，让世界一流的计算能力与值得信赖、可规模化的生物学验证能力相结合。PitchFest 为数字生物学初创企业提供整合支持，帮助它们快速测试模型、生成证据并加速突破性疗法」",
+    "入围企业还将受邀参加金斯瑞生物科技全球产业论坛（GenScript Biotech Global Forum），与生物科技企业高管、战略合作伙伴及行业领袖交流。评审标准、讲者与投资人参与细节将于未来数周公布"
+   ],
+   "cat": "nvda",
+   "note": "date 取官方新闻稿发布日 2026-10-08（金斯瑞官网原稿标注 PISCATAWAY, N.J. and SANTA CLARA, Calif., Oct. 8, 2026；美通社同日发布）。本条为金斯瑞主导的赛事官宣，英伟达作为合作方参与，src/url 指向 genscript.com 而非 nvidia.com 官方域，故按口径归 nvda 而非 nvnews。中文见报日 2026-10-10（界面新闻 17:35），已在正文体现发布时间差。"
+  },
+  {
+   "id": "ev20261008i",
+   "date": "2026-10-08",
+   "type": "mt",
+   "src": "路透社（腾讯科技/经济观察/中国新闻网等转载）",
+   "title": "路透：英伟达把 DGX Spark 128GB 官方价上调约 75% 至 6950 美元，内存涨价成为本地 AI 硬件普及的成本瓶颈",
+   "place": "美国·旧金山",
+   "url": "http://www.chinanews.net/news/279358260/microsoft-unveils-ai-powered-surface-laptop-with-nvidia-chips",
+   "images": [
+    "https://chitra-api.kreatio.com/api/v1/wps/93282c7/8869c0d7-c236-4f8c-9216-098fcbdbbc0c/1/Microsoft-4-600x315.jpg"
+   ],
+   "signals": [
+    "据路透报道（事件于 10 月 8 日旧金山微软 Windows AI and Surface 活动期间由英伟达确认）：英伟达近几周把名为 DGX Spark 的 AI 桌面机官方价格上调约 75% 至 6950 美元，原因是其 128GB 内存成本飙升",
+    "价格背景：DGX Spark 128GB 最初于 2025 年推出时官方售价 3999 美元；英伟达 2026 年 2 月已把 128GB Founders Edition 提价至 4699 美元，本轮再调至 6950 美元",
+    "对照：同批发布的 DGX Spark 64GB 版本起售价 4999 美元、10 月 23 日由六家 OEM 出货（详见事件 ev20261002c）——内存容量减半，但定价低于 128GB 版 1951 美元",
+    "Moor Insights & Strategy 分析师 Anshel Sag：「两年前软件没准备好，硬件准备好了；现在软件准备好了，硬件却贵到没法在本地跑」，内存价格同时影响苹果与微软的相关布局，「正在变成只有有预算的人才真的能在本地跑 AI」",
+    "背景对照：微软两年前推广 PC 本地跑 AI 以省成本时，相关笔记本定价多在 2000 美元以下；Tom's Hardware 指出市场上 128GB GB10 系统实际售价甚至已达约 7000 至 9000 美元"
+   ],
+   "cat": "nvda",
+   "note": "date 取事件发生日 2026-10-08（路透在微软旧金山活动期间采访确认，与 ev20261007a/ev20261008a 同源场合）；中国新闻网英文转载稿发布日为 2026-10-10 09:40 GMT+。本条只保留价格上调这一新增事实与分析师评论框架，微软 Surface Laptop Ultra 发布本身已由 ev20261007a（官网）与 ev20261008a（国行上架）收录，不重复采集。"
+  },
+  {
+   "id": "ev20261008j",
+   "date": "2026-10-08",
+   "type": "sp",
+   "src": "微软 Windows & Surface 开发者活动（黄仁勋×纳德拉炉边对话，经 36 氪、钜亨网、CSDN 转述现场记录）",
+   "title": "黄仁勋回溯 Windows 来源：RTX Spark 累计投入超 4000 工程人年、算力 1 PFLOPS，已测超 1200 款应用",
+   "place": "美国·旧金山（Dogpatch Studios；线上直播）",
+   "url": "https://36kr.com/p/4019964542521225",
+   "images": [],
+   "signals": [
+    "黄仁勋在 10 月 7 日微软 Windows & Surface 开发者活动的炉边对话中谈 RTX Spark 的研发投入：「参与这个项目的工程师数量惊人——超过了 4000 个工程年（engineering years）。这是一项真正重构 PC 的宏大工程。」",
+    "关于算力与封装：「我们有史以来第一次，将游戏 PC、笔记本、工作站以及云端超级计算机所具备的顶尖计算能力，彻底统一并封装进一颗超级芯片中。这颗芯片是一头真正的算力怪兽：它将两颗巨型芯片融合封装在一起，提供高达 1 Petaflop 的算力。」",
+    "关于对比口径：「当年开启现代 AI 革命的第一代 DGX-1 超级计算机，整机算力也就是 1 Petaflop，重达 500 磅、售价 25 万美元；而如今，同样的算力被完整封装在了一台轻薄的笔记本电脑中。」（注：活动现场另有口径称 DGX-1 价值 2.5 亿美元、官方系统重量约 134 磅，两处表述不一致）",
+    "关于兼容性：「这是全球唯一一台能够原生运行完整 DirectX、Direct3D、各版本 OpenGL、并无缝跑通所有 CUDA 应用程序与 Unreal Engine 的 PC。」「目前，我们已经对超过 1200 款应用进行了测试，其中包括全球最复杂、对性能要求最高的一批应用。」",
+    "关于英伟达的起点（回答主持人 Sriram Krishnan 关于与微软合作往事的提问）：「英伟达其实是因为 Windows 才创立的。那是 1992 年底，当时 Windows 3.1 刚推出……如果没有 Windows，英伟达根本就不会诞生。」他并表示 1995 年 Windows 95「真正重新定义了一切」"
+   ],
+   "cat": "jensen",
+   "note": "date 取对话发生日 2026-10-08（北京时间；活动为美东/太平洋时间 10 月 7 日上午），id 内嵌日期同。**与 ev20261007a / ev20261007b 同场合**：那两条主体分别为「微软×英伟达 RTX Spark 官宣与产品事实」（nvnews）与「旧金山炉边对话整体」（jensen），本条为该场对话中黄仁勋本人关于 RTX Spark 研发投入与规格的**具体发言引语**，signals 保留原话，不重复官宣事实。**注意口径冲突**：黄仁勋称 DGX-1「售价 25 万美元」，现场另有中方记录称「2.5 亿美元」、官方系统重量亦有 500 磅/134 磅两说，signals 已并列标注两处表述，不作取舍。中文转录（36 氪、钜亨网、CSDN）为转述稿，非官方逐字稿；英文原始录像未核。images 留空（转述页无可取 og:image）。"
   },
   {
    "id": "ev20261007a",
@@ -1212,27 +1287,6 @@ function renderChrome(){
    "note": "计划性行程，撰稿时未见英伟达、白宫或各公司对会见结果的确认。date 取彭博社首报日 2026-10-07（中文媒体 10/08 转载）。彭博原文 bloomberg.com/news/articles/2026-10-07/trump-s-new-ai-czar-to-visit-top-ai-firms-on-silicon-valley-tour 本机返回 000，url 改用 IT之家中文报道页。"
   },
   {
-   "id": "ev20261006b",
-   "date": "2026-10-06",
-   "type": "mt",
-   "src": "路透社 Reuters（首报：金融时报 Financial Times）",
-   "title": "SpaceX 拟募资 400 亿美元采购英伟达 AI 芯片：阿波罗全球管理牵头，100 亿银行贷款 + 300 亿投资级债，交易预计 2027 年完成",
-   "place": "美国·纽约（Apollo Global Management）",
-   "url": "https://www.thestar.com.my/tech/tech-news/2026/10/07/spacex-seeks-40-billion-to-buy-nvidia-chips-ft-reports",
-   "images": [
-    "https://apicms.thestar.com.my/uploads/images/2026/10/07/4149042.jpg"
-   ],
-   "signals": [
-    "《金融时报》10 月 6 日援引知情人士报道：马斯克旗下的 SpaceX 正寻求募集约 400 亿美元资金，用于采购英伟达 AI 芯片；路透社同日转发该报道（10 月 6 日电）",
-    "募资结构：约 100 亿美元银行贷款 + 约 300 亿美元投资级债务；资产管理公司阿波罗全球管理（Apollo Global Management）预计牵头该交易并负责向广泛的机构投资者分销债务，债券基金品浩（Pimco）是正在洽谈参与的少数贷款机构之一",
-    "报道称这笔交易预计 2027 年完成；消息出来后 SpaceX 盘后下跌约 1%，英伟达盘后上涨约 0.5%",
-    "SpaceX 于今年 6 月以创纪录的 860 亿美元 IPO 上市；马斯克上月表示，xAI 的 Colossus 2 数据中心到 12 月可能把英伟达芯片用量翻倍以上，公司数据中心将只用英伟达硬件",
-    "背景：摩根士丹利估计到 2028 年 AI 基础设施将需要 1.5 万亿美元外部融资；英伟达今年 8 月已与阿波罗、贝莱德、黑石、博枫、高盛、KKR 合作搭建融资平台，目标为 AI 基础设施撬动超过 5000 亿美元"
-   ],
-   "cat": "nvda",
-   "note": "诚实红线：FT 10/06 首报、路透社当日转发；SpaceX、阿波罗与英伟达均未立即回应置评请求，品浩拒绝置评——金额与结构目前仅《金融时报》单一信源，属未获当事方确认的报道，非官宣。中文侧财联社（10/7 06:31 电报）、参考消息网（10/7）为转载。"
-  },
-  {
    "id": "ev20261006a",
    "date": "2026-10-06",
    "type": "mt",
@@ -1252,51 +1306,25 @@ function renderChrome(){
    "note": "行情数字取结算口径（腾讯自选股历史行情接口），并与东方财富、新浪财经 gb_nvda、TipRanks 逐项比对一致；成交量与成交额在盘后各源仍有微幅浮动（1.0065 亿–1.0066 亿股、241.99 亿–242.18 亿美元），本条取约数。5.86 万亿美元为盘中市值口径、5.7769 万亿为收盘市值口径，两者不可混用。url 指向格隆汇 10 月 6 日盘中快讯（仅覆盖盘中新高与估值两行事实），其余行情与大盘数字来自结算口径与新浪财经 10 月 7 日收盘稿。未配图：新浪财经收盘稿的 og:image 为通用交易台照片，与本条主题无具体对应，按口径留空。"
   },
   {
-   "id": "ev20261005e",
-   "date": "2026-10-05",
-   "type": "co",
-   "src": "The Information（经新浪财经·环球市场播报编译；ETtoday、鉅亨網、Times of India、BigGo 等转述）",
-   "title": "The Information 披露黄仁勋女婿 Nico Caprez 已升任英伟达全球 AI 基础设施增长副总裁，主导 Neocloud 融资关系与 5000 亿美元融资计划",
-   "place": "美国·加州圣克拉拉（NVIDIA 总部）",
-   "url": "http://finance.sina.com.cn/stock/usstock/c/2026-10-06/doc-iniuhuhz8821233.shtml",
+   "id": "ev20261006b",
+   "date": "2026-10-06",
+   "type": "mt",
+   "src": "路透社 Reuters（首报：金融时报 Financial Times）",
+   "title": "SpaceX 拟募资 400 亿美元采购英伟达 AI 芯片：阿波罗全球管理牵头，100 亿银行贷款 + 300 亿投资级债，交易预计 2027 年完成",
+   "place": "美国·纽约（Apollo Global Management）",
+   "url": "https://www.thestar.com.my/tech/tech-news/2026/10/07/spacex-seeks-40-billion-to-buy-nvidia-chips-ft-reports",
    "images": [
-    "https://n.sinaimg.cn/finance/transform/59/w550h309/20261006/8b8f-bb0ab5bfb06f900032ad1445ce4cd82f.png"
+    "https://apicms.thestar.com.my/uploads/images/2026/10/07/4149042.jpg"
    ],
    "signals": [
-    "The Information 10 月 5 日刊出长篇报道（作者 Phoebe Liu）：黄仁勋长女麦迪逊·黄（Madison Huang）近日在夏威夷完婚，其丈夫尼科·卡普雷茨（Nico Caprez，35 岁）已是英伟达核心高管之一——全球 AI 基础设施增长（Global AI Infrastructure Growth）副总裁",
-    "卡普雷茨是瑞士人，曾代表瑞士出战高山滑雪赛事、2013 年退役，之后任职波士顿咨询（BCG）苏黎世办公室并赴伦敦商学院取得硕士（与麦迪逊同班，2021 年毕业）；2024 年初加入英伟达任企业发展经理，2026 年 1 月跳过资深总监一级，直接升任副总裁",
-    "其职责已超出卖 GPU：维护英伟达与 Neocloud（面向 AI 训练与推理的新一代云厂商）及数据中心企业的关系，帮客户找地、找电，并设计以 GPU 等硬件为抵押的信用担保与贷款工具",
-    "报道点名的交易包括：2026 年 6 月推动英伟达对澳洲 Neocloud 业者 Firmus 的信用支持，协助其采购约 17 万颗 Grace Blackwell 与 Vera Rubin 芯片、金额可能超过 150 亿美元；以及参与推动 8 月与黑石等华尔街机构合作的 AI 基建融资计划（目标动员逾 5000 亿美元第三方资金，大量细节仍未敲定）",
-    "报道称麦迪逊·黄 2026 年 3 月升任「物理 AI」产品营销高级总监、常随父亲出访供应链伙伴，黄仁勋之子斯宾塞（Spencer，36 岁）自 2022 年起任机器人产品管理总监；多名英伟达员工对 The Information 表示，公司运作「远比外界想象的更像家族企业」，并认为黄仁勋正为二人日后承担更大领导角色做准备",
-    "报道同时指出并非所有押注都奏效：卡普雷茨向 Neocloud 推的营收分成方案「AI Compute Partnership」因 Nebius 等业者拒绝（担心过度依赖英伟达、让出利润）正在重做。布鲁克菲尔德资管全球 AI 基础设施主管西坎德·拉希德转述黄仁勋的话：「想把事情办成，就找 Nico」",
-    "黄仁勋与英伟达均未就婚礼或该项人事安排发布官方声明"
+    "《金融时报》10 月 6 日援引知情人士报道：马斯克旗下的 SpaceX 正寻求募集约 400 亿美元资金，用于采购英伟达 AI 芯片；路透社同日转发该报道（10 月 6 日电）",
+    "募资结构：约 100 亿美元银行贷款 + 约 300 亿美元投资级债务；资产管理公司阿波罗全球管理（Apollo Global Management）预计牵头该交易并负责向广泛的机构投资者分销债务，债券基金品浩（Pimco）是正在洽谈参与的少数贷款机构之一",
+    "报道称这笔交易预计 2027 年完成；消息出来后 SpaceX 盘后下跌约 1%，英伟达盘后上涨约 0.5%",
+    "SpaceX 于今年 6 月以创纪录的 860 亿美元 IPO 上市；马斯克上月表示，xAI 的 Colossus 2 数据中心到 12 月可能把英伟达芯片用量翻倍以上，公司数据中心将只用英伟达硬件",
+    "背景：摩根士丹利估计到 2028 年 AI 基础设施将需要 1.5 万亿美元外部融资；英伟达今年 8 月已与阿波罗、贝莱德、黑石、博枫、高盛、KKR 合作搭建融资平台，目标为 AI 基础设施撬动超过 5000 亿美元"
    ],
    "cat": "nvda",
-   "note": "The Information 首发日为 2026-10-05（美东周一），中文版由新浪财经·环球市场播报于 10-06 18:29 编译发布，ETtoday、NOWnews、鉅亨網、Times of India、BigGo 等 10-06 跟进，故 date 取首报日 10-05（id 内嵌日期一致）。婚礼属私人事务、官方未置评；本条只采纳该报道中可溯源的事实陈述（当事人履历、职级、参与的交易），不含社媒传闻与台媒转述的三星会长李在镕 9-28 晚宴爆料（后者事件日归 9-28，已在 ev20260928e）。配图为新浪财经原文页 og:image（合成插画，已目视确认与主题对应）。"
-  },
-  {
-   "id": "ev20261005d",
-   "date": "2026-10-05",
-   "type": "co",
-   "src": "Fortune",
-   "title": "英伟达风投 NVentures 参投 Reactor 的 A 轮，后者总融资升至 7400 万美元，主打世界模型实时推理基础设施",
-   "place": "美国·旧金山",
-   "url": "https://fortune.com/2026/10/05/nvidia-backs-startup-reactor-buzz-grows-world-models/",
-   "images": [
-    "https://fortune.com/img-assets/wp-content/uploads/2026/10/Alberto-and-BryceReactor.jpg?resize=1200,600",
-    "https://inc-reactor-static.b-cdn.net/assets/opengraph-image.png"
-   ],
-   "signals": [
-    "旧金山初创公司 Reactor 于 10 月 5 日宣布，英伟达风投部门 NVentures 与 Sapphire Ventures 加入其 A 轮，公司累计融资额由此升至 7400 万美元；该轮由 Lightspeed Venture Partners 领投，公司 5 月 28 日结束隐身状态时累计融资为 5900 万美元（Fortune 10 月 5 日首报）",
-    "Reactor 不做世界模型本身，做的是让别人跑得起世界模型的中间层：自研推理引擎 + 全球 GPU 云 + 流媒体分发层，以 SDK 和 API 形式出售；公司称其平台可让交互式 3D 环境以每秒 60 帧以上渲染、时延低于 40 毫秒",
-    "客户方向分两块：一是影视娱乐，公司称好莱坞制片厂、广告平台和流媒体服务已有在跑的项目；二是物理 AI 与机器人，创始人认为机器人测试若用传统仿真，需人工搭建三维物体与场景，成本高耗时长，而世界模型可由提示词直接生成环境",
-    "创始团队背景：CEO Alberto Taiuti 是 AI 视频生成公司 Luma AI 的联合创始人、曾任其 CTO；CTO Bryce Schmidtchen 曾是苹果 Vision Pro 的技术负责人，两人均参与过 Vision Pro；团队来自苹果、Meta、谷歌、Netflix、Adobe、Replicate、微软",
-    "公司另与 AWS 及世界模型研究机构 Overworld 建立合作；资金用途为锁定更多算力、扩充团队、采购机器人硬件用于测试",
-    "英伟达自身已有 Cosmos 系列世界模型、用于机器人仿真的 Isaac 工具链，以及让机器人在本地跑 AI 的 Jetson 计算平台，此次投资使其在「跑世界模型」这一基础设施层也持有权益",
-    "同周内，AMD 宣布以 82 亿美元换股方式收购世界模型公司 World Labs，AI 视频公司 Runway 发布其世界模型的首个开源权重版本；此前英伟达还投过 Reflection AI、AMI（Yann LeCun 创立）、World Labs 等世界模型方向公司"
-   ],
-   "cat": "nvda",
-   "note": ""
+   "note": "诚实红线：FT 10/06 首报、路透社当日转发；SpaceX、阿波罗与英伟达均未立即回应置评请求，品浩拒绝置评——金额与结构目前仅《金融时报》单一信源，属未获当事方确认的报道，非官宣。中文侧财联社（10/7 06:31 电报）、参考消息网（10/7）为转载。"
   },
   {
    "id": "ev20261005a",
@@ -1362,6 +1390,76 @@ function renderChrome(){
    "note": "诉状递交日为美东 10 月 2 日、CNBC 首报日为 10 月 5 日，date 取首报日（10/2 之前无任何公开报道）；黄仁勋引语出自 2025 年 12 月交易宣布前后的内部邮件，由 CNBC 本次披露，非 10 月 5 日新发言。"
   },
   {
+   "id": "ev20261005d",
+   "date": "2026-10-05",
+   "type": "co",
+   "src": "Fortune",
+   "title": "英伟达风投 NVentures 参投 Reactor 的 A 轮，后者总融资升至 7400 万美元，主打世界模型实时推理基础设施",
+   "place": "美国·旧金山",
+   "url": "https://fortune.com/2026/10/05/nvidia-backs-startup-reactor-buzz-grows-world-models/",
+   "images": [
+    "https://fortune.com/img-assets/wp-content/uploads/2026/10/Alberto-and-BryceReactor.jpg?resize=1200,600",
+    "https://inc-reactor-static.b-cdn.net/assets/opengraph-image.png"
+   ],
+   "signals": [
+    "旧金山初创公司 Reactor 于 10 月 5 日宣布，英伟达风投部门 NVentures 与 Sapphire Ventures 加入其 A 轮，公司累计融资额由此升至 7400 万美元；该轮由 Lightspeed Venture Partners 领投，公司 5 月 28 日结束隐身状态时累计融资为 5900 万美元（Fortune 10 月 5 日首报）",
+    "Reactor 不做世界模型本身，做的是让别人跑得起世界模型的中间层：自研推理引擎 + 全球 GPU 云 + 流媒体分发层，以 SDK 和 API 形式出售；公司称其平台可让交互式 3D 环境以每秒 60 帧以上渲染、时延低于 40 毫秒",
+    "客户方向分两块：一是影视娱乐，公司称好莱坞制片厂、广告平台和流媒体服务已有在跑的项目；二是物理 AI 与机器人，创始人认为机器人测试若用传统仿真，需人工搭建三维物体与场景，成本高耗时长，而世界模型可由提示词直接生成环境",
+    "创始团队背景：CEO Alberto Taiuti 是 AI 视频生成公司 Luma AI 的联合创始人、曾任其 CTO；CTO Bryce Schmidtchen 曾是苹果 Vision Pro 的技术负责人，两人均参与过 Vision Pro；团队来自苹果、Meta、谷歌、Netflix、Adobe、Replicate、微软",
+    "公司另与 AWS 及世界模型研究机构 Overworld 建立合作；资金用途为锁定更多算力、扩充团队、采购机器人硬件用于测试",
+    "英伟达自身已有 Cosmos 系列世界模型、用于机器人仿真的 Isaac 工具链，以及让机器人在本地跑 AI 的 Jetson 计算平台，此次投资使其在「跑世界模型」这一基础设施层也持有权益",
+    "同周内，AMD 宣布以 82 亿美元换股方式收购世界模型公司 World Labs，AI 视频公司 Runway 发布其世界模型的首个开源权重版本；此前英伟达还投过 Reflection AI、AMI（Yann LeCun 创立）、World Labs 等世界模型方向公司"
+   ],
+   "cat": "nvda",
+   "note": ""
+  },
+  {
+   "id": "ev20261005e",
+   "date": "2026-10-05",
+   "type": "co",
+   "src": "The Information（经新浪财经·环球市场播报编译；ETtoday、鉅亨網、Times of India、BigGo 等转述）",
+   "title": "The Information 披露黄仁勋女婿 Nico Caprez 已升任英伟达全球 AI 基础设施增长副总裁，主导 Neocloud 融资关系与 5000 亿美元融资计划",
+   "place": "美国·加州圣克拉拉（NVIDIA 总部）",
+   "url": "http://finance.sina.com.cn/stock/usstock/c/2026-10-06/doc-iniuhuhz8821233.shtml",
+   "images": [
+    "https://n.sinaimg.cn/finance/transform/59/w550h309/20261006/8b8f-bb0ab5bfb06f900032ad1445ce4cd82f.png"
+   ],
+   "signals": [
+    "The Information 10 月 5 日刊出长篇报道（作者 Phoebe Liu）：黄仁勋长女麦迪逊·黄（Madison Huang）近日在夏威夷完婚，其丈夫尼科·卡普雷茨（Nico Caprez，35 岁）已是英伟达核心高管之一——全球 AI 基础设施增长（Global AI Infrastructure Growth）副总裁",
+    "卡普雷茨是瑞士人，曾代表瑞士出战高山滑雪赛事、2013 年退役，之后任职波士顿咨询（BCG）苏黎世办公室并赴伦敦商学院取得硕士（与麦迪逊同班，2021 年毕业）；2024 年初加入英伟达任企业发展经理，2026 年 1 月跳过资深总监一级，直接升任副总裁",
+    "其职责已超出卖 GPU：维护英伟达与 Neocloud（面向 AI 训练与推理的新一代云厂商）及数据中心企业的关系，帮客户找地、找电，并设计以 GPU 等硬件为抵押的信用担保与贷款工具",
+    "报道点名的交易包括：2026 年 6 月推动英伟达对澳洲 Neocloud 业者 Firmus 的信用支持，协助其采购约 17 万颗 Grace Blackwell 与 Vera Rubin 芯片、金额可能超过 150 亿美元；以及参与推动 8 月与黑石等华尔街机构合作的 AI 基建融资计划（目标动员逾 5000 亿美元第三方资金，大量细节仍未敲定）",
+    "报道称麦迪逊·黄 2026 年 3 月升任「物理 AI」产品营销高级总监、常随父亲出访供应链伙伴，黄仁勋之子斯宾塞（Spencer，36 岁）自 2022 年起任机器人产品管理总监；多名英伟达员工对 The Information 表示，公司运作「远比外界想象的更像家族企业」，并认为黄仁勋正为二人日后承担更大领导角色做准备",
+    "报道同时指出并非所有押注都奏效：卡普雷茨向 Neocloud 推的营收分成方案「AI Compute Partnership」因 Nebius 等业者拒绝（担心过度依赖英伟达、让出利润）正在重做。布鲁克菲尔德资管全球 AI 基础设施主管西坎德·拉希德转述黄仁勋的话：「想把事情办成，就找 Nico」",
+    "黄仁勋与英伟达均未就婚礼或该项人事安排发布官方声明"
+   ],
+   "cat": "nvda",
+   "note": "The Information 首发日为 2026-10-05（美东周一），中文版由新浪财经·环球市场播报于 10-06 18:29 编译发布，ETtoday、NOWnews、鉅亨網、Times of India、BigGo 等 10-06 跟进，故 date 取首报日 10-05（id 内嵌日期一致）。婚礼属私人事务、官方未置评；本条只采纳该报道中可溯源的事实陈述（当事人履历、职级、参与的交易），不含社媒传闻与台媒转述的三星会长李在镕 9-28 晚宴爆料（后者事件日归 9-28，已在 ev20260928e）。配图为新浪财经原文页 og:image（合成插画，已目视确认与主题对应）。"
+  },
+  {
+   "id": "ev20261002a",
+   "date": "2026-10-02",
+   "type": "mt",
+   "cat": "nvda",
+   "src": "IT之家 10 月 2 日报道（腾讯新闻转载）；原始信源为微软开发者账号 @windowsdev 在 X 发布的预告",
+   "title": "微软官宣 10 月 7 日开发者活动：黄仁勋受邀与纳德拉同台，主推 RTX Spark 与 Surface Laptop Ultra",
+   "place": "美国·旧金山（活动地点；本轮为线上官宣）",
+   "url": "https://news.qq.com/rain/a/20261002A034WD00",
+   "images": [
+    "https://inews.gtimg.com/om_ls/Ob69xS0Vws84DK0awGDTh_xZAv1EmZleZYH9zdlCwTUQ0AA_640330/0"
+   ],
+   "signals": [
+    "微软开发者账号 @windowsdev 于 10 月 2 日在 X 发布预告：将于太平洋时间 10 月 7 日上午 10 点（北京时间 10 月 8 日凌晨 1 点）举办一场面向开发者与构建者的线上活动，主题是「本地 AI 如何塑造 PC 的下一阶段」",
+    "预告称将携手英伟达介绍 RTX Spark 的新体验，并为开发者与 Builder 带来更多工具与功能",
+    "出席阵容：微软 CEO 萨提亚·纳德拉、Windows 与 Surface 负责人帕万·达武鲁里，英伟达 CEO 黄仁勋受邀参与",
+    "预计公布的硬件包括 Surface Laptop Ultra（搭载 RTX Spark、最高 128GB 统一内存、完整 CUDA 支持，官方口径可在本地运行最高 1200 亿参数的 AI 模型）与 Surface RTX Spark Dev Box 开发主机",
+    "RTX Spark 是英伟达为 Windows 轻薄本与小尺寸台式机打造的「超级芯片」平台：把 Grace Arm CPU 与 Blackwell 架构 RTX GPU 封装在同一芯片／基板上，经 NVLink-C2C 高速互连，并采用 CPU 与 GPU 共享同一块 LPDDR5X 内存池的统一内存架构",
+    "已列入首批 RTX Spark 笔记本阵容的机型为华硕 ProArt P16、戴尔 XPS 16、惠普 OmniBook Ultra 16、联想 Yoga Pro 9n、微软 Surface Laptop Ultra、微星 Prestige N16 Flip AI+；截至报道时各机型定价与上市日期尚未公布",
+    "这是微软两年多来首次举办大型 Windows 与 Surface 硬件活动，上一场是 2024 年 5 月的 Copilot+ PC 发布"
+   ],
+   "note": "事件日为官宣日 2026-10-02；活动本身在 2026-10-07 太平洋时间 10:00。原始信源为微软 @windowsdev 的 X 预告（本轮 x.com 不可直读），中文侧由 IT之家 10/2 报道、腾讯新闻转载，英文侧由 BigGo Finance 等转述，三处信息一致。配图取本条 url 页面 og:image（微软「07」+ 笔记本的官方预热主视觉，已下载目视确认切题）。尚未有黄仁勋本人发言，故不入 cat=jensen。"
+  },
+  {
    "id": "ev20261002b",
    "date": "2026-10-02",
    "type": "mt",
@@ -1406,29 +1504,6 @@ function renderChrome(){
     "美光已警告内存短缺可能在 2027–2028 年加剧，且尚不知道供需何时重新平衡；本代 64GB 与 128GB 共用同一颗 GB10 Grace Blackwell 超级芯片与同一套软件栈，差别只在统一内存容量（官方口径 1000 亿 vs 2000 亿参数上限）"
    ],
    "note": "官方博客署期 2026-10-02T13:00:39Z（北京时间 10 月 2 日 21:00）。配图取该页 og:image（多品牌 DGX Spark 机型合影 + 「NVIDIA Local AI」角标），已下载目视确认切题。signals 中的数字（4999 美元、10 月 23 日、1000 亿／2000 亿参数、1.7 倍、200 GbE）均逐字取自官方原文，未做任何推算。 【2026-10-05 富化】补 128GB Founders Edition 定价上调至 6950 美元及相关内存供应背景，来源为 Business Insider 市场版（引 The Register 首报），非英伟达官网原文；官网产品页不列价格，故该组数字按媒体口径记录，未做任何换算。"
-  },
-  {
-   "id": "ev20261002a",
-   "date": "2026-10-02",
-   "type": "mt",
-   "cat": "nvda",
-   "src": "IT之家 10 月 2 日报道（腾讯新闻转载）；原始信源为微软开发者账号 @windowsdev 在 X 发布的预告",
-   "title": "微软官宣 10 月 7 日开发者活动：黄仁勋受邀与纳德拉同台，主推 RTX Spark 与 Surface Laptop Ultra",
-   "place": "美国·旧金山（活动地点；本轮为线上官宣）",
-   "url": "https://news.qq.com/rain/a/20261002A034WD00",
-   "images": [
-    "https://inews.gtimg.com/om_ls/Ob69xS0Vws84DK0awGDTh_xZAv1EmZleZYH9zdlCwTUQ0AA_640330/0"
-   ],
-   "signals": [
-    "微软开发者账号 @windowsdev 于 10 月 2 日在 X 发布预告：将于太平洋时间 10 月 7 日上午 10 点（北京时间 10 月 8 日凌晨 1 点）举办一场面向开发者与构建者的线上活动，主题是「本地 AI 如何塑造 PC 的下一阶段」",
-    "预告称将携手英伟达介绍 RTX Spark 的新体验，并为开发者与 Builder 带来更多工具与功能",
-    "出席阵容：微软 CEO 萨提亚·纳德拉、Windows 与 Surface 负责人帕万·达武鲁里，英伟达 CEO 黄仁勋受邀参与",
-    "预计公布的硬件包括 Surface Laptop Ultra（搭载 RTX Spark、最高 128GB 统一内存、完整 CUDA 支持，官方口径可在本地运行最高 1200 亿参数的 AI 模型）与 Surface RTX Spark Dev Box 开发主机",
-    "RTX Spark 是英伟达为 Windows 轻薄本与小尺寸台式机打造的「超级芯片」平台：把 Grace Arm CPU 与 Blackwell 架构 RTX GPU 封装在同一芯片／基板上，经 NVLink-C2C 高速互连，并采用 CPU 与 GPU 共享同一块 LPDDR5X 内存池的统一内存架构",
-    "已列入首批 RTX Spark 笔记本阵容的机型为华硕 ProArt P16、戴尔 XPS 16、惠普 OmniBook Ultra 16、联想 Yoga Pro 9n、微软 Surface Laptop Ultra、微星 Prestige N16 Flip AI+；截至报道时各机型定价与上市日期尚未公布",
-    "这是微软两年多来首次举办大型 Windows 与 Surface 硬件活动，上一场是 2024 年 5 月的 Copilot+ PC 发布"
-   ],
-   "note": "事件日为官宣日 2026-10-02；活动本身在 2026-10-07 太平洋时间 10:00。原始信源为微软 @windowsdev 的 X 预告（本轮 x.com 不可直读），中文侧由 IT之家 10/2 报道、腾讯新闻转载，英文侧由 BigGo Finance 等转述，三处信息一致。配图取本条 url 页面 og:image（微软「07」+ 笔记本的官方预热主视觉，已下载目视确认切题）。尚未有黄仁勋本人发言，故不入 cat=jensen。"
   },
   {
    "id": "ev20261002d",
@@ -1557,6 +1632,47 @@ function renderChrome(){
    "note": "英伟达官方博客 2026-10-01 23:44 GMT 发布（美东 10/1 晚、北京时间 10/2 早），署名作者 Dion Harris，按 cat 口径归 nvnews；date 取文章署名日期 10/1。原文无黄仁勋直接引语。配图取原文页 og:image（Standard 17.0s vs Ultrafast 6.4s 对比卡片，已下载目视确认切题）。中文侧由 IT时代网（腾讯新闻 10/02）等转载。"
   },
   {
+   "id": "ev20260930a",
+   "date": "2026-09-30",
+   "type": "mt",
+   "cat": "jensen",
+   "src": "新浪财经 7×24（转述黄仁勋就《白宫超级智能协定》的表态）",
+   "title": "黄仁勋就《白宫超级智能协定》表态：开发这项技术的公司负有首要责任，做不到就要担责",
+   "place": "线上（黄仁勋公开表态）",
+   "url": "https://wap.cj.sina.cn/pc/7x24/5121585",
+   "images": [],
+   "signals": [
+    "【核心表态】「昨天在白宫，来自我们整个行业的领导人齐聚一堂，共同签署了《白宫超级智能协定》。其核心原则非常简单：开发这项技术的公司负有首要责任，必须安全地开发和部署该技术，并在未能达标时承担责任。」",
+    "【对协定的定性】「协定通过强有力的内部管控、独立的外部评估以及董事会级别的监督，进一步强化了这一责任。」",
+    "【对超级智能的定位】「超级智能为推动科学发现、提升生产力、保障安全、改善健康和促进繁荣提供了非凡的机遇。」",
+    "【收尾口径】「超级智能的未来，不仅取决于它能做什么，更取决于它能赢得多少信任。通过秉持雄心、严谨和责任感进行开发，我们可以确保这项非凡技术不断拓展机遇，并为子孙后代改善生活。」",
+    "【协定背景】9/29 白宫超级智能日，特朗普与谷歌皮查伊、Anthropic 阿莫代伊、Meta 扎克伯格、OpenAI 布罗克曼、xAI 马斯克、英伟达黄仁勋六人共同签署《白宫超级智能协定：前沿责任联合承诺》，设「内部管控—内部团队核验—独立外部审计—董事会独立委员会」四层机制；特朗普称其「具有道德约束力」，但属自愿性质、未设罚则。同日特朗普另签行政令，要求联邦机构在官方表述中以「超级智能（SI）」取代「人工智能（AI）」"
+   ],
+   "note": "本条为黄仁勋本人第一人称表态，中文口径出自新浪财经 7×24 于北京 2026-10-01 01:30 连续发布的四条快讯（北京 10/1 凌晨即美东 9/30 午后），语句中「昨天在白宫」指向 9/29，故 date 取表态发生日（美东）2026-09-30。**发布渠道待核：未核到英文原文，无法确认该表态出自 X 原帖、官方声明还是媒体声明，暂按「黄仁勋本人可溯源发言」归 jensen；本轮 @JensenHuang 计数由 18 增至 19（followers 1,105,600→1,108,349），确认窗口内有新增原帖，但 X 时间线通道全程不可用（x.com 直连 000、nitter 系镜像 000、r.jina.ai 空、cdn.syndication 空），未能定位该新帖的具体内容与 status id，permalink 待补。**严禁编造 status id。"
+  },
+  {
+   "id": "ev20260930b",
+   "date": "2026-09-30",
+   "type": "mt",
+   "cat": "nvnews",
+   "src": "英伟达官方博客（NVIDIA Blog，作者 Stuart Pitts）",
+   "title": "CoreWeave 把 Vera Rubin NVL72 拉进生产：Cognition 成首个客户，SWE-2 推理吞吐较 GB200 提升 4.8 倍",
+   "place": "美国·旧金山（CoreWeave Fully Connected 大会）",
+   "url": "https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/09/logo-lockup-corp-blog-coreweave-1280x680-1.png"
+   ],
+   "signals": [
+    "【官方发布】英伟达官方博客 9/30 发文：CoreWeave 在旧金山 CoreWeave Fully Connected 大会上宣布 NVIDIA Vera Rubin NVL72 系统正式进入生产，配 Spectrum-X 102.4T 以太网；同时将提供 NVIDIA Vera——英伟达首款「为 AI 智能体而生」的 CPU",
+    "【首个生产客户】Cognition（Devin 背后的应用 AI 实验室）成为在 Vera Rubin 上跑生产负载的首个客户；该公司在 CoreWeave 上九个月内扩展到数千块 GPU，承担 Devin 的训练、强化学习与生产推理",
+    "【性能口径】CoreWeave 本月收到首批 Vera Rubin NVL72 生产机架后，Cognition 用取自 FrontierCode 的真实软件工程任务做基准，对照 GB200 NVL72 基线：**早期测试中 Vera Rubin NVL72 在 SWE-2 推理负载上的总 token 吞吐最高提升 4.8 倍**",
+    "【Cognition 原话】创始团队成员 Silas Alberti：「Agentic coding 是复杂负载——长上下文、高并发、大 token 量，每一个 token 的成本决定了我们能交付什么。把这一切放在同一个平台上，加上英伟达和 CoreWeave 的工程师……」",
+    "【英伟达原话】 hyperscale 与高性能计算副总裁 Ian Buck：「英伟达加速计算的价值能跨代延续。Volta 发布将近十年后，CoreWeave 的 NVIDIA V100 仍在跑客户负载；同时 CoreWeave 正把 Vera Rubin NVL72 带入生产。这就是英伟达平台的力量：基础设施能持续赚钱多年，并且能把合适的 GPU 放到合适的负载上」",
+    "【配套发布】CoreWeave 同时推出 CoreWeave Forge——一个在英伟达加速计算上训练、评估、改进模型与智能体的连通环境"
+   ],
+   "note": "来源为英伟达官方博客（blogs.nvidia.com，官方域）故归 nvnews；文中「本周」在旧金山举行的 CoreWeave Fully Connected 为会议举办时点，博文发布日为 9/30（GMT 15:00），date 取发布日 2026-09-30（与美东 9/30 上午一致）。配图取自原文页 og:image（CoreWeave 与 NVIDIA 联名锁图，为该篇专属题图，已目视确认切题；注意区别于站点默认图）。"
+  },
+  {
    "id": "ev20260930c",
    "date": "2026-09-30",
    "type": "mt",
@@ -1597,112 +1713,6 @@ function renderChrome(){
     "【既有合作】Jacobs 称该奖项建立在公司与英伟达在 AI 基础设施与先进数据中心数字孪生技术上的既有合作之上"
    ],
    "note": "来源为 Jacobs 官方新闻稿（投资者关系页，Business Wire 2026-09-30 发布），date 取发布日 2026-09-30。原文页本轮两次 curl 均返回 429（限流），未取到 og:image，images 留空。"
-  },
-  {
-   "id": "ev20260930b",
-   "date": "2026-09-30",
-   "type": "mt",
-   "cat": "nvnews",
-   "src": "英伟达官方博客（NVIDIA Blog，作者 Stuart Pitts）",
-   "title": "CoreWeave 把 Vera Rubin NVL72 拉进生产：Cognition 成首个客户，SWE-2 推理吞吐较 GB200 提升 4.8 倍",
-   "place": "美国·旧金山（CoreWeave Fully Connected 大会）",
-   "url": "https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/",
-   "images": [
-    "https://blogs.nvidia.com/wp-content/uploads/2026/09/logo-lockup-corp-blog-coreweave-1280x680-1.png"
-   ],
-   "signals": [
-    "【官方发布】英伟达官方博客 9/30 发文：CoreWeave 在旧金山 CoreWeave Fully Connected 大会上宣布 NVIDIA Vera Rubin NVL72 系统正式进入生产，配 Spectrum-X 102.4T 以太网；同时将提供 NVIDIA Vera——英伟达首款「为 AI 智能体而生」的 CPU",
-    "【首个生产客户】Cognition（Devin 背后的应用 AI 实验室）成为在 Vera Rubin 上跑生产负载的首个客户；该公司在 CoreWeave 上九个月内扩展到数千块 GPU，承担 Devin 的训练、强化学习与生产推理",
-    "【性能口径】CoreWeave 本月收到首批 Vera Rubin NVL72 生产机架后，Cognition 用取自 FrontierCode 的真实软件工程任务做基准，对照 GB200 NVL72 基线：**早期测试中 Vera Rubin NVL72 在 SWE-2 推理负载上的总 token 吞吐最高提升 4.8 倍**",
-    "【Cognition 原话】创始团队成员 Silas Alberti：「Agentic coding 是复杂负载——长上下文、高并发、大 token 量，每一个 token 的成本决定了我们能交付什么。把这一切放在同一个平台上，加上英伟达和 CoreWeave 的工程师……」",
-    "【英伟达原话】 hyperscale 与高性能计算副总裁 Ian Buck：「英伟达加速计算的价值能跨代延续。Volta 发布将近十年后，CoreWeave 的 NVIDIA V100 仍在跑客户负载；同时 CoreWeave 正把 Vera Rubin NVL72 带入生产。这就是英伟达平台的力量：基础设施能持续赚钱多年，并且能把合适的 GPU 放到合适的负载上」",
-    "【配套发布】CoreWeave 同时推出 CoreWeave Forge——一个在英伟达加速计算上训练、评估、改进模型与智能体的连通环境"
-   ],
-   "note": "来源为英伟达官方博客（blogs.nvidia.com，官方域）故归 nvnews；文中「本周」在旧金山举行的 CoreWeave Fully Connected 为会议举办时点，博文发布日为 9/30（GMT 15:00），date 取发布日 2026-09-30（与美东 9/30 上午一致）。配图取自原文页 og:image（CoreWeave 与 NVIDIA 联名锁图，为该篇专属题图，已目视确认切题；注意区别于站点默认图）。"
-  },
-  {
-   "id": "ev20260930a",
-   "date": "2026-09-30",
-   "type": "mt",
-   "cat": "jensen",
-   "src": "新浪财经 7×24（转述黄仁勋就《白宫超级智能协定》的表态）",
-   "title": "黄仁勋就《白宫超级智能协定》表态：开发这项技术的公司负有首要责任，做不到就要担责",
-   "place": "线上（黄仁勋公开表态）",
-   "url": "https://wap.cj.sina.cn/pc/7x24/5121585",
-   "images": [],
-   "signals": [
-    "【核心表态】「昨天在白宫，来自我们整个行业的领导人齐聚一堂，共同签署了《白宫超级智能协定》。其核心原则非常简单：开发这项技术的公司负有首要责任，必须安全地开发和部署该技术，并在未能达标时承担责任。」",
-    "【对协定的定性】「协定通过强有力的内部管控、独立的外部评估以及董事会级别的监督，进一步强化了这一责任。」",
-    "【对超级智能的定位】「超级智能为推动科学发现、提升生产力、保障安全、改善健康和促进繁荣提供了非凡的机遇。」",
-    "【收尾口径】「超级智能的未来，不仅取决于它能做什么，更取决于它能赢得多少信任。通过秉持雄心、严谨和责任感进行开发，我们可以确保这项非凡技术不断拓展机遇，并为子孙后代改善生活。」",
-    "【协定背景】9/29 白宫超级智能日，特朗普与谷歌皮查伊、Anthropic 阿莫代伊、Meta 扎克伯格、OpenAI 布罗克曼、xAI 马斯克、英伟达黄仁勋六人共同签署《白宫超级智能协定：前沿责任联合承诺》，设「内部管控—内部团队核验—独立外部审计—董事会独立委员会」四层机制；特朗普称其「具有道德约束力」，但属自愿性质、未设罚则。同日特朗普另签行政令，要求联邦机构在官方表述中以「超级智能（SI）」取代「人工智能（AI）」"
-   ],
-   "note": "本条为黄仁勋本人第一人称表态，中文口径出自新浪财经 7×24 于北京 2026-10-01 01:30 连续发布的四条快讯（北京 10/1 凌晨即美东 9/30 午后），语句中「昨天在白宫」指向 9/29，故 date 取表态发生日（美东）2026-09-30。**发布渠道待核：未核到英文原文，无法确认该表态出自 X 原帖、官方声明还是媒体声明，暂按「黄仁勋本人可溯源发言」归 jensen；本轮 @JensenHuang 计数由 18 增至 19（followers 1,105,600→1,108,349），确认窗口内有新增原帖，但 X 时间线通道全程不可用（x.com 直连 000、nitter 系镜像 000、r.jina.ai 空、cdn.syndication 空），未能定位该新帖的具体内容与 status id，permalink 待补。**严禁编造 status id。"
-  },
-  {
-   "id": "ev20260929d",
-   "date": "2026-09-29",
-   "type": "mt",
-   "cat": "nvda",
-   "src": "《金融时报》（Financial Times）报道；本条 url 为中文转载（环球市场播报·腾讯网）",
-   "title": "FT：英伟达找保险公司分担 GPU 抵押贷款风险，要把芯片做成「可投资资产类别」",
-   "place": "线上（FT 报道，英伟达与美国保险业接触）",
-   "url": "https://new.qq.com/rain/a/20260930A01P0B00",
-   "images": [],
-   "signals": [
-    "【核心事实】《金融时报》9/29 报道（引知情人士）：英伟达正与多家保险公司展开谈判，探讨把以自有芯片为抵押进行放贷所产生的一部分风险，转移给保险公司与其他投资者。相关对话尚处早期阶段，未必会落地为实际交易",
-    "【方案之一】针对新兴云厂商（「新云」/neocloud）的贷款损失保险：若这类企业债务违约、而用作抵押物的英伟达芯片转售收入不足以偿还贷方本息，由保险赔付差额",
-    "【交易架构】英伟达正与再保险经纪豪登再保险（Howden Re）共同研发保险交易架构；已向至少一家保险公司提供芯片折旧与算力远期价格的相关数据；因单笔潜在体量过大，英伟达考虑借助保险机构把风险进一步分保给对冲基金及其他另类投资者",
-    "【谁在牵头】该项目由英伟达金融解决方案负责人英格马尔·拉内维（Ingemar Lanevi）牵头",
-    "【黄仁勋的口径】黄仁勋主张芯片应被视作一类「可投资资产」，类比飞机这类昂贵、长寿命设备——航空业已发展出复杂金融工具，在用户与投资者之间分摊风险与成本。熟悉英伟达引资工作的人士称：「英伟达在推动市场参与，向其他资本方证明芯片是具备投资价值的资产」",
-    "【既有安排】此前英伟达已承诺为部分融资交易提供兜底，希望从高盛、阿波罗等华尔街机构撬动合计 5000 亿美元资金；并为 OpenAI 的巨型数据中心项目提供了 1050 亿美元租赁担保",
-    "【行业景深】就在保险谈判推进的同时，保险公司正密集推出面向 AI 基建的产品，涵盖信用风险保障、芯片贬值损失赔付，以及数据中心停电、冷却故障带来的合同违约风险保障"
-   ],
-   "note": "FT 于当地 2026-09-29 首发（中文媒体 9/30 转载），date 取外媒首报日 2026-09-29；英文侧由《首尔经济日报》英文版 9/30 复述印证，其中「5000 亿美元融资平台」与「1050 亿美元租赁担保」两项数字与中文转载一致。报道未给出交易规模与具名保险方，属早期磋商，不得当作已落地交易。原文页 og:image 为空（content=\"\"），images 留空。"
-  },
-  {
-   "id": "ev20260929e",
-   "date": "2026-09-29",
-   "type": "mt",
-   "cat": "nvda",
-   "src": "《华尔街日报》（The Wall Street Journal）",
-   "title": "WSJ：黄仁勋等 CEO 在白宫当面质疑 Amodei 的 AI 警告，并曾联手否决类 FINRA 自律方案",
-   "place": "美国·华盛顿（白宫罗斯福厅）",
-   "url": "https://www.wsj.com/tech/ai/tech-ceos-privately-questioned-amodei-for-sounding-ai-alarm-bells-aaa47df3",
-   "images": [],
-   "signals": [
-    "【核心事实】WSJ 引知情人士：美东 9/29，在同意签署 AI 安全原则声明、并于白宫东厅与约两打 CEO 共进午餐之后，包括英伟达黄仁勋在内的多位行业领袖，在罗斯福厅一个更小范围的会议（参加者另有白宫助手与顾问，会上正在敲定 AI 原则）中，当面质疑 Anthropic CEO 达里奥·阿莫代伊——为什么要在公开场合对 AI 模型能力及其风险讲得如此极端",
-    "【Amodei 的回应】据部分知情人士，阿莫代伊对在场高管表示：向公众如实说明模型能力、不淡化风险，这很重要",
-    "【曾否决自律组织方案】同一报道：Anthropic、OpenAI、谷歌此前联合推动一个类 FINRA（美国金融业监管局）的 AI 行业自律组织方案；黄仁勋、Meta 扎克伯格、SpaceX 马斯克向特朗普表达担忧——认为该组织会让头部 AI 公司掌握过多权力——该方案随后被放弃。最终落地的是更轻的自愿协议，其中部分安全措施被保留",
-    "【这场会怎么来的】报道称起点是上周国宴上扎克伯格与众议院议长约翰逊邻座谈 AI 政策；随后扎克伯格与黄仁勋共同协调各家 CEO，特朗普与约翰逊组织了这场午宴。报道把扎克伯格与黄仁勋描述为白宫宽松监管路线的支持者，反对「必要时与政府协调、开始放缓模型开发」的主张",
-    "【旁证】美国国家情报总监 Jay Clayton 称这场会议是他参加过的「最具建设性与融洽度」的行业会议之一"
-   ],
-   "note": "WSJ 原文报道（中文媒体 10/1 集中转载）；谈话本身发生于美东 2026-09-29，date 取事件发生日，不取转载日。本条与 ev20260929a（白宫「超级智能日」）同日但属独立事实（幕后交锋与监管路线博弈），故单独成条。wsj.com 本轮 curl 返回 000（出网受限）且两次重试失败，未取到 og:image，images 留空。"
-  },
-  {
-   "id": "ev20260929c",
-   "date": "2026-09-29",
-   "type": "sp",
-   "cat": "jensen",
-   "src": "雅虎财经（Yahoo Finance，记者 Brian Sozzi）／印度斯坦时报（Hindustan Times，记者 Vaishnavi Vaidyanathan）／The Hill",
-   "title": "黄仁勋在华盛顿与马斯克同台对谈：以后别叫数据中心，叫「超级智能工厂」",
-   "place": "美国·华盛顿（America.gov 发布活动现场）",
-   "url": "https://finance.yahoo.com/technology/article/nvidia-ceo-jensen-huang-ai-data-center-buildout-could-create-1-million-jobs-and-reshape-the-us-economy-110706514.html",
-   "images": [],
-   "signals": [
-    "【场合】9/29 白宫「超级智能日」，黄仁勋与马斯克在华盛顿 America.gov 发布活动上同台对谈，主持人为 Atreides Management 创始人兼首席投资官 Gavin Baker，Anthropic 联合创始人 Tom Brown 后半段加入，全场约 25 分钟。特朗普在记者会上点名黄仁勋「非常英俊」并请他发言",
-    "【改名口径 · 原话】「过去我们称它们为数据中心，是因为那里用来存数据。但我们现在建设的这些设施，本质上其实是『超级智能工厂』（SI 工厂）。之所以叫工厂，是因为它们直接生产具有经济价值的产物，而不仅仅是存储二进制比特。」（雅虎财经、印度斯坦时报口径一致）",
-    "【工厂形态】他描述这些「SI 工厂」是「体量惊人的重实体工程」——庞大的发电设施、高密度的计算集群、高速网络以及复杂的液冷温控系统；类比互联网「让你无论身在何处都能检索任何信息」，超级智能基础设施将「让你无论身在何处都能获知任何洞见、完成任何任务」",
-    "【岗位口径 · 原话】「我们在全美铺开这套基础设施，假设每年新增 10 到 20 吉瓦，光建这些数据中心就可能创造大约一百万个岗位。别忘了你还得建发电厂、修机房主体结构、安装散热温控管网，还要调集大批管工和电工。」「这是 50 年来我们首次迎来美国再工业化的浪潮，并由此催生出大量高薪蓝领岗位。」（原话为 「the first time in probably … 50 years [that] we are re-industrializing the United States, creating a whole bunch of blue collar jobs」）",
-    "【能源观】同场另一段（中文逐字稿口径）：这是他「有记忆以来第一次由纯粹市场力量直接驱动可持续能源投资」——无论核聚变、核裂变、小型模块化反应堆（SMR）还是公用事业级大型电站，几乎各类清洁能源都在获得资金青睐，「我们现在有机会完全不依赖政府补贴来资助能源的未来」",
-    "【赢法 · 原话】被问「美国怎么赢」时他给了一套栈式排序——底层是能源，之上是土地、电力、厂房与基础设施：「我们要造出世界上最好的芯片，要有大量的能源，要创造出色的算法，最后还要让美国对这项技术充满热情，这样我们才能把它推广到各行各业，从制造业到医疗，再到太空探索。」",
-    "【判断权】被问「怎样让超级智能拥有正确的价值观」，他反问「我们究竟希望一个工具拥有多大判断权」，把超级智能比作一把牛排刀——切七分熟牛排游刃有余，但如果它「不肯切一分熟牛排」呢",
-    "【同日答记者问】特朗普请他发言时，黄仁勋说：「我们将推进这项对人类如此重要、对我们国家未来繁荣都非常重要的技术。我们将以负责任且安全的方式推进这项工作。」被问是否需要政府监管、行业能否自我监管时，他答「创新、技术和安全之间并不冲突」（CBS 新闻转述；另据 The Hill，他此前称 AI 灾难概率估算「不负责任」「荒谬」，主张行业应为安全而「加速」）",
-    "【行业同步动作】同场马斯克称中国发电量约为美国的三倍，并给出 SpaceX/特斯拉合计年产 200 吉瓦太阳能的目标；英伟达、Meta、微软本周加入美国技术工人联盟（AAST）——该联盟估算到 2035 年美国每年需填补 170 万个技术工种空缺，而当前培训体系每 100 个需求只产出 55 名工人",
-    "【太空算力 · 中文整理稿口径】同场话题延伸到把算力送上天：马斯克算了一笔账——美国平均用电约 500 吉瓦，每增加 5 吉瓦稳定电力约等于用电量增加 1%，他「愿意打赌」电力使用量每增加 1% 大致对应 GDP 增加 1%，并称 SpaceX 与特斯拉的目标是每年制造 200 吉瓦太阳能发电能力，理由是「太空基本永远都是晴天」、轨道上能接近设计发电能力而地面实际平均只有设计的五分之一到八分之一；黄仁勋接话称「现在正是做这件事情非常好的时机」——这些计算系统目前能产生的经济回报足够高，即便发射成本依然很高，「把它放到整个经济价值里看，其实完全负担得起」，并称「把英伟达的计算系统送进太空，是实现这件事情最好的办法」",
-    "【安全机制亲述 · 中文整理稿口径】黄仁勋在该场合亲自讲解了前一天发布的 Open Agent Safety Platform 思路：模型训练阶段环境相对安全，但到了评估测试阶段必须把智能体高度隔离、并由「另一颗独立的芯片」在带外实时监控——「不能因为『它已经被关起来了』就完全相信它真的不会出来」；他把这套逻辑类比成管理员工：给一定范围的权限、工具和访问权，同时持续监督其行为。他的结论是「安全和推动技术进步，本来就不是矛盾的事情，安全和技术进步其实是一回事」，并举自动驾驶为例——既是更先进的技术，也应该是更安全的技术；同场主持人贝克用「互联网早期担心信用卡被盗、后来把互联网做得足够安全才有亚马逊和 Netflix」作类比呼应"
-   ],
-   "note": "对谈发生于美东 9/29 白宫超级智能日当天（America.gov 发布活动同场，午宴前后），date 按事件发生地取 2026-09-29；中文媒体（瓦砾村夫、IN咖、奇点折射等）于 9/30 集中转载逐字稿，均非一手来源，故 url 取雅虎财经英文首发报道，逐字引语以雅虎财经／印度斯坦时报／Inshorts／GuruFocus（经 TradingView 转载）多家英文源交叉比对后采用；**仅见于中文逐字稿的段落在 signals 内已注明「中文逐字稿口径」**。原文页 curl 取不到 og:image（雅虎财经对无头请求返回拦截页，印度斯坦时报返回 Access Denied）→ images 留空。同日白宫午宴、《白宫超级智能协定》与行政令的事实见 ev20260929a。 2026-10-05 补充：中文整理稿（聪明投资者整理、富途牛牛 10/4「周末读物」转载，配图路径日期 20261004）给出同场更多对话细节——太空算力（马斯克 SpaceX/特斯拉年产 200 吉瓦太阳能目标、黄仁勋「把英伟达的计算系统送进太空是实现这件事最好的办法」）、马斯克「电力使用量每增 1% 大致对应 GDP 增 1%」「每 1 吉瓦算力基础设施约对应 600 亿美元年经济产出」的经济账，以及黄仁勋对 OpenShell 隔离 + Sentry 带外监控机制的亲述。这些段落属英文现场对话的中译整理口径、非原文逐字，已在 signals 内逐条注明「中文整理稿口径」。"
   },
   {
    "id": "ev20260929a",
@@ -1751,51 +1761,69 @@ function renderChrome(){
    "note": "一手来源为清华大学经济管理学院官方微信公众号 9/29 消息；媒体转引见中国新闻网（中新社 记者 曾玥）、上海证券报·中国证券网、证券时报。黄仁勋本人是否出席 10 月 13–14 日北京年会尚未公布。原文页未取到可用 og:image，images 留空。"
   },
   {
-   "id": "ev20260928e",
-   "date": "2026-09-28",
+   "id": "ev20260929c",
+   "date": "2026-09-29",
    "type": "sp",
    "cat": "jensen",
-   "src": "韩国 Financial News（fnnews，纽约特派记者 Lee Byung-chul）/ CHOSUNBIZ / BusinessKorea",
-   "title": "黄仁勋在纽约获 The Korea Society 2026 Van Fleet 奖并发表演说，李在镕、崔泰源到场致辞",
-   "place": "美国·纽约 Cipriani South Street",
-   "url": "https://en.fnnews.com/news/202609290959045159",
-   "images": [
-    "https://image.fnnews.com/resource/media/image/2026/09/29/202609291002142292_l.jpg"
-   ],
-   "signals": [
-    "【获奖口径】美韩友好非营利机构 The Korea Society（韩国社交协会）9/28 晚在纽约 Cipriani South Street 举行 2026 年度晚宴，把范弗利特奖（James A. Van Fleet Award）颁给黄仁勋，理由是他在 AI 与半导体产业的「开创性领导力」及推动美韩经济合作；该奖 1995 年设立、每年颁给对美韩关系有贡献的个人或机构，往届得主包括美国前总统卡特与老布什、韩国前总统金大中、三星前会长李健熙、现代名誉会长郑梦九与 BTS",
-    "【黄仁勋原话 · 韩国】\"By leveraging AI and automation, South Korea can punch far above its weight.\"（借 AI 与自动化，韩国能打出远超自身体量的分量）；他称韩国用 25 年多从「引进技术的国家」变成「站在技术创新最前沿」，是「an astonishing miracle」（惊人的奇迹）",
-    "【黄仁勋原话 · 制造】\"No companies or people are better than South Koreans at building factories.\"（没有哪个公司或民族比韩国人更会建厂）；\"South Korea is now building a 'factory of intelligence,' and we are building it together.\"（韩国正在建「智能工厂」，我们一起建）",
-    "【黄仁勋原话 · AI 安全】\"AI is not alive, nor does it break free from control and act on its own. It is simply software that runs algorithms.\"（AI 不是活的，也不会挣脱控制自作主张，它只是跑算法的软件）；他主张 AI 系统必须放进受限环境「contained」并持续「monitored」，把 AI 时代的行事原则定为 \"responsible optimism\"（负责任的乐观）：\"Work with AI, use it, and harness it to empower yourself.\"",
-    "【黄仁勋原话 · 回忆】他回忆早年访韩时看到年轻人为《星际争霸》和英伟达欢呼、喊出公司名字，\"took my breath away\"（让他屏住呼吸）；与韩国共同成长数十年后，\"I couldn't help but fall in love with the country\"",
-    "【李在镕致辞】三星电子会长李在镕上台祝贺并称其父李健熙 2006 年拿过同一奖项；他说 \"Jensen has built NVIDIA into a company at the center of everything happening in AI today.\"（黄仁勋把英伟达建成了今天 AI 一切事情的中心），并称「我们两家公司都在 AI 上押上了一切」（Both of our companies are betting everything on AI）；他提到两人相识约 25 年（首次见面在 CES），还转述黄仁勋最近对他说的一句话：\"I want to die working.\"",
-    "【崔泰源致辞】SK 集团会长崔泰源祝酒时把两家关系概括为「英伟达设计大脑，SK 制造记忆」（NVIDIA designs the brain, and SK makes the memory）；称每次见面黄仁勋第一句都是「能不能再快一点？」；他把美韩同盟的「前线」从战场改写成数据中心，说领跑者 \"wears a black leather jacket instead of a military uniform\"（穿的是皮夹克而不是军装），并引用被他戏称为「Jensen's Law」的「买得越多省得越多」",
-    "【同行观察】产业简报（The CODEW 9/29）称三人 9/28–9/29 在纽约的会面议题以 HBM 产能锁定为主，三星正推进 HBM4 量产、HBM4E 送样，并试图把代工与先进封装一起打包进合作；三星电子还在纽约时代广场投放祝贺黄仁勋获奖的视频，关键词为 Pioneer / Architect / Builder / Friend",
-    "【领奖后记者会】据韩国《首尔经济日报》英文版报道，黄仁勋在领奖后的记者会上表示「英伟达的繁荣还在我们前面，所以我鼓励股东继续持有」，并称公司股票「目前被明显低估、且处在容易持有的水平」；同一报道提到，他把一件现场签名的皮衣拍卖，成交 13.2 万美元（约 1.8 亿韩元），所得捐给 The Korea Society",
-    "【英伟达官方口径 · 10/1 通稿】英伟达（韩国）10 月 1 日发布官方新闻稿确认黄仁勋获 2026 年 Van Fleet 奖，并补充领奖演说与典礼后对谈内容：他把韩国几十年的转变称为 \"a remarkable miracle\"（非凡的奇迹），强调韩国人「拥抱技术并把技术迅速扩散到产业与社会」的能力；他把 AI 描述为继电力与互联网之后的新一代基础设施，说韩国正在建设 \"intelligence factories\"（智能工厂）「而且是与英伟达一起建」，并表示 \"It is a great honor to stand at the meeting point of two great nations and to join the journey in which the two countries are building the future together.\""
-   ],
-   "note": "获奖事实的一手来源是主办方 The Korea Society 官网（koreasociety.org 与晚宴专站 tksgala.org，2026 Van Fleet Award Honoree — JENSEN HUANG）；本条 url 取现场特派报道（韩国 Financial News 英文版，含黄仁勋获奖后对话的逐字引语）。中文媒体（新浪财经 9/28、科创板日报 9/28）在晚宴举行前只做前瞻报道，不含现场内容。事件发生在美东 9/28 晚，韩国媒体发稿时间为 9/29 上午（时差所致），date 按事件发生地取 2026-09-28。配图取自 fnnews 原文页 og:image（黄仁勋获奖后在台上对话的现场照，已目视确认切题）。 2026-10-01 补充：记者会表态与皮衣拍卖细节来自韩国《首尔经济日报》（en.sedaily.com，AI 英译稿）与 BigGo 财经的相互印证，两句引语为英译转述、非原文逐字，不得当作英文原话直接引用。 2026-10-02 补充：英伟达官方（韩国）已于 10/1 发布通稿确认获奖与演说要点（韩媒 AJU Press 2026-10-01 转述页 https://m.ajupress.com/view/20261001150870715 ；官方通稿页面地址未核到，故未替换 url）。本条 url 仍取现场特派报道。"
-  },
-  {
-   "id": "ev20260928f",
-   "date": "2026-09-28",
-   "type": "iv",
-   "cat": "jensen",
-   "src": "CNBC《Squawk Box》（CNBC 官方摘录稿）",
-   "title": "黄仁勋上 CNBC《Squawk Box》：模型蒸馏「这叫竞争」，不是盗窃",
-   "place": "美国（CNBC 演播室）",
-   "url": "https://www.cnbc.com/2026/09/28/cnbc-excerpts-nvidia-founder-ceo-jensen-huang-speaks-with-cnbcs-squawk-box-today.html",
+   "src": "雅虎财经（Yahoo Finance，记者 Brian Sozzi）／印度斯坦时报（Hindustan Times，记者 Vaishnavi Vaidyanathan）／The Hill",
+   "title": "黄仁勋在华盛顿与马斯克同台对谈：以后别叫数据中心，叫「超级智能工厂」",
+   "place": "美国·华盛顿（America.gov 发布活动现场）",
+   "url": "https://finance.yahoo.com/technology/article/nvidia-ceo-jensen-huang-ai-data-center-buildout-could-create-1-million-jobs-and-reshape-the-us-economy-110706514.html",
    "images": [],
    "signals": [
-    "【蒸馏争议原话】主持人 Andrew Ross Sorkin 问 \"Do you think distillation is not robbery?\"（你觉得蒸馏不算抢劫吗），黄仁勋答：\"That's called competition.\"（这叫竞争）；随后补 \"You're allowed to test somebody else's products all you want.\"（你完全可以尽情测试别人的产品）",
-    "【黄仁勋原话 · 拆解】\"People strip our products down to, you know, down to nothing, down to bones. And I prefer they didn't. I really prefer they didn't.\"（有人把我们的产品拆到只剩骨架；我当然不希望他们这么做）——中文转述口径即「竞争会让一切变得更好」",
-    "【黄仁勋的解法】中文媒体转述其补充：如果不想让别人这样用你的产品，「了解自己的客户，把对应的服务关闭」；他不为伪造账号、恶意爬取 API 的行为背书，讨论对象是蒸馏这项技术本身的正当性",
-    "【同场 · 回购】被问及当日宣布的 1500 亿美元追加回购，黄仁勋称：\"We're going through the largest infrastructure build out in human history... We're generating a lot of cash. We're going to generate a lot of cash in the coming years. And every single year as we generate more cash, I'd like to be able to return it back to the shareholders.\"（我们正经历人类史上最大的基建；我们产生大量现金，而且未来几年还会产生更多，希望能逐年返还给股东）",
-    "【同场 · 安全平台】CNBC 问他是否认为当天发布的 OpenShell 与 Sentry 才是更大的新闻，他答 \"Yeah. Really important news.\"，并称：\"We can't have a successful AI industry if the world doesn't think it's built or confident that it's built and deployed safely... I want the world to know that this industry has the technology, it has the maturity, has the responsibility to do it right, and we will do it right.\"",
-    "【同日另一表述 · 工程问题】就失控智能体，黄仁勋当天对 CNBC 称：\"I believe it's an engineering problem... and we all need to hope that's an engineering problem. If it's not an engineering problem, it's not solvable.\"（我认为这是工程问题，我们也只能指望它是工程问题；如果它不是工程问题，那就无解）（法新社 9/28 引 CNBC，经《海峡时报》转载）",
-    "【立场对照】美国财政部长贝森特 7 月把模型蒸馏称为「盗窃」并威胁制裁；美国 CISA 本月早些时候指控中国 AI 企业开展「工业规模的知识蒸馏行动」，Anthropic 点名阿里通义千问与 DeepSeek，中方已驳斥。CNBC 称白宫未立即回应就黄仁勋言论提出的置评请求"
+    "【场合】9/29 白宫「超级智能日」，黄仁勋与马斯克在华盛顿 America.gov 发布活动上同台对谈，主持人为 Atreides Management 创始人兼首席投资官 Gavin Baker，Anthropic 联合创始人 Tom Brown 后半段加入，全场约 25 分钟。特朗普在记者会上点名黄仁勋「非常英俊」并请他发言",
+    "【改名口径 · 原话】「过去我们称它们为数据中心，是因为那里用来存数据。但我们现在建设的这些设施，本质上其实是『超级智能工厂』（SI 工厂）。之所以叫工厂，是因为它们直接生产具有经济价值的产物，而不仅仅是存储二进制比特。」（雅虎财经、印度斯坦时报口径一致）",
+    "【工厂形态】他描述这些「SI 工厂」是「体量惊人的重实体工程」——庞大的发电设施、高密度的计算集群、高速网络以及复杂的液冷温控系统；类比互联网「让你无论身在何处都能检索任何信息」，超级智能基础设施将「让你无论身在何处都能获知任何洞见、完成任何任务」",
+    "【岗位口径 · 原话】「我们在全美铺开这套基础设施，假设每年新增 10 到 20 吉瓦，光建这些数据中心就可能创造大约一百万个岗位。别忘了你还得建发电厂、修机房主体结构、安装散热温控管网，还要调集大批管工和电工。」「这是 50 年来我们首次迎来美国再工业化的浪潮，并由此催生出大量高薪蓝领岗位。」（原话为 「the first time in probably … 50 years [that] we are re-industrializing the United States, creating a whole bunch of blue collar jobs」）",
+    "【能源观】同场另一段（中文逐字稿口径）：这是他「有记忆以来第一次由纯粹市场力量直接驱动可持续能源投资」——无论核聚变、核裂变、小型模块化反应堆（SMR）还是公用事业级大型电站，几乎各类清洁能源都在获得资金青睐，「我们现在有机会完全不依赖政府补贴来资助能源的未来」",
+    "【赢法 · 原话】被问「美国怎么赢」时他给了一套栈式排序——底层是能源，之上是土地、电力、厂房与基础设施：「我们要造出世界上最好的芯片，要有大量的能源，要创造出色的算法，最后还要让美国对这项技术充满热情，这样我们才能把它推广到各行各业，从制造业到医疗，再到太空探索。」",
+    "【判断权】被问「怎样让超级智能拥有正确的价值观」，他反问「我们究竟希望一个工具拥有多大判断权」，把超级智能比作一把牛排刀——切七分熟牛排游刃有余，但如果它「不肯切一分熟牛排」呢",
+    "【同日答记者问】特朗普请他发言时，黄仁勋说：「我们将推进这项对人类如此重要、对我们国家未来繁荣都非常重要的技术。我们将以负责任且安全的方式推进这项工作。」被问是否需要政府监管、行业能否自我监管时，他答「创新、技术和安全之间并不冲突」（CBS 新闻转述；另据 The Hill，他此前称 AI 灾难概率估算「不负责任」「荒谬」，主张行业应为安全而「加速」）",
+    "【行业同步动作】同场马斯克称中国发电量约为美国的三倍，并给出 SpaceX/特斯拉合计年产 200 吉瓦太阳能的目标；英伟达、Meta、微软本周加入美国技术工人联盟（AAST）——该联盟估算到 2035 年美国每年需填补 170 万个技术工种空缺，而当前培训体系每 100 个需求只产出 55 名工人",
+    "【太空算力 · 中文整理稿口径】同场话题延伸到把算力送上天：马斯克算了一笔账——美国平均用电约 500 吉瓦，每增加 5 吉瓦稳定电力约等于用电量增加 1%，他「愿意打赌」电力使用量每增加 1% 大致对应 GDP 增加 1%，并称 SpaceX 与特斯拉的目标是每年制造 200 吉瓦太阳能发电能力，理由是「太空基本永远都是晴天」、轨道上能接近设计发电能力而地面实际平均只有设计的五分之一到八分之一；黄仁勋接话称「现在正是做这件事情非常好的时机」——这些计算系统目前能产生的经济回报足够高，即便发射成本依然很高，「把它放到整个经济价值里看，其实完全负担得起」，并称「把英伟达的计算系统送进太空，是实现这件事情最好的办法」",
+    "【安全机制亲述 · 中文整理稿口径】黄仁勋在该场合亲自讲解了前一天发布的 Open Agent Safety Platform 思路：模型训练阶段环境相对安全，但到了评估测试阶段必须把智能体高度隔离、并由「另一颗独立的芯片」在带外实时监控——「不能因为『它已经被关起来了』就完全相信它真的不会出来」；他把这套逻辑类比成管理员工：给一定范围的权限、工具和访问权，同时持续监督其行为。他的结论是「安全和推动技术进步，本来就不是矛盾的事情，安全和技术进步其实是一回事」，并举自动驾驶为例——既是更先进的技术，也应该是更安全的技术；同场主持人贝克用「互联网早期担心信用卡被盗、后来把互联网做得足够安全才有亚马逊和 Netflix」作类比呼应"
    ],
-   "note": "CNBC 官方稿件是节目摘录（标题即 CNBC Excerpts），属速记片段而非完整逐字稿；signals 中标注「中文转述」的条目来自 IT之家/新浪 9/29 译文，已区分口径。同一天黄仁勋本人 X 原帖发布同一安全平台官宣（见 ev20260928a），本条不含 X 原帖内容。配图：CNBC 原文页 og:image 为站点通用品牌图（cnbc_versant_share.png），与事件无具体对应，按图片规则留空。"
+   "note": "对谈发生于美东 9/29 白宫超级智能日当天（America.gov 发布活动同场，午宴前后），date 按事件发生地取 2026-09-29；中文媒体（瓦砾村夫、IN咖、奇点折射等）于 9/30 集中转载逐字稿，均非一手来源，故 url 取雅虎财经英文首发报道，逐字引语以雅虎财经／印度斯坦时报／Inshorts／GuruFocus（经 TradingView 转载）多家英文源交叉比对后采用；**仅见于中文逐字稿的段落在 signals 内已注明「中文逐字稿口径」**。原文页 curl 取不到 og:image（雅虎财经对无头请求返回拦截页，印度斯坦时报返回 Access Denied）→ images 留空。同日白宫午宴、《白宫超级智能协定》与行政令的事实见 ev20260929a。 2026-10-05 补充：中文整理稿（聪明投资者整理、富途牛牛 10/4「周末读物」转载，配图路径日期 20261004）给出同场更多对话细节——太空算力（马斯克 SpaceX/特斯拉年产 200 吉瓦太阳能目标、黄仁勋「把英伟达的计算系统送进太空是实现这件事最好的办法」）、马斯克「电力使用量每增 1% 大致对应 GDP 增 1%」「每 1 吉瓦算力基础设施约对应 600 亿美元年经济产出」的经济账，以及黄仁勋对 OpenShell 隔离 + Sentry 带外监控机制的亲述。这些段落属英文现场对话的中译整理口径、非原文逐字，已在 signals 内逐条注明「中文整理稿口径」。"
+  },
+  {
+   "id": "ev20260929d",
+   "date": "2026-09-29",
+   "type": "mt",
+   "cat": "nvda",
+   "src": "《金融时报》（Financial Times）报道；本条 url 为中文转载（环球市场播报·腾讯网）",
+   "title": "FT：英伟达找保险公司分担 GPU 抵押贷款风险，要把芯片做成「可投资资产类别」",
+   "place": "线上（FT 报道，英伟达与美国保险业接触）",
+   "url": "https://new.qq.com/rain/a/20260930A01P0B00",
+   "images": [],
+   "signals": [
+    "【核心事实】《金融时报》9/29 报道（引知情人士）：英伟达正与多家保险公司展开谈判，探讨把以自有芯片为抵押进行放贷所产生的一部分风险，转移给保险公司与其他投资者。相关对话尚处早期阶段，未必会落地为实际交易",
+    "【方案之一】针对新兴云厂商（「新云」/neocloud）的贷款损失保险：若这类企业债务违约、而用作抵押物的英伟达芯片转售收入不足以偿还贷方本息，由保险赔付差额",
+    "【交易架构】英伟达正与再保险经纪豪登再保险（Howden Re）共同研发保险交易架构；已向至少一家保险公司提供芯片折旧与算力远期价格的相关数据；因单笔潜在体量过大，英伟达考虑借助保险机构把风险进一步分保给对冲基金及其他另类投资者",
+    "【谁在牵头】该项目由英伟达金融解决方案负责人英格马尔·拉内维（Ingemar Lanevi）牵头",
+    "【黄仁勋的口径】黄仁勋主张芯片应被视作一类「可投资资产」，类比飞机这类昂贵、长寿命设备——航空业已发展出复杂金融工具，在用户与投资者之间分摊风险与成本。熟悉英伟达引资工作的人士称：「英伟达在推动市场参与，向其他资本方证明芯片是具备投资价值的资产」",
+    "【既有安排】此前英伟达已承诺为部分融资交易提供兜底，希望从高盛、阿波罗等华尔街机构撬动合计 5000 亿美元资金；并为 OpenAI 的巨型数据中心项目提供了 1050 亿美元租赁担保",
+    "【行业景深】就在保险谈判推进的同时，保险公司正密集推出面向 AI 基建的产品，涵盖信用风险保障、芯片贬值损失赔付，以及数据中心停电、冷却故障带来的合同违约风险保障"
+   ],
+   "note": "FT 于当地 2026-09-29 首发（中文媒体 9/30 转载），date 取外媒首报日 2026-09-29；英文侧由《首尔经济日报》英文版 9/30 复述印证，其中「5000 亿美元融资平台」与「1050 亿美元租赁担保」两项数字与中文转载一致。报道未给出交易规模与具名保险方，属早期磋商，不得当作已落地交易。原文页 og:image 为空（content=\"\"），images 留空。"
+  },
+  {
+   "id": "ev20260929e",
+   "date": "2026-09-29",
+   "type": "mt",
+   "cat": "nvda",
+   "src": "《华尔街日报》（The Wall Street Journal）",
+   "title": "WSJ：黄仁勋等 CEO 在白宫当面质疑 Amodei 的 AI 警告，并曾联手否决类 FINRA 自律方案",
+   "place": "美国·华盛顿（白宫罗斯福厅）",
+   "url": "https://www.wsj.com/tech/ai/tech-ceos-privately-questioned-amodei-for-sounding-ai-alarm-bells-aaa47df3",
+   "images": [],
+   "signals": [
+    "【核心事实】WSJ 引知情人士：美东 9/29，在同意签署 AI 安全原则声明、并于白宫东厅与约两打 CEO 共进午餐之后，包括英伟达黄仁勋在内的多位行业领袖，在罗斯福厅一个更小范围的会议（参加者另有白宫助手与顾问，会上正在敲定 AI 原则）中，当面质疑 Anthropic CEO 达里奥·阿莫代伊——为什么要在公开场合对 AI 模型能力及其风险讲得如此极端",
+    "【Amodei 的回应】据部分知情人士，阿莫代伊对在场高管表示：向公众如实说明模型能力、不淡化风险，这很重要",
+    "【曾否决自律组织方案】同一报道：Anthropic、OpenAI、谷歌此前联合推动一个类 FINRA（美国金融业监管局）的 AI 行业自律组织方案；黄仁勋、Meta 扎克伯格、SpaceX 马斯克向特朗普表达担忧——认为该组织会让头部 AI 公司掌握过多权力——该方案随后被放弃。最终落地的是更轻的自愿协议，其中部分安全措施被保留",
+    "【这场会怎么来的】报道称起点是上周国宴上扎克伯格与众议院议长约翰逊邻座谈 AI 政策；随后扎克伯格与黄仁勋共同协调各家 CEO，特朗普与约翰逊组织了这场午宴。报道把扎克伯格与黄仁勋描述为白宫宽松监管路线的支持者，反对「必要时与政府协调、开始放缓模型开发」的主张",
+    "【旁证】美国国家情报总监 Jay Clayton 称这场会议是他参加过的「最具建设性与融洽度」的行业会议之一"
+   ],
+   "note": "WSJ 原文报道（中文媒体 10/1 集中转载）；谈话本身发生于美东 2026-09-29，date 取事件发生日，不取转载日。本条与 ev20260929a（白宫「超级智能日」）同日但属独立事实（幕后交锋与监管路线博弈），故单独成条。wsj.com 本轮 curl 返回 000（出网受限）且两次重试失败，未取到 og:image，images 留空。"
   },
   {
    "id": "ev20260928a",
@@ -1877,6 +1905,53 @@ function renderChrome(){
    "note": "待核验：上述数字为英伟达 2026-09-28 的公开披露，经 Newsquawk、财联社、华尔街见闻、Longbridge、GuruFocus 等多家转述；GuruFocus 单独记为 2.5 吉瓦，与多数口径的 2.6 吉瓦不一致，本条采信 2.6 吉瓦并保留分歧。披露的原始页面本轮未直接核到——investor.nvidia.com 返回 429，且 nvidianews 9/28 两条新闻稿正文经 grep 确认均不含这些数字，故 url 取公开英文渠道快讯页，cat 按「非官网首发」归 nvda。"
   },
   {
+   "id": "ev20260928e",
+   "date": "2026-09-28",
+   "type": "sp",
+   "cat": "jensen",
+   "src": "韩国 Financial News（fnnews，纽约特派记者 Lee Byung-chul）/ CHOSUNBIZ / BusinessKorea",
+   "title": "黄仁勋在纽约获 The Korea Society 2026 Van Fleet 奖并发表演说，李在镕、崔泰源到场致辞",
+   "place": "美国·纽约 Cipriani South Street",
+   "url": "https://en.fnnews.com/news/202609290959045159",
+   "images": [
+    "https://image.fnnews.com/resource/media/image/2026/09/29/202609291002142292_l.jpg"
+   ],
+   "signals": [
+    "【获奖口径】美韩友好非营利机构 The Korea Society（韩国社交协会）9/28 晚在纽约 Cipriani South Street 举行 2026 年度晚宴，把范弗利特奖（James A. Van Fleet Award）颁给黄仁勋，理由是他在 AI 与半导体产业的「开创性领导力」及推动美韩经济合作；该奖 1995 年设立、每年颁给对美韩关系有贡献的个人或机构，往届得主包括美国前总统卡特与老布什、韩国前总统金大中、三星前会长李健熙、现代名誉会长郑梦九与 BTS",
+    "【黄仁勋原话 · 韩国】\"By leveraging AI and automation, South Korea can punch far above its weight.\"（借 AI 与自动化，韩国能打出远超自身体量的分量）；他称韩国用 25 年多从「引进技术的国家」变成「站在技术创新最前沿」，是「an astonishing miracle」（惊人的奇迹）",
+    "【黄仁勋原话 · 制造】\"No companies or people are better than South Koreans at building factories.\"（没有哪个公司或民族比韩国人更会建厂）；\"South Korea is now building a 'factory of intelligence,' and we are building it together.\"（韩国正在建「智能工厂」，我们一起建）",
+    "【黄仁勋原话 · AI 安全】\"AI is not alive, nor does it break free from control and act on its own. It is simply software that runs algorithms.\"（AI 不是活的，也不会挣脱控制自作主张，它只是跑算法的软件）；他主张 AI 系统必须放进受限环境「contained」并持续「monitored」，把 AI 时代的行事原则定为 \"responsible optimism\"（负责任的乐观）：\"Work with AI, use it, and harness it to empower yourself.\"",
+    "【黄仁勋原话 · 回忆】他回忆早年访韩时看到年轻人为《星际争霸》和英伟达欢呼、喊出公司名字，\"took my breath away\"（让他屏住呼吸）；与韩国共同成长数十年后，\"I couldn't help but fall in love with the country\"",
+    "【李在镕致辞】三星电子会长李在镕上台祝贺并称其父李健熙 2006 年拿过同一奖项；他说 \"Jensen has built NVIDIA into a company at the center of everything happening in AI today.\"（黄仁勋把英伟达建成了今天 AI 一切事情的中心），并称「我们两家公司都在 AI 上押上了一切」（Both of our companies are betting everything on AI）；他提到两人相识约 25 年（首次见面在 CES），还转述黄仁勋最近对他说的一句话：\"I want to die working.\"",
+    "【崔泰源致辞】SK 集团会长崔泰源祝酒时把两家关系概括为「英伟达设计大脑，SK 制造记忆」（NVIDIA designs the brain, and SK makes the memory）；称每次见面黄仁勋第一句都是「能不能再快一点？」；他把美韩同盟的「前线」从战场改写成数据中心，说领跑者 \"wears a black leather jacket instead of a military uniform\"（穿的是皮夹克而不是军装），并引用被他戏称为「Jensen's Law」的「买得越多省得越多」",
+    "【同行观察】产业简报（The CODEW 9/29）称三人 9/28–9/29 在纽约的会面议题以 HBM 产能锁定为主，三星正推进 HBM4 量产、HBM4E 送样，并试图把代工与先进封装一起打包进合作；三星电子还在纽约时代广场投放祝贺黄仁勋获奖的视频，关键词为 Pioneer / Architect / Builder / Friend",
+    "【领奖后记者会】据韩国《首尔经济日报》英文版报道，黄仁勋在领奖后的记者会上表示「英伟达的繁荣还在我们前面，所以我鼓励股东继续持有」，并称公司股票「目前被明显低估、且处在容易持有的水平」；同一报道提到，他把一件现场签名的皮衣拍卖，成交 13.2 万美元（约 1.8 亿韩元），所得捐给 The Korea Society",
+    "【英伟达官方口径 · 10/1 通稿】英伟达（韩国）10 月 1 日发布官方新闻稿确认黄仁勋获 2026 年 Van Fleet 奖，并补充领奖演说与典礼后对谈内容：他把韩国几十年的转变称为 \"a remarkable miracle\"（非凡的奇迹），强调韩国人「拥抱技术并把技术迅速扩散到产业与社会」的能力；他把 AI 描述为继电力与互联网之后的新一代基础设施，说韩国正在建设 \"intelligence factories\"（智能工厂）「而且是与英伟达一起建」，并表示 \"It is a great honor to stand at the meeting point of two great nations and to join the journey in which the two countries are building the future together.\""
+   ],
+   "note": "获奖事实的一手来源是主办方 The Korea Society 官网（koreasociety.org 与晚宴专站 tksgala.org，2026 Van Fleet Award Honoree — JENSEN HUANG）；本条 url 取现场特派报道（韩国 Financial News 英文版，含黄仁勋获奖后对话的逐字引语）。中文媒体（新浪财经 9/28、科创板日报 9/28）在晚宴举行前只做前瞻报道，不含现场内容。事件发生在美东 9/28 晚，韩国媒体发稿时间为 9/29 上午（时差所致），date 按事件发生地取 2026-09-28。配图取自 fnnews 原文页 og:image（黄仁勋获奖后在台上对话的现场照，已目视确认切题）。 2026-10-01 补充：记者会表态与皮衣拍卖细节来自韩国《首尔经济日报》（en.sedaily.com，AI 英译稿）与 BigGo 财经的相互印证，两句引语为英译转述、非原文逐字，不得当作英文原话直接引用。 2026-10-02 补充：英伟达官方（韩国）已于 10/1 发布通稿确认获奖与演说要点（韩媒 AJU Press 2026-10-01 转述页 https://m.ajupress.com/view/20261001150870715 ；官方通稿页面地址未核到，故未替换 url）。本条 url 仍取现场特派报道。"
+  },
+  {
+   "id": "ev20260928f",
+   "date": "2026-09-28",
+   "type": "iv",
+   "cat": "jensen",
+   "src": "CNBC《Squawk Box》（CNBC 官方摘录稿）",
+   "title": "黄仁勋上 CNBC《Squawk Box》：模型蒸馏「这叫竞争」，不是盗窃",
+   "place": "美国（CNBC 演播室）",
+   "url": "https://www.cnbc.com/2026/09/28/cnbc-excerpts-nvidia-founder-ceo-jensen-huang-speaks-with-cnbcs-squawk-box-today.html",
+   "images": [],
+   "signals": [
+    "【蒸馏争议原话】主持人 Andrew Ross Sorkin 问 \"Do you think distillation is not robbery?\"（你觉得蒸馏不算抢劫吗），黄仁勋答：\"That's called competition.\"（这叫竞争）；随后补 \"You're allowed to test somebody else's products all you want.\"（你完全可以尽情测试别人的产品）",
+    "【黄仁勋原话 · 拆解】\"People strip our products down to, you know, down to nothing, down to bones. And I prefer they didn't. I really prefer they didn't.\"（有人把我们的产品拆到只剩骨架；我当然不希望他们这么做）——中文转述口径即「竞争会让一切变得更好」",
+    "【黄仁勋的解法】中文媒体转述其补充：如果不想让别人这样用你的产品，「了解自己的客户，把对应的服务关闭」；他不为伪造账号、恶意爬取 API 的行为背书，讨论对象是蒸馏这项技术本身的正当性",
+    "【同场 · 回购】被问及当日宣布的 1500 亿美元追加回购，黄仁勋称：\"We're going through the largest infrastructure build out in human history... We're generating a lot of cash. We're going to generate a lot of cash in the coming years. And every single year as we generate more cash, I'd like to be able to return it back to the shareholders.\"（我们正经历人类史上最大的基建；我们产生大量现金，而且未来几年还会产生更多，希望能逐年返还给股东）",
+    "【同场 · 安全平台】CNBC 问他是否认为当天发布的 OpenShell 与 Sentry 才是更大的新闻，他答 \"Yeah. Really important news.\"，并称：\"We can't have a successful AI industry if the world doesn't think it's built or confident that it's built and deployed safely... I want the world to know that this industry has the technology, it has the maturity, has the responsibility to do it right, and we will do it right.\"",
+    "【同日另一表述 · 工程问题】就失控智能体，黄仁勋当天对 CNBC 称：\"I believe it's an engineering problem... and we all need to hope that's an engineering problem. If it's not an engineering problem, it's not solvable.\"（我认为这是工程问题，我们也只能指望它是工程问题；如果它不是工程问题，那就无解）（法新社 9/28 引 CNBC，经《海峡时报》转载）",
+    "【立场对照】美国财政部长贝森特 7 月把模型蒸馏称为「盗窃」并威胁制裁；美国 CISA 本月早些时候指控中国 AI 企业开展「工业规模的知识蒸馏行动」，Anthropic 点名阿里通义千问与 DeepSeek，中方已驳斥。CNBC 称白宫未立即回应就黄仁勋言论提出的置评请求"
+   ],
+   "note": "CNBC 官方稿件是节目摘录（标题即 CNBC Excerpts），属速记片段而非完整逐字稿；signals 中标注「中文转述」的条目来自 IT之家/新浪 9/29 译文，已区分口径。同一天黄仁勋本人 X 原帖发布同一安全平台官宣（见 ev20260928a），本条不含 X 原帖内容。配图：CNBC 原文页 og:image 为站点通用品牌图（cnbc_versant_share.png），与事件无具体对应，按图片规则留空。"
+  },
+  {
    "id": "ev20260928g",
    "date": "2026-09-28",
    "type": "mt",
@@ -1946,45 +2021,6 @@ function renderChrome(){
    "note": "date 取发布方页面标注日 Sep 27, 2026（该页 article:published_time 为 2026-09-28T01:00Z，即美东 9/27 21:00／北京 9/28 09:00，两种口径指向同一发布时点）。配图取原文页 og:image（数据中心机柜 + 功率表 3D 渲染图，已目视确认切题）。"
   },
   {
-   "id": "ev20260925c",
-   "date": "2026-09-25",
-   "type": "mt",
-   "src": "MeetKai 官方新闻稿（PR Newswire，经晨星 Morningstar 转载）",
-   "title": "MeetKai 把主权 AI 平台铺到六国，底座全部建在英伟达栈上",
-   "place": "美国·洛杉矶／圣克拉拉（发布地）",
-   "url": "https://www.morningstar.com/news/pr-newswire/20260925ny56882/meetkai-takes-sovereign-ai-built-on-nvidia-to-six-countries",
-   "images": [],
-   "signals": [
-    "【事实】9/25 MeetKai 宣布把其主权 AI 平台 MK-A1 SOVIA 推向六国：巴西、乌克兰、巴基斯坦、哈萨克斯坦、乌兹别克斯坦、孟加拉，覆盖人口超 7 亿",
-    "【技术依赖】各国本地语言模型在英伟达加速计算上训练、微调与推理；平台运行于英伟达加速计算 + 英伟达网络 + NVIDIA AI Enterprise 软件；主权站点的 AI 工厂参考设计按英伟达基础设施定义",
-    "【乌克兰项目】与 VEON 旗下 Kyivstar 合建乌克兰首个国家级 AI 工厂，设计容量由 15 兆瓦起、按公共部门与工业需求扩至 100 兆瓦，首期算力计划 2027 年上线；平台支持气隙（air-gapped）部署",
-    "【巴西项目】MeetKai Brasil 以最高综合得分中标巴西 SERPRO 的全国主权 AI 平台公开招标，将在境内英伟达加速计算上部署平台与本地训练模型，含面向安全工作流的本地编码智能体",
-    "【英伟达方表态】英伟达全球 AI 计划副总裁 Calista Redmond：各国都想要跑在自己基础设施上、用自己语言、按自己规则运行的 AI，MeetKai 在英伟达加速计算上构建平台与国家级语言模型，为政府和电信运营商提供在本国部署运营 AI 工厂的全栈基础",
-    "【口径】本条为合作方官方发布（非 nvidia.com 官方域首发），按现行分类归公司动态 nvda"
-   ],
-   "cat": "nvda",
-   "note": "date 取官方新闻稿发布日 2026-09-25（PR Newswire，洛杉矶/圣克拉拉电）。原文页无独立 og:image（转载页为媒体通用图），images 留空。"
-  },
-  {
-   "id": "ev20260925d",
-   "date": "2026-09-25",
-   "type": "co",
-   "src": "路透社/CNBC（美国贸易代表 Greer 表态）、彭博社（国宴座位解读）— 经朝鲜日报 Biz、韩国时报编译",
-   "title": "美中峰会收官：对华芯片出口管制未上谈判桌，黄仁勋列席主桌但英伟达在华议题未被讨论",
-   "place": "美国·华盛顿（白宫）",
-   "url": "https://biz.chosun.com/en/en-international/2026/09/26/6SINWCXM5FAJXK2QU5FTGCBZGA/",
-   "images": [],
-   "signals": [
-    "【官方表态·9/25】美国贸易代表 Jamieson Greer 在华盛顿表示，本轮美中谈判未涉及需要出口许可的美国高端芯片：\"这些是美国技术的皇冠明珠，是我们在超级智能（AI）竞赛中保持领先的方式\"，相关对话\"实际上没有发生在这轮谈判里\"；涉及国家安全与出口管制的项目被整体放在一边（路透社/CNBC）",
-    "【贸易成果】美国财政部长 Bessent 称，与中方副总理何立峰的会谈把暂停贸易战的安排延长至 1 月 10 日；Greer 称双方就部分关键商品豁免达成一致，更多细节将于下周一公布（韩国时报/路透社）",
-    "【黄仁勋相关事实】国宴（当地 9/24 晚）主桌上黄仁勋与习近平、特朗普同席；但整场会谈未提及中方希望在峰会上讨论的 AI 芯片议题，习近平仅称\"两国 AI 能力都很强\"\"正确的道路不是相互防范而是相互借鉴\"（朝鲜日报 Biz 引彭博社/联合通讯社现场画面）",
-    "【背景解读】彭博社称，座位安排本身反映美方维持半导体出口管制的意图；约 130 位国宴宾客中无一位中国 IT 企业人士。欧亚集团分析师 Jeremy Chan 对 CNBC 表示，习近平过去会见拜登时几乎每次都会提芯片管制，这次没有浮现，值得注意",
-    "【现状】中国目前仍无法购买英伟达最高端 Blackwell 芯片，美方出口管制下仅允许向约十几家中国企业销售上一代 H200（朝鲜日报 Biz 引彭博社）"
-   ],
-   "cat": "nvda",
-   "note": "date 取峰会收官日与美国贸易代表表态日 2026-09-25（媒体报道集中于 9/25–9/26）。本事件为第三方政策事实、非黄仁勋本人动作；公开播报审慎处理，见 pushed.json 的 skipped 说明。"
-  },
-  {
    "id": "ev20260925a",
    "date": "2026-09-25",
    "type": "mt",
@@ -2026,45 +2062,43 @@ function renderChrome(){
    "note": "依据 LinkedIn 资料与媒体报道，**英伟达未官方公告**，具体入职日期未披露，date 取首报日 2026-09-25。原文页配图为台股行情看板，与本事件无关，故 images 留空。"
   },
   {
-   "id": "ev20260924d",
-   "date": "2026-09-24",
+   "id": "ev20260925c",
+   "date": "2026-09-25",
    "type": "mt",
-   "src": "首尔经济日报/KIPOST（经科创板日报、财联社、腾讯新闻编译）",
-   "title": "英伟达评估玻璃基板方案并催供应链两年内交卷，黄仁勋被指已与 SK 崔泰源讨论该技术",
-   "place": "韩国（首尔经济日报报道）/ 德国（SCHMID）",
-   "url": "https://www.chinastarmarket.cn/detail/2493349",
+   "src": "MeetKai 官方新闻稿（PR Newswire，经晨星 Morningstar 转载）",
+   "title": "MeetKai 把主权 AI 平台铺到六国，底座全部建在英伟达栈上",
+   "place": "美国·洛杉矶／圣克拉拉（发布地）",
+   "url": "https://www.morningstar.com/news/pr-newswire/20260925ny56882/meetkai-takes-sovereign-ai-built-on-nvidia-to-six-countries",
    "images": [],
    "signals": [
-    "【核心】据韩国《首尔经济日报》报道，英伟达正在评估采用玻璃基板（glass substrate）方案，并与德国设备厂商 SCHMID 等企业开展合作；另据韩国科技媒体 KIPOST 报道，英伟达要求韩国、日本及中国台湾地区的基板厂商两年内完成玻璃基板开发，最快 2028 年前落地",
-    "【设备侧披露】SCHMID 在 2026 财年第二季财报会上披露，公司正与英特尔、英伟达、AMD 各自供应链内的核心供应商合作，共同研发玻璃基板设备；首席战略官/销售负责人 Roland Rettenmaier 表示，玻璃通孔（Through-Glass Via, TGV）的金属化环节仍存在技术难点，客户认证尚未完成",
-    "【黄仁勋相关】报道称黄仁勋此前与 SK 集团会长崔泰源会面，双方探讨了包含玻璃基板在内的下一代半导体合作；报道同时称英伟达正推动台积电开发玻璃基板技术（两点均为韩媒转述，英伟达与台积电均未公开确认）",
-    "【市场反应】受此消息提振，SCHMID 美股 9/25（周五）盘中大涨近 20%，盘后续涨超 3%",
-    "【技术背景】玻璃基板被视为新一代半导体封装材料、用于替代有机基板：可把芯片运行速度提升约 40%、功耗降低近一半，并可替代硅中介层、支持更大尺寸封装与更多 HBM 堆叠；当前全球玻璃基板正由技术验证加速走向中试、客户认证与量产导入，海外量产节点多集中在 2028 年前后",
-    "【既有基础】2026 年 5 月，英伟达与玻璃基板大厂康宁宣布达成多年期战略合作：英伟达向康宁投资最高 27 亿美元并获配认股权证，康宁在美国新建三座先进制造厂、将本土光学连接产能扩大十倍",
-    "【补充·中文媒体供应链口径】上海证券报报道称，英伟达持续与台积电联合定义 CoPoS 玻璃面板封装方案，用于承载超大面板级封装、在单一封装内塞入更多 HBM，进而提升下一代 GPU 与 CPO 的带宽、降低封装翘曲并提升良率，目标 2028 至 2029 年实现量产落地（该段为国内媒体对产业链进展的梳理，非英伟达官方口径）"
+    "【事实】9/25 MeetKai 宣布把其主权 AI 平台 MK-A1 SOVIA 推向六国：巴西、乌克兰、巴基斯坦、哈萨克斯坦、乌兹别克斯坦、孟加拉，覆盖人口超 7 亿",
+    "【技术依赖】各国本地语言模型在英伟达加速计算上训练、微调与推理；平台运行于英伟达加速计算 + 英伟达网络 + NVIDIA AI Enterprise 软件；主权站点的 AI 工厂参考设计按英伟达基础设施定义",
+    "【乌克兰项目】与 VEON 旗下 Kyivstar 合建乌克兰首个国家级 AI 工厂，设计容量由 15 兆瓦起、按公共部门与工业需求扩至 100 兆瓦，首期算力计划 2027 年上线；平台支持气隙（air-gapped）部署",
+    "【巴西项目】MeetKai Brasil 以最高综合得分中标巴西 SERPRO 的全国主权 AI 平台公开招标，将在境内英伟达加速计算上部署平台与本地训练模型，含面向安全工作流的本地编码智能体",
+    "【英伟达方表态】英伟达全球 AI 计划副总裁 Calista Redmond：各国都想要跑在自己基础设施上、用自己语言、按自己规则运行的 AI，MeetKai 在英伟达加速计算上构建平台与国家级语言模型，为政府和电信运营商提供在本国部署运营 AI 工厂的全栈基础",
+    "【口径】本条为合作方官方发布（非 nvidia.com 官方域首发），按现行分类归公司动态 nvda"
    ],
    "cat": "nvda",
-   "note": "事件日取韩媒首报日 2026-09-24（中文媒体 9/27 集中转载，文中标注\"《首尔经济日报》24日报道\"；另有券商渠道纪要将股价异动记为 9/25 周五）。英伟达官网未就玻璃基板发布任何公告，本条为韩媒报道 + SCHMID 财报会自述；黄仁勋与崔泰源讨论一节亦为韩媒转述、无官方确认，故不据此单列行程。**待核验**：市场上存在分歧意见——有渠道方对该报道的信源提出质疑，并认为英伟达更可能经 Ibiden、欣兴（Unimicron）等既有基板厂推进，量产不早于 2029–2030 年。"
+   "note": "date 取官方新闻稿发布日 2026-09-25（PR Newswire，洛杉矶/圣克拉拉电）。原文页无独立 og:image（转载页为媒体通用图），images 留空。"
   },
   {
-   "id": "ev20260924c",
-   "date": "2026-09-24",
-   "type": "iv",
-   "src": "CNN《Anderson Cooper 360°》（记者 Anne Clifford 撰稿）",
-   "title": "黄仁勋接受 CNN 安德森·库珀专访，谈自己与 AI 监管的关系",
-   "place": "美国（CNN 播出）",
-   "url": "https://us.cnn.com/2026/09/24/us/video/achuangsot1",
-   "images": [
-    "https://media.cnn.com/api/v1/images/stellar/prod/still-23014294-30854-968-still.jpg?c=16x9&q=w_800,c_fill"
-   ],
+   "id": "ev20260925d",
+   "date": "2026-09-25",
+   "type": "co",
+   "src": "路透社/CNBC（美国贸易代表 Greer 表态）、彭博社（国宴座位解读）— 经朝鲜日报 Biz、韩国时报编译",
+   "title": "美中峰会收官：对华芯片出口管制未上谈判桌，黄仁勋列席主桌但英伟达在华议题未被讨论",
+   "place": "美国·华盛顿（白宫）",
+   "url": "https://biz.chosun.com/en/en-international/2026/09/26/6SINWCXM5FAJXK2QU5FTGCBZGA/",
+   "images": [],
    "signals": [
-    "【场合】CNN 于美东 9/24 17:46 发布专访片段：安德森·库珀（Anderson Cooper）与黄仁勋坐下来对谈，主题为其「与 AI 监管的关系」，并追问他对科技公司 CEO 担忧 AI 一事的回应",
-    "【播出】完整专访于当晚 20:00（美东）在《Anderson Cooper 360°》播出，完整版需 CNN All Access 订阅",
-    "【教育/AI 观点 · 据多家媒体转述本场专访】被问到 AI 时代孩子该学什么，黄仁勋称他并不知道哪个职业会最成功，但给他的孩子两点建议：一是\"go to school（去上学）\"，二是\"engage AI（用起 AI）\"。他说，任何让孩子们觉得不必再去上学的事，\"我认为是对社会的伤害\"（\"a disservice to society\"）；上学的意义不止于为某个职业做准备——\"它提升你的教养、提升你对世界的理解，并消除偏见与成见\"，\"知识越多、越有见识，就越好\"",
-    "【同段原话】\"The two things that I tell my kids: engage AI, learn what it can do, don't give up on it, and make it work for you.\"（我告诉孩子的两件事：用起 AI，搞清它能做什么，别放弃它，让它为你所用。）他认为应避免向孩子传递\"你的努力将不再重要、上学是浪费时间和金钱\"这类信息，形容这种说法\"horrible, horrible, absolutely horrible\""
+    "【官方表态·9/25】美国贸易代表 Jamieson Greer 在华盛顿表示，本轮美中谈判未涉及需要出口许可的美国高端芯片：\"这些是美国技术的皇冠明珠，是我们在超级智能（AI）竞赛中保持领先的方式\"，相关对话\"实际上没有发生在这轮谈判里\"；涉及国家安全与出口管制的项目被整体放在一边（路透社/CNBC）",
+    "【贸易成果】美国财政部长 Bessent 称，与中方副总理何立峰的会谈把暂停贸易战的安排延长至 1 月 10 日；Greer 称双方就部分关键商品豁免达成一致，更多细节将于下周一公布（韩国时报/路透社）",
+    "【黄仁勋相关事实】国宴（当地 9/24 晚）主桌上黄仁勋与习近平、特朗普同席；但整场会谈未提及中方希望在峰会上讨论的 AI 芯片议题，习近平仅称\"两国 AI 能力都很强\"\"正确的道路不是相互防范而是相互借鉴\"（朝鲜日报 Biz 引彭博社/联合通讯社现场画面）",
+    "【背景解读】彭博社称，座位安排本身反映美方维持半导体出口管制的意图；约 130 位国宴宾客中无一位中国 IT 企业人士。欧亚集团分析师 Jeremy Chan 对 CNBC 表示，习近平过去会见拜登时几乎每次都会提芯片管制，这次没有浮现，值得注意",
+    "【现状】中国目前仍无法购买英伟达最高端 Blackwell 芯片，美方出口管制下仅允许向约十几家中国企业销售上一代 H200（朝鲜日报 Biz 引彭博社）"
    ],
-   "cat": "jensen",
-   "note": "事件日取 CNN 发布/播出日 2026-09-24。原话核实进展：CNN 官网（us.cnn.com/2026/09/24/us/video/achuangsot1）迄今仍只放出页面描述（场合 + 播出时间），未公开逐字稿；本场对话中\"教育/AI 建议\"一节的具体原话，现由《印度时报》（Times of India）等多家媒体以直接引语形式转述，故本轮据此补入 signals 并保留转述出处。仍属**媒体转述、非 CNN 官方文本**，引用时不得当作 CNN 逐字稿使用。与 ev20260919b（CBS 9/20）、ev20260923a（NYT 播客 9/23）为不同电视台、不同主持人的独立专访。"
+   "cat": "nvda",
+   "note": "date 取峰会收官日与美国贸易代表表态日 2026-09-25（媒体报道集中于 9/25–9/26）。本事件为第三方政策事实、非黄仁勋本人动作；公开播报审慎处理，见 pushed.json 的 skipped 说明。"
   },
   {
    "id": "ev20260924a",
@@ -2108,71 +2142,45 @@ function renderChrome(){
    "note": "date 取官方博客发布日 2026-09-24（页内 article:published_time 2026-09-24T14:00:50Z）。"
   },
   {
-   "id": "ev20260923d",
-   "date": "2026-09-23",
-   "type": "mt",
-   "src": "英伟达官方 Hugging Face 博客",
-   "title": "英伟达开源 Nemotron 3 Diarization：1 亿参数解决 8 人重叠语音的说话人分离",
-   "place": "线上发布（Hugging Face / NVIDIA）",
-   "url": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+   "id": "ev20260924c",
+   "date": "2026-09-24",
+   "type": "iv",
+   "src": "CNN《Anderson Cooper 360°》（记者 Anne Clifford 撰稿）",
+   "title": "黄仁勋接受 CNN 安德森·库珀专访，谈自己与 AI 监管的关系",
+   "place": "美国（CNN 播出）",
+   "url": "https://us.cnn.com/2026/09/24/us/video/achuangsot1",
    "images": [
-    "https://cdn-uploads.huggingface.co/production/uploads/688d4bdfdeb55432d90e546d/d_xBvPVTwTB_Rt9yxmp_0.png"
+    "https://media.cnn.com/api/v1/images/stellar/prod/still-23014294-30854-968-still.jpg?c=16x9&q=w_800,c_fill"
    ],
    "signals": [
-    "Nemotron 3 Diarization 是 1 亿（100M）参数的开源权重模型，解决「谁在什么时候说话」，在 VoiceArena 的 Diarization-Bench 上以 14.72% 的说话人错误率（DER）排名第一",
-    "最多支持 8 位说话人通道（前代 Streaming Sortformer 为 4 位），同一套权重同时覆盖离线批处理与流式实时推理",
-    "输入缓冲延迟四档可选：30.4 秒、1.04 秒、0.64 秒、0.32 秒；离线 30.4 秒档 DER 12.73%，实时 0.32 秒档 13.55%",
-    "相对排第二的系统（19.3%）DER 相对降低约 24%；相对前代 Streaming Sortformer 在 1.04 秒档平均相对降低约 40%，且说话人数越多改善越明显",
-    "模型结构：16 kHz 单声道音频 → 10 毫秒步长 Mel 频谱、8 倍堆叠为 80 毫秒帧 → 31 层 Transformer 编码器（RoPE 位置编码）→ 输出 [T, 8] 的说话人活跃概率张量，同一帧可多通道同时激活，天然支持重叠语音",
-    "许可为 OpenMDW 1.1（允许商用），支持 NVIDIA Ampere 及之后架构 GPU，权重发布于 Hugging Face，配套 NVIDIA NeMo 工具包使用"
+    "【场合】CNN 于美东 9/24 17:46 发布专访片段：安德森·库珀（Anderson Cooper）与黄仁勋坐下来对谈，主题为其「与 AI 监管的关系」，并追问他对科技公司 CEO 担忧 AI 一事的回应",
+    "【播出】完整专访于当晚 20:00（美东）在《Anderson Cooper 360°》播出，完整版需 CNN All Access 订阅",
+    "【教育/AI 观点 · 据多家媒体转述本场专访】被问到 AI 时代孩子该学什么，黄仁勋称他并不知道哪个职业会最成功，但给他的孩子两点建议：一是\"go to school（去上学）\"，二是\"engage AI（用起 AI）\"。他说，任何让孩子们觉得不必再去上学的事，\"我认为是对社会的伤害\"（\"a disservice to society\"）；上学的意义不止于为某个职业做准备——\"它提升你的教养、提升你对世界的理解，并消除偏见与成见\"，\"知识越多、越有见识，就越好\"",
+    "【同段原话】\"The two things that I tell my kids: engage AI, learn what it can do, don't give up on it, and make it work for you.\"（我告诉孩子的两件事：用起 AI，搞清它能做什么，别放弃它，让它为你所用。）他认为应避免向孩子传递\"你的努力将不再重要、上学是浪费时间和金钱\"这类信息，形容这种说法\"horrible, horrible, absolutely horrible\""
    ],
-   "cat": "nvda",
-   "note": "官方首发渠道为 NVIDIA 官方 Hugging Face 组织博客（域名非 nvidia.com），按字段模板「非官网首发」口径归 nvda。日期取官方发布日 2026-09-23（博客页标注 Published September 23, 2026）。"
+   "cat": "jensen",
+   "note": "事件日取 CNN 发布/播出日 2026-09-24。原话核实进展：CNN 官网（us.cnn.com/2026/09/24/us/video/achuangsot1）迄今仍只放出页面描述（场合 + 播出时间），未公开逐字稿；本场对话中\"教育/AI 建议\"一节的具体原话，现由《印度时报》（Times of India）等多家媒体以直接引语形式转述，故本轮据此补入 signals 并保留转述出处。仍属**媒体转述、非 CNN 官方文本**，引用时不得当作 CNN 逐字稿使用。与 ev20260919b（CBS 9/20）、ev20260923a（NYT 播客 9/23）为不同电视台、不同主持人的独立专访。"
   },
   {
-   "id": "ev20260923c",
-   "date": "2026-09-23",
+   "id": "ev20260924d",
+   "date": "2026-09-24",
    "type": "mt",
-   "src": "英伟达开发者博客（NVIDIA Technical Blog）",
-   "title": "英伟达发布 NV-Reason-CT 开源 3D CT 视觉语言模型：把放射科医生的思维链推理搬进体积影像",
-   "place": "线上发布（英伟达开发者博客）",
-   "url": "https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning/",
-   "images": [
-    "https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/ct-scan-image.webp"
-   ],
+   "src": "首尔经济日报/KIPOST（经科创板日报、财联社、腾讯新闻编译）",
+   "title": "英伟达评估玻璃基板方案并催供应链两年内交卷，黄仁勋被指已与 SK 崔泰源讨论该技术",
+   "place": "韩国（首尔经济日报报道）/ 德国（SCHMID）",
+   "url": "https://www.chinastarmarket.cn/detail/2493349",
+   "images": [],
    "signals": [
-    "NV-Reason-CT 是专为 3D CT 分析打造的视觉语言模型，把思维链推理扩展到完整体积 CT：生成结构化诊断报告、模拟放射科医生逐步排查的内在思考，并支持胸腹部多轮追问对话",
-    "架构为专用全 3D 视觉 Transformer 编码器 + Qwen3.5-4B 语言模型；CT 体积重采样为 192³ 体素（2 毫米各向同性），切成非重叠 8×8×8 patch、共 13,824 个视觉 token，不打折不降采样，全部连同 3D 网格坐标送入语言模型，经 3D MRoPE 让语言模型感知 token 之间的三维空间关系",
-    "官方称一次腹部 CT 检查可达 300–600 个轴位切片；构建的本体覆盖 30 种胸部异常与 29 种腹部异常（肺结节、气胸、肝病灶、肾囊肿等），输出格式对接临床文书流程",
-    "CT-RATE 基准成绩：Macro-F1 0.614、Macro-AUROC 0.871，官方称超过已发表的 3D 对比学习与融合 2D/3D 基线",
-    "两阶段训练：先用在约 55 万个结构化问答样本（CT-RATE、NIH CT 数据集、CancerVerse + 专家标注接地的合成推理数据）上做监督微调，再用 GRPO 强化学习打磨推理质量，奖励按解剖区域分别计准确性",
-    "美国国立卫生研究院（NIH）放射科医生核验了生成报告与推理链的临床合理性；NIH 高级临床医师 Baris Turkbey 表示，能审查模型的思考过程而不只是结论，「正是让人有可能信任并据此行动的原因」",
-    "英伟达明确其定位：这是开放的研究与开发基础模型，面向要针对自身场景做后训练的研究者与开发者，不是自主诊断系统，也不是获批的临床产品",
-    "延续 NV-Reason-CXR 的推理方法论（该多读者临床研究已被 RSNA 2026 接收），与 NV-Generate-CTMR、NV-Segment-CTMR 共同构成英伟达放射 AI 流程的组件"
-   ],
-   "cat": "nvnews"
-  },
-  {
-   "id": "ev20260923b",
-   "date": "2026-09-23",
-   "type": "mt",
-   "src": "Calcalist / CTech（以色列财经日报）",
-   "title": "英伟达在以色列新设 Applied AI Architecture 研究组，主攻基因组学与药物发现",
-   "place": "以色列·特拉维夫",
-   "url": "https://calcalistech.com/ctechnews/article/s10w00yz5gg",
-   "images": [
-    "https://pic1.calcalist.co.il/picserver3/crop_images/2026/09/22/BkWM5llqMe/BkWM5llqMe_0_0_700_398_0_large.jpg"
-   ],
-   "signals": [
-    "【新设机构】英伟达在以色列研发中心成立「Applied AI Architecture」研究组，隶属公司全球 CTO 办公室；由 CTO Michael Kagan（Mellanox 联合创始人、直接向黄仁勋汇报）推动设立，负责人为 Dr. Nati Daniel（以色列理工 AI 博士，曾任职 Intel、GE、华为）",
-    "【编制扩张】该组现有数名研究员在以色列办公，计划未来一年再招数十人；英伟达招聘网站已挂出特拉维夫多个相关研究岗位",
-    "【基因组项目】与以色列 Sheba 医疗中心、纽约 Mount Sinai 医院合作开发基因组基础模型（gFM），目标是研究人类基因组中约 98% 尚未被深入理解的区域，用于疾病预防、诊断与个性化医疗",
-    "【并入礼来合作】以色列团队参与英伟达与礼来（Eli Lilly）五年约 10 亿美元的 AI 药物发现合作——把基因组与测序数据同化学、生物学、细胞上下文整合分析，压缩从基础研究到新药的路径",
-    "【欧盟项目】参与 GENMAT 国际材料研究计划（欧盟 Horizon 计划资助约 600 万欧元），联合欧洲企业与高校开发面向航空、汽车与制药的新材料 AI 工具",
-    "【定位】研究组不做即时商用产品，瞄准长期科学概念，成果未来可能并入英伟达自身系统；以色列已是英伟达美国以外最大基地，员工超 5000 人、7 个研发中心，约五分之一集团营收经由以色列团队"
+    "【核心】据韩国《首尔经济日报》报道，英伟达正在评估采用玻璃基板（glass substrate）方案，并与德国设备厂商 SCHMID 等企业开展合作；另据韩国科技媒体 KIPOST 报道，英伟达要求韩国、日本及中国台湾地区的基板厂商两年内完成玻璃基板开发，最快 2028 年前落地",
+    "【设备侧披露】SCHMID 在 2026 财年第二季财报会上披露，公司正与英特尔、英伟达、AMD 各自供应链内的核心供应商合作，共同研发玻璃基板设备；首席战略官/销售负责人 Roland Rettenmaier 表示，玻璃通孔（Through-Glass Via, TGV）的金属化环节仍存在技术难点，客户认证尚未完成",
+    "【黄仁勋相关】报道称黄仁勋此前与 SK 集团会长崔泰源会面，双方探讨了包含玻璃基板在内的下一代半导体合作；报道同时称英伟达正推动台积电开发玻璃基板技术（两点均为韩媒转述，英伟达与台积电均未公开确认）",
+    "【市场反应】受此消息提振，SCHMID 美股 9/25（周五）盘中大涨近 20%，盘后续涨超 3%",
+    "【技术背景】玻璃基板被视为新一代半导体封装材料、用于替代有机基板：可把芯片运行速度提升约 40%、功耗降低近一半，并可替代硅中介层、支持更大尺寸封装与更多 HBM 堆叠；当前全球玻璃基板正由技术验证加速走向中试、客户认证与量产导入，海外量产节点多集中在 2028 年前后",
+    "【既有基础】2026 年 5 月，英伟达与玻璃基板大厂康宁宣布达成多年期战略合作：英伟达向康宁投资最高 27 亿美元并获配认股权证，康宁在美国新建三座先进制造厂、将本土光学连接产能扩大十倍",
+    "【补充·中文媒体供应链口径】上海证券报报道称，英伟达持续与台积电联合定义 CoPoS 玻璃面板封装方案，用于承载超大面板级封装、在单一封装内塞入更多 HBM，进而提升下一代 GPU 与 CPO 的带宽、降低封装翘曲并提升良率，目标 2028 至 2029 年实现量产落地（该段为国内媒体对产业链进展的梳理，非英伟达官方口径）"
    ],
    "cat": "nvda",
-   "note": "事件日 2026-09-23（Calcalist 9/23 首报，CTech 与 Ynetnews 同日转载）。已按「先查官网原文再定源」复核 nvidianews.nvidia.com 与 blogs.nvidia.com：截至本轮官网最新为 9/23 员工特写与 9/22 Isaac ROS 5.0，官网未发布该研究组成立消息，故归 nvda。og:image（Calcalist CDN）已 curl 验证 HTTP 200。无黄仁勋本人动作或原话。"
+   "note": "事件日取韩媒首报日 2026-09-24（中文媒体 9/27 集中转载，文中标注\"《首尔经济日报》24日报道\"；另有券商渠道纪要将股价异动记为 9/25 周五）。英伟达官网未就玻璃基板发布任何公告，本条为韩媒报道 + SCHMID 财报会自述；黄仁勋与崔泰源讨论一节亦为韩媒转述、无官方确认，故不据此单列行程。**待核验**：市场上存在分歧意见——有渠道方对该报道的信源提出质疑，并认为英伟达更可能经 Ibiden、欣兴（Unimicron）等既有基板厂推进，量产不早于 2029–2030 年。"
   },
   {
    "id": "ev20260923a",
@@ -2212,6 +2220,73 @@ function renderChrome(){
    "note": "事件日 2026-09-23（播客 9/23 周三发布；录制于英伟达圣克拉拉总部，录制具体日期未披露）。归 jensen：本人可溯源原话，路透社/中央社/财联社/凤凰网科技均依据《纽约时报》公布的逐字稿。与 9/15 Dreamforce、9/19 CBS 属不同日期、不同场合、不同主持人的独立专访，故单列成条。第 11 条「开放模型 token 占比 20%→70%」与「全行业投资约 1000 亿美元」出自 TNW 报道，未在路透稿中出现，标注供核。Klein 在节目中提到收购 Hugging Face 价格约 120 亿美元，与路透的 130 亿美元及英伟达官方 129.3 亿美元口径不一致，本条目不采信任何价格数字。 2026-09-26 补录 3 条信号（基础数学之辩/能源代价/能力放大器），来源为 9/25 中文媒体对同一场访谈的整理稿。"
   },
   {
+   "id": "ev20260923b",
+   "date": "2026-09-23",
+   "type": "mt",
+   "src": "Calcalist / CTech（以色列财经日报）",
+   "title": "英伟达在以色列新设 Applied AI Architecture 研究组，主攻基因组学与药物发现",
+   "place": "以色列·特拉维夫",
+   "url": "https://calcalistech.com/ctechnews/article/s10w00yz5gg",
+   "images": [
+    "https://pic1.calcalist.co.il/picserver3/crop_images/2026/09/22/BkWM5llqMe/BkWM5llqMe_0_0_700_398_0_large.jpg"
+   ],
+   "signals": [
+    "【新设机构】英伟达在以色列研发中心成立「Applied AI Architecture」研究组，隶属公司全球 CTO 办公室；由 CTO Michael Kagan（Mellanox 联合创始人、直接向黄仁勋汇报）推动设立，负责人为 Dr. Nati Daniel（以色列理工 AI 博士，曾任职 Intel、GE、华为）",
+    "【编制扩张】该组现有数名研究员在以色列办公，计划未来一年再招数十人；英伟达招聘网站已挂出特拉维夫多个相关研究岗位",
+    "【基因组项目】与以色列 Sheba 医疗中心、纽约 Mount Sinai 医院合作开发基因组基础模型（gFM），目标是研究人类基因组中约 98% 尚未被深入理解的区域，用于疾病预防、诊断与个性化医疗",
+    "【并入礼来合作】以色列团队参与英伟达与礼来（Eli Lilly）五年约 10 亿美元的 AI 药物发现合作——把基因组与测序数据同化学、生物学、细胞上下文整合分析，压缩从基础研究到新药的路径",
+    "【欧盟项目】参与 GENMAT 国际材料研究计划（欧盟 Horizon 计划资助约 600 万欧元），联合欧洲企业与高校开发面向航空、汽车与制药的新材料 AI 工具",
+    "【定位】研究组不做即时商用产品，瞄准长期科学概念，成果未来可能并入英伟达自身系统；以色列已是英伟达美国以外最大基地，员工超 5000 人、7 个研发中心，约五分之一集团营收经由以色列团队"
+   ],
+   "cat": "nvda",
+   "note": "事件日 2026-09-23（Calcalist 9/23 首报，CTech 与 Ynetnews 同日转载）。已按「先查官网原文再定源」复核 nvidianews.nvidia.com 与 blogs.nvidia.com：截至本轮官网最新为 9/23 员工特写与 9/22 Isaac ROS 5.0，官网未发布该研究组成立消息，故归 nvda。og:image（Calcalist CDN）已 curl 验证 HTTP 200。无黄仁勋本人动作或原话。"
+  },
+  {
+   "id": "ev20260923c",
+   "date": "2026-09-23",
+   "type": "mt",
+   "src": "英伟达开发者博客（NVIDIA Technical Blog）",
+   "title": "英伟达发布 NV-Reason-CT 开源 3D CT 视觉语言模型：把放射科医生的思维链推理搬进体积影像",
+   "place": "线上发布（英伟达开发者博客）",
+   "url": "https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning/",
+   "images": [
+    "https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/ct-scan-image.webp"
+   ],
+   "signals": [
+    "NV-Reason-CT 是专为 3D CT 分析打造的视觉语言模型，把思维链推理扩展到完整体积 CT：生成结构化诊断报告、模拟放射科医生逐步排查的内在思考，并支持胸腹部多轮追问对话",
+    "架构为专用全 3D 视觉 Transformer 编码器 + Qwen3.5-4B 语言模型；CT 体积重采样为 192³ 体素（2 毫米各向同性），切成非重叠 8×8×8 patch、共 13,824 个视觉 token，不打折不降采样，全部连同 3D 网格坐标送入语言模型，经 3D MRoPE 让语言模型感知 token 之间的三维空间关系",
+    "官方称一次腹部 CT 检查可达 300–600 个轴位切片；构建的本体覆盖 30 种胸部异常与 29 种腹部异常（肺结节、气胸、肝病灶、肾囊肿等），输出格式对接临床文书流程",
+    "CT-RATE 基准成绩：Macro-F1 0.614、Macro-AUROC 0.871，官方称超过已发表的 3D 对比学习与融合 2D/3D 基线",
+    "两阶段训练：先用在约 55 万个结构化问答样本（CT-RATE、NIH CT 数据集、CancerVerse + 专家标注接地的合成推理数据）上做监督微调，再用 GRPO 强化学习打磨推理质量，奖励按解剖区域分别计准确性",
+    "美国国立卫生研究院（NIH）放射科医生核验了生成报告与推理链的临床合理性；NIH 高级临床医师 Baris Turkbey 表示，能审查模型的思考过程而不只是结论，「正是让人有可能信任并据此行动的原因」",
+    "英伟达明确其定位：这是开放的研究与开发基础模型，面向要针对自身场景做后训练的研究者与开发者，不是自主诊断系统，也不是获批的临床产品",
+    "延续 NV-Reason-CXR 的推理方法论（该多读者临床研究已被 RSNA 2026 接收），与 NV-Generate-CTMR、NV-Segment-CTMR 共同构成英伟达放射 AI 流程的组件"
+   ],
+   "cat": "nvnews"
+  },
+  {
+   "id": "ev20260923d",
+   "date": "2026-09-23",
+   "type": "mt",
+   "src": "英伟达官方 Hugging Face 博客",
+   "title": "英伟达开源 Nemotron 3 Diarization：1 亿参数解决 8 人重叠语音的说话人分离",
+   "place": "线上发布（Hugging Face / NVIDIA）",
+   "url": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+   "images": [
+    "https://cdn-uploads.huggingface.co/production/uploads/688d4bdfdeb55432d90e546d/d_xBvPVTwTB_Rt9yxmp_0.png"
+   ],
+   "signals": [
+    "Nemotron 3 Diarization 是 1 亿（100M）参数的开源权重模型，解决「谁在什么时候说话」，在 VoiceArena 的 Diarization-Bench 上以 14.72% 的说话人错误率（DER）排名第一",
+    "最多支持 8 位说话人通道（前代 Streaming Sortformer 为 4 位），同一套权重同时覆盖离线批处理与流式实时推理",
+    "输入缓冲延迟四档可选：30.4 秒、1.04 秒、0.64 秒、0.32 秒；离线 30.4 秒档 DER 12.73%，实时 0.32 秒档 13.55%",
+    "相对排第二的系统（19.3%）DER 相对降低约 24%；相对前代 Streaming Sortformer 在 1.04 秒档平均相对降低约 40%，且说话人数越多改善越明显",
+    "模型结构：16 kHz 单声道音频 → 10 毫秒步长 Mel 频谱、8 倍堆叠为 80 毫秒帧 → 31 层 Transformer 编码器（RoPE 位置编码）→ 输出 [T, 8] 的说话人活跃概率张量，同一帧可多通道同时激活，天然支持重叠语音",
+    "许可为 OpenMDW 1.1（允许商用），支持 NVIDIA Ampere 及之后架构 GPU，权重发布于 Hugging Face，配套 NVIDIA NeMo 工具包使用"
+   ],
+   "cat": "nvda",
+   "note": "官方首发渠道为 NVIDIA 官方 Hugging Face 组织博客（域名非 nvidia.com），按字段模板「非官网首发」口径归 nvda。日期取官方发布日 2026-09-23（博客页标注 Published September 23, 2026）。"
+  },
+  {
    "id": "ev20260922a",
    "date": "2026-09-22",
    "type": "mt",
@@ -2229,6 +2304,25 @@ function renderChrome(){
    ],
    "cat": "nvnews",
    "note": "事件日 2026-09-22（官方博客 pubDate 2026-09-22T12:00Z，ROSCon 多伦多现场发布）。归 nvnews：src/url 指向 nvidia.com 官方域。og:image 已 curl 验证 HTTP 200。无黄仁勋本人动作/原话，属开发者工具与产品发布。"
+  },
+  {
+   "id": "ev20260921a",
+   "date": "2026-09-21",
+   "type": "mt",
+   "src": "Bloomberg（经智通财经 / 财联社 / PChome 转引）+ SB Energy S-1 第 2 号修正案（SEC，2026-09-21 提交）",
+   "title": "英伟达在 SB Energy 赴美 IPO 前追加认购 15 亿美元股份，累计股权投资承诺升至 30 亿美元",
+   "place": "美国（SB Energy 拟于纳斯达克及纳斯达克德州上市，代码 SBE）",
+   "url": "https://www.bloomberg.com/news/articles/2026-09-21/nvidia-buying-an-additional-1-5-billion-in-sb-energy-shares-ahead-of-ipo",
+   "images": [],
+   "signals": [
+    "【事件】英伟达在软银支持的数据中心与电力基础设施商 SB Energy 赴美 IPO 前，追加认购 15 亿美元股份，使其对 SB Energy 的累计股权投资承诺升至 30 亿美元（Bloomberg 2026-09-21）",
+    "【交易结构】本次通过私募方式认购 SB Energy 新发行的 N 类无投票权股票，认购价按最终 IPO 发行价的 90% 计价（较 IPO 价折让 10%）；SB Energy 第 2 号 S-1 修正案（9/21 提交）确认英伟达合计承诺投资 30 亿美元",
+    "【资产底数】SB Energy 已签约或在建的 AI 数据中心规模 8.8GW，含得克萨斯州与俄亥俄州项目；俄亥俄 PORTS-Pike 园区初始设计 4.25GW AI 算力负荷、可扩展至 8GW，长期租予 OpenAI 并约定独家使用英伟达芯片",
+    "【IPO 进展】SB Energy 拟以 500 亿美元以上估值登陆纳斯达克（代码 SBE），计划募资 50–70 亿美元，另向日本零售投资者募资至多 5 亿美元；据纽约时报 9/21 报道，因高估值下认购需求不足，上市时间已推迟至 10 月中下旬，公司方面未在 SEC 文件中确认延期",
+    "【公司财务】S-1 披露 SB Energy 2026 上半年营收 1.39 亿美元（主要来自原有光伏业务）、净亏损 32.09 亿美元；目前尚无数据中心正式投运；投资者包括软银（控股）、OpenAI（主要租户兼股东）与英伟达"
+   ],
+   "cat": "nvda",
+   "note": "事件日 2026-09-21（Bloomberg 当日报道，同日 SB Energy 向 SEC 提交 S-1 第 2 号修正案）。归 nvda：属英伟达公司投资动作，非官网首发、非黄仁勋本人表态。'是否延期'两说并存——纽约时报 9/21 称推迟至 10 月中下旬，Investing.com 引知情人士称按原计划推进、公司从未确认 9 月窗口，故以'公司未确认延期'口径并列呈现。url 指向 Bloomberg 原始报道（付费源）。images 留空（Bloomberg/MO 中文门户 og:image 不可抓，依规则不附无关图）。"
   },
   {
    "id": "ev20260921b",
@@ -2251,23 +2345,23 @@ function renderChrome(){
    "note": "事件日 2026-09-21（官方博客 pubDate 2026-09-21T18:00Z，即美西 9/21 上午官宣；北京时间 9/22 02:00）。归 nvnews：src/url 指向 nvidia.com 官方域（blogs.nvidia.com），属官方首发。og:image 已 curl 验证 HTTP 200。无黄仁勋本人动作/原话，属公司产品与标准发布。"
   },
   {
-   "id": "ev20260921a",
-   "date": "2026-09-21",
+   "id": "ev20260919a",
+   "date": "2026-09-19",
    "type": "mt",
-   "src": "Bloomberg（经智通财经 / 财联社 / PChome 转引）+ SB Energy S-1 第 2 号修正案（SEC，2026-09-21 提交）",
-   "title": "英伟达在 SB Energy 赴美 IPO 前追加认购 15 亿美元股份，累计股权投资承诺升至 30 亿美元",
-   "place": "美国（SB Energy 拟于纳斯达克及纳斯达克德州上市，代码 SBE）",
-   "url": "https://www.bloomberg.com/news/articles/2026-09-21/nvidia-buying-an-additional-1-5-billion-in-sb-energy-shares-ahead-of-ipo",
+   "src": "证券时报 / 澎湃新闻（经 SEC Form 4 文件）",
+   "title": "黄仁勋据 SEC 披露以每股 212.17 美元处置 4.57 万股英伟达股票（代扣税），家族信托另捐出 43.8 万股",
+   "place": "",
+   "url": "https://www.stcn.com/article/detail/4191719.html",
    "images": [],
    "signals": [
-    "【事件】英伟达在软银支持的数据中心与电力基础设施商 SB Energy 赴美 IPO 前，追加认购 15 亿美元股份，使其对 SB Energy 的累计股权投资承诺升至 30 亿美元（Bloomberg 2026-09-21）",
-    "【交易结构】本次通过私募方式认购 SB Energy 新发行的 N 类无投票权股票，认购价按最终 IPO 发行价的 90% 计价（较 IPO 价折让 10%）；SB Energy 第 2 号 S-1 修正案（9/21 提交）确认英伟达合计承诺投资 30 亿美元",
-    "【资产底数】SB Energy 已签约或在建的 AI 数据中心规模 8.8GW，含得克萨斯州与俄亥俄州项目；俄亥俄 PORTS-Pike 园区初始设计 4.25GW AI 算力负荷、可扩展至 8GW，长期租予 OpenAI 并约定独家使用英伟达芯片",
-    "【IPO 进展】SB Energy 拟以 500 亿美元以上估值登陆纳斯达克（代码 SBE），计划募资 50–70 亿美元，另向日本零售投资者募资至多 5 亿美元；据纽约时报 9/21 报道，因高估值下认购需求不足，上市时间已推迟至 10 月中下旬，公司方面未在 SEC 文件中确认延期",
-    "【公司财务】S-1 披露 SB Energy 2026 上半年营收 1.39 亿美元（主要来自原有光伏业务）、净亏损 32.09 亿美元；目前尚无数据中心正式投运；投资者包括软银（控股）、OpenAI（主要租户兼股东）与英伟达"
+    "【事件（SEC Form 4 披露，9/16 交易、9/18 提交）】黄仁勋 9/16 因限制性股票单位（RSU）归属产生税务义务，被英伟达代扣 45728 股普通股，每股计价 212.17 美元，对应价值约 970 万美元；文件交易代码为「F」（公司代扣股票以支付税款，非公开市场出售）",
+    "【其他高管同日均被代扣】首席运营官 Debora Shoquist 35008 股、总法律顾问 Timothy Teter 35738 股、首席会计官 Scott Gawel 2932 股，均按每股 212.17 美元代扣；5 名高管合计约 16 万股因税务被代扣",
+    "【CFO 克雷斯另有实际出售】Colette Kress 9/16 处置 40747 股缴税，另于 9/17 通过 2026-06-16 制定的 Rule 10b5-1 交易计划分三笔实际出售 34918 股，每股约 218—220 美元，合计约 764.9 万美元",
+    "【家族信托捐赠】9/17 黄仁勋夫妇的 Jen-Hsun & Lori Huang Living Trust 无偿转让 43.8 万股英伟达股票，其中 29.2 万股捐给 The Jen-Hsun & Lori Huang Foundation 基金会，14.6 万股转入捐赠者建议基金（DAF）",
+    "【口径】45728 股 / 212.17 美元 / 34918 股 / 218—220 美元 / 43.8 万股均为披露文件公开数字；减持与捐赠均按预设计划/信托安排执行，非本人主动公开市场买卖，不推算套现总额、不解读动机"
    ],
    "cat": "nvda",
-   "note": "事件日 2026-09-21（Bloomberg 当日报道，同日 SB Energy 向 SEC 提交 S-1 第 2 号修正案）。归 nvda：属英伟达公司投资动作，非官网首发、非黄仁勋本人表态。'是否延期'两说并存——纽约时报 9/21 称推迟至 10 月中下旬，Investing.com 引知情人士称按原计划推进、公司从未确认 9 月窗口，故以'公司未确认延期'口径并列呈现。url 指向 Bloomberg 原始报道（付费源）。images 留空（Bloomberg/MO 中文门户 og:image 不可抓，依规则不附无关图）。"
+   "note": "事件日 2026-09-19（SEC 文件 9/18 提交、财联社 9/19 早间首报、证券时报 9/19 17:52 与澎湃新闻 9/19 22:20 披露精确数字与家族信托捐赠细节）。归 nvda：公司高管/创始人持股变动客观事实（经媒体首报，非官网首发）。源为证券时报/澎湃（tier-2 正规媒体，基于 SEC Form 4）；早间财联社首报仅给「约4.6万股@约212」模糊口径，本轮以 Form 4 精确数字（45728@212.17）修正、并补入家族信托捐赠 43.8 万股。属预设税务代扣与信托捐赠的常规披露，非本人公开表态/演讲/行程，按「客观事实」口径入库；不含股价涨跌解读。og:image 受访客墙限制 curl 不可抓，依规则留空。证券时报另提英伟达参股的 AI 云公司 Nscale 在 IPO 申报文件中披露 2026 上半年营收同比 +1252%（英伟达身兼股东/供应商/债权人）——属第三方公司财务披露、非 Huang 本人动作，未单列事件，记为待人工复核。"
   },
   {
    "id": "ev20260919b",
@@ -2297,25 +2391,6 @@ function renderChrome(){
    ],
    "cat": "jensen",
    "note": "事件日 2026-09-19（CBS News 9/18 放出片段、Bloomberg/凤凰网科技/CNBC TV18/Economic Times/Livemint 9/19 集中刊发；完整 CBS Sunday Morning 专访 9/20 播出）。归 jensen：黄仁勋本人可溯源专访原话（与 9/14 All-In、9/15 Dreamforce、9/17 英王峰会为不同日期、不同场合、不同对话对象的独立专访）。本事件聚焦「2030 末日概率为零 + 全速推进但产品不安全不发布」这一在 CBS 专访中的新表述，以及对末日论者动机的质疑。id 内嵌 9/19 取片段/报道集中公开日；note 注明完整播出 9/20、片段 9/18。CBS 为正规权威媒体（tier-2），多家一线媒体交叉确认，非劣质源；og:image 受外媒渲染限制 curl 不可抓，依规则留空。"
-  },
-  {
-   "id": "ev20260919a",
-   "date": "2026-09-19",
-   "type": "mt",
-   "src": "证券时报 / 澎湃新闻（经 SEC Form 4 文件）",
-   "title": "黄仁勋据 SEC 披露以每股 212.17 美元处置 4.57 万股英伟达股票（代扣税），家族信托另捐出 43.8 万股",
-   "place": "",
-   "url": "https://www.stcn.com/article/detail/4191719.html",
-   "images": [],
-   "signals": [
-    "【事件（SEC Form 4 披露，9/16 交易、9/18 提交）】黄仁勋 9/16 因限制性股票单位（RSU）归属产生税务义务，被英伟达代扣 45728 股普通股，每股计价 212.17 美元，对应价值约 970 万美元；文件交易代码为「F」（公司代扣股票以支付税款，非公开市场出售）",
-    "【其他高管同日均被代扣】首席运营官 Debora Shoquist 35008 股、总法律顾问 Timothy Teter 35738 股、首席会计官 Scott Gawel 2932 股，均按每股 212.17 美元代扣；5 名高管合计约 16 万股因税务被代扣",
-    "【CFO 克雷斯另有实际出售】Colette Kress 9/16 处置 40747 股缴税，另于 9/17 通过 2026-06-16 制定的 Rule 10b5-1 交易计划分三笔实际出售 34918 股，每股约 218—220 美元，合计约 764.9 万美元",
-    "【家族信托捐赠】9/17 黄仁勋夫妇的 Jen-Hsun & Lori Huang Living Trust 无偿转让 43.8 万股英伟达股票，其中 29.2 万股捐给 The Jen-Hsun & Lori Huang Foundation 基金会，14.6 万股转入捐赠者建议基金（DAF）",
-    "【口径】45728 股 / 212.17 美元 / 34918 股 / 218—220 美元 / 43.8 万股均为披露文件公开数字；减持与捐赠均按预设计划/信托安排执行，非本人主动公开市场买卖，不推算套现总额、不解读动机"
-   ],
-   "cat": "nvda",
-   "note": "事件日 2026-09-19（SEC 文件 9/18 提交、财联社 9/19 早间首报、证券时报 9/19 17:52 与澎湃新闻 9/19 22:20 披露精确数字与家族信托捐赠细节）。归 nvda：公司高管/创始人持股变动客观事实（经媒体首报，非官网首发）。源为证券时报/澎湃（tier-2 正规媒体，基于 SEC Form 4）；早间财联社首报仅给「约4.6万股@约212」模糊口径，本轮以 Form 4 精确数字（45728@212.17）修正、并补入家族信托捐赠 43.8 万股。属预设税务代扣与信托捐赠的常规披露，非本人公开表态/演讲/行程，按「客观事实」口径入库；不含股价涨跌解读。og:image 受访客墙限制 curl 不可抓，依规则留空。证券时报另提英伟达参股的 AI 云公司 Nscale 在 IPO 申报文件中披露 2026 上半年营收同比 +1252%（英伟达身兼股东/供应商/债权人）——属第三方公司财务披露、非 Huang 本人动作，未单列事件，记为待人工复核。"
   },
   {
    "id": "ev20260917a",
@@ -2360,31 +2435,6 @@ function renderChrome(){
    "note": "事件日 2026-09-15（周二，旧金山 Dreamforce；财联社 9/16 刊发，中国时区晚于美西当日）。归 jensen：黄仁勋本人可溯源公开对话原话（与 Marc Benioff 同台）。与 ev20260914c（9/14 All-In Summit 接特朗普来电）为不同日期、不同场合、不同对话对象的独立事件；本次聚焦 AI 监管立法立场。财联社 og:image 不可抓（curl 无返回），images 留空。另：英伟达官方博客 9/15 发布同名回顾《Now We Can Know Everything and Do Anything, Jensen Huang Says at Dreamforce》（blogs.nvidia.com/blog/jensen-huang-dreamforce/），补充 Koa 模型发布与「know everything and do anything」主题原话，已并入本事件 signals，不另立 nvnews 条目（同事件不重复）。"
   },
   {
-   "id": "ev20260914c",
-   "date": "2026-09-14",
-   "type": "sp",
-   "src": "All-In Summit 2026（黄仁勋炉边对话；腾讯新闻全文转引）/ Axios / NBC / 彭博",
-   "title": "黄仁勋 All-In 峰会现场接到特朗普来电，称「AI末日论」缺乏科学依据、部分领域超级智能已到来",
-   "place": "美国·洛杉矶（All-In Summit 2026）",
-   "url": "https://news.qq.com/rain/a/20260915A03PKI00",
-   "images": [
-    "https://inews.gtimg.com/om_ls/O675Qv8zX8rlAXrV8xPSrP8OS69ze2XrfCtj0DJKuW7v0AA_640330/0"
-   ],
-   "signals": [
-    "【事件（9/14 洛杉矶 All-In Summit）】黄仁勋在台上与主持人讨论时，助理递上手机——美国总统特朗普来电，黄仁勋当场开免提，两人围绕 AI 发展公开对话；英伟达对二人互动不予置评（NBC / Axios / 彭博）",
-    "【黄仁勋谈 AI 安全】拒绝「AI 可能终结人类」的预测，称其「缺乏科学依据」；但比特朗普更谨慎——表示若 AI 公司感觉自身研发已「失控」，就应暂停或放慢节奏，并认真看待内部吹哨人声音",
-    "【原话·呼应吹哨人】特别称赞 Anthropic 前研究员 Jacob Coxon 敢于提出担忧「很有勇气」，认为恐慌造成了「在快速创新与 AI 安全之间做错误二元选择」",
-    "【原话·回应特朗普】「你是对的，我们不会让（AI 减速）发生」「我们会确保美国在 AI 竞赛中让所有人都受益——每个行业、每家公司、每个州、每一个人」",
-    "【原话·生态策略】「Go as high as possible, but stay as low as possible」——英伟达要帮整个生态成功而非切走一块；「若没有 cuDNN 那些框架都不存在，没有 Megatron Core 大规模训练不会发生，我们发明必需的技术然后让百花齐放」",
-    "【原话·收购后开源布局】完成收购 Hugging Face 后，英伟达已在自动驾驶、生物医药等五个垂直领域领跑前沿开源模型，含全球首款「会思考的自动驾驶」Alpamayo、蛋白质合成模型 Proteina Complexa",
-    "【原话·超级智能判定】被问是否已进入 AGI 时刻，黄仁勋答「我认为我们也到了」——定义是窄域超级智能：自动驾驶事故率仅为人类 1/10，蛋白质合成、虚拟筛选「我们已经在那里了」",
-    "【原话·收尾】「我希望我们能降低戏剧性，最重要的是整个美国要一起前进，这才是成功的方式」",
-    "【特朗普同期表态（背景）】称数据中心是「未来 20–25 年的石油」、AI 接管世界是「骗局」、不能放缓 AI 产业；特朗普 9/13 在爱尔兰已表态可为 AI 设「护栏」但反对渲染恐慌"
-   ],
-   "cat": "jensen",
-   "note": "事件日 2026-09-14（周一，洛杉矶 All-In Summit 2026；NBC/Axios/彭博/CNBC/FT 9/15 报道均指当地时间 14 日）。归 jensen：黄仁勋本人可溯源公开炉边对话原话（All-In 为 tier-3 信源，腾讯新闻转引全文实录 + Axios/NBC 直接报道交叉确认）。与 ev20260910c（9/10 高盛同场称 AI 末日论 complete nonsense）为不同日期、不同场合的独立事件；本次 9/14 立场更细腻——既驳末日论、又称赞吹哨人、主张失控应暂停。og:image 取腾讯新闻原文页 og:image（黄仁勋现场图）。date 取事件发生日 9/14，非文章日 9/15"
-  },
-  {
    "id": "ev20260914a",
    "date": "2026-09-14",
    "type": "mt",
@@ -2421,6 +2471,31 @@ function renderChrome(){
    "note": "英伟达官方博客 9/14 发布；归 nvnews 因其为 blogs.nvidia.com 官方域发布"
   },
   {
+   "id": "ev20260914c",
+   "date": "2026-09-14",
+   "type": "sp",
+   "src": "All-In Summit 2026（黄仁勋炉边对话；腾讯新闻全文转引）/ Axios / NBC / 彭博",
+   "title": "黄仁勋 All-In 峰会现场接到特朗普来电，称「AI末日论」缺乏科学依据、部分领域超级智能已到来",
+   "place": "美国·洛杉矶（All-In Summit 2026）",
+   "url": "https://news.qq.com/rain/a/20260915A03PKI00",
+   "images": [
+    "https://inews.gtimg.com/om_ls/O675Qv8zX8rlAXrV8xPSrP8OS69ze2XrfCtj0DJKuW7v0AA_640330/0"
+   ],
+   "signals": [
+    "【事件（9/14 洛杉矶 All-In Summit）】黄仁勋在台上与主持人讨论时，助理递上手机——美国总统特朗普来电，黄仁勋当场开免提，两人围绕 AI 发展公开对话；英伟达对二人互动不予置评（NBC / Axios / 彭博）",
+    "【黄仁勋谈 AI 安全】拒绝「AI 可能终结人类」的预测，称其「缺乏科学依据」；但比特朗普更谨慎——表示若 AI 公司感觉自身研发已「失控」，就应暂停或放慢节奏，并认真看待内部吹哨人声音",
+    "【原话·呼应吹哨人】特别称赞 Anthropic 前研究员 Jacob Coxon 敢于提出担忧「很有勇气」，认为恐慌造成了「在快速创新与 AI 安全之间做错误二元选择」",
+    "【原话·回应特朗普】「你是对的，我们不会让（AI 减速）发生」「我们会确保美国在 AI 竞赛中让所有人都受益——每个行业、每家公司、每个州、每一个人」",
+    "【原话·生态策略】「Go as high as possible, but stay as low as possible」——英伟达要帮整个生态成功而非切走一块；「若没有 cuDNN 那些框架都不存在，没有 Megatron Core 大规模训练不会发生，我们发明必需的技术然后让百花齐放」",
+    "【原话·收购后开源布局】完成收购 Hugging Face 后，英伟达已在自动驾驶、生物医药等五个垂直领域领跑前沿开源模型，含全球首款「会思考的自动驾驶」Alpamayo、蛋白质合成模型 Proteina Complexa",
+    "【原话·超级智能判定】被问是否已进入 AGI 时刻，黄仁勋答「我认为我们也到了」——定义是窄域超级智能：自动驾驶事故率仅为人类 1/10，蛋白质合成、虚拟筛选「我们已经在那里了」",
+    "【原话·收尾】「我希望我们能降低戏剧性，最重要的是整个美国要一起前进，这才是成功的方式」",
+    "【特朗普同期表态（背景）】称数据中心是「未来 20–25 年的石油」、AI 接管世界是「骗局」、不能放缓 AI 产业；特朗普 9/13 在爱尔兰已表态可为 AI 设「护栏」但反对渲染恐慌"
+   ],
+   "cat": "jensen",
+   "note": "事件日 2026-09-14（周一，洛杉矶 All-In Summit 2026；NBC/Axios/彭博/CNBC/FT 9/15 报道均指当地时间 14 日）。归 jensen：黄仁勋本人可溯源公开炉边对话原话（All-In 为 tier-3 信源，腾讯新闻转引全文实录 + Axios/NBC 直接报道交叉确认）。与 ev20260910c（9/10 高盛同场称 AI 末日论 complete nonsense）为不同日期、不同场合的独立事件；本次 9/14 立场更细腻——既驳末日论、又称赞吹哨人、主张失控应暂停。og:image 取腾讯新闻原文页 og:image（黄仁勋现场图）。date 取事件发生日 9/14，非文章日 9/15"
+  },
+  {
    "id": "ev20260911a",
    "date": "2026-09-11",
    "type": "mt",
@@ -2440,24 +2515,22 @@ function renderChrome(){
    "note": "路透社独家（9/11）援引知情人士；Anthropic 拒评、英伟达未回应；计划未定、金额与规模可能变化。归 nvda：媒体首报、非英伟达官网官宣。与 2025-11 已宣布的 100 亿美元投资重叠关系路透未澄清，数字勿外推。"
   },
   {
-   "id": "ev20260910d",
+   "id": "ev20260910b",
    "date": "2026-09-10",
    "type": "mt",
-   "src": "英伟达官方新闻室（nvidianews.nvidia.com）",
-   "title": "英伟达与 Palantir 推出主权 AI 供应链智能栈，先从英伟达自身产线落地",
-   "place": "美国",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-and-palantir-bring-sovereign-intelligence-to-critical-supply-chains/?nvid=nv-csfg-771428",
-   "images": [
-    "https://iprsoftwaremedia.com/219/files/202609/38876c048ca50c779d310d7d819f27bd/6aa210be3d63325a96e97259_palantir-nvidia/palantir-nvidia_f0195c71-b6c0-4659-b603-2f73ebdc1de8-prv.jpg?v=f0195c71-b6c0-4659-b603-2f73ebdc1de8"
-   ],
+   "src": "新浪财经（环球市场播报）/ 路透社",
+   "title": "美司法部调查英伟达与 Groq 的 170–200 亿美元授权交易是否规避反垄断审查",
+   "place": "美国（监管调查）",
+   "url": "https://finance.sina.com.cn/stock/usstock/c/2026-09-10/doc-inirihnu8566892.shtml",
+   "images": [],
    "signals": [
-    "英伟达与 Palantir（PLTR）官宣合作，将主权 AI 引入关键供应链，先在英伟达自身供应链落地：把 NVIDIA Nemotron 开放模型接入 Palantir Foundry/AIP 与 Ontology，覆盖从晶圆到首 token 的物料分配与决策",
-    "【黄仁勋原话】“供应链是实体经济的操作系统，AI 工厂是有史以来最复杂的系统之一……英伟达与 Palantir 正把这张庞大的运营图谱变成主权智能——结合 Nemotron 模型与 Palantir Ontology，去推理、规划并编排从晶圆到 token 的旅程”",
-    "【Palantir CEO Alex Karp 原话】“英伟达拥有 arguably 全球最有价值、最复杂精密的供应链；我们的主权技术栈由 Nemotron 模型与 Ontology 驱动，提供超越前沿的能力”",
-    "该 AI 栈基于双方联合开发的 Palantir 主权 AI 操作系统参考架构（SAIOS），由 Dell、Cisco 支持，可在本地（Cisco/Dell）或云（Rackspace/Nebius）部署；将在 Palantir AIPCon 11 展示"
+    "美国司法部正在调查英伟达 2025 年 12 月与 AI 芯片初创 Groq 达成的授权交易，重点是其是否通过“非独家技术许可 + 聘用核心高管”的结构刻意规避更严格的反垄断并购审查",
+    "交易结构：英伟达支付约 170–200 亿美元获得 Groq 芯片技术的非独家许可，同时 Groq 创始人兼 CEO Jonathan Ross 与 COO Sunny Madra 转投英伟达，Groq 本身维持独立公司地位",
+    "据《纽约时报》报道，司法部在交易公布后不久即启动调查并已正式要求英伟达提交相关信息；若认定交易处理方式有问题，英伟达可能面临罚款，但报道称司法部大概率不会要求撤销该交易",
+    "美国国会议员曾指该交易“实质上是一起扼杀竞争的收购”；这把 AI 行业“不买公司、只拿技术与人才”的交易方式推入反垄断监管视野（与 ev20260824b Groq 3 LPX 量产同源主体，本条为针对授权交易的监管调查，独立成条）"
    ],
-   "cat": "nvnews",
-   "note": "事件日 9/10（英伟达官方新闻室 9/10 发布）。NVIDIA Nemotron 为英伟达自有开放模型；SAIOS 由 Dell/Cisco 支持。源为 nvidia.com 官方域，归 nvnews。"
+   "cat": "nvda",
+   "note": "事件日 9/10（路透社/新浪财经环球市场播报/格隆汇 9/10 报道，引述 NYT 与知情人士）；金额各源口径不一（凤凰/财闻引 NYT 称 170 亿美元、新浪引格隆汇称 200 亿美元），以区间记录。官方一手源未直接抓取，以新浪财经（正规 tier-3）为溯源代理；url 指向新浪原文页"
   },
   {
    "id": "ev20260910c",
@@ -2493,40 +2566,24 @@ function renderChrome(){
    "note": "事件日 9/10（高盛 Communacopia + Technology 大会炉边对话 8:50 a.m. PT；NVIDIA 8/27 官宣该出席）。源 华尔街见闻《黄仁勋挽救美股的讲话，到底说了啥》全文实录（9/11 刊，事件日 9/10；多源确认 9/10 当日确有此炉边对话）。该文对“讲话后 NVDA 107→116.9、+8.15%、+2158 亿美元市值”的描述与 9/10 实际收盘 $218.58（-2.17%）严重冲突，疑套用旧框架/笔误，故正文不收录任何股价变动数字，仅录黄仁勋本人定性表述。右兜/雪球流传的“1993 创立 31 年”英文逐字稿实为 2024 年同主题对话模板，非本场，已排除；9/11 补录同场 cybersecurity 与“循环交易”回应信号（源 财联社/TechCrunch，均指向 9/10 高盛同场）。；9/12 续跑据 9/11 详细实录补充同场 3 条新信号（3–4万亿长期预测、系统均价梯度/850万美元GPU/27%月环比、算力资产化+physical AI 四阶段），均为 9/10 高盛同场原话，非新事件"
   },
   {
-   "id": "ev20260910b",
+   "id": "ev20260910d",
    "date": "2026-09-10",
    "type": "mt",
-   "src": "新浪财经（环球市场播报）/ 路透社",
-   "title": "美司法部调查英伟达与 Groq 的 170–200 亿美元授权交易是否规避反垄断审查",
-   "place": "美国（监管调查）",
-   "url": "https://finance.sina.com.cn/stock/usstock/c/2026-09-10/doc-inirihnu8566892.shtml",
-   "images": [],
-   "signals": [
-    "美国司法部正在调查英伟达 2025 年 12 月与 AI 芯片初创 Groq 达成的授权交易，重点是其是否通过“非独家技术许可 + 聘用核心高管”的结构刻意规避更严格的反垄断并购审查",
-    "交易结构：英伟达支付约 170–200 亿美元获得 Groq 芯片技术的非独家许可，同时 Groq 创始人兼 CEO Jonathan Ross 与 COO Sunny Madra 转投英伟达，Groq 本身维持独立公司地位",
-    "据《纽约时报》报道，司法部在交易公布后不久即启动调查并已正式要求英伟达提交相关信息；若认定交易处理方式有问题，英伟达可能面临罚款，但报道称司法部大概率不会要求撤销该交易",
-    "美国国会议员曾指该交易“实质上是一起扼杀竞争的收购”；这把 AI 行业“不买公司、只拿技术与人才”的交易方式推入反垄断监管视野（与 ev20260824b Groq 3 LPX 量产同源主体，本条为针对授权交易的监管调查，独立成条）"
+   "src": "英伟达官方新闻室（nvidianews.nvidia.com）",
+   "title": "英伟达与 Palantir 推出主权 AI 供应链智能栈，先从英伟达自身产线落地",
+   "place": "美国",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-and-palantir-bring-sovereign-intelligence-to-critical-supply-chains/?nvid=nv-csfg-771428",
+   "images": [
+    "https://iprsoftwaremedia.com/219/files/202609/38876c048ca50c779d310d7d819f27bd/6aa210be3d63325a96e97259_palantir-nvidia/palantir-nvidia_f0195c71-b6c0-4659-b603-2f73ebdc1de8-prv.jpg?v=f0195c71-b6c0-4659-b603-2f73ebdc1de8"
    ],
-   "cat": "nvda",
-   "note": "事件日 9/10（路透社/新浪财经环球市场播报/格隆汇 9/10 报道，引述 NYT 与知情人士）；金额各源口径不一（凤凰/财闻引 NYT 称 170 亿美元、新浪引格隆汇称 200 亿美元），以区间记录。官方一手源未直接抓取，以新浪财经（正规 tier-3）为溯源代理；url 指向新浪原文页"
-  },
-  {
-   "id": "ev20260909b",
-   "date": "2026-09-09",
-   "type": "mt",
-   "src": "财联社 / 路透社（NVIDIA 9/9 官宣）",
-   "title": "英伟达宣布支持澳大利亚到 2027 年建设最高 2GW AI 基础设施，联手八大本土伙伴",
-   "place": "澳大利亚",
-   "url": "https://www.cls.cn/detail/2478832",
-   "images": [],
    "signals": [
-    "英伟达 9/9 宣布扩大与澳大利亚数据中心及云生态合作，目标到 2027 年交付最高 2GW 的 AI 基础设施容量；合作伙伴含 Firmus、Sharon AI、IREN、ResetData、Megaport、CDC、NEXTDC、AirTrunk",
-    "合作围绕 NVIDIA DSX 平台建设 full-stack AI factories，明确把“land、power and shell capacity”（土地、电力、机房）写进合作内容——标志英伟达从卖 GPU 进一步延伸到 AI 工厂标准制定",
-    "Reuters 9/10 报道称，澳大利亚现有数据中心行业总容量约 1.6GW，英伟达及伙伴规划新增的 AI 容量超过其现有总和；NEXTDC 本周拟发约 11 亿澳元（约 7.96 亿美元）可转债扩建设施",
-    "2GW 为合作伙伴面向 2027 年的建设目标，非当前已投运容量；反映 AI 基建瓶颈正从“有没有 GPU”转向“有没有地方给 GPU 通电”，延续黄仁勋“AI 工厂”叙事"
+    "英伟达与 Palantir（PLTR）官宣合作，将主权 AI 引入关键供应链，先在英伟达自身供应链落地：把 NVIDIA Nemotron 开放模型接入 Palantir Foundry/AIP 与 Ontology，覆盖从晶圆到首 token 的物料分配与决策",
+    "【黄仁勋原话】“供应链是实体经济的操作系统，AI 工厂是有史以来最复杂的系统之一……英伟达与 Palantir 正把这张庞大的运营图谱变成主权智能——结合 Nemotron 模型与 Palantir Ontology，去推理、规划并编排从晶圆到 token 的旅程”",
+    "【Palantir CEO Alex Karp 原话】“英伟达拥有 arguably 全球最有价值、最复杂精密的供应链；我们的主权技术栈由 Nemotron 模型与 Ontology 驱动，提供超越前沿的能力”",
+    "该 AI 栈基于双方联合开发的 Palantir 主权 AI 操作系统参考架构（SAIOS），由 Dell、Cisco 支持，可在本地（Cisco/Dell）或云（Rackspace/Nebius）部署；将在 Palantir AIPCon 11 展示"
    ],
-   "cat": "nvda",
-   "note": "官宣日 9/9（智算通鉴引 NVIDIA 9/9 澳大利亚 AI 基础设施合作公告；财联社 9/10 08:07 电、Reuters 9/10 跟进）。官方 nvidia.com 一手 URL 本轮未抓到，暂归公司动态（nvda）并以财联社为溯源；若后续确认官网首发应升级为 nvnews。与 ev20260908b（Firmus×OpenAI 马来西亚）同属 AI 工厂生态区域扩张"
+   "cat": "nvnews",
+   "note": "事件日 9/10（英伟达官方新闻室 9/10 发布）。NVIDIA Nemotron 为英伟达自有开放模型；SAIOS 由 Dell/Cisco 支持。源为 nvidia.com 官方域，归 nvnews。"
   },
   {
    "id": "ev20260909a",
@@ -2547,41 +2604,22 @@ function renderChrome(){
    "note": "9/9 为访韩第五日（收官离韩）；Khan / Nocutnews / Yonhap 9/9 报道。系 ev20260905a–ev20260908a 访韩系列的收官事件，非新合作官宣。og:image 韩媒不可抓，留空"
   },
   {
-   "id": "ev20260908c",
-   "date": "2026-09-08",
+   "id": "ev20260909b",
+   "date": "2026-09-09",
    "type": "mt",
-   "src": "黄仁勋X（@JensenHuang）",
-   "title": "黄仁勋 X 原帖：称英伟达算力“可替代、耐用、高出租率”，是创收资产（回应 H100 租金月涨 22% 至 $3.28/小时）",
-   "place": "X 原帖（9/8）",
-   "url": "https://x.com/JensenHuang",
+   "src": "财联社 / 路透社（NVIDIA 9/9 官宣）",
+   "title": "英伟达宣布支持澳大利亚到 2027 年建设最高 2GW AI 基础设施，联手八大本土伙伴",
+   "place": "澳大利亚",
+   "url": "https://www.cls.cn/detail/2478832",
    "images": [],
    "signals": [
-    "【X原帖原话（9/8）】\"NVIDIA compute is fungible, durable and highly rentable. It is a productive, revenue-generating asset.\"（英伟达算力是可替代、耐用、高出租率的，是一种能创造收入的生产性资产）——黄仁勋 9/8 于 X 发文，回应网友关于 H100 租赁价格的讨论",
-    "背景：算力交易平台 Ornn Exchange（@OrnnExchange）9/7 发帖称，已上市约三年的 H100 训练芯片小时租金过去一个月上涨 22% 至 3.28 美元/小时，反驳“三年旧卡该持续折价”的折旧假设；黄仁勋转发并附上引语",
-    "逻辑支点：新一代 Blackwell 优先供给大客户、旧集群承接推理负载，叠加电力与显存紧缺，令旧代 GPU 租金坚挺；延续英伟达 8/10 将“AI 算力打造为可投资资产类别”的叙事（联合六大机构动员超 5000 亿美元第三方资本）"
-   ],
-   "cat": "xtweet",
-   "note": "X 原帖 9/8（Webull/WordUpNews/BeInCrypto 均引用 t.co/cvmjaNoiK8、@JensenHuang 9/8；TipRanks 9/8 逐字转引原话）。经 TipRanks/Webull/WordUpNews(BeInCrypto)/腾讯财闻 多源交叉确认。permalink 待补（X 不可直连），url 暂挂 https://x.com/JensenHuang。注意：GPT-6 Astra/AGI/40万GPU 为 9/6 另一帖（ev20260906b），不可并入本条。date 取本人发帖日 9/8"
-  },
-  {
-   "id": "ev20260908b",
-   "date": "2026-09-08",
-   "type": "mt",
-   "src": "Firmus 官方新闻室 / 路透社（经 Straits Times 转引）",
-   "title": "英伟达支持的 Firmus 与 OpenAI 签多年期协议，马来西亚两座 AI 工厂供货、OpenAI 成锚定客户",
-   "place": "马来西亚（两座 AI 工厂）/ 悉尼（Firmus 总部）",
-   "url": "https://firmus.co/newsroom/firmus-surpasses-900-mw-contracted-capacity-adds-openai-as-anchor-customer-and-expands-into-malaysia",
-   "images": [
-    "https://cdn.sanity.io/images/q43wife6/production/a9da001bb8baa44154a9e7a5791a01c0f1362ea0-1960x1000.png"
-   ],
-   "signals": [
-    "Firmus（英伟达参投，估值超 105 亿美元，其他投资方含 Jane Street、Blackstone 基金、Coatue）9/8 宣布与 OpenAI 签多年期战略协议：OpenAI 向 Firmus 位于马来西亚的两座 AI 工厂采购专属 AI 算力，并成为其锚定客户（anchor customer）",
-    "Firmus 称此次合作后全客户签约总容量超 900 兆瓦（MW）；其 AI 工厂横跨澳、新、印尼、马来四国共 7 座，2 座已运营、5 座在建（未来 24 个月陆续投运）",
-    "两座马来西亚 AI 工厂采用 NVIDIA DSX AI Factory 平台 + Vera Rubin NVL72 机架级系统，搭配 Firmus 自研 HyperCube 液冷；英伟达全球 AI 基础设施增长副总裁 Nico Caprez 出面站台，称将'更快把先进容量送上線、以更强 token 经济性在区域规模化产出智能'",
-    "OpenAI 算力战略副总裁 Sachin Katti 称'马来西亚新数据中心将帮助满足亚太乃至全球日益增长的产品需求'；Firmus 联席 CEO Tim Rosenfield 称'亚太从此成为智能的生产者，而非只是消费者'。合作性质为算力采购，不涉及股权或合资"
+    "英伟达 9/9 宣布扩大与澳大利亚数据中心及云生态合作，目标到 2027 年交付最高 2GW 的 AI 基础设施容量；合作伙伴含 Firmus、Sharon AI、IREN、ResetData、Megaport、CDC、NEXTDC、AirTrunk",
+    "合作围绕 NVIDIA DSX 平台建设 full-stack AI factories，明确把“land、power and shell capacity”（土地、电力、机房）写进合作内容——标志英伟达从卖 GPU 进一步延伸到 AI 工厂标准制定",
+    "Reuters 9/10 报道称，澳大利亚现有数据中心行业总容量约 1.6GW，英伟达及伙伴规划新增的 AI 容量超过其现有总和；NEXTDC 本周拟发约 11 亿澳元（约 7.96 亿美元）可转债扩建设施",
+    "2GW 为合作伙伴面向 2027 年的建设目标，非当前已投运容量；反映 AI 基建瓶颈正从“有没有 GPU”转向“有没有地方给 GPU 通电”，延续黄仁勋“AI 工厂”叙事"
    ],
    "cat": "nvda",
-   "note": "事件日 9/8（Firmus 官方新闻室 + 路透 9/8 首报）。属英伟达 AI 工厂生态扩张事实：NVIDIA 为 Firmus 投资方且提供 Vera Rubin/DSX 平台，但官宣主体为 Firmus，故归公司动态（nvda）而非官网发布（nvnews）；NVIDIA 副总裁 Caprez 发言为二手引语"
+   "note": "官宣日 9/9（智算通鉴引 NVIDIA 9/9 澳大利亚 AI 基础设施合作公告；财联社 9/10 08:07 电、Reuters 9/10 跟进）。官方 nvidia.com 一手 URL 本轮未抓到，暂归公司动态（nvda）并以财联社为溯源；若后续确认官网首发应升级为 nvnews。与 ev20260908b（Firmus×OpenAI 马来西亚）同属 AI 工厂生态区域扩张"
   },
   {
    "id": "ev20260908a",
@@ -2605,6 +2643,43 @@ function renderChrome(){
    ],
    "cat": "nvda",
    "note": "9/8 为访韩第四日（收官），多项合作官宣落地（ev20260905a 9/5 抵韩时所列“待官宣”清单兑现）。SK 海力士次世代内存合作经 鉅亨网/中央日报中文网/AsiaToday/Edaily 多源确认；Naver 55MW→GW 具体数字首见于 6/8 官宣，本次为确认推进，未重复录入明细。og:image 取 cnyes 转引英伟达提供之 SK×NVIDIA 合作照"
+  },
+  {
+   "id": "ev20260908b",
+   "date": "2026-09-08",
+   "type": "mt",
+   "src": "Firmus 官方新闻室 / 路透社（经 Straits Times 转引）",
+   "title": "英伟达支持的 Firmus 与 OpenAI 签多年期协议，马来西亚两座 AI 工厂供货、OpenAI 成锚定客户",
+   "place": "马来西亚（两座 AI 工厂）/ 悉尼（Firmus 总部）",
+   "url": "https://firmus.co/newsroom/firmus-surpasses-900-mw-contracted-capacity-adds-openai-as-anchor-customer-and-expands-into-malaysia",
+   "images": [
+    "https://cdn.sanity.io/images/q43wife6/production/a9da001bb8baa44154a9e7a5791a01c0f1362ea0-1960x1000.png"
+   ],
+   "signals": [
+    "Firmus（英伟达参投，估值超 105 亿美元，其他投资方含 Jane Street、Blackstone 基金、Coatue）9/8 宣布与 OpenAI 签多年期战略协议：OpenAI 向 Firmus 位于马来西亚的两座 AI 工厂采购专属 AI 算力，并成为其锚定客户（anchor customer）",
+    "Firmus 称此次合作后全客户签约总容量超 900 兆瓦（MW）；其 AI 工厂横跨澳、新、印尼、马来四国共 7 座，2 座已运营、5 座在建（未来 24 个月陆续投运）",
+    "两座马来西亚 AI 工厂采用 NVIDIA DSX AI Factory 平台 + Vera Rubin NVL72 机架级系统，搭配 Firmus 自研 HyperCube 液冷；英伟达全球 AI 基础设施增长副总裁 Nico Caprez 出面站台，称将'更快把先进容量送上線、以更强 token 经济性在区域规模化产出智能'",
+    "OpenAI 算力战略副总裁 Sachin Katti 称'马来西亚新数据中心将帮助满足亚太乃至全球日益增长的产品需求'；Firmus 联席 CEO Tim Rosenfield 称'亚太从此成为智能的生产者，而非只是消费者'。合作性质为算力采购，不涉及股权或合资"
+   ],
+   "cat": "nvda",
+   "note": "事件日 9/8（Firmus 官方新闻室 + 路透 9/8 首报）。属英伟达 AI 工厂生态扩张事实：NVIDIA 为 Firmus 投资方且提供 Vera Rubin/DSX 平台，但官宣主体为 Firmus，故归公司动态（nvda）而非官网发布（nvnews）；NVIDIA 副总裁 Caprez 发言为二手引语"
+  },
+  {
+   "id": "ev20260908c",
+   "date": "2026-09-08",
+   "type": "mt",
+   "src": "黄仁勋X（@JensenHuang）",
+   "title": "黄仁勋 X 原帖：称英伟达算力“可替代、耐用、高出租率”，是创收资产（回应 H100 租金月涨 22% 至 $3.28/小时）",
+   "place": "X 原帖（9/8）",
+   "url": "https://x.com/JensenHuang",
+   "images": [],
+   "signals": [
+    "【X原帖原话（9/8）】\"NVIDIA compute is fungible, durable and highly rentable. It is a productive, revenue-generating asset.\"（英伟达算力是可替代、耐用、高出租率的，是一种能创造收入的生产性资产）——黄仁勋 9/8 于 X 发文，回应网友关于 H100 租赁价格的讨论",
+    "背景：算力交易平台 Ornn Exchange（@OrnnExchange）9/7 发帖称，已上市约三年的 H100 训练芯片小时租金过去一个月上涨 22% 至 3.28 美元/小时，反驳“三年旧卡该持续折价”的折旧假设；黄仁勋转发并附上引语",
+    "逻辑支点：新一代 Blackwell 优先供给大客户、旧集群承接推理负载，叠加电力与显存紧缺，令旧代 GPU 租金坚挺；延续英伟达 8/10 将“AI 算力打造为可投资资产类别”的叙事（联合六大机构动员超 5000 亿美元第三方资本）"
+   ],
+   "cat": "xtweet",
+   "note": "X 原帖 9/8（Webull/WordUpNews/BeInCrypto 均引用 t.co/cvmjaNoiK8、@JensenHuang 9/8；TipRanks 9/8 逐字转引原话）。经 TipRanks/Webull/WordUpNews(BeInCrypto)/腾讯财闻 多源交叉确认。permalink 待补（X 不可直连），url 暂挂 https://x.com/JensenHuang。注意：GPT-6 Astra/AGI/40万GPU 为 9/6 另一帖（ev20260906b），不可并入本条。date 取本人发帖日 9/8"
   },
   {
    "id": "ev20260907a",
@@ -2733,59 +2808,6 @@ function renderChrome(){
    "note": "事件日 9/4（尼财长视频致谢）；来源经 Kathmandu Post / The Himalayan Times（Asia Business Daily、FN News 韩国媒转引）多源确认。属黄仁勋个人公开善举，归入公司动态/CEO动态"
   },
   {
-   "id": "ev20260903d",
-   "date": "2026-09-03",
-   "type": "mt",
-   "src": "英伟达官方（blogs.nvidia.com）",
-   "title": "GeForce NOW 9月片单：NBA 2K27 携 DLSS 5 领衔，28 款新游上云",
-   "place": "线上发布",
-   "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-september-2026-games-list/",
-   "images": [
-    "https://blogs.nvidia.com/wp-content/uploads/2026/09/gfn-thursday-9-3-blog-1920x1080-logo.jpg"
-   ],
-   "signals": [
-    "英伟达 9/3 在官方博客公布 GFN Thursday 9 月片单：28 款新游戏登陆 GeForce NOW 云游戏，由《NBA 2K27》领衔，该作首发即支持 DLSS 5 3D 引导神经渲染（RTX 5080 云算力串流）",
-    "其余重点新游包括 Rebel Wolves《The Blood of Dawnwalker》、Capcom《Onimusha: Way of the Sword》（9/4 首发即上云）、以及《SpeedRunners 2》《Crimson Moon》等；整月还将接入《Train Sim World 7》《CONTROL Resonant》等"
-   ],
-   "cat": "nvnews",
-   "note": "官网博客 9/3 发布（article:published_time 2026-09-03）；与 ev20260901d（DLSS 5 上线）互为产品化补充，本条聚焦云游戏片单"
-  },
-  {
-   "id": "ev20260903c",
-   "date": "2026-09-03",
-   "type": "mt",
-   "src": "英伟达官方（blogs.nvidia.com）",
-   "title": "IFA 2026：NVIDIA 联合微软加速本地 AI，RTX Spark Windows PC 10 月上市",
-   "place": "德国·柏林（IFA 2026）",
-   "url": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
-   "images": [
-    "https://blogs.nvidia.com/wp-content/uploads/2026/09/nv-blog-1280x680-1.jpg"
-   ],
-   "signals": [
-    "NVIDIA 在 IFA 2026 官宣'前沿智能走向本地化'：联合微软及合作伙伴，为本地运行 AI 智能体提供更快推理与新工具，让代理在 NVIDIA 硬件上更易搭建与运行",
-    "发布全新紧凑型 NVIDIA RTX Spark Windows PC，10 月上市（Lenovo、Acer 首批），面向 AI 爱好者/开发者/创作者本地安全运行智能体；微软与 OpenClaw 合作降低 Windows 端上手门槛"
-   ],
-   "cat": "nvnews",
-   "note": "官网博客 9/3 发布（article:published_time 2026-09-03T16:00Z）；与 timeline 中 GTC 台北 RTX Spark 联合研发形成产品化闭环"
-  },
-  {
-   "id": "ev20260903b",
-   "date": "2026-09-03",
-   "type": "mt",
-   "src": "黄仁勋X（@JensenHuang）",
-   "title": "黄仁勋 X 原帖官宣收购 Hugging Face：开放模型强化安全、赋能主权",
-   "place": "X 原帖（9/3）",
-   "url": "https://x.com/JensenHuang",
-   "images": [],
-   "signals": [
-    "【X原帖原话（9/3）】\"Exciting day for NVIDIA and @huggingface. Open models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty. They allow every developer, startup, university, industry and country to build with, customize and benefit from AI. Thank you…\"",
-    "黄仁勋在 X 亲自官宣英伟达拟以 129.3 亿美元收购 Hugging Face（与公司动态 ev20260903a 同源，本条为本人 X 原帖，独立归入 X原贴 分类）",
-    "Hugging Face 官方同日在 X 发帖\"Preserving the Open Platform 🤗💚\"呼应；原帖经 Hothardware 逐字转引交叉确认"
-   ],
-   "cat": "xtweet",
-   "note": "X 原帖 9/3 官宣 HF 收购；permalink 待浏览器通道/用户补全（hothardware 已逐字转引佐证）。date 取本人发帖日 9/3"
-  },
-  {
    "id": "ev20260903a",
    "date": "2026-09-03",
    "type": "mt",
@@ -2807,41 +2829,75 @@ function renderChrome(){
    "note": "官网首发（黄仁勋本人博客 9/3，article:published_time 2026-09-03T11:56Z）；腾讯科技/大河财立方为二级转载，此前误作一手源。价格 $12,930,300,000（129.303 亿美元）。两高管 Stevens/Teter 于 9/2 盘后提交 Form 4。媒体观点见 op20260903a"
   },
   {
-   "id": "ev20260902f",
-   "date": "2026-09-02",
+   "id": "ev20260903b",
+   "date": "2026-09-03",
    "type": "mt",
-   "src": "观察者网（经新浪财经转载）",
-   "title": "英伟达股价大涨 4.2%，总市值达 5.4 万亿美元，单日增约 2200 亿美元",
-   "place": "美国·纳斯达克",
-   "url": "https://finance.sina.com.cn/roll/2026-09-03/doc-iniqpkry1153379.shtml",
-   "images": [
-    "https://inews.gtimg.com/om_ls/OInXRafDonexVoyeTBkKEu1deTgBuUtz-ebCOjIMip69wAA_640330/0"
-   ],
+   "src": "黄仁勋X（@JensenHuang）",
+   "title": "黄仁勋 X 原帖官宣收购 Hugging Face：开放模型强化安全、赋能主权",
+   "place": "X 原帖（9/3）",
+   "url": "https://x.com/JensenHuang",
+   "images": [],
    "signals": [
-    "9/2 英伟达股价大涨 4.2%，总市值达 5.4 万亿美元，较上一交易日收盘上涨约 2200 亿美元（观察者网）",
-    "英伟达为全球市值最高的上市公司，GPU 为全球扩张中数据中心的核心硬件（观察者网）"
+    "【X原帖原话（9/3）】\"Exciting day for NVIDIA and @huggingface. Open models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty. They allow every developer, startup, university, industry and country to build with, customize and benefit from AI. Thank you…\"",
+    "黄仁勋在 X 亲自官宣英伟达拟以 129.3 亿美元收购 Hugging Face（与公司动态 ev20260903a 同源，本条为本人 X 原帖，独立归入 X原贴 分类）",
+    "Hugging Face 官方同日在 X 发帖\"Preserving the Open Platform 🤗💚\"呼应；原帖经 Hothardware 逐字转引交叉确认"
    ],
-   "cat": "nvda",
-   "note": "原 src 都市快报·橙柿互动经用户裁定移出信源库，改用观察者网（新浪财经转载页）同日报道；盘中一度升至 5.46 万亿的说法出自已移除信源，现按观察者网口径记 5.4 万亿"
+   "cat": "xtweet",
+   "note": "X 原帖 9/3 官宣 HF 收购；permalink 待浏览器通道/用户补全（hothardware 已逐字转引佐证）。date 取本人发帖日 9/3"
   },
   {
-   "id": "ev20260902c",
-   "date": "2026-09-02",
+   "id": "ev20260903c",
+   "date": "2026-09-03",
    "type": "mt",
-   "src": "IT之家 / 彭博社",
-   "title": "英伟达接近以 140 亿美元收购 Hugging Face，最快本周达成协议",
-   "place": "美国·圣克拉拉（谈判中）",
-   "url": "https://view.inews.qq.com/a/20260902A04T1000",
+   "src": "英伟达官方（blogs.nvidia.com）",
+   "title": "IFA 2026：NVIDIA 联合微软加速本地 AI，RTX Spark Windows PC 10 月上市",
+   "place": "德国·柏林（IFA 2026）",
+   "url": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
    "images": [
-    "https://inews.gtimg.com/om_ls/O7pc5IqKiOLQfMLE3w1TksE3c-C-B14RlZAOIBOx0rmx4AA_640330/0"
+    "https://blogs.nvidia.com/wp-content/uploads/2026/09/nv-blog-1280x680-1.jpg"
    ],
    "signals": [
-    "彭博社 9/2 报道，英伟达正就收购 AI 开源平台 Hugging Face 展开深入谈判，总规模近 140 亿美元（约 129 亿美元收购 + 10 亿美元员工留任激励），最快本周达成协议，双方尚未签署最终协议",
-    "若达成，将是黄仁勋为扩大 AI 应用普及、拓展客户群体迄今最大举措：英伟达将掌控开发者展示/共享 AI 模型的核心平台（托管 300 万+ 公开模型、100 万+ 数据集）",
-    "Hugging Face 2023 年估值 45 亿美元，若以 129 亿成交三年涨近三倍；英伟达早为其投资方之一；此前一年已拿下 Groq 核心班底（约 200 亿美元）、与 Poolside 签 60 亿美元授权"
+    "NVIDIA 在 IFA 2026 官宣'前沿智能走向本地化'：联合微软及合作伙伴，为本地运行 AI 智能体提供更快推理与新工具，让代理在 NVIDIA 硬件上更易搭建与运行",
+    "发布全新紧凑型 NVIDIA RTX Spark Windows PC，10 月上市（Lenovo、Acer 首批），面向 AI 爱好者/开发者/创作者本地安全运行智能体；微软与 OpenClaw 合作降低 Windows 端上手门槛"
    ],
-   "cat": "nvda",
-   "note": "9/2 彭博报道'接近 140 亿、谈判中未签约'；已于 9/3 官宣落地（129.3 亿美元成交），详见 ev20260903a，金额以官宣为准"
+   "cat": "nvnews",
+   "note": "官网博客 9/3 发布（article:published_time 2026-09-03T16:00Z）；与 timeline 中 GTC 台北 RTX Spark 联合研发形成产品化闭环"
+  },
+  {
+   "id": "ev20260903d",
+   "date": "2026-09-03",
+   "type": "mt",
+   "src": "英伟达官方（blogs.nvidia.com）",
+   "title": "GeForce NOW 9月片单：NBA 2K27 携 DLSS 5 领衔，28 款新游上云",
+   "place": "线上发布",
+   "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-september-2026-games-list/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/09/gfn-thursday-9-3-blog-1920x1080-logo.jpg"
+   ],
+   "signals": [
+    "英伟达 9/3 在官方博客公布 GFN Thursday 9 月片单：28 款新游戏登陆 GeForce NOW 云游戏，由《NBA 2K27》领衔，该作首发即支持 DLSS 5 3D 引导神经渲染（RTX 5080 云算力串流）",
+    "其余重点新游包括 Rebel Wolves《The Blood of Dawnwalker》、Capcom《Onimusha: Way of the Sword》（9/4 首发即上云）、以及《SpeedRunners 2》《Crimson Moon》等；整月还将接入《Train Sim World 7》《CONTROL Resonant》等"
+   ],
+   "cat": "nvnews",
+   "note": "官网博客 9/3 发布（article:published_time 2026-09-03）；与 ev20260901d（DLSS 5 上线）互为产品化补充，本条聚焦云游戏片单"
+  },
+  {
+   "id": "ev20260902a",
+   "date": "2026-09-02",
+   "type": "mt",
+   "src": "虎嗅/华尔街日报",
+   "title": "英伟达暂停部分高争议闭环算力交易（反垄断审视）",
+   "place": "美国·圣克拉拉",
+   "url": "https://www.163.com/dy/article/L5PFO3HP051188EA.html",
+   "images": [
+    "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2026%2F0901%2F8f2b82bej00tko8p201y8d0012800lcg.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+    "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2026%2F0901%2Fda89b893j00tko8p200gjd000rs00fng.jpg&thumbnail=660x2147483647&quality=80&type=jpg"
+   ],
+   "signals": [
+    "据华尔街日报报道，英伟达8月底主动暂停了部分包含“未售算力兜底回租+超额营收50%分成”的高争议闭环交易，原因既有反垄断担忧，也有内部对风险边界的重新评估"
+   ],
+   "note": "来源虎嗅引华尔街日报，待 WSJ 原文核验",
+   "cat": "nvda"
   },
   {
    "id": "ev20260902b",
@@ -2871,40 +2927,41 @@ function renderChrome(){
    "note": "财联社 9/3 刊发（事件日 9/2 炉边对话）；日报导晚于活动日。引语经财联社原文逐条核对；场边记者会引语经 Business Today/IANS 双源核对。原 thejapantimes.jp 为仿冒垃圾站（真域名为 japantimes.co.jp），已弃用；换财联社原文；9/5 补入界面新闻/新浪财经确认之“年内对美基建投资近 1 万亿美元”原话，及“炼油厂/AGI博士”比喻（网易·AI科技大本营 9/4 整理）"
   },
   {
-   "id": "ev20260902a",
+   "id": "ev20260902c",
    "date": "2026-09-02",
    "type": "mt",
-   "src": "虎嗅/华尔街日报",
-   "title": "英伟达暂停部分高争议闭环算力交易（反垄断审视）",
-   "place": "美国·圣克拉拉",
-   "url": "https://www.163.com/dy/article/L5PFO3HP051188EA.html",
+   "src": "IT之家 / 彭博社",
+   "title": "英伟达接近以 140 亿美元收购 Hugging Face，最快本周达成协议",
+   "place": "美国·圣克拉拉（谈判中）",
+   "url": "https://view.inews.qq.com/a/20260902A04T1000",
    "images": [
-    "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2026%2F0901%2F8f2b82bej00tko8p201y8d0012800lcg.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
-    "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2026%2F0901%2Fda89b893j00tko8p200gjd000rs00fng.jpg&thumbnail=660x2147483647&quality=80&type=jpg"
+    "https://inews.gtimg.com/om_ls/O7pc5IqKiOLQfMLE3w1TksE3c-C-B14RlZAOIBOx0rmx4AA_640330/0"
    ],
    "signals": [
-    "据华尔街日报报道，英伟达8月底主动暂停了部分包含“未售算力兜底回租+超额营收50%分成”的高争议闭环交易，原因既有反垄断担忧，也有内部对风险边界的重新评估"
+    "彭博社 9/2 报道，英伟达正就收购 AI 开源平台 Hugging Face 展开深入谈判，总规模近 140 亿美元（约 129 亿美元收购 + 10 亿美元员工留任激励），最快本周达成协议，双方尚未签署最终协议",
+    "若达成，将是黄仁勋为扩大 AI 应用普及、拓展客户群体迄今最大举措：英伟达将掌控开发者展示/共享 AI 模型的核心平台（托管 300 万+ 公开模型、100 万+ 数据集）",
+    "Hugging Face 2023 年估值 45 亿美元，若以 129 亿成交三年涨近三倍；英伟达早为其投资方之一；此前一年已拿下 Groq 核心班底（约 200 亿美元）、与 Poolside 签 60 亿美元授权"
    ],
-   "note": "来源虎嗅引华尔街日报，待 WSJ 原文核验",
-   "cat": "nvda"
+   "cat": "nvda",
+   "note": "9/2 彭博报道'接近 140 亿、谈判中未签约'；已于 9/3 官宣落地（129.3 亿美元成交），详见 ev20260903a，金额以官宣为准"
   },
   {
-   "id": "ev20260901e",
-   "date": "2026-09-01",
-   "type": "sp",
-   "src": "英伟达官方（blogs.nvidia.com）",
-   "title": "NVIDIA × CrowdStrike：黄仁勋 Fal.Con 2026 演讲，SafeMind 智能体安全系统落地",
-   "place": "美国·拉斯维加斯（Fal.Con 2026）",
-   "url": "https://blogs.nvidia.com/blog/nvidia-crowdstrike-fal-con-2026/",
+   "id": "ev20260902f",
+   "date": "2026-09-02",
+   "type": "mt",
+   "src": "观察者网（经新浪财经转载）",
+   "title": "英伟达股价大涨 4.2%，总市值达 5.4 万亿美元，单日增约 2200 亿美元",
+   "place": "美国·纳斯达克",
+   "url": "https://finance.sina.com.cn/roll/2026-09-03/doc-iniqpkry1153379.shtml",
    "images": [
-    "https://blogs.nvidia.com/wp-content/uploads/2026/09/crowdstrike-nvidia-stage-scaled.jpg"
+    "https://inews.gtimg.com/om_ls/OInXRafDonexVoyeTBkKEu1deTgBuUtz-ebCOjIMip69wAA_640330/0"
    ],
    "signals": [
-    "【黄仁勋原话（Fal.Con 2026，拉斯维加斯）】\"We're at an inflection point in cybersecurity. Attacks are now automated. Defense has to be, too.\"（网络安全正处拐点：攻击已自动化，防御也必须自动化）",
-    "CrowdStrike 发布 SafeMind 智能体网络安全系统，基于 NVIDIA Nemotron 开源模型构建，宣称带来更强的防护与成本节省；黄仁勋现场与 CrowdStrike CEO George Kurtz 同台"
+    "9/2 英伟达股价大涨 4.2%，总市值达 5.4 万亿美元，较上一交易日收盘上涨约 2200 亿美元（观察者网）",
+    "英伟达为全球市值最高的上市公司，GPU 为全球扩张中数据中心的核心硬件（观察者网）"
    ],
-   "cat": "nvnews",
-   "note": "官网博客 9/1 发布（article:published_time 2026-09-01T21:19Z）；含黄仁勋本人演讲原话，主载体为英伟达官方博客，归 nvnews"
+   "cat": "nvda",
+   "note": "原 src 都市快报·橙柿互动经用户裁定移出信源库，改用观察者网（新浪财经转载页）同日报道；盘中一度升至 5.46 万亿的说法出自已移除信源，现按观察者网口径记 5.4 万亿"
   },
   {
    "id": "ev20260901d",
@@ -2927,6 +2984,24 @@ function renderChrome(){
    "note": "官宣日 9/1，可用日 9/3 太平洋时间/9/4 北京；本次更新补入上线确认与官方 og:image"
   },
   {
+   "id": "ev20260901e",
+   "date": "2026-09-01",
+   "type": "sp",
+   "src": "英伟达官方（blogs.nvidia.com）",
+   "title": "NVIDIA × CrowdStrike：黄仁勋 Fal.Con 2026 演讲，SafeMind 智能体安全系统落地",
+   "place": "美国·拉斯维加斯（Fal.Con 2026）",
+   "url": "https://blogs.nvidia.com/blog/nvidia-crowdstrike-fal-con-2026/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/09/crowdstrike-nvidia-stage-scaled.jpg"
+   ],
+   "signals": [
+    "【黄仁勋原话（Fal.Con 2026，拉斯维加斯）】\"We're at an inflection point in cybersecurity. Attacks are now automated. Defense has to be, too.\"（网络安全正处拐点：攻击已自动化，防御也必须自动化）",
+    "CrowdStrike 发布 SafeMind 智能体网络安全系统，基于 NVIDIA Nemotron 开源模型构建，宣称带来更强的防护与成本节省；黄仁勋现场与 CrowdStrike CEO George Kurtz 同台"
+   ],
+   "cat": "nvnews",
+   "note": "官网博客 9/1 发布（article:published_time 2026-09-01T21:19Z）；含黄仁勋本人演讲原话，主载体为英伟达官方博客，归 nvnews"
+  },
+  {
    "id": "ev20260831a",
    "date": "2026-08-31",
    "type": "mt",
@@ -2946,22 +3021,6 @@ function renderChrome(){
    "note": "原 src 财联社经用户裁定改归 nvidianews 官方信源（cat=nvnews）；date 8/31 与 nvidianews 列表一致"
   },
   {
-   "id": "ev20260830b",
-   "date": "2026-08-30",
-   "type": "mt",
-   "src": "黄仁勋X / Bloomberg",
-   "title": "黄仁勋就 AI 再工业化与 XPU 竞争公开表态",
-   "place": "美国·X 原帖（8/30）/ Bloomberg 专访（8/31）",
-   "url": "https://stocktwits.com/news-articles/markets/equity/nvda-stock-jensen-huang-not-intimidated-custom-ai-chips-3-5b-mediatek-pc/cZYy6dbRJsY",
-   "images": [],
-   "signals": [
-    "【X原帖原话】“Gavin, spot on. AI is bringing manufacturing back to America and reindustrializing the nation after decades of offshoring. AI is creating demand that drives investment in our aging power grid and sustainable energy, powered by market forces, not subsidies.”（AI 正把制造业带回美国、让国家再工业化，相关投资靠市场力量而非补贴驱动）——回应投资人 Gavin Baker 对数据中心扩张的质疑；帖中另称“过去六个月 AI 初创公司已获 4000 亿美元投资”“有机会帮助美国引领下一场工业革命”",
-    "【彭博专访原话】“XPU is in the market. It's not coming into the market – it's in the market. We're not intimidated by this. We're in fact welcoming it.”（XPU 已经在市场里，不是即将进入——我们不畏惧，反而欢迎）；并称“客户想把专用 XPU 放进数据中心，为何不让它们更容易地接入英伟达基础设施”"
-   ],
-   "cat": "xtweet",
-   "note": "X 原帖发布于 8/30，彭博专访刊发于 8/31；日期取最早的本人发言日（8/30）。引语经 Business Today/Benzinga/Yahoo Finance 多源交叉印证；按归类规则，'黄仁勋 X 原帖'归 X原贴 分类而非公开采访"
-  },
-  {
    "id": "ev20260830",
    "date": "2026-08-30",
    "type": "mt",
@@ -2977,73 +3036,20 @@ function renderChrome(){
    "note": "原链接为腾讯个人创作者号转载（红线禁用），换 Wired 官网原文"
   },
   {
-   "id": "ev20260826e",
-   "date": "2026-08-26",
+   "id": "ev20260830b",
+   "date": "2026-08-30",
    "type": "mt",
-   "src": "英伟达官方（blogs.nvidia.com）",
-   "title": "NVIDIA NVLink Fusion 扩展：推出 NVHBM 定制高带宽内存",
-   "place": "美国·圣克拉拉",
-   "url": "https://blogs.nvidia.com/blog/nvlink-fusion-nvhbm-custom-high-bandwidth-memory/",
-   "images": [
-    "https://blogs.nvidia.com/wp-content/uploads/2026/08/gpu-architecture-corp-blog-nvhbm-1280x680-5547600.jpg"
-   ],
-   "signals": [
-    "英伟达官宣 NVLink Fusion 生态扩展：推出 NVHBM 定制高带宽内存，直击 AI 代理与万亿参数负载对'算力+内存+存储+网络'一体化性能的新需求",
-    "与 8/31 联发科深度合作（NVLink Fusion 让客户自研 ASIC/XPU 接入 MGX 机架）同属 NVLink Fusion 开放生态主线，本条聚焦定制内存（NVHBM）维度"
-   ],
-   "cat": "nvnews",
-   "note": "官网博客 8/26 发布（article:published_time 2026-08-26T21:05Z）；此前遗漏，与 MediaTek NVLink Fusion 事件互为补充"
-  },
-  {
-   "id": "ev20260826d",
-   "date": "2026-08-26",
-   "type": "mt",
-   "src": "英伟达官方（nvidianews.nvidia.com）",
-   "title": "亚马逊云科技 × NVIDIA：提供 200 万个新增 GPU 与新一代基础设施",
-   "place": "美国·圣克拉拉 / 远程",
-   "url": "https://nvidianews.nvidia.com/news/aws-and-nvidia",
+   "src": "黄仁勋X / Bloomberg",
+   "title": "黄仁勋就 AI 再工业化与 XPU 竞争公开表态",
+   "place": "美国·X 原帖（8/30）/ Bloomberg 专访（8/31）",
+   "url": "https://stocktwits.com/news-articles/markets/equity/nvda-stock-jensen-huang-not-intimidated-custom-ai-chips-3-5b-mediatek-pc/cZYy6dbRJsY",
    "images": [],
    "signals": [
-    "亚马逊云科技与 NVIDIA 扩展战略协作，AWS 将提供 200 万个新增 GPU 与新一代 AI 基础设施（含 Blackwell / Vera Rubin）",
-    "目标支持代理式 AI（agentic AI）与物理 AI（physical AI）大规模训练与推理；与同日发布的 ev20260826 财报中\"物理 AI 收入翻倍至 90 亿、拿下亚马逊\"形成主-辅双信号"
+    "【X原帖原话】“Gavin, spot on. AI is bringing manufacturing back to America and reindustrializing the nation after decades of offshoring. AI is creating demand that drives investment in our aging power grid and sustainable energy, powered by market forces, not subsidies.”（AI 正把制造业带回美国、让国家再工业化，相关投资靠市场力量而非补贴驱动）——回应投资人 Gavin Baker 对数据中心扩张的质疑；帖中另称“过去六个月 AI 初创公司已获 4000 亿美元投资”“有机会帮助美国引领下一场工业革命”",
+    "【彭博专访原话】“XPU is in the market. It's not coming into the market – it's in the market. We're not intimidated by this. We're in fact welcoming it.”（XPU 已经在市场里，不是即将进入——我们不畏惧，反而欢迎）；并称“客户想把专用 XPU 放进数据中心，为何不让它们更容易地接入英伟达基础设施”"
    ],
-   "cat": "nvnews",
-   "note": "8/26 财报同日 nvidianews 官宣 AWS 战略协作；8/26 第一财经复盘文（ev20260826b）为二级转述"
-  },
-  {
-   "id": "ev20260826c",
-   "date": "2026-08-26",
-   "type": "iv",
-   "src": "CNBC《Mad Money》官方文字实录",
-   "title": "财报夜做客 Mad Money：FY2028 增速指引约 70% + 加码回购 · \"the risk is low\"",
-   "place": "美国·圣克拉拉（CNBC 连线）",
-   "url": "https://pressroom.versantmedia.com/cnbc/press-releases/cnbc-transcript-nvidia-founder-ceo-jensen-huang-speaks-cnbcs-jim-cramer-mad",
-   "images": [],
-   "signals": [
-    "【原话】黄仁勋向 Jim Cramer 给出 FY2028 营收增速约 70% 的指引，并宣布提高回购规模",
-    "【原话】\"the risk is low\"（风险很低）：算力资产生命周期可达 9 年以上（A100 发布至今仍在服役），需求由真实收入支撑而非债务泡沫，compute 正成为可产生收入的资产",
-    "专访与财报电话会同日进行；逐字稿由 CNBC 新闻室官方发布，引语经原文核对"
-   ],
-   "cat": "jensen",
-   "note": "官方文字实录（pressroom.versantmedia.com）；FY28 70% 指引已同步补入 ev20260826 信号区"
-  },
-  {
-   "id": "ev20260826b",
-   "date": "2026-08-26",
-   "type": "mt",
-   "src": "第一财经",
-   "title": "物理 AI 收入翻倍（60亿→90亿美元）并拿下亚马逊",
-   "place": "美国·圣克拉拉（Q2 财报电话会）",
-   "url": "https://new.qq.com/rain/a/20260901A0A3RP00",
-   "images": [
-    "https://inews.gtimg.com/om_ls/O7LGFeD8szKYrX3U3DxsWErP2t5BFXDnX7f81CCE87wPUAA_640330/0",
-    "https://inews.gtimg.com/om_bt/OJSk3On-ZdUOaM-KrnntAJr0lwwQ2jcR-hoZO0HlwQEsAAA/1000"
-   ],
-   "signals": [
-    "英伟达 Q2 财报后，黄仁勋反复强调的物理 AI 收入从 60 亿美元涨至 90 亿美元并拿下亚马逊，正加速显化"
-   ],
-   "note": "亚马逊物理 AI 合作与收入数据披露于 8/26 财报电话会；9/1 第一财经为复盘评论，日期以事件发生日为准；已核实为第一财经官方账号发布页",
-   "cat": "nvda"
+   "cat": "xtweet",
+   "note": "X 原帖发布于 8/30，彭博专访刊发于 8/31；日期取最早的本人发言日（8/30）。引语经 Business Today/Benzinga/Yahoo Finance 多源交叉印证；按归类规则，'黄仁勋 X 原帖'归 X原贴 分类而非公开采访"
   },
   {
    "id": "ev20260826",
@@ -3066,6 +3072,75 @@ function renderChrome(){
    "note": "原链接为今日头条转载页，换英伟达官方财报新闻稿"
   },
   {
+   "id": "ev20260826b",
+   "date": "2026-08-26",
+   "type": "mt",
+   "src": "第一财经",
+   "title": "物理 AI 收入翻倍（60亿→90亿美元）并拿下亚马逊",
+   "place": "美国·圣克拉拉（Q2 财报电话会）",
+   "url": "https://new.qq.com/rain/a/20260901A0A3RP00",
+   "images": [
+    "https://inews.gtimg.com/om_ls/O7LGFeD8szKYrX3U3DxsWErP2t5BFXDnX7f81CCE87wPUAA_640330/0",
+    "https://inews.gtimg.com/om_bt/OJSk3On-ZdUOaM-KrnntAJr0lwwQ2jcR-hoZO0HlwQEsAAA/1000"
+   ],
+   "signals": [
+    "英伟达 Q2 财报后，黄仁勋反复强调的物理 AI 收入从 60 亿美元涨至 90 亿美元并拿下亚马逊，正加速显化"
+   ],
+   "note": "亚马逊物理 AI 合作与收入数据披露于 8/26 财报电话会；9/1 第一财经为复盘评论，日期以事件发生日为准；已核实为第一财经官方账号发布页",
+   "cat": "nvda"
+  },
+  {
+   "id": "ev20260826c",
+   "date": "2026-08-26",
+   "type": "iv",
+   "src": "CNBC《Mad Money》官方文字实录",
+   "title": "财报夜做客 Mad Money：FY2028 增速指引约 70% + 加码回购 · \"the risk is low\"",
+   "place": "美国·圣克拉拉（CNBC 连线）",
+   "url": "https://pressroom.versantmedia.com/cnbc/press-releases/cnbc-transcript-nvidia-founder-ceo-jensen-huang-speaks-cnbcs-jim-cramer-mad",
+   "images": [],
+   "signals": [
+    "【原话】黄仁勋向 Jim Cramer 给出 FY2028 营收增速约 70% 的指引，并宣布提高回购规模",
+    "【原话】\"the risk is low\"（风险很低）：算力资产生命周期可达 9 年以上（A100 发布至今仍在服役），需求由真实收入支撑而非债务泡沫，compute 正成为可产生收入的资产",
+    "专访与财报电话会同日进行；逐字稿由 CNBC 新闻室官方发布，引语经原文核对"
+   ],
+   "cat": "jensen",
+   "note": "官方文字实录（pressroom.versantmedia.com）；FY28 70% 指引已同步补入 ev20260826 信号区"
+  },
+  {
+   "id": "ev20260826d",
+   "date": "2026-08-26",
+   "type": "mt",
+   "src": "英伟达官方（nvidianews.nvidia.com）",
+   "title": "亚马逊云科技 × NVIDIA：提供 200 万个新增 GPU 与新一代基础设施",
+   "place": "美国·圣克拉拉 / 远程",
+   "url": "https://nvidianews.nvidia.com/news/aws-and-nvidia",
+   "images": [],
+   "signals": [
+    "亚马逊云科技与 NVIDIA 扩展战略协作，AWS 将提供 200 万个新增 GPU 与新一代 AI 基础设施（含 Blackwell / Vera Rubin）",
+    "目标支持代理式 AI（agentic AI）与物理 AI（physical AI）大规模训练与推理；与同日发布的 ev20260826 财报中\"物理 AI 收入翻倍至 90 亿、拿下亚马逊\"形成主-辅双信号"
+   ],
+   "cat": "nvnews",
+   "note": "8/26 财报同日 nvidianews 官宣 AWS 战略协作；8/26 第一财经复盘文（ev20260826b）为二级转述"
+  },
+  {
+   "id": "ev20260826e",
+   "date": "2026-08-26",
+   "type": "mt",
+   "src": "英伟达官方（blogs.nvidia.com）",
+   "title": "NVIDIA NVLink Fusion 扩展：推出 NVHBM 定制高带宽内存",
+   "place": "美国·圣克拉拉",
+   "url": "https://blogs.nvidia.com/blog/nvlink-fusion-nvhbm-custom-high-bandwidth-memory/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/08/gpu-architecture-corp-blog-nvhbm-1280x680-5547600.jpg"
+   ],
+   "signals": [
+    "英伟达官宣 NVLink Fusion 生态扩展：推出 NVHBM 定制高带宽内存，直击 AI 代理与万亿参数负载对'算力+内存+存储+网络'一体化性能的新需求",
+    "与 8/31 联发科深度合作（NVLink Fusion 让客户自研 ASIC/XPU 接入 MGX 机架）同属 NVLink Fusion 开放生态主线，本条聚焦定制内存（NVHBM）维度"
+   ],
+   "cat": "nvnews",
+   "note": "官网博客 8/26 发布（article:published_time 2026-08-26T21:05Z）；此前遗漏，与 MediaTek NVLink Fusion 事件互为补充"
+  },
+  {
    "id": "ev20260825",
    "date": "2026-08-25",
    "type": "mt",
@@ -3082,22 +3157,6 @@ function renderChrome(){
    "note": "原 8/25 我以'无 nvidianews 一手 URL'为由排除，错过；现已补回 nvidianews 官方信源"
   },
   {
-   "id": "ev20260824b",
-   "date": "2026-08-24",
-   "type": "mt",
-   "src": "英伟达官方（nvidianews.nvidia.com）",
-   "title": "NVIDIA Groq 3 LPX 全面量产，赋能智能体 AI 推理",
-   "place": "美国·圣克拉拉",
-   "url": "https://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-in-volume-production",
-   "images": [],
-   "signals": [
-    "NVIDIA Groq 3 LPX 推理加速器已全面量产（LP = Language Processing），为智能体 AI 提供低延迟推理算力",
-    "与 NVIDIA 2025 年 7 月对 Groq 资产的吸纳相关；Groq 3 LPX 定位与 Vera Rubin 训练集群互补，专注推理工作负载"
-   ],
-   "cat": "nvnews",
-   "note": "原 8/24 我以'无 nvidianews 一手 URL'为由排除，错过；现已补回"
-  },
-  {
    "id": "ev20260824a",
    "date": "2026-08-24",
    "type": "mt",
@@ -3109,6 +3168,22 @@ function renderChrome(){
    "signals": [
     "SpaceXAI 采用 NVIDIA Vera CPU 用于其智能体 AI 基础设施，标志 Vera CPU 阵营继 AWS 之后又一大型 AI 客户落地",
     "Vera CPU 与 Rubin GPU 共同构成英伟达 Vera Rubin 平台；2026 秋开始大规模出货"
+   ],
+   "cat": "nvnews",
+   "note": "原 8/24 我以'无 nvidianews 一手 URL'为由排除，错过；现已补回"
+  },
+  {
+   "id": "ev20260824b",
+   "date": "2026-08-24",
+   "type": "mt",
+   "src": "英伟达官方（nvidianews.nvidia.com）",
+   "title": "NVIDIA Groq 3 LPX 全面量产，赋能智能体 AI 推理",
+   "place": "美国·圣克拉拉",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-in-volume-production",
+   "images": [],
+   "signals": [
+    "NVIDIA Groq 3 LPX 推理加速器已全面量产（LP = Language Processing），为智能体 AI 提供低延迟推理算力",
+    "与 NVIDIA 2025 年 7 月对 Groq 资产的吸纳相关；Groq 3 LPX 定位与 Vera Rubin 训练集群互补，专注推理工作负载"
    ],
    "cat": "nvnews",
    "note": "原 8/24 我以'无 nvidianews 一手 URL'为由排除，错过；现已补回"
@@ -3132,23 +3207,19 @@ function renderChrome(){
    "note": "事件发生于 8/21（TechCrunch 首报）；8/31 中文媒体过期转载，日期以事件发生日为准；原 qq 链接已 404（创业邦公众号转载），换 TechCrunch 8/21 原文"
   },
   {
-   "id": "ev20260817c",
+   "id": "ev20260817",
    "date": "2026-08-17",
    "type": "mt",
-   "src": "黄仁勋X（@JensenHuang）",
-   "title": "黄仁勋 X 长文《Securing the Infrastructure of Intelligence》：算力瓶颈从芯片转向土地/电力/机房",
-   "place": "X 原帖（8/17）",
-   "url": "https://x.com/JensenHuang/status/2089331487342829862",
+   "src": "界面新闻",
+   "title": "OpenAI 承诺部署 12GW 英伟达算力 · 英伟达牵头 5000 亿美元融资平台",
+   "place": "美国·圣克拉拉",
+   "url": "https://new.qq.com/rain/a/20260817A0C8RD00",
    "images": [],
    "signals": [
-    "【X原帖原话·标题《Securing the Infrastructure of Intelligence》】\"AI factories are the defining infrastructure of the AI era.\"（AI工厂是AI时代标志性的基础设施）",
-    "【原话】\"AI factories require a full stack of critical resources: advanced chips, packaging, memory, and networking – as well as land, power and shell.\"（AI工厂需要一整套关键资源：先进芯片、封装、内存、网络，以及土地、电力与机房壳体）",
-    "【原话】前沿AI实验室\"growth is increasingly constrained not by algorithms or customer demand, but by the availability of compute\"（增长越来越不受算法或客户需求约束，而是受算力能否及时到位约束）",
-    "宣布与 SB Energy 合作，在俄亥俄州朴次茅斯 PORTS-Pike 科技园区锁定土地/电力/机房（LPS），OpenAI 为租户；初期货 4.25GW，后续可扩至 8GW；英伟达另投 SB Energy 15 亿美元（与公司动态 ev20260817b 同源，本条为本人 X 原帖）",
-    "【原话·回应循环融资质疑】\"No. OpenAI will pay the lease.\"（不会循环融资，OpenAI 会付租金）；强调英伟达仅对租赁与电力付款的特定部分及指定的残值承诺提供支持，而非承担整个站点成本"
+    "OpenAI 承诺 2030 年前部署约 12GW（可扩至 16GW）英伟达 AI 算力，对应约 6000 亿美元收入；英伟达联合阿波罗/黑石/贝莱德/KKR/高盛/布鲁克菲尔德搭建 5000 亿美元 AI 融资平台"
    ],
-   "cat": "xtweet",
-   "note": "X 原帖 8/17，permalink 2089331487342829862（今日头条全文翻译 + India Today/PublicTV/ANI 多源交叉确认）；date 取本人发帖日 8/17"
+   "cat": "nvda",
+   "note": "5000 亿美元融资平台首报于 8/10 官宣（见 ev20260810），本条为 OpenAI 12GW 官宣、同日提及平台"
   },
   {
    "id": "ev20260817b",
@@ -3166,19 +3237,23 @@ function renderChrome(){
    "note": "原链接为今日头条转载页，换新浪财经原文页（网易刊载）"
   },
   {
-   "id": "ev20260817",
+   "id": "ev20260817c",
    "date": "2026-08-17",
    "type": "mt",
-   "src": "界面新闻",
-   "title": "OpenAI 承诺部署 12GW 英伟达算力 · 英伟达牵头 5000 亿美元融资平台",
-   "place": "美国·圣克拉拉",
-   "url": "https://new.qq.com/rain/a/20260817A0C8RD00",
+   "src": "黄仁勋X（@JensenHuang）",
+   "title": "黄仁勋 X 长文《Securing the Infrastructure of Intelligence》：算力瓶颈从芯片转向土地/电力/机房",
+   "place": "X 原帖（8/17）",
+   "url": "https://x.com/JensenHuang/status/2089331487342829862",
    "images": [],
    "signals": [
-    "OpenAI 承诺 2030 年前部署约 12GW（可扩至 16GW）英伟达 AI 算力，对应约 6000 亿美元收入；英伟达联合阿波罗/黑石/贝莱德/KKR/高盛/布鲁克菲尔德搭建 5000 亿美元 AI 融资平台"
+    "【X原帖原话·标题《Securing the Infrastructure of Intelligence》】\"AI factories are the defining infrastructure of the AI era.\"（AI工厂是AI时代标志性的基础设施）",
+    "【原话】\"AI factories require a full stack of critical resources: advanced chips, packaging, memory, and networking – as well as land, power and shell.\"（AI工厂需要一整套关键资源：先进芯片、封装、内存、网络，以及土地、电力与机房壳体）",
+    "【原话】前沿AI实验室\"growth is increasingly constrained not by algorithms or customer demand, but by the availability of compute\"（增长越来越不受算法或客户需求约束，而是受算力能否及时到位约束）",
+    "宣布与 SB Energy 合作，在俄亥俄州朴次茅斯 PORTS-Pike 科技园区锁定土地/电力/机房（LPS），OpenAI 为租户；初期货 4.25GW，后续可扩至 8GW；英伟达另投 SB Energy 15 亿美元（与公司动态 ev20260817b 同源，本条为本人 X 原帖）",
+    "【原话·回应循环融资质疑】\"No. OpenAI will pay the lease.\"（不会循环融资，OpenAI 会付租金）；强调英伟达仅对租赁与电力付款的特定部分及指定的残值承诺提供支持，而非承担整个站点成本"
    ],
-   "cat": "nvda",
-   "note": "5000 亿美元融资平台首报于 8/10 官宣（见 ev20260810），本条为 OpenAI 12GW 官宣、同日提及平台"
+   "cat": "xtweet",
+   "note": "X 原帖 8/17，permalink 2089331487342829862（今日头条全文翻译 + India Today/PublicTV/ANI 多源交叉确认）；date 取本人发帖日 8/17"
   },
   {
    "id": "ev20260811",
@@ -3295,92 +3370,12 @@ function renderChrome(){
  ],
  "timeline": [
   {
-   "date": "预计10月",
-   "place": "美国·硅谷",
-   "who": "杰伊·克莱顿（美国国家情报总监、白宫「超级智能工作组」负责人）；黄仁勋、山姆·奥尔特曼（OpenAI）、达里奥·阿莫代伊（Anthropic）、马克·扎克伯格（Meta）",
-   "ev": "克莱顿履新首站硅谷行 · 会见四大 AI 公司 CEO",
-   "note": "彭博社 10/07 首报：为克莱顿执掌「超级智能工作组」以来首次与科技行业领袖会面；会面前一周多位高管刚与其同席白宫午宴并签署自愿性安全协议。撰稿时未见会见结果确认。详见事件 ev20261007e",
-   "future": true
-  },
-  {
-   "date": "2026秋",
-   "place": "",
-   "who": "",
-   "ev": "Vera Rubin 大规模出货启动",
-   "note": "财报确认 2026 年秋季开始大规模出货",
-   "future": true
-  },
-  {
-   "date": "2026-11-30～12-03",
-   "place": "美国·华盛顿（Ronald Reagan Building and International Trade Center 及全城多个场地）",
-   "who": "黄仁勋（NVIDIA 创始人兼 CEO，主题演讲）",
-   "ev": "NVIDIA GTC Washington, D.C. 2026 · 黄仁勋主题演讲（12 月 1 日 14:00 ET）",
-   "note": "官网口径：会期 11/30–12/3，黄仁勋 keynote 定于 12 月 1 日 14:00（ET），会前有 GTC Live 预热；官网称议程覆盖开放模型、AI 工厂、物理 AI、高性能计算与美国科研，并列出美国参议员 Todd Young、Skild AI 的 Deepak Pathak、纳斯达克 John Zecca、Salesforce Kathy Baxter 等讲者；session 目录 10 月中旬开放（nvidia.com/gtc/dc）",
-   "future": true
-  },
-  {
-   "date": "2026-11-17",
-   "place": "",
-   "who": "",
-   "ev": "英伟达 2027 财年 Q3 财报（预计）",
-   "note": "雅虎财经行情页显示财报日为 2026 年 11 月 17 日（原为「2026Q4 预计」口径，本轮据行情页细化为具体日期）。指引 1080 亿美元，观察液冷/PCB 业绩兑现",
-   "future": true
-  },
-  {
-   "date": "2026-10-23",
-   "place": "哈萨克斯坦·阿斯塔纳（alem.ai 国际人工智能中心）",
-   "who": "Zhaslan Madiyev（哈萨克斯坦副总理兼人工智能与数字发展部长）",
-   "ev": "AI Month 收官 · 炉边对话（黄仁勋首次访哈）",
-   "note": "哈萨克斯坦政府 9/23 宣布，黄仁勋应 Madiyev 邀请首次访问哈萨克斯坦，10/23 在 alem.ai 与 Madiyev 炉边对话，议题含全球 AI 发展、技术趋势、新一代 AI 人才培养与中欧亚机遇。AI Month 9/23 由 HackAlem AI 黑客松开幕（参赛者可调用英伟达技术资源）；10/1 英伟达副总裁 Rev Lebaredian 出席 AI 理事会会议；10/2–3 举办 AI & Digital Bridge 2026 国际论坛。属未来安排，以官方最终行程为准",
-   "future": true
-  },
-  {
-   "date": "2026-10-23",
-   "place": "美国（线上；Acer、华硕、戴尔、技嘉、惠普、微星六家厂商出货）",
-   "who": "",
-   "ev": "DGX Spark 64GB 统一内存版本上市（起价 4999 美元）",
-   "note": "英伟达官方博客 10/02 公布：64GB 版本 10 月 23 日（周五）起由六家厂商出货，起价 4999 美元；沿用 GB10 Grace Blackwell 超级芯片与完整 NVIDIA AI 软件栈，可本地运行最高 1000 亿参数模型；两台组集群内存池化至 128GB、模型上限扩展到 2000 亿参数。详见事件 ev20261002c",
-   "future": true
-  },
-  {
-   "date": "2026-10-21",
-   "place": "德国·柏林 Tempodrom",
-   "who": "黄仁勋（NVIDIA CEO，主题演讲）",
-   "ev": "GTC Berlin 2026 · 黄仁勋主题演讲",
-   "note": "已确认：大会 10/20–22 在柏林 Tempodrom 举行，黄仁勋主题演讲为 10/21 11:00–13:00 CEST（nvidia.com、developer.nvidia.com 口径；中文站为北京时间 17:00–19:00）。讲题方向：AI 工厂、开放模型、物理 AI、加速计算。2026-10-13 官网新发《NVIDIA Lands in Europe for GTC Berlin》专题页，覆盖期标注 10/12–24，为滚动报道入口。",
-   "future": true
-  },
-  {
-   "date": "2026-10-16",
-   "place": "德国·柏林 Alexanderplatz（XPERION，Saturn 店内）",
-   "who": "",
-   "ev": "RTX Spark 笔记本全球首发上市 · 柏林公开发布会",
-   "note": "RTX Spark 笔记本 10/16 起由宏碁、华硕、戴尔、惠普、联想、微软、微星、技嘉出货（详见事件 ev20261007a）。同日英伟达在柏林 XPERION 办免费公开上市派对（TechPowerUp 10/09 报道）：需提前经 Luma 报名、名额有限，18:00 开始排队、18:45 入场，含线下体验、CD Projekt Red 分享、5 台华硕 ProArt P14 抽奖（黄仁勋签名版），并为 10/21 GTC Berlin 预热。官方未公布黄仁勋本人出席。",
-   "future": true
-  },
-  {
-   "date": "2026-10-15～16",
-   "place": "中国·苏州（金鸡湖国际会议中心 A 馆）",
-   "who": "",
-   "ev": "NVIDIA 中国开发者日 2026",
-   "note": "英伟达中国官网活动页：10 月 15—16 日在苏州金鸡湖国际会议中心 A 馆举行；10 月 15 日同期举办「NVIDIA 初创加速计划 · 创业企业展示半程展示」。官网页面未列黄仁勋出席信息",
-   "future": true
-  },
-  {
-   "date": "2026-10-13～14",
-   "place": "中国·北京（清华大学）",
-   "who": "黄仁勋（NVIDIA 创始人兼 CEO，2026 年新任委员）、苏姿丰（AMD 董事长兼 CEO，新任委员）、百达铭（瑞士百达集团高级管理合伙人，新任委员）；委员会主席蒂姆·库克（苹果董事会执行董事长）",
-   "ev": "清华大学经济管理学院顾问委员会 2026 年会议（第 27 次年度会议）",
-   "note": "清华经管学院 9/29 官宣：会议 10/13、10/14 在北京召开，今年新增委员 3 人（黄仁勋、苏姿丰、百达铭）、新增接任委员 5 人；委员会主席蒂姆·库克已于 10/11 到场。截至 10/14 未见黄仁勋出席本次会议的任何报道——其 10/13 在巴黎出席活动，此后行程为伦敦与柏林，出席情况以官方口径为准",
-   "future": true
-  },
-  {
-   "date": "预计10月中旬",
+   "date": "2026-10-14",
    "place": "英国·伦敦",
-   "who": "黄仁勋（NVIDIA 创始人兼 CEO）",
+   "who": "黄仁勋（NVIDIA 创始人兼 CEO）；英国 AI 部长 Kanishka Narayan、商业大臣 Jonathan Reynolds（见新闻稿表态）",
    "ev": "黄仁勋欧洲行 · 伦敦站",
-   "future": true,
-   "note": "彭博社 10/13 报道把伦敦列为此次欧洲行的第二站（巴黎→伦敦→柏林）；具体日期、议题、以及是否会见英国政府官员均未见官方公布"
+   "future": false,
+   "note": "10/14：英伟达在伦敦宣布五年向英国捐赠价值 2.5 亿美元算力（每年 5000 万美元），专供智能体安全与安全研究，覆盖牛津 BOLD、UCL SOFAIR 与帝国理工；同日官网博客盘点英国生态落地（Fuse Energy、Locai Labs、OneAdvanced、LSEG、Revolut、劳埃德、NatWest 等）并宣布成为 Earthshot Prize 全球联盟创始伙伴；黄仁勋本人是否在伦敦现场出席未见官方文稿单独说明"
   },
   {
    "date": "2026-10-13",
@@ -3706,6 +3701,86 @@ function renderChrome(){
    "who": "蔡力行（联发科）",
    "ev": "GTC 台北 · RTX Spark 联合研发",
    "note": ""
+  },
+  {
+   "date": "预计10月",
+   "place": "美国·硅谷",
+   "who": "杰伊·克莱顿（美国国家情报总监、白宫「超级智能工作组」负责人）；黄仁勋、山姆·奥尔特曼（OpenAI）、达里奥·阿莫代伊（Anthropic）、马克·扎克伯格（Meta）",
+   "ev": "克莱顿履新首站硅谷行 · 会见四大 AI 公司 CEO",
+   "note": "彭博社 10/07 首报：为克莱顿执掌「超级智能工作组」以来首次与科技行业领袖会面；会面前一周多位高管刚与其同席白宫午宴并签署自愿性安全协议。撰稿时未见会见结果确认。详见事件 ev20261007e",
+   "future": true
+  },
+  {
+   "date": "2026秋",
+   "place": "",
+   "who": "",
+   "ev": "Vera Rubin 大规模出货启动",
+   "note": "财报确认 2026 年秋季开始大规模出货",
+   "future": true
+  },
+  {
+   "date": "2026-11-30～12-03",
+   "place": "美国·华盛顿（Ronald Reagan Building and International Trade Center 及全城多个场地）",
+   "who": "黄仁勋（NVIDIA 创始人兼 CEO，主题演讲）",
+   "ev": "NVIDIA GTC Washington, D.C. 2026 · 黄仁勋主题演讲（12 月 1 日 14:00 ET）",
+   "note": "官网口径：会期 11/30–12/3，黄仁勋 keynote 定于 12 月 1 日 14:00（ET），会前有 GTC Live 预热；官网称议程覆盖开放模型、AI 工厂、物理 AI、高性能计算与美国科研，并列出美国参议员 Todd Young、Skild AI 的 Deepak Pathak、纳斯达克 John Zecca、Salesforce Kathy Baxter 等讲者；session 目录 10 月中旬开放（nvidia.com/gtc/dc）",
+   "future": true
+  },
+  {
+   "date": "2026-11-17",
+   "place": "",
+   "who": "",
+   "ev": "英伟达 2027 财年 Q3 财报（预计）",
+   "note": "雅虎财经行情页显示财报日为 2026 年 11 月 17 日（原为「2026Q4 预计」口径，本轮据行情页细化为具体日期）。指引 1080 亿美元，观察液冷/PCB 业绩兑现",
+   "future": true
+  },
+  {
+   "date": "2026-10-23",
+   "place": "哈萨克斯坦·阿斯塔纳（alem.ai 国际人工智能中心）",
+   "who": "Zhaslan Madiyev（哈萨克斯坦副总理兼人工智能与数字发展部长）",
+   "ev": "AI Month 收官 · 炉边对话（黄仁勋首次访哈）",
+   "note": "哈萨克斯坦政府 9/23 宣布，黄仁勋应 Madiyev 邀请首次访问哈萨克斯坦，10/23 在 alem.ai 与 Madiyev 炉边对话，议题含全球 AI 发展、技术趋势、新一代 AI 人才培养与中欧亚机遇。AI Month 9/23 由 HackAlem AI 黑客松开幕（参赛者可调用英伟达技术资源）；10/1 英伟达副总裁 Rev Lebaredian 出席 AI 理事会会议；10/2–3 举办 AI & Digital Bridge 2026 国际论坛。属未来安排，以官方最终行程为准",
+   "future": true
+  },
+  {
+   "date": "2026-10-23",
+   "place": "美国（线上；Acer、华硕、戴尔、技嘉、惠普、微星六家厂商出货）",
+   "who": "",
+   "ev": "DGX Spark 64GB 统一内存版本上市（起价 4999 美元）",
+   "note": "英伟达官方博客 10/02 公布：64GB 版本 10 月 23 日（周五）起由六家厂商出货，起价 4999 美元；沿用 GB10 Grace Blackwell 超级芯片与完整 NVIDIA AI 软件栈，可本地运行最高 1000 亿参数模型；两台组集群内存池化至 128GB、模型上限扩展到 2000 亿参数。详见事件 ev20261002c",
+   "future": true
+  },
+  {
+   "date": "2026-10-21",
+   "place": "德国·柏林 Tempodrom",
+   "who": "黄仁勋（NVIDIA CEO，主题演讲）",
+   "ev": "GTC Berlin 2026 · 黄仁勋主题演讲",
+   "note": "已确认：大会 10/20–22 在柏林 Tempodrom 举行，黄仁勋主题演讲为 10/21 11:00–13:00 CEST（nvidia.com、developer.nvidia.com 口径；中文站为北京时间 17:00–19:00）。讲题方向：AI 工厂、开放模型、物理 AI、加速计算。2026-10-13 官网新发《NVIDIA Lands in Europe for GTC Berlin》专题页，覆盖期标注 10/12–24，为滚动报道入口。",
+   "future": true
+  },
+  {
+   "date": "2026-10-16",
+   "place": "德国·柏林 Alexanderplatz（XPERION，Saturn 店内）",
+   "who": "",
+   "ev": "RTX Spark 笔记本全球首发上市 · 柏林公开发布会",
+   "note": "RTX Spark 笔记本 10/16 起由宏碁、华硕、戴尔、惠普、联想、微软、微星、技嘉出货（详见事件 ev20261007a）。同日英伟达在柏林 XPERION 办免费公开上市派对（TechPowerUp 10/09 报道）：需提前经 Luma 报名、名额有限，18:00 开始排队、18:45 入场，含线下体验、CD Projekt Red 分享、5 台华硕 ProArt P14 抽奖（黄仁勋签名版），并为 10/21 GTC Berlin 预热。官方未公布黄仁勋本人出席。",
+   "future": true
+  },
+  {
+   "date": "2026-10-15～16",
+   "place": "中国·苏州（金鸡湖国际会议中心 A 馆）",
+   "who": "",
+   "ev": "NVIDIA 中国开发者日 2026",
+   "note": "英伟达中国官网活动页：10 月 15—16 日在苏州金鸡湖国际会议中心 A 馆举行；10 月 15 日同期举办「NVIDIA 初创加速计划 · 创业企业展示半程展示」。官网页面未列黄仁勋出席信息",
+   "future": true
+  },
+  {
+   "date": "2026-10-13～14",
+   "place": "中国·北京（清华大学）",
+   "who": "黄仁勋（NVIDIA 创始人兼 CEO，2026 年新任委员）、苏姿丰（AMD 董事长兼 CEO，新任委员）、百达铭（瑞士百达集团高级管理合伙人，新任委员）；委员会主席蒂姆·库克（苹果董事会执行董事长）",
+   "ev": "清华大学经济管理学院顾问委员会 2026 年会议（第 27 次年度会议）",
+   "note": "清华经管学院 9/29 官宣：会议 10/13、10/14 在北京召开，今年新增委员 3 人（黄仁勋、苏姿丰、百达铭）、新增接任委员 5 人；委员会主席蒂姆·库克已于 10/11 到场。截至 10/14 未见黄仁勋出席本次会议的任何报道——其 10/13 在巴黎出席活动，此后行程为伦敦与柏林，出席情况以官方口径为准",
+   "future": true
   },
   {
    "date": "2026 年 10 月起（各站日期待公布）",
