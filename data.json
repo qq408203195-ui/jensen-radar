@@ -1,8 +1,71 @@
 {
  "mode": "auto",
- "today": "2026-10-14",
- "updatedAt": "2026-10-14 20:22",
+ "today": "2026-10-15",
+ "updatedAt": "2026-10-15 08:20",
  "events": [
+  {
+   "id": "ev20261014d",
+   "date": "2026-10-14",
+   "type": "mt",
+   "cat": "nvnews",
+   "src": "NVIDIA 官方新闻室（nvidianews.nvidia.com）",
+   "title": "英伟达联手半导体龙头推进「AI 定义晶圆厂」：CUDA-X 新增 cuPotential 库，NanoVDB、NPP 加速刻蚀仿真与晶圆检测",
+   "place": "美国·加州圣克拉拉",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-and-semiconductor-leaders-advance-ai-across-chip-design-and-manufacturing-for-ai-defined-fabs",
+   "images": [
+    "https://iprsoftwaremedia.com/219/files/202610/91e4671418fd42dd611fce974f821286/6aceab1a3d6332051d5dc521_nvidia-and-semiconductor-leaders/nvidia-and-semiconductor-leaders_5ac54765-981c-4c26-b6c2-cdd8daa42e94-prv.jpg"
+   ],
+   "signals": [
+    "官网新闻稿：英伟达宣布半导体龙头开始采用 NVIDIA CUDA-X 库，其中包括全新的 cuPotential 库——开发者可用它构建模拟原子与分子相互作用的 AI 智能体，把「AI 定义晶圆厂（AI-defined fabs）」往前推一步",
+    "cuPotential 在早期访问测试中，让已完成 GPU 优化的既有工作流再提速 2–3 倍；Synopsys 是早期采用者之一，用于加速材料仿真",
+    "开源三维数据（3D data）库 NanoVDB 加速芯片制造仿真：Lam Research 计划把它集成进度量式（wafer-etch）建模平台 SEMulator3D（属 Semiverse Solutions 虚拟产品线），预期让部分刻蚀建模最多快 30 倍；NVIDIA PhysicsNeMo 已被验证可把等离子体预测仿真时间从「数天」压到「毫秒级」",
+    "图像处理库 NVIDIA NPP 加速晶圆检测：KLA 把量产内核经验用于新的 NPP NCC 内核，性能比早期 CPU 版本快 50 倍；Teradyne 用它加速图像传感器测试，并用 RAPIDS cuDF 与 CuPy 处理测试数据",
+    "Synopsys 用 cuPotential、cuEST、cuDSS 加速半导体仿真：QuantumATK 早期结果显示 cuEST 潜在提速 30 倍，S-Device 基准显示 cuDSS 提速 12 倍；Cadence 把 Nemotron 开放模型与 CUDA-X 用于机电系统与先进封装的智能体设计（AuraStack AI 用 cuDSS 优化封装的散热与应力，快 8 倍）；COMSOL 用 cuDSS 让多物理场仿真最高快 10x",
+    "黄仁勋未在本稿署名或发声；新闻稿引述的是英伟达工业与计算工程副总裁兼总经理 Tim Costa：「半导体产业成就了 AI 革命。现在，AI 正在改变芯片被制造出来的方式。」",
+    "名单：Applied Materials、Cadence、KLA、Lam Research、Siemens、Synopsys 等在芯片设计、制造与测试环节使用英伟达加速计算与 AI 栈；imec 借英伟达技术把光刻工艺窗口改善 30%"
+   ],
+   "note": "官网页署名 October 14, 2026。官网 RSS（releases.xml）该条 pubDate 为 2026-10-14 16:10 GMT，故 date 取 10-14。页面 canonical 为 …/for-ai-defined-fabs（页面 og:url 误写成 …-labs，两个路径实测均 200），本条取 canonical。"
+  },
+  {
+   "id": "ev20261014e",
+   "date": "2026-10-14",
+   "type": "iv",
+   "cat": "jensen",
+   "src": "彭博社（Bloomberg）",
+   "title": "黄仁勋伦敦接受彭博专访：若客户开发不安全的 AI 软件，他会停止供芯；称安全担忧是行业「成长阵痛」，并重申供需失衡还将持续数年",
+   "place": "英国·伦敦",
+   "url": "https://www.bloomberg.com/news/articles/2026-10-14/nvidia-ceo-says-he-would-cut-off-customers-who-build-unsafe-ai",
+   "images": [],
+   "signals": [
+    "彭博主播 Emily Chang 在伦敦专访黄仁勋。被问及是否会停止向不负责任的开发者供应芯片，他回答：「这是个假设性的情况，但答案是肯定的。」（\"It's a hypothetical, but yes.\"）",
+    "他随即划出边界：「不过在这么做之前，会先和对方谈一谈。我们不替别人经营公司，对于其他公司如何使用我们的技术，我们的判断是有限度的。我们的技术是通用的。」",
+    "他把当前对 AI 安全的担忧定性为快速扩张行业的「成长阵痛」：「许多年轻公司正在经历成长的阵痛，它们成长得极为迅速。创建公司伴随着问责与责任，它们正在逐渐适应这些要求。」并称部分担忧是「自己造成的」，整个行业在向公众解释新技术好处方面做得「非常糟糕」",
+    "路线选择上他主张「以 AI 监控 AI」：「我们应该加快把这种防控技术整合到 AI 系统中，应该加快监控技术的发展，而 AI 就是这个监控者。所以，我们应该加快 AI 技术。」他明确反对 Anthropic CEO Dario Amodei 等人提出的全行业减速主张",
+    "同日伦敦活动上就供需表态：AI 基础设施的短缺与供需失衡还将持续数年，「供需最终会趋于平衡，但绝不是今天」；并称 AI 泡沫论言过其实",
+    "背景：他此行是欧洲巡回访问，为英伟达即将在柏林举办的活动（GTC Berlin，10/20–22，黄仁勋 keynote 10/21）造势；英伟达同日宣布五年向英国 AI 安全研究捐赠价值 2.5 亿美元算力（见 ev20261014a）"
+   ],
+   "note": "彭博原文页对自动化抓取返回 403，正文引语经中央社（伦敦 14 日电）、新浪财经、财联社、鉅亨網、Yahoo 財經五家转载逐字比对一致后采用。「供需最终会趋于平衡，但绝不是今天」出自同日伦敦活动，中文源（新浪财经/网易科技）标注为伦敦活动发言。"
+  },
+  {
+   "id": "ev20261014f",
+   "date": "2026-10-14",
+   "type": "mt",
+   "cat": "nvda",
+   "src": "同花顺财经／中新经纬",
+   "title": "英伟达 10 月 14 日收跌 3.16% 报 221.30 美元：美国 9 月 CPI 超预期，费城半导体指数六连跌",
+   "place": "美国·纽约（纳斯达克）",
+   "url": "https://news.10jqka.com.cn/field/20261015/680703357.shtml",
+   "images": [],
+   "signals": [
+    "英伟达 10 月 14 日（周三）收跌 3.16% 报 221.30 美元，当日成交额 260.25 亿美元、在当日全部美股中排第 1 名，成交额较前一交易日增加 36.63%，成交量 1.17 亿股",
+    "区间表现：过去 5 个交易日跌 6.81%，整个 10 月跌 3.10%，年初至今涨 18.66%，过去 52 周涨 22.92%",
+    "美股三大指数全线收跌：道指跌 0.09% 报 51,621.48，标普 500 跌 1.11% 报 7,718.94，纳斯达克综合跌 1.88% 报 26,692.87（创 7 月以来最大单日跌幅）",
+    "费城半导体指数重挫 4.30%，为连续第 6 个交易日下跌，创 2025 年 5 月以来最长连跌纪录，与 6 月历史高点相比累计跌幅已超过 20%；ARM 跌超 6%，AMD 跌超 5%，美光、英特尔跌超 4%",
+    "触发因素是美国 9 月 CPI 超预期：同比涨 3.7%（预期 3.6%）、核心 CPI 同比涨 2.6%、CPI 环比涨 0.6%（今年 4 月以来新高）、核心 CPI 环比 0.3%，交易员上调对美联储加息的押注",
+    "AI 融资链同时承压：CoreWeave 当日跌超 15%（其 2032 年到期债券到期收益率升至约 14.8%）、甲骨文跌近 9%、戴尔跌超 11%、Nebius 跌超 10%；苹果涨 0.50%，收盘市值首次站上 5 万亿美元，成为继英伟达之后第二家"
+   ],
+   "note": "date 取美股 10/14 交易日。收盘 221.30 美元 / -3.16% 经同花顺、腾讯自选股行情、富途、Investing.com 多源一致。道指/标普/纳指口径取同花顺 2026-10-15 收盘综述（纳指 -1.88% 与 CNN Business 一致；另有个别中文源写作 -1.4%，不采）。成交额各源略有差异（同花顺 260.25 亿美元，腾讯行情 262.51 亿美元），本条取同花顺口径。页面无可用 og:image → images 留空。"
+  },
   {
    "id": "ev20261014a",
    "date": "2026-10-14",
@@ -3008,32 +3071,16 @@
    ],
    "cat": "nvda",
    "note": "原链接为垃圾抓取站 huskybyte.com 已弃用，换纬创官方新闻稿；黄仁勋会后另接受 Dallas Morning News 专访"
-  },
-  {
-   "id": "ev20260716",
-   "date": "2026-07-16",
-   "type": "mt",
-   "src": "英伟达官方（investor.nvidia.com）/ 共同社",
-   "title": "黄仁勋东京行 · 敲定 Noetra 国家级 AI 工厂",
-   "place": "日本·东京",
-   "url": "https://investor.nvidia.com/news/press-release-details/2026/Japan-Government-Industrial-Leaders-and-NVIDIA-Launch-the-Worlds-First-National-AI-Infrastructure/default.aspx",
-   "images": [],
-   "signals": [
-    "英伟达与 Noetra（软银/索尼/NEC/本田等 44 家企业参投）共建国家级 AI 工厂：13,750 颗 Vera CPU + 27,500 颗 Rubin GPU，140MW，2027 年 4 月动工；日本 FRONTia 计划算力底座",
-    "发那科、安川、川崎等日本工业机器人巨头集体加入 Cosmos 物理 AI 联盟，将开发标准统一到英伟达平台；日本目标 2040 年落地 1000 万台 AI 机器人"
-   ],
-   "cat": "nvnews",
-   "note": "原链接为垃圾抓取站 syntho.net 已弃用，换英伟达官方新闻稿（共同社有现场报道）"
   }
  ],
  "timeline": [
   {
    "date": "2026-10-14",
    "place": "英国·伦敦",
-   "who": "黄仁勋（NVIDIA 创始人兼 CEO）；英国 AI 部长 Kanishka Narayan、商业大臣 Jonathan Reynolds（见新闻稿表态）",
+   "who": "黄仁勋（NVIDIA 创始人兼 CEO，当日在伦敦接受彭博专访）；英国 AI 部长 Kanishka Narayan、商业大臣 Jonathan Reynolds（见新闻稿表态）",
    "ev": "黄仁勋欧洲行 · 伦敦站",
    "future": false,
-   "note": "10/14：英伟达在伦敦宣布五年向英国捐赠价值 2.5 亿美元算力（每年 5000 万美元），专供智能体安全与安全研究，覆盖牛津 BOLD、UCL SOFAIR 与帝国理工；同日官网博客盘点英国生态落地（Fuse Energy、Locai Labs、OneAdvanced、LSEG、Revolut、劳埃德、NatWest 等）并宣布成为 Earthshot Prize 全球联盟创始伙伴；黄仁勋本人是否在伦敦现场出席未见官方文稿单独说明"
+   "note": "10/14：英伟达在伦敦宣布五年向英国捐赠价值 2.5 亿美元算力（每年 5000 万美元），专供智能体安全与安全研究，覆盖牛津 BOLD、UCL SOFAIR 与帝国理工；同日官网博客盘点英国生态落地（Fuse Energy、Locai Labs、OneAdvanced、LSEG、Revolut、劳埃德、NatWest 等）并宣布成为 Earthshot Prize 全球联盟创始伙伴；同日黄仁勋本人在伦敦接受彭博主播 Emily Chang 专访，就对不安全 AI 客户可断供芯片、AI 安全是行业「成长阵痛」、AI 基础设施供需失衡还将持续数年等表态（详见 ev20261014e），可确认其本人当日在伦敦现场"
   },
   {
    "date": "2026-10-13",
