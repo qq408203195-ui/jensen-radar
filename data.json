@@ -1,8 +1,147 @@
 {
  "mode": "auto",
  "today": "2026-10-15",
- "updatedAt": "2026-10-15 08:20",
+ "updatedAt": "2026-10-15 20:50",
  "events": [
+  {
+   "id": "ev20261015a",
+   "date": "2026-10-15",
+   "type": "mt",
+   "cat": "nvnews",
+   "src": "NVIDIA 官方博客（blogs.nvidia.com）",
+   "title": "英伟达加入欧盟「AI in Science Enablers」：欧洲在建 35 台超算，覆盖 300 万以上研究者",
+   "place": "爱尔兰·都柏林（AI in Science Summit）",
+   "url": "https://blogs.nvidia.com/blog/ec-scientific-computing-pledge/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/10/ai-in-science-enablers-1920x1080-1.jpg"
+   ],
+   "signals": [
+    "官网博客《NVIDIA Expands Advanced Technology Access for Europe’s Scientific Community Through Open Learning Resources, Collaborations and Compute》，页面署名日期 October 15, 2026，作者 Rod Evans",
+    "欧盟委员会在都柏林 AI in Science Summit 上发起 AI in Science Enablers Initiative，与 RAISE（Resource for AI Science in Europe）框架相连；英伟达宣布加入该倡议",
+    "英伟达给出的五类支持：加速工具／模型／平台接入；算力与云资源、数据与科学资源；技能培训与技术支持；合作项目与试点；初创与生态发展支持",
+    "开放资产口径：英伟达累计已开放 250 个以上模型、250 个以上数据集、1,400 个以上开源软件项目；科学侧工具含 NVIDIA BioNeMo Agent Toolkit、PhysicsNeMo 库、Earth-2 模型与 ALCHEMI NIM 微服务",
+    "培训：NVIDIA Deep Learning Institute 上线新的开源课程库，材料可免费下载、开放授权、无报名费与截止期，模块化设计可适配大学课程与超算中心训练营",
+    "算力：与法国、西班牙、瑞典等欧洲国家 AI 工厂及云伙伴合作，为初创与中小企业开辟本地主权算力入口；法国 AI2F 是首个与 Inception 计划合作四个月的 AI 工厂，西班牙 BSC AI Factory 跑完试点后正推出首个完整加速器计划；瑞典 AI Factory（欧洲 19 家 EuroHPC 资助 AI 工厂之一）宣布与英伟达合作；EuroHPC 的 CINECA、JSC 等超算中心为学界与初创提供免费英伟达 GPU 基础设施",
+    "基础设施规模：官网称英伟达正支撑欧洲迄今最大规模的 AI 基础设施扩张，35 台超算在建，将使 300 万以上研究者获得下一代基础设施",
+    "欧盟委员会负责初创、研究与创新的委员 Ekaterina Zaharieva 表态：「Europe’s ambition in AI in science can only become reality if we bring together the strengths of our research community, industry and other partners.」"
+   ],
+   "note": "页面署名日期 October 15, 2026，官网 RSS（releases.xml）该条 pubDate 为 2026-10-15 10:00 GMT（北京时间 10/15 18:00）→ date 取 10-15。og:image 已 curl 验证并目视确认（地球气候／蛋白质／材料三格科学配图，切题）。"
+  },
+  {
+   "id": "ev20261015b",
+   "date": "2026-10-15",
+   "type": "er",
+   "cat": "nvda",
+   "src": "中央社（CNA）",
+   "title": "台积电 Q3 净利 7630.6 亿新台币同比增 68.7%：先进制程占晶圆收入 79%，HPC 占整体营收 68%",
+   "place": "中国台湾·新竹",
+   "url": "https://www.cna.com.tw/news/afe/202610150127.aspx",
+   "images": [
+    "https://imgcdn.cna.com.tw/www/webphotos/WebCover/800/20261015/1850x1387_798920707204.jpg"
+   ],
+   "signals": [
+    "台积电 10/15 召开线上法人说明会公布 2026 年第三季结果：营收 467.2 亿美元（约新台币 1 兆 4942.4 亿元），季增 17.6%、年增 50.9%，超越公司原先 446 亿至 458 亿美元的财测区间，创历史新高",
+    "归属母公司净利新台币 7630.6 亿元，季增 8%、年增 68.7%，同创历史新高；每股纯益新台币 29.43 元（每单位美国存托凭证 4.60 美元）",
+    "毛利率 66.4%（较第二季下滑 1.3 个百分点）、营业利润率 58.7%、净利率 51.1%",
+    "制程结构：2 纳米占晶圆收入 8%、3 纳米 33%、5 纳米 28%、7 纳米 10%；7 纳米及更先进制程合计占晶圆收入 79%",
+    "平台结构：HPC（高性能计算）营收季增 22%、占整体营收 68%；智能手机季增 10%、占 21%；汽车电子季增 23%、占 4%；物联网季增 5%、占 4%；消费电子季减 12%、占 1%",
+    "第四季财测：营收 523 亿至 543 亿美元（中值 533 亿美元，环比约增 14%、同比约增 58%），毛利率 65% 至 67%，营业利益率 56.5% 至 58.5%",
+    "董事长魏哲家在法说会表示，在先进制程强劲需求支撑下，预计 2026 全年美元营收同比增长约 44%；他看好产业从聊天机器人走向代理式 AI（Agentic AI）部署，并指出 AI 需求不限于 GPU 与 AI 加速器，代理式 AI CPU 的出现与网络芯片需求增长也会推动晶圆需求",
+    "魏哲家同时提示消费者端与价格敏感的终端市场正面临零组件价格上涨及总体经济不确定性，规划迈向 2027 年的业务计划时保持审慎；但先进技术需求整体依然极为强劲"
+   ],
+   "note": "属第三方（台积电）自身业绩，事实内核为英伟达主要代工方的先进制程／HPC 产能与需求口径，按既有判例（ev20260930c 美光财报）归 nvda；台积电法说会未点名任何客户，本条不作客户层面的推断。配图取自中央社原文页 og:image（台积电总部档案照），已目视确认切题。"
+  },
+  {
+   "id": "ev20261014j",
+   "date": "2026-10-14",
+   "type": "mt",
+   "cat": "nvnews",
+   "src": "NVIDIA 官方博客（blogs.nvidia.com）",
+   "title": "英伟达官网盘点北欧：Sferical One 超算上 1152 张 GPU，AI 云容量预计 2027 年底做到 1GW",
+   "place": "北欧（瑞典、芬兰、丹麦等）",
+   "url": "https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/10/nordics-embrace-social-1920x1080-5822300.jpeg"
+   ],
+   "signals": [
+    "官网博客《The Nordics and NVIDIA Show What’s Possible When a Region Commits to Advanced Computing》，页面署名日期 October 14, 2026，作者 Linda Malm",
+    "基础设施：北欧是欧洲增长最快的基础设施枢纽之一，AI 云预计到 2027 年底在该地区部署约 1 吉瓦（1GW）容量；官网点名的云厂商包括 Bitdeer、CoreWeave、Crusoe、Hyperstack、Nscale、Verda、Volta",
+    "瑞典：由 Ericsson、AstraZeneca、Saab、SEB 与 Wallenberg Investments 牵头、SKF 任战略伙伴的联合体推出 Sferical One 共享超算，跑在两套 NVIDIA DGX SuperPOD 上，共 16 机架 NVIDIA DGX GB300 系统、1,152 张 GPU，服务将基于 NVIDIA Nemotron 开放模型搭建，让研究者可在安全环境中定制与部署自己的模型",
+    "Spotify 用 NVIDIA TensorRT-LLM 推理软件更快、更便宜地规模化运行 AI 播客推荐；官网称其为推理效率案例——向全球听众给出同样推荐结果，每次查询成本更低",
+    "ABB Robotics 用 NVIDIA Omniverse 库开发 RobotStudio HyperReality，把仿真与实体机器人打通；官网引述 ABB Robotics 数据称该方案仿真精度最高 99%、调试时间最多减少 80%",
+    "芬兰电信 Elisa 推出 Moontalk AIRI 测试版，一个基于 NVIDIA Nemotron 开放模型的实时企业智能体助手，可在会议与通话中检索信息、捕捉要点并记录决策",
+    "初创侧：瑞典 2026 年上半年融资 28 亿美元、全年预计达 50 亿美元；Stilta 用 Nemotron 做专利组合分析（从单件专利扩到整个组合）；ConfidentialMind 的 SampoTron 基于 Nemotron-3-Embed，把英／芬／瑞跨语检索准确率提升 20% 以上；Klang 基于 Parakeet v3 微调的瑞典语转写模型 Pianissimo 错误率降低 75%，且比最准的替代方案快 64 倍（基于 5 万小时以上瑞典语语音、NVIDIA NeMo 开源框架）"
+   ],
+   "note": "页面署名日期 October 14, 2026；官网 RSS 该条 pubDate 为 2026-10-15 05:00 GMT，即美西 10-14 22:00 PDT（同一发布时刻的两种时区写法）→ 事件日按官网页面字段取 10-14。og:image 已 curl 验证并目视确认（北欧各国旗帜立体地图配图，切题）。"
+  },
+  {
+   "id": "ev20261014h",
+   "date": "2026-10-14",
+   "type": "mt",
+   "cat": "nvnews",
+   "src": "NVIDIA 官方博客（blogs.nvidia.com，GTC Berlin 滚动报道页）",
+   "title": "伦敦梅费尔那场英国生态招待会：黄仁勋台上讲「AI 不只是模型」，英国 AI 部长同台祝酒",
+   "place": "英国·伦敦（Mercato Mayfair）",
+   "url": "https://blogs.nvidia.com/gtc-berlin-2026-news/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/10/IMG_7462-1680x945.jpg",
+    "https://blogs.nvidia.com/wp-content/uploads/2026/10/26gtc-eu-prenote-london-reception-stage-program-lda-LD1_1142-1680x945.jpg"
+   ],
+   "signals": [
+    "官网 GTC Berlin 滚动报道页条目《UK AI Ecosystem Gathers in London》（页面时间戳 Wed, Oct 14, 2:47 pm PDT）：英伟达在英国 AI 生态招待会上，把英国称为蓬勃发展的技术创新中心；黄仁勋在由教堂改建、位于梅费尔 Mercato Mayfair 的场地里穿过人群，与创始人、企业领袖交流并向在场初创企业祝酒",
+    "黄仁勋上台发言，提到英伟达多个架构以英国科学家命名；他感谢台下对英伟达的贡献与持续合作，并强调安全的重要性，尤其是智能体必须透明",
+    "黄仁勋原话：「AI is our best shot at accelerating the transition to sustainable energy.」（AI 是我们加速能源转型的最大机会）",
+    "黄仁勋原话：「AI is not just the model」、「in order for the U.K. to participate in the AI economy, you have to participate in every single layer of the AI economy, the AI industry.」（英国要参与 AI 经济，就得参与 AI 经济与 AI 产业的每一层）",
+    "黄仁勋在会上宣布英伟达对英国初创企业的计划投资，覆盖医疗、AI 研究、基础设施与量子计算，并称这是对欧洲技术生态「近 100 亿美元」承诺的一部分",
+    "英国人工智能部长 Kanishka Narayan 与黄仁勋及初创创始人同台祝酒；黄仁勋原话：「Go U.K.! You gotta put pedal to the metal, and let’s get the U.K. ecosystem flywheel going in the U.K.」",
+    "招待会结束后，黄仁勋在会场外回答了到场媒体的提问"
+   ],
+   "note": "事件日：官网英文滚动页时间戳为 Wed, Oct 14, 2:47 pm PDT（伦敦当地 10/14 晚），中文站（blogs.nvidia.cn）同日内容按北京时间渲染为「10 月 15 日」→ 按事件发生地当日取 10-14。与 ev20261014b（同日官网英国生态落地清单博客）是同主题的不同事件：本条为伦敦线下招待会现场（含黄仁勋台上原话与英国 AI 部长同台），ev20261014b 为官网生态清单。配图取自官网原文页正文内嵌图（会场外媒体围访照、舞台合影），已目视确认切题。"
+  },
+  {
+   "id": "ev20261014g",
+   "date": "2026-10-14",
+   "type": "mt",
+   "cat": "nvnews",
+   "src": "NVIDIA 官方博客（blogs.nvidia.com，GTC Berlin 滚动报道页）",
+   "title": "黄仁勋伦敦两场：Build-a-Claw 讲 OpenShell 最小权限隔离，AI 安全论坛主张「民主化自我防御」",
+   "place": "英国·伦敦",
+   "url": "https://blogs.nvidia.com/gtc-berlin-2026-news/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/10/IMG_7367-1680x945.jpg",
+    "https://blogs.nvidia.com/wp-content/uploads/2026/10/UKsafetysecurityforum-1680x945.jpg"
+   ],
+   "signals": [
+    "官网 GTC Berlin 滚动报道页条目《Build-a-Claw Comes to UK Developers》（页面时间戳 Wed, Oct 14, 1:11 pm PDT）：开发者挤满伦敦 One Triton Square，在 Build-a-Claw 活动上用英伟达驱动的电脑设计自己的智能体、无需写代码；黄仁勋本人到场；该活动是英伟达 GTC Berlin 前欧洲巡回的一站",
+    "黄仁勋原话：「OpenClaw, as you know, makes it possible for the agent to be able to deal with memory, orchestrate action and use tools. As a result, we have now seen an inflection, and artificial intelligence has become useful.」他列举的应用方向含药物发现、编程、市场营销与学术研究",
+    "关于隔离层，他称之为「another operating system inside the operating system」（操作系统里的另一个操作系统），以确保智能体安全运行；原话：「And so we created this thing called OpenShell. Whatever the task you give to your agent, you then give it minimum rights, minimum privileges, and then you monitor it to make sure it’s compliant with policy.」",
+    "黄仁勋请台下观众上台抽奖，奖品包含一台他亲笔签名的 NVIDIA DGX Spark",
+    "同日早间，他出席在伦敦医疗工程研究所（LIHE）举行的 AI 安全与保障研究论坛，与英国研究者同场；此行紧接英伟达宣布五年 2.5 亿美元英国智能体安全与安全研究算力捐赠（见 ev20261014a）",
+    "论坛形成两个共同挑战：多智能体系统安全（单个智能体各自安全，组合出的系统仍可能不安全），以及安全能力要与能力提升同速扩展",
+    "黄仁勋原话：「We need to democratize self-defense. We need a community of people watching each others’ backs.」他主张开放模型与开放方案才能把防御能力交到每个人手里，并称英国在 AI 安全上具备世界领先实力；同场合影者为 LIHE 所长 Sebastian Ourselin、伦敦国王学院研究与特别项目高级副校长 Bashir Al-Hashimi"
+   ],
+   "note": "事件日：官网英文滚动页时间戳为 Wed, Oct 14, 1:11 pm PDT（伦敦当地 10/14 晚），中文站（blogs.nvidia.cn）把该条目标为「10 月 15 日」（按北京时间渲染）→ 按活动发生地当日取 10-14。配图取自官网原文页正文内嵌图（Build-a-Claw 现场签名奖品合影、伦敦医疗工程研究所前合影），已目视确认切题。"
+  },
+  {
+   "id": "ev20261014i",
+   "date": "2026-10-14",
+   "type": "mt",
+   "cat": "nvda",
+   "src": "Business Wire 通稿（Yahoo Finance 转载）",
+   "title": "ChipAgents 联合英伟达发布 Build-A-Chip-Bench：智能体过功能验证约四成，达标物理 PPA 只有约一成",
+   "place": "美国·加州圣克拉拉",
+   "url": "https://finance.yahoo.com/technology/ai/articles/chipagents-collaborates-nvidia-launch-build-161000214.html",
+   "images": [],
+   "signals": [
+    "通稿电头 SANTA CLARA, Calif., October 14, 2026（Business Wire）：半导体工程智能体平台 ChipAgents 发布 Build-A-Chip-Bench，该基准由 ChipAgents 开发、英伟达在基准套件与评分规则上提供技术专长",
+    "基准覆盖数字芯片设计全流程：架构、微架构、RTL、功能验证、逻辑综合、floorplan、布局、时钟树综合、布线、时序与功耗签核、物理验证，终点是经物理实现并验证过的 GDS 版图",
+    "首批评测结果：被测智能体平均约 40% 的任务通过功能验证，但只有约 10% 达到所需的物理性能、功耗与面积（PPA）目标——功能正确与真的能造出芯片之间存在明显落差",
+    "英伟达工业与计算工程副总裁兼总经理 Tim Costa 原话：「Chip design is a defining test of AI’s ability to make decisions that hold up under the demands of the physical world.」称该基准让开发者看清推理与工具使用能力需要在哪里提升",
+    "ChipAgents 创始人兼 CEO William Wang 原话：「As chip designs get more complex and time to market pressures increase, we see the need for chip superintelligence that can fully engineer the next generation of silicon.」",
+    "评测任务、方法论与初步结果挂在 chipagents.ai/research/build-a-chip-bench；通稿未披露任务数量、被测模型清单与分模型对比结果，本条不作任何补充推断"
+   ],
+   "note": "事件日按通稿电头 2026-10-14（Business Wire 于美东 10/14 发布；中文财经站 10/15 才转述该消息）→ 取 10-14。属第三方（ChipAgents）发起、英伟达提供技术专长的合作发布，src/url 非 nvidia.com 官方域，故归 nvda。通稿 og:image 经下载目视确认为 ChipAgents 品牌图形、与事件无关 → images 留空。"
+  },
   {
    "id": "ev20261014d",
    "date": "2026-10-14",
@@ -332,9 +471,10 @@
     "英伟达官方 X 账号 2026 年 10 月 13 日发帖：巴黎 Build-A-Claw 活动现场，开发者与初创公司用开源模型搭建自己的 AI 智能体",
     "该活动为英伟达 Build-A-Claw 开发者工作坊系列一站；转述口径其巴黎场时间为 10 月 13 日 14:00–18:00，主题是在英伟达本地硬件上运行智能体，安全层由 NemoClaw 提供",
     "转述称黄仁勋以「到场」（stop-by）方式出席；英伟达对 Build-A-Claw 系列的官方宣传材料未确认其在巴黎站的出席",
-    "该欧洲巡展另含巴塞罗那、伦敦与柏林"
+    "该欧洲巡展另含巴塞罗那、伦敦与柏林",
+    "【2026-10-15 补核】英伟达官网 GTC Berlin 滚动报道页（blogs.nvidia.com/gtc-berlin-2026-news/）确认：巴黎 Build-a-Claw 在旺多姆亭楼举行，数百名开发者到场一同打造物理 AI，黄仁勋以「一位意外到访的嘉宾」身份现身，该活动属 GTC Berlin 前欧洲巡回的一站"
    ],
-   "note": "【待核验】原推 permalink 未取到（X 平台直连受限），url 用英伟达官方 X 账号主页；「黄仁勋到场」仅见于 Crypto Briefing、Nation Press 等转述，未见英伟达官方文稿确认。原帖无独立配图 → images 留空"
+   "note": "【2026-10-15 补核】黄仁勋到场已由英伟达官网 GTC Berlin 滚动报道页确认，原「仅见 Crypto Briefing、Nation Press 转述」的待核状态解除；src/url 仍保留英伟达官方 X 账号口径（原帖 permalink 未取到）。原帖无独立配图 → images 留空"
   },
   {
    "id": "ev20261013k",
@@ -3077,10 +3217,10 @@
   {
    "date": "2026-10-14",
    "place": "英国·伦敦",
-   "who": "黄仁勋（NVIDIA 创始人兼 CEO，当日在伦敦接受彭博专访）；英国 AI 部长 Kanishka Narayan、商业大臣 Jonathan Reynolds（见新闻稿表态）",
+   "who": "黄仁勋（NVIDIA 创始人兼 CEO）；英国 AI 部长 Kanishka Narayan、商业大臣 Jonathan Reynolds（见新闻稿表态）；LIHE 所长 Sebastian Ourselin、伦敦国王学院研究与特别项目高级副校长 Bashir Al-Hashimi",
    "ev": "黄仁勋欧洲行 · 伦敦站",
    "future": false,
-   "note": "10/14：英伟达在伦敦宣布五年向英国捐赠价值 2.5 亿美元算力（每年 5000 万美元），专供智能体安全与安全研究，覆盖牛津 BOLD、UCL SOFAIR 与帝国理工；同日官网博客盘点英国生态落地（Fuse Energy、Locai Labs、OneAdvanced、LSEG、Revolut、劳埃德、NatWest 等）并宣布成为 Earthshot Prize 全球联盟创始伙伴；同日黄仁勋本人在伦敦接受彭博主播 Emily Chang 专访，就对不安全 AI 客户可断供芯片、AI 安全是行业「成长阵痛」、AI 基础设施供需失衡还将持续数年等表态（详见 ev20261014e），可确认其本人当日在伦敦现场"
+   "note": "10/14：英伟达在伦敦宣布五年向英国捐赠价值 2.5 亿美元算力（每年 5000 万美元），专供智能体安全与安全研究，覆盖牛津 BOLD、UCL SOFAIR 与帝国理工；同日官网博客盘点英国生态落地（Fuse Energy、Locai Labs、OneAdvanced、LSEG、Revolut、劳埃德、NatWest 等）并宣布成为 Earthshot Prize 全球联盟创始伙伴；同日黄仁勋本人在伦敦接受彭博主播 Emily Chang 专访，就对不安全 AI 客户可断供芯片、AI 安全是行业「成长阵痛」、AI 基础设施供需失衡还将持续数年等表态（详见 ev20261014e），可确认其本人当日在伦敦现场【2026-10-15 补录】官网 GTC Berlin 滚动报道页确认其当日伦敦另有三个现场：早间出席伦敦医疗工程研究所（LIHE）的 AI 安全与保障研究论坛，与英国研究者同场并主张「民主化自我防御」（ev20261014g）；下午现身 One Triton Square 的 Build-a-Claw 开发者活动，讲 OpenClaw 已过拐点、OpenShell 用最小权限加监控兜底（ev20261014g）；晚间在梅费尔 Mercato Mayfair 的英国 AI 生态招待会上台发言，英国 AI 部长 Kanishka Narayan 同台祝酒（ev20261014h）。"
   },
   {
    "date": "2026-10-13",
@@ -3088,7 +3228,7 @@
    "who": "黄仁勋（NVIDIA 创始人兼 CEO）；法国总统马克龙；Doctolib、Genesis AI、Pigment、Entalpic 四家法国初创企业",
    "ev": "黄仁勋欧洲行首站 · 巴黎（爱丽舍宫会见 + 投资宣布 + Build-A-Claw 开发者活动）",
    "future": false,
-   "note": "10/13：在爱丽舍宫会见马克龙，议题含英伟达对法国 AI 产业投资、开源与 AI 安全；公开表示未来一周将公布 20 亿美元欧洲投资（叠加过去一年 80 亿美元）、向四家法国初创企业注资，并喊话「欧洲需要加入这场竞赛」；同日现身 Build-A-Claw 巴黎开发者工作坊。详见 ev20261013f / ev20261013g / ev20261013j"
+   "note": "10/13：在爱丽舍宫会见马克龙，议题含英伟达对法国 AI 产业投资、开源与 AI 安全；公开表示未来一周将公布 20 亿美元欧洲投资（叠加过去一年 80 亿美元）、向四家法国初创企业注资，并喊话「欧洲需要加入这场竞赛」；同日现身 Build-A-Claw 巴黎开发者工作坊。详见 ev20261013f / ev20261013g / ev20261013j【2026-10-15 补核】官网 GTC Berlin 滚动报道页《NVIDIA Brings Build-a-Claw to the Heart of Paris》已确认黄仁勋到场（原文称其为「一位意外到访的嘉宾」），ev20261013j 的「仅见转述」待核状态解除。"
   },
   {
    "date": "2026-10-12～15",
@@ -3134,9 +3274,9 @@
    "date": "2026-10-08",
    "who": "特朗普（美国总统）／黄仁勋、马斯克、布林、苏姿丰、戴尔、纳德拉",
    "place": "美国·华盛顿（美国和平研究所）",
-   "event": "白宫「科学：新黄金时代」峰会暨国家科学奖章、国家技术与创新奖章颁授典礼",
-   "content": "特朗普首次颁授国家科学奖章，黄仁勋获颁国家科学奖章（授奖词：把 GPU 推进为通用计算架构）；同场宣布「创世纪计划」24 亿美元产业算力承诺、超 60 亿美元科研投资计划",
-   "future": false
+   "future": false,
+   "ev": "白宫「科学：新黄金时代」峰会暨国家科学奖章、国家技术与创新奖章颁授典礼",
+   "note": "特朗普首次颁授国家科学奖章，黄仁勋获颁国家科学奖章（授奖词：把 GPU 推进为通用计算架构）；同场宣布「创世纪计划」24 亿美元产业算力承诺、超 60 亿美元科研投资计划"
   },
   {
    "date": "2026-10-07",
