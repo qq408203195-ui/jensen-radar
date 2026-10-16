@@ -1,8 +1,53 @@
 {
   "mode": "auto",
   "today": "2026-10-16",
-  "updatedAt": "2026-10-16 09:20",
+  "updatedAt": "2026-10-16 21:20",
   "events": [
+    {
+      "id": "ev20261016a",
+      "date": "2026-10-16",
+      "type": "mt",
+      "cat": "nvnews",
+      "src": "英伟达官方新闻室（nvidianews.nvidia.com）",
+      "title": "RTX Spark 笔记本全球开卖：六家 OEM 同日上架、起价 2599 美元，Windows PC 首次原生承载本地智能体",
+      "place": "美国·加州圣克拉拉（全球同步上市）",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs",
+      "images": [
+        "https://iprsoftwaremedia.com/219/files/202610/6b76fb1cf81fffb13a4bb218a40498e4/6ad1b68c3d63324cdc9b1ab9_nvidia-rtx-spark/nvidia-rtx-spark_f4f2e983-c349-4b1f-ac12-c09817b54764-prv.jpg?v=f4f2e983-c349-4b1f-ac12-c09817b54764"
+      ],
+      "signals": [
+        "英伟达 10/16 宣布 RTX Spark 笔记本电脑正式上市，由华硕、戴尔、惠普、联想、微软、微星六家同日开卖，起售价 2599 美元，通过各家官网与主要零售商销售；价格与配置因地区而异。",
+        "黄仁勋原话：「RTX Spark 将英伟达 AI、RTX 图形技术与 CUDA 和微软 Windows 融于一台 PC，让用户能创作、游戏并运行个人 AI 智能体。我们与微软及 PC 产业伙伴一起，带来新一代 Windows PC——为今天的工作，也为接下来要共事的个人 AI 智能体而建。」",
+        "平台为一颗超级芯片：Blackwell RTX GPU + Grace CPU，最高 128GB 统一内存、最高 1 Petaflop FP4 AI 算力；MediaTek 参与定制 CPU 设计。官方称可本地运行大语言模型与智能体、渲染 90GB+ 的 3D 场景、以 1440p 分辨率超过 100 FPS 玩 3A 游戏。",
+        "首发机型：ASUS ProArt P14 与 P16、Dell XPS 16、HP OmniBook Ultra 与 OmniBook X 14、Lenovo Yoga Pro 9n、Microsoft Surface Laptop Ultra、MSI Prestige N16 Flip AI+ 与 Prestige N16。",
+        "开箱即用的本地智能体：GitHub Copilot、Hermes、OpenClaw、Perplexity、Pi 与 WorkBuddy，无需命令行；权限由英伟达 OpenShell 安全运行时与 Microsoft Execution Containers 管控，另有 NVIDIA PAIR 把一台 RTX Spark 的推理能力分给同网络内的其他 Windows/Linux/macOS 机器。",
+        "开发者侧：Windows on Arm 上首个 PyTorch-CUDA 构建、首个默认原生 Python 构建、原生 Conda 安装器，支持 Python 前 15000 个常用包中的 97%；编码智能体含 GitHub Copilot 与 Pi。创意软件侧，Adobe 把 TensorRT 加速引入 Photoshop、Premiere 与 Substance 3D 的 AI 编辑功能，前两者上市日提供原生 RTX Spark 支持（测试版）。",
+        "微软执行副总裁 Yusuf Mehdi：「我们正在把 Windows 打造为混合智能的平台——AI 合适时在本地跑，需要时连到云上。」",
+        "上市同日六城举办发布活动（当地时间）：旧金山 Best Buy、柏林 Xperion at Saturn、中国台北 Muse Garden、北京 JD MALL 双井店、伊斯坦布尔 Vatan Bilgisayar Topkapı、首尔 COEX East Lobby。"
+      ],
+      "note": "官方新闻稿 pubDate Fri, 16 Oct 2026 12:00:00 GMT（北京时间 10/16 20:00）；og:image 为英伟达官方题图（alt=NVIDIA RTX Spark）已 curl 校验 200 并目视确认切题。承接 10/7 开启预售（ev20261007a）与 10/13 官网「生态就绪」（ev20261013h），本条为正式开卖口径。注意 10/13 稿另提 Acer、Gigabyte，但 10/16 官方可售名单为上述六家。"
+    },
+    {
+      "id": "ev20261016b",
+      "date": "2026-10-16",
+      "type": "mt",
+      "cat": "nvnews",
+      "src": "英伟达官方新闻室（nvidianews.nvidia.com）",
+      "title": "奔驰与英伟达把自动驾驶合作延到下一个十年：MB.OS 接 Hyperion 与 Alpamayo，为 SAE L4 与无人出租车铺路",
+      "place": "德国·斯图加特 / 美国·加州圣克拉拉",
+      "url": "https://nvidianews.nvidia.com/news/mercedes-benz-and-nvidia-expand-strategic-partnership-to-advance-safe-highly-automated-driving-in-the-next-decade",
+      "images": [
+        "https://iprsoftwaremedia.com/219/files/202610/d8074bf73d259485ee16c0b53d2e2ccb/6ad157533d633269179b1ab9_mercedes-benz-nvidia/mercedes-benz-nvidia_f3c71739-e87b-4984-b90f-744f8481356c-prv.jpg?v=f3c71739-e87b-4984-b90f-744f8481356c"
+      ],
+      "signals": [
+        "梅赛德斯-奔驰与英伟达 10/16 宣布延长战略合作，共同开发下一代驾驶辅助与自动驾驶系统：奔驰侧提供汽车工程与安全能力及 MB.OS 操作系统，英伟达侧提供加速计算与 AI 技术。",
+        "技术栈：英伟达 Hyperion 车载计算与传感器架构、Alpamayo Stack 全栈驾驶软件（带 AI 推理能力，支持城市点对点辅助驾驶、主动安全与自动泊车）、Halos 安全系统（含并行安全栈做冗余与护栏）。双方称这些技术支撑高级驾驶辅助，并为未来 SAE L4 级应用（含无人出租车 robolimousines）做准备。",
+        "奔驰集团董事会成员、首席技术官（研发与采购）Jörg Burzer：「英伟达是我们在自动驾驶领域最重要的战略合作伙伴。我们共同开发了西方世界第一套用于城市点对点驾驶的奔驰辅助驾驶系统。扩大合作是一个重要里程碑，体现了我们多年建立的相互信任。」",
+        "英伟达汽车业务副总裁 Ali Kani：「加速计算正在让车辆有能力理解世界、推理复杂的驾驶场景。奔驰带来了这场转型所需要的工程卓越与对安全的承诺。我们正基于 Hyperion 把这种智能和全栈安全带到路上，让自动驾驶成为日常现实。」",
+        "自动驾驶之外，奔驰在车辆工程仿真以及数字化生产体系 MO360（从虚拟规划到 AI 应用）中也在使用英伟达技术，双方称将继续提升全球生产网络的效率、灵活性与质量。"
+      ],
+      "note": "官方新闻稿与奔驰集团官网（group.mercedes-benz.com/company/news/mb-and-nvidia-expand-strategic-partnership.html）同日发布、口径一致；og:image 为双方 Logo 联署题图（alt=Mercedes-Benz and NVIDIA）已 curl 校验 200 并目视确认切题。全稿无黄仁勋本人发言。与 10/15 沃尔沃官宣（ev20261015f）连成车企合作连发，是 GTC Berlin（10/20–22）前的铺垫。"
+    },
     {
       "id": "ev20261015c",
       "date": "2026-10-15",
@@ -68,9 +113,10 @@
         "背景：英伟达是 CoreWeave 第二大股东，持股约 10%；英伟达与 CoreWeave 另有一项协议——英伟达将购买其截至 2032 年 4 月 13 日未售出的算力。",
         "路透同日数据：CoreWeave 股价盘中一度下跌 8.3% 至 2025 年 5 月以来最低，报道时转涨约 5%；这家亏损的云公司约有 500 亿美元债务，其 4 月发行的债券收益率约 15%，债务违约保险成本升至约 1,000 个基点，隐含五年内违约概率接近 63%（一年前约 30%）。",
         "行业背景：市场担忧 AI 基建扩张由债务融资撑起，费城半导体指数在此前六个交易日累计下跌 11.6%、市值蒸发超 1.6 万亿美元，纳指同期跌超 3%；IG Group 首席技术分析师 Axel Rudolph：「市场正在意识到，AI 需求与可盈利的商业模式是两件完全不同的事。」",
-        "路透另提到：投资者正等待 Anthropic 的 IPO，以检验其收入增速能否缓解对 AI 支出失控的担忧；智能戒指厂商 Oura 等公司已推迟上市。"
+        "路透另提到：投资者正等待 Anthropic 的 IPO，以检验其收入增速能否缓解对 AI 支出失控的担忧；智能戒指厂商 Oura 等公司已推迟上市。",
+        "财联社 10/16 补充的信用市场口径：CoreWeave 五年期 CDS 利差周四盘中一度扩大 74.5 个基点至 1194.5 个基点、创盘中历史新高，隐含未来五年累计违约概率超过 60%；票息 9%、2031 年到期的债券每 1 美元面值跌 3.3 美分至 79.9 美分、收益率升至 15.6%，同期限 9.75% 票息债券收益率升至 16.2%。市场预测 CoreWeave 今年销售额 129 亿美元、明年翻番，但债务总额超 400 亿美元、大部分需在五年内偿还，今年亏损预计升至 25 亿美元。"
       ],
-      "note": "路透社原稿 2026-10-15 经 CNA（Channel NewsAsia）转载，英文原话逐字取自该稿；中文口径见新浪财经「环球市场播报」版，两处一致。og:image 为路透配图（CoreWeave 标识插画），已 curl 校验 HTTP 200。"
+      "note": "路透社原稿 2026-10-15 经 CNA（Channel NewsAsia）转载，英文原话逐字取自该稿；中文口径见新浪财经「环球市场播报」版，两处一致。og:image 为路透配图（CoreWeave 标识插画），已 curl 校验 HTTP 200。 2026-10-16 补充：财联社《跌9%→涨近6% 黄仁勋力挺云服务商CoreWeave现奇效》给出上述信用市场细节。"
     },
     {
       "id": "ev20261015f",
@@ -206,6 +252,49 @@
         "魏哲家同时提示消费者端与价格敏感的终端市场正面临零组件价格上涨及总体经济不确定性，规划迈向 2027 年的业务计划时保持审慎；但先进技术需求整体依然极为强劲"
       ],
       "note": "属第三方（台积电）自身业绩，事实内核为英伟达主要代工方的先进制程／HPC 产能与需求口径，按既有判例（ev20260930c 美光财报）归 nvda；台积电法说会未点名任何客户，本条不作客户层面的推断。配图取自中央社原文页 og:image（台积电总部档案照），已目视确认切题。"
+    },
+    {
+      "id": "ev20261015j",
+      "date": "2026-10-15",
+      "type": "iv",
+      "cat": "jensen",
+      "src": "BG2 Pod（Brad Gerstner / Clark Tang 主持，官方节目页）",
+      "title": "黄仁勋第三次做客 BG2 播客：新订单几乎每天都来，前沿实验室只占英伟达算力需求约四分之一到三成",
+      "place": "美国（节目 2026-10-15 播出）",
+      "url": "https://podfollow.com/bg2pod-with-brad-gerstner-and-bill-gurley/episode/c4558ea48f15fe7bc21b9823fbf135d36f953531/view",
+      "images": [],
+      "signals": [
+        "场合：黄仁勋第三次做客 BG2 Pod（主持 Brad Gerstner、Clark Tang），节目 2026-10-15 发布，时长约 1 小时 40 分钟，录制于 10 月白宫国宴、白宫超级智能协定与获颁美国国家科学奖章之后。",
+        "需求与供给原话：「新订单几乎每周、甚至每天都在持续涌入。我们一直在不断提升供给，但未交付的订单量仍在持续走高。」（\"New orders are arriving almost weekly and daily... We keep increasing more supply and the order books keeps going up.\"）头部云服务商、新兴 AI 云运营商与设备制造商均已下大额订单；客户需求预测普遍提前至少一年，体量最大的客户规划周期排到两年之后；而英伟达分给这些客户的产能远少于其实际需求。",
+        "瓶颈：电力短缺、尚未完工的数据中心、制造零部件（另提及土地、基板与硅光）制约扩产速度。他称芯片项目可能对应约 50 吉瓦算力，但配套的土地、电力与机房建筑或只能承接 35 到 40 吉瓦，「需求肯定有，而且还不止这么多」。",
+        "需求结构拆解（本轮最被引用的一段）：前沿 AI 实验室仅占英伟达整体计算需求约 25%–30%；其余来自传统计算（分子动力学、物理仿真、量子化学、推荐系统与欺诈检测等，他说这块「每年增长 30% 到 40%」，并称「就算完全没有 AI，英伟达也不是零」）与数千家租算力的初创公司（他称之为「下一代 AWS」，其中约 80% 使用开放模型）。「把数万亿美元的建设押在两家实验室的营收上，是一个很大的错误。」「他们完全不需要做到上万亿美元的营收规模，就足以证明自身的成功。」",
+        "他做了一个思想实验：如果有人要你开一张 1000 亿美元的支票、为还没见过的下一代 Vera Rubin Ultra 下单，你敢下给谁？他说在这个量级上英伟达是唯一能让人这样下单的公司，并类比英伟达把 100% 订单交给台积电、只因后者能让他照着五年后的路线图下单。",
+        "核心论证是三个词：fungible（可通用可替换）、durable（耐用）、rentable（可出租）——算力能在不同工作负载、模型、客户与地区之间换用，CUDA 八年前卖出的硬件现在还在更新软件。他由此说「专用化是通用性的敌人」，是针对定制芯片的说法。",
+        "物理 AI：他称此前说的「1000 亿美元市场」说小了——这块业务从前年 50 亿美元、去年 100 亿美元，到今年上半年已做 100 亿美元，并断言英伟达是全球最大的物理 AI 公司。",
+        "电力越紧、份额越高：他称其架构 tokens/瓦最高，所以每吉瓦「卖给世界的内容」从约 180 亿美元、200 多亿美元，升到现在的 400 亿美元以上。",
+        "安全：OpenShell 已有 100 多家公司加入；他认为安全与能力是同一件事，「加速 AI」必须包含加速安全技术。",
+        "他对未来十年的乐观度是 99.99%，并表示 SpaceX 有可能帮忙把数据中心送入轨道（对应 10/15 马斯克 X 表态，见 ev20261015k）。"
+      ],
+      "note": "节目 2026-10-15 发布（podfollow 官方节目页与 www.bg2pod.com 为准）；录制时间早于发布日，故 date 取发布/发言公开日。中文侧 10/16 由 IT之家、新浪财经、腾讯新闻等集中转述。⚠️ 同日另有斯德哥尔摩对记者的 CoreWeave 表态（ev20261015e，路透/彭博口径），两者是不同场合，勿混。signals 中标明归属：约 43 吉瓦新增算力是主持人引用 SemiAnalysis 的估算、1000 亿美元支票与 13–14 倍市盈率等为主持人提问口径，非黄仁勋本人数字。"
+    },
+    {
+      "id": "ev20261015k",
+      "date": "2026-10-15",
+      "type": "mt",
+      "cat": "nvda",
+      "src": "马斯克 X 原帖（@elonmusk，经全天候科技/华尔街见闻转述）",
+      "title": "马斯克在 X 上确认：SpaceX 与英伟达联合设计的 Star Mind 计算机明年量产",
+      "place": "美国",
+      "url": "https://awtmt.com/articles/3783733",
+      "images": [],
+      "signals": [
+        "马斯克 2026-10-15 在 X 上发文确认：SpaceX 与英伟达联合设计的 Star Mind 计算机「远比几乎所有人预期的都要好」，将在明年（2027）进入量产；他称「与才华横溢的英伟达工程团队合作无比愉快」（\"Working with the incredibly talented Nvidia engineering team is pure joy!\"）。该帖转发了一段黄仁勋的访谈片段。",
+        "被转发的黄仁勋片段中，他说两个工程团队正紧密协作开发一种新型服务器架构，「可能在太空和地球上都表现出色」，并把这称为双方将共同探索的全新市场；他称马斯克在 AI 训练、模型部署与物理基础设施建设三件事上的组合相当独特，「没有人比他更懂能源」。",
+        "技术口径：每颗 Star Mind AI1 卫星搭载的算力相当于一套完整 NVL72 机架式服务器（36 颗 Vera CPU + 72 颗 Rubin GPU）；英伟达称该空间版模块「Space-1 Module」的 AI 算力约为上一代 H100 GPU 的 25 倍；数据经 Starlink 星间激光链路回传，量产基地预计设在德克萨斯州巴斯特罗普的 SpaceX Gigasat 工厂。",
+        "注意口径边界：马斯克 X 原文说的是「计算机」明年量产，未指卫星本体；他 8 月另曾表示太空优化版 NVL72 目标 2027 年第四季度发射入轨、2028 年形成规模。",
+        "同日（10/15）马斯克另发帖谈地面数据中心：需求确实非常强，但「为需要海量电力、散热与网络的大型复杂硬件系统拿到资金，和真正把它建起来，是两回事」，即便 SpaceX 团队在轨发射能力领先一个数量级，完成这类建设依然极难。"
+      ],
+      "note": "马斯克 X 原帖日期 2026-10-15（Gokhshtein Media 记 \"posted on X today, October 15, 2026\"，东方财富 10/16 早报亦记「马斯克10月15日在X上表示」；BigGo Finance 误记为 Wednesday，已按前两者为准）。permalink 未取得，待补。黄仁勋那番话的具体公开场合（BG2 播客抑或其他访谈）未在报道中指明，**尚未核到原文出处，待核验**。卫星功率口径（AI1 峰值 250kW、均值 175kW、展开高 30 米/翼展 75 米）来自 SpaceX 产品页而非英伟达口径，故未纳入 signals。"
     },
     {
       "id": "ev20261014k",
@@ -455,6 +544,27 @@
       ],
       "cat": "nvnews",
       "note": "RSS pubDate 为 2026-10-14 06:00 GMT（北京时间 10/14 14:00），与英国批次同批发布 → 取 10-14。og:image 取自原文页"
+    },
+    {
+      "id": "ev20261014m",
+      "date": "2026-10-14",
+      "type": "iv",
+      "cat": "jensen",
+      "src": "《财富》杂志（Fortune）",
+      "title": "黄仁勋伦敦对《财富》放话：AI 网络安全事件一起都不接受，末日论者「那就别干了」",
+      "place": "英国·伦敦",
+      "url": "https://fortune.com/2026/10/14/nvidia-ceo-huang-says-society-shouldnt-tolerate-ai-cyber-incidents-says-ai-doomers-ought-to-stop-working-on-the-technology/",
+      "images": [
+        "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2299493352-e1791985972721.jpg?resize=1200,600"
+      ],
+      "signals": [
+        "黄仁勋在伦敦接受《财富》采访时表示，AI 行业不应容忍任何由这项技术引发的网络安全事件：「我愿意接受零起网络安全事件。我们不应接受任何一起，我们应当尽一切努力去避免它们。」（\"I'm willing to accept no incidents of cybersecurity. We should not accept any of them. We should do everything we can to avoid them.\"）",
+        "这与 OpenAI CEO 萨姆·奥尔特曼近期表态相左：奥尔特曼对《名利场》称世界可能不得不接受「一些坏事发生」（含大规模黑客攻击、滥用与诈骗），以换取 AI 带来的收益；随后他在 Politico 的 Decoded 播客中警告，竞争对手的开源模型将带来「网络安全问题的海啸」。",
+        "他把问题类比早期消费互联网：当年点开一个网站就可能让电脑中毒，解法是让浏览器把网站隔离运行、碰不到电脑其他部分。他说 AI 智能体需要同等防护，应被封在安全容器里，只能在获准范围内行动；此前发生的智能体安全事件「本可以通过更强的隔离与监控避免」。",
+        "对 Anthropic CEO 达里奥·阿莫代伊等人的生存威胁警告，他不以为然：这项技术「完全在我们的掌控之中」；「我不明白为什么会有人想要支持一项将导致人类文明终结的技术。如果他们真的相信这一点，那他们确实应该停止研发它。」",
+        "他重申欧洲行投资口径：一周内将宣布 20 亿美元新增欧洲投资，此前英伟达已承诺在欧洲投资 80 亿美元；并把开源/开放权重模型称为欧洲追赶美国的最佳路径——英伟达是法国 Mistral 的主要支持者，其 Large 4 模型用 4000 张 Grace Blackwell GPU 训练。"
+      ],
+      "note": "《财富》2026-10-14 发布（作者 Jeremy Kahn、Beatrice Nolan），采访地点伦敦；中文侧 10/15 腾讯新闻、10/16 IT之家与新浪财经集中转述。⚠️ 同日伦敦另有彭博专访（ev20261014e，谈会否停止向做不安全 AI 的客户供芯）与 CNBC 吹风会（ev20261014k，谈对华合作），三者为不同媒体、不同场次，勿混。og:image 为《财富》题图（Getty 黄仁勋肖像）已 curl 校验 200 并目视确认切题。"
     },
     {
       "id": "ev20261013a",
@@ -3392,6 +3502,14 @@
   ],
   "timeline": [
     {
+      "date": "2027 年（马斯克口径）",
+      "place": "美国·德克萨斯州巴斯特罗普（SpaceX Gigasat 工厂）",
+      "who": "马斯克（SpaceX/Tesla）；英伟达工程团队",
+      "ev": "SpaceX × 英伟达合研的 Star Mind 计算机进入量产",
+      "note": "马斯克 2026-10-15 在 X 上确认 Star Mind 计算机将于明年（2027）进入量产，称「远超几乎所有人的预期」，但未说明卫星本体的时间表；他 8 月另称太空优化版 NVL72 目标 2027 年四季度发射入轨、2028 年形成规模。详见事件 ev20261015k。",
+      "future": true
+    },
+    {
       "date": "2026-10-14",
       "place": "英国·伦敦",
       "who": "黄仁勋（NVIDIA 创始人兼 CEO）；英国 AI 部长 Kanishka Narayan、商业大臣 Jonathan Reynolds（见新闻稿表态）；LIHE 所长 Sebastian Ourselin、伦敦国王学院研究与特别项目高级副校长 Bashir Al-Hashimi",
@@ -3793,8 +3911,8 @@
       "place": "德国·柏林 Alexanderplatz（XPERION，Saturn 店内）",
       "who": "",
       "ev": "RTX Spark 笔记本全球首发上市 · 柏林公开发布会",
-      "note": "RTX Spark 笔记本 10/16 起由宏碁、华硕、戴尔、惠普、联想、微软、微星、技嘉出货（详见事件 ev20261007a）。同日英伟达在柏林 XPERION 办免费公开上市派对（TechPowerUp 10/09 报道）：需提前经 Luma 报名、名额有限，18:00 开始排队、18:45 入场，含线下体验、CD Projekt Red 分享、5 台华硕 ProArt P14 抽奖（黄仁勋签名版），并为 10/21 GTC Berlin 预热。官方未公布黄仁勋本人出席。",
-      "future": true
+      "note": "10/16 英伟达官方新闻稿确认 RTX Spark 笔记本全球开卖：华硕、戴尔、惠普、联想、微软、微星六家同日上架，起售价 2599 美元，最高 128GB 统一内存与 1 Petaflop FP4 算力（详见事件 ev20261016a）。同日六城办上市活动：旧金山 Best Buy、柏林 Xperion at Saturn（18:00 排队、18:45 入场，含 CD Projekt Red 分享与 5 台华硕 ProArt P14 抽奖、其中含黄仁勋签名版）、中国台北 Muse Garden、北京 JD MALL 双井店、伊斯坦布尔 Vatan Bilgisayar Topkapı、首尔 COEX East Lobby。官方未公布黄仁勋本人出席柏林场。该活动同时为 10/21 GTC Berlin 主题演讲预热（ev20261013a、ev20261015?）。",
+      "future": false
     },
     {
       "date": "2026-10-15～16",
