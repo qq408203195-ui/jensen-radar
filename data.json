@@ -1,8 +1,28 @@
 {
   "mode": "auto",
   "today": "2026-10-18",
-  "updatedAt": "2026-10-18 09:55",
+  "updatedAt": "2026-10-18 22:05",
   "events": [
+    {
+      "id": "ev20261017b",
+      "date": "2026-10-17",
+      "type": "mt",
+      "cat": "jensen",
+      "src": "Economic Times（印度经济时报）",
+      "title": "黄仁勋把黑森林实验室 CEO 喊上台：「你永远都是英伟达的实习生」",
+      "place": "未核到（报道称在 GTC Berlin 之前会面）",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/he-was-once-my-intern-jensen-huangs-introduction-of-black-forest-labs-ceo-goes-viral-watch/articleshow/135013348.cms",
+      "images": [
+        "https://img.etimg.com/thumb/width-1200,height-900,imgsize-55010,resizemode-75,msid-135013348/tech/artificial-intelligence/he-was-once-my-intern-jensen-huangs-introduction-of-black-forest-labs-ceo-goes-viral-watch.jpg"
+      ],
+      "signals": [
+        "黄仁勋现场原话（英文逐字）：「One of the biggest interns, come here. I have raised so many CEOs and he’s the CEO of Black Forest Labs, one of Germany’s premier AI companies. His claim to fame was he was my intern. For the rest of his life, he will always be an Nvidia intern. It doesn’t matter how successful he is and CEO, you’ll always be an Nvidia intern.」（说完自己大笑）",
+        "被点名的对象是黑森林实验室（Black Forest Labs）联合创始人兼 CEO 罗宾·罗姆巴赫（Robin Rombach）；该公司以 FLUX 图像生成模型闻名，总部留在德国弗莱堡",
+        "Black Forest Labs 是德国政府与英伟达工业 AI 合作协议名单里的十余家德企之一（见 ev20261015l / ev20261016f），罗姆巴赫本人也是 10/20–22 GTC Berlin 的确认讲者之一",
+        "这段视频在社交平台被大量转发，Economic Times 于印度时间 10/17 17:09 成稿报道（北京时间 10/17 19:39）"
+      ],
+      "note": "**待核验**：视频的**场次与地点未核到**——Economic Times 只写两人「在即将举行的 GTC Berlin 之前会面」，未点名活动地点。date 取该报道首报日 2026-10-17，**不是已核实的事件发生日**；按黄仁勋行程仅能推断在 10/16 柏林 RTX Spark 上市派对或 10/17 柏林 Build-A-Claw 现场之间，两者均未获官方或主办方确认，故 place 不写死。配图为该文 og:image（视频截图：黄仁勋持麦、罗姆巴赫在侧），已目视确认与内容对应。要升级为确认条目，需核到原始视频的发布者与场次。"
+    },
     {
       "id": "ev20261017a",
       "date": "2026-10-17",
@@ -540,9 +560,10 @@
         "黄仁勋请台下观众上台抽奖，奖品包含一台他亲笔签名的 NVIDIA DGX Spark",
         "同日早间，他出席在伦敦医疗工程研究所（LIHE）举行的 AI 安全与保障研究论坛，与英国研究者同场；此行紧接英伟达宣布五年 2.5 亿美元英国智能体安全与安全研究算力捐赠（见 ev20261014a）",
         "论坛形成两个共同挑战：多智能体系统安全（单个智能体各自安全，组合出的系统仍可能不安全），以及安全能力要与能力提升同速扩展",
-        "黄仁勋原话：「We need to democratize self-defense. We need a community of people watching each others’ backs.」他主张开放模型与开放方案才能把防御能力交到每个人手里，并称英国在 AI 安全上具备世界领先实力；同场合影者为 LIHE 所长 Sebastian Ourselin、伦敦国王学院研究与特别项目高级副校长 Bashir Al-Hashimi"
+        "黄仁勋原话：「We need to democratize self-defense. We need a community of people watching each others’ backs.」他主张开放模型与开放方案才能把防御能力交到每个人手里，并称英国在 AI 安全上具备世界领先实力；同场合影者为 LIHE 所长 Sebastian Ourselin、伦敦国王学院研究与特别项目高级副校长 Bashir Al-Hashimi",
+        "【2026-10-18 补录｜TechRadar 10/18 报道】同一场伦敦开发者活动上，黄仁勋还替微软 Surface Laptop Ultra 站台——这是首款搭载英伟达芯片的微软设备。原话（英文逐字）：「This computer is going to be incredible - it took us four years to build it. This project is really a work of love - we had several thousand engineering years dedicated to it, we build a brand new revolutionary chip, a whole new line of PCs, it’s so beautiful - you’re going to love it.」他并透露为此给微软 CEO 纳德拉打了电话，且必须等 Blackwell 架构做完才能把芯片做出来；中文整理稿（IT之家／新浪 10/18）译作「倾注心血之作」「花了四年时间才把它造出来」。"
       ],
-      "note": "事件日：官网英文滚动页时间戳为 Wed, Oct 14, 1:11 pm PDT（伦敦当地 10/14 晚），中文站（blogs.nvidia.cn）把该条目标为「10 月 15 日」（按北京时间渲染）→ 按活动发生地当日取 10-14。配图取自官网原文页正文内嵌图（Build-a-Claw 现场签名奖品合影、伦敦医疗工程研究所前合影），已目视确认切题。"
+      "note": "事件日：官网英文滚动页时间戳为 Wed, Oct 14, 1:11 pm PDT（伦敦当地 10/14 晚），中文站（blogs.nvidia.cn）把该条目标为「10 月 15 日」（按北京时间渲染）→ 按活动发生地当日取 10-14。配图取自官网原文页正文内嵌图（Build-a-Claw 现场签名奖品合影、伦敦医疗工程研究所前合影），已目视确认切题。 【2026-10-18 补录】TechRadar 于 10/18 01:05 UTC 刊出该场活动的 Surface Laptop Ultra 段落，原文只写「a developer event in London」，与本条对应的伦敦 Build-a-Claw（One Triton Square）同日同城，故并入本条 signal，不另立事件。"
     },
     {
       "id": "ev20261014i",
@@ -3670,7 +3691,7 @@
       "place": "德国·柏林（Kraftwerk Berlin）",
       "who": "黄仁勋（NVIDIA CEO）、德国总理默茨（Friedrich Merz）、梅赛德斯-奔驰 CEO 康林松（Ola Källenius）",
       "ev": "Invest in Germany 投资峰会 · 德国 × 英伟达工业 AI 合作协议公布",
-      "note": "据《商报》与新华社稿：黄仁勋 10/19（周一）抵达柏林，当晚在 Kraftwerk Berlin 的招待会上与默茨会面，闭门会谈后与康林松举行三方会晤；协议规模数亿欧元，约 12 家德企（含西门子、奥迪、黑森林实验室）参与，围绕 SOOFI 主权开源基础模型展开。10/16 德国政府消息人士向路透社确认「将有英伟达以外的其他合作伙伴」，但未公布名单与金额，官方文本截至本轮未见。详见事件 ev20261015l / ev20261016f。",
+      "note": "据《商报》与新华社稿：黄仁勋 10/19（周一）抵达柏林，当晚在 Kraftwerk Berlin 的招待会上与默茨会面，闭门会谈后与康林松举行三方会晤；协议规模数亿欧元，约 12 家德企（含西门子、奥迪、黑森林实验室）参与，围绕 SOOFI 主权开源基础模型展开。10/16 德国政府消息人士向路透社确认「将有英伟达以外的其他合作伙伴」，但未公布名单与金额，官方文本截至本轮未见。详见事件 ev20261015l / ev20261016f。 【2026-10-18 补】财联社与腾讯财经 10/18 的「下周看点」均把「默茨 10/19 晚与黄仁勋会面」列入日程，并再确认 keynote 为 10/21 当地时间 11:00–13:00（北京 17:00–19:00）。",
       "future": true
     },
     {
