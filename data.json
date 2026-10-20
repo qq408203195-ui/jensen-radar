@@ -1,8 +1,52 @@
 {
  "mode": "auto",
  "today": "2026-10-20",
- "updatedAt": "2026-10-20 10:45",
+ "updatedAt": "2026-10-20 22:52",
  "events": [
+  {
+   "id": "ev20261020a",
+   "date": "2026-10-20",
+   "type": "mt",
+   "cat": "nvnews",
+   "src": "英伟达官方博客",
+   "title": "巴塞罗那超算中心的 AI 工厂加速器转入正式运行：三家初创评上「AI 冠军」，英伟达 Inception 打通服务入口",
+   "place": "西班牙·巴塞罗那",
+   "url": "https://blogs.nvidia.com/blog/spain-startups-barcelona-supercomputing-center/",
+   "images": [
+    "https://blogs.nvidia.com/wp-content/uploads/2026/10/spain-startups-bsc-1920x1080-1.jpg"
+   ],
+   "signals": [
+    "巴塞罗那超算中心（BSC）的 AI Factory Accelerator Programme 在试点之后进入全面运行，为初创企业提供主权算力、技术支持与培训，覆盖多个行业。",
+    "即日起，BSC AI Factory 的部分服务可通过 NVIDIA Inception 门户申请；Inception 另外提供 NVIDIA Deep Learning Institute 开放课程、商业辅导与风投对接。",
+    "试点 demo day 上，三家 Inception 成员获评「AI Champions」：做水网的 Qatium、BSC 衍生公司 OneCareAI、做药企销售智能体的 Avatia。",
+    "Qatium 的水网平台已在 16 个国家的 250 多家公用事业公司使用，其 Neural Water Intelligence 基于 MareNostrum 5 训练的模型，用到 cuGraph、PhysicsNeMo 与 Nemotron 开放模型。",
+    "OneCareAI 用 NVIDIA NIM 微服务，从看似正常的心电图中识别隐匿性房颤，目标是让临床医生在卒中发生前找出风险患者。",
+    "Avatia 做的是语音优先的多智能体系统，给药企销售代表配「智能体同事」，底层用 Nemotron 3 开放模型族与开源 NeMo Curator。",
+    "其余成员覆盖精准农业、医学影像、知识获取、语音服务、企业安全、销售智能与可持续包装：Agrikola AI、Elna Health、Lokutor、Montevive AI、Oppy、Pack2Earth、Up2Smart。",
+    "MareNostrum 5 的后续扩建将把超算能力通过 BSC AI Factory 与欧洲其他 AI Factories 开放；BSC AI Factory 属欧洲首批 AI Factories。",
+    "本条无黄仁勋发言，属英伟达欧洲生态的官方发布。"
+   ],
+   "note": "该文结构化数据 datePublished 为 2026-10-20T05:00:00Z，RSS pubDate 同为 10/20 05:00 GMT；页面「Related News」处按太平洋时间标注 Oct 19, 2026。本条以官方 datePublished 取 10/20。"
+  },
+  {
+   "id": "ev20261019e",
+   "date": "2026-10-19",
+   "type": "iv",
+   "cat": "jensen",
+   "src": "欧洲新闻台（Euronews）",
+   "title": "黄仁勋在伦敦对记者开炮：德国在 AI 竞赛里「落后太远」，症结是欧洲人想得太多、干得太少",
+   "place": "英国·伦敦",
+   "url": "https://www.euronews.com/2026/10/19/nvidia-ceo-jensen-huang-warns-germany-is-falling-behind-in-ai-race",
+   "images": [],
+   "signals": [
+    "黄仁勋：「坦白说，最让我痛心的莫过于，看到一个科技水平顶尖的国家，在科技领域却远远落后。」（中文媒体转译）",
+    "黄仁勋：「我认为背后的原因或许在于，欧洲人的行事风格就是凡事思虑过重。」另一版本转译为「欧洲人做事的方式，可能把所有事情都想得太复杂了」。",
+    "黄仁勋：「我觉得，德国拥有大量人才，放手去干就好。」另一版本为「直接动手干就行了」。",
+    "euronews 的概括：德国潜力强、人才多，但欧洲的进展被「过多的犹豫与反复分析」拖住，黄仁勋呼吁决策者更快把 AI 落到实践。",
+    "同篇报道称，默茨与黄仁勋将在本周 Invest in Germany 峰会上公布一份联合 AI 协议，德方准备投入数亿欧元（hundreds of millions of euros），西门子、奥迪等约十家德国老牌企业加 Black Forest Labs 参与，依托 Sovereign Open Source Foundation Models 联盟，资金主要用于购买德国电信 Industrial AI Cloud 的算力。"
+   ],
+   "note": "原话出自黄仁勋「上周」在伦敦与媒体的一次会面，euronews 原文只写 last week，具体日期没给，故 date 取外媒首报日 2026-10-19。10/19 柏林 Invest in Germany 峰会上他再次表达同一意思，澎湃、凤凰、国是直通车都把「痛心」一段归到柏林现场——两处说法并存，本条按 euronews 与 TechWeb（引德媒）的伦敦口径立条，柏林同场合的发言见 ev20261019d。引语为中文媒体转译，英文逐字稿未获。euronews 页面直连被拦（HTTP 000），配图留空。另有一段涉及英国创业者「如果有一百万种方法成功，你们总能找到那一个不去做的理由」的表述，仅见凤凰网科技 10/20 转述（源自海客新闻），英文原文与场合未核实，未写入 signals。"
+  },
   {
    "id": "ev20261019d",
    "date": "2026-10-19",
@@ -3761,7 +3805,7 @@
    "place": "德国·柏林（Tempodrom / STATION-Berlin）",
    "who": "黄仁勋（NVIDIA 创始人兼 CEO，keynote 10/21）；梅赛德斯-奔驰集团董事会成员兼 CTO Jörg Burzer、Black Forest Labs 联合创始人兼 CEO Robin Rombach、Shopify 应用机器学习工程副总裁 Andrew McNamara、LSEG 量化与经济数据全球总监 Tim Anderson、西门子能源 Adnan Chaudry、欧莱雅 Alexandre Jacob 等",
    "ev": "GTC Berlin 2026（含黄仁勋主题演讲）",
-   "note": "大会 10/20–22 在 STATION-Berlin 举行，逾 100 场分会覆盖 CUDA 与加速计算、智能体 AI、机器人、开放模型、物理 AI、AI 基础设施、主权 AI 等方向；黄仁勋 keynote 为 10/21（周三）11:00–13:00 CEST，地点 Tempodrom，北京时间 17:00–19:00，官网另设 GTC Live 预热节目。【2026-10-20 更新】德国联合意向声明已于 10/19 签署（ev20261019d），黄仁勋同日宣布对 Agile Robots 等四家德国初创的计划投资，官方口径为近 100 亿美元欧洲承诺；10/19 另有于利希 JUPITER 上的 104 比特容错量子仿真（ev20261019c）与柏林创意产业场的 EBU／Adobe 合作（ev20261019b）。10/20 起进入 workshops 首日，滚动页应密集刷新。",
+   "note": "大会 10/20–22 在 STATION-Berlin 举行，逾 100 场分会覆盖 CUDA 与加速计算、智能体 AI、机器人、开放模型、物理 AI、AI 基础设施、主权 AI 等方向；黄仁勋 keynote 为 10/21（周三）11:00–13:00 CEST，地点 Tempodrom，北京时间 17:00–19:00，官网另设 GTC Live 预热节目。【2026-10-20 更新】德国联合意向声明已于 10/19 签署（ev20261019d），黄仁勋同日宣布对 Agile Robots 等四家德国初创的计划投资，官方口径为近 100 亿美元欧洲承诺；10/19 另有于利希 JUPITER 上的 104 比特容错量子仿真（ev20261019c）与柏林创意产业场的 EBU／Adobe 合作（ev20261019b）。【2026-10-20 晚更新】大会 10/20 已开幕、进入 workshops 首日；截至北京时间 10/20 22:40，官方 GTC 滚动页最新条目仍是 10/19 12:27 PDT 的德国篇，未出 10/20 条目，英伟达新闻室当日仅发西班牙巴塞罗那 AI 工厂一篇博客（ev20261020a），无新品或客户新闻稿。keynote 仍待 10/21。",
    "future": true
   },
   {
