@@ -1,7 +1,7 @@
 {
   "mode": "auto",
   "today": "2026-10-26",
-  "updatedAt": "2026-10-26 00:38",
+  "updatedAt": "2026-10-26 12:46",
   "events": [
     {
       "id": "ev20261024b",
@@ -63,6 +63,30 @@
         "与 10/21 英伟达官方口径衔接：基板合作计划三年把产能提到 2.5 倍，其中 IBIDEN 小野厂扩至 3 倍、新增产能 2028 年一季度起爬坡"
       ],
       "note": "50 亿美元与各公司分摊金额均属台湾《经济日报》报道及法人推估，英伟达、英特尔、AMD 未就合计金额发布统一公告。事件日取报道日 2026-10-24；与 10/21 英伟达官方供应链扩产公告（ev20261021d）为同一动作的后续披露，互注同源。"
+    },
+    {
+      "id": "ev20261024d",
+      "date": "2026-10-24",
+      "type": "mt",
+      "cat": "nvda",
+      "src": "CNBC",
+      "title": "英伟达给新云客户兜的 360 亿美元，开始被市场拿去定价",
+      "place": "",
+      "url": "https://www.cnbc.com/2026/10/24/nvidias-role-as-ai-financier-faces-first-big-test-as-neoclouds-take-market-hit.html",
+      "images": [
+        "https://image.cnbcfm.com/api/v1/image/108450923-1792750261614-gettyimages-2300714363-GERMANY_NVIDIA.jpeg?v=1792750317&w=1920&h=1080"
+      ],
+      "signals": [
+        "按英伟达 7 月季报：截至该季，英伟达手上有 360 亿美元表外 AI 云协议（对新云客户的兜底），另有对俄亥俄州一座拟建 10 吉瓦 OpenAI 数据中心最高 1050 亿美元的担保，覆盖芯片、土地与电力",
+        "英伟达还以承租人身份签了 200 亿美元的未来数据中心租约，这批租约后续转给第三方；绝大多数此类交易，只有项目参与方违约英伟达才需要付钱",
+        "新云板块：CoreWeave、Nebius、IREN 本月股价均跌至少 30%；体量最大的 CoreWeave，五年期信用违约互换（CDS）利差升破 11%",
+        "英伟达连续第三周收跌，10 月股价累计下跌 7.6%，为去年 11 月以来最差月度表现（截至 10/23 收盘）",
+        "英伟达 7 月季末投资组合账面 990 亿美元，含对 OpenAI、Anthropic 的大额投资；上一财年营收 2160 亿美元",
+        "被投新云的处境：澳洲 Firmus 本月撤回 IPO；英国 Nscale 与软银支持的 SB Energy 9 月递交美股上市申请，数周未更新进展",
+        "产品端参照：Vera Rubin 旗舰机架装 72 颗 GPU、长约 7 英尺、重约一辆皮卡，摩根士丹利估算单套成本超过 700 万美元",
+        "英伟达对这篇报道不予置评（declined to comment）"
+      ],
+      "note": "CNBC 2026-10-24 11:00 UTC 发布，事件日取发布日；文中黄仁勋「off the charts」等引语出自 10/22 CNBC 专访（已单独成条 ev20261022a）。360 亿／1050 亿／200 亿三项为英伟达 7 月季报披露口径经 CNBC 解读，本次未见英伟达单独确认；股价与 CDS 数据为 10/23 收盘及本周口径。与 ev20261012a（10-Q 拆解）为同一套表外结构的后续报道，互注同源。"
     },
     {
       "id": "ev20261023e",
@@ -5104,6 +5128,26 @@
         "ev20261022a"
       ],
       "note": "原文 10/24 发布，评述的是 10/19–10/23 一周的资本市场反应。"
+    },
+    {
+      "id": "op20261024c",
+      "date": "2026-10-24",
+      "cat": "media",
+      "author": "CNBC（Kif Leswing、Isabel O'Brien）引 New Constructs 创始人 David Trainer、穆迪副总裁 David Gonzales",
+      "stance": "审慎",
+      "title": "「如果算力需求兑现不了这些极高的预期，我们就会出问题」",
+      "quotes": [
+        "David Trainer（New Constructs 创始人兼 CEO）：「If the demand for compute doesn't meet these really super lofty expectations, we're going to have a problem.」（如果算力需求达不到这些极高的预期，我们就会出问题）",
+        "New Constructs 测算：英伟达 2026 财年表外负债的净现值合计超过 1530 亿美元，比上一年多出 1000 亿美元以上，且这类负债正以租约义务为主在全行业扩张",
+        "穆迪副总裁 David Gonzales：担保在评级时不计入债务，但「这是我们持续监测的事项」；这类安排「都是独一无二的复杂结构，没有一刀切的现成办法」",
+        "同一段里的缓和判断：短期内芯片价值大概率高于合同约定的残值，可减轻多数融资结构的风险；投资级 AI 玩家能扛多大敞口，「是我们每天都在评估的问题」",
+        "CNBC 给出的框架：英伟达的角色已从芯片供应商变成自家客户的保险人——违约才掏钱，但整条 AI 建设的信用风险因此挂到了它的资产负债表上"
+      ],
+      "url": "https://www.cnbc.com/2026/10/24/nvidias-role-as-ai-financier-faces-first-big-test-as-neoclouds-take-market-hit.html",
+      "src": "CNBC",
+      "related": [
+        "ev20261024d"
+      ]
     },
     {
       "id": "op20261021a",
