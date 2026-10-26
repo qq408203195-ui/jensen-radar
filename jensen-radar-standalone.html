@@ -187,165 +187,76 @@ a:hover{text-decoration:underline}
 <div class="ft">黄仁勋信号雷达</div>
 </div>
 
-<script>
-const $ = s => document.querySelector(s);
-const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const CAT_TXT = {jensen:'公开采访', xtweet:'X原贴', nvnews:'官网发布', nvda:'公司动态', kol:'大V观点', media:'媒体观点', sellside:'卖方研报', 'media-op':'媒体观点'};
-const OP_CAT_CLS = {kol:'kol', sellside:'sellside', media:'media-op'};
-let sigExpanded = false;
-const INIT_EVENTS = 5;
-let DATA = null, selDate = null, curCat = '全部';
-
-function catOf(item){ return item.type === 'op' ? (item.cat || 'kol') : (item.cat || 'nvda'); }
-
-function renderCatbar(){
-  const items = streamItems();
-  const counts = {全部: items.length};
-  items.forEach(it => { const c = catOf(it); counts[c] = (counts[c] || 0) + 1; });
-  const order = ['全部','xtweet','jensen','nvnews','nvda','media','kol','sellside'];
-  $('#catbar').innerHTML = order.map(c =>
-    `<button class="cattab${curCat === c ? ' on' : ''}" data-cat="${c}">${c === '全部' ? '全部' : CAT_TXT[c]}<span class="n">${counts[c] || 0}</span></button>`).join('');
-  document.querySelectorAll('.cattab').forEach(b => b.onclick = () => { curCat = b.dataset.cat; renderFeed(); });
-}
-
-function stanceCls(s){ return s === '看多' ? 'bull' : s === '看空' ? 'bear' : s === '审慎' ? 'caution' : 'neutral'; }
-
-function opCard(o){
-  return `<div class="fd op-fd">
-    <div class="fd-head">
-      <span class="cat-tag ${OP_CAT_CLS[o.cat] || esc(o.cat)}">${CAT_TXT[o.cat] || (o.cat === 'media' ? '媒体评论' : '观点')}</span>
-      <span class="op-author">${esc(o.author)}</span>
-    </div>
-    <div class="fd-title">${esc(o.title)}</div>
-    <div class="op-q-wrap">
-      <span class="stance ${stanceCls(o.stance)}">${esc(o.stance || '解读')}</span>
-      ${(o.quotes || []).map(q => `<span class="op-q">${esc(q)}</span>`).join('')}
-    </div>
-    <div class="fd-meta">观点发表：${esc(o.date)} · <a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.src)} ↗</a></div>
-  </div>`;
-}
-
-function eventCard(ev){
-  const sigs = (ev.signals || []).map(t => `<li>${esc(t)}</li>`).join('');
-  const imgs = (ev.images || []).map((u, i) =>
-    `<img src="${esc(u)}" alt="" loading="lazy" referrerpolicy="no-referrer" onclick="showImg(this.src)" onerror="this.style.display='none'">`).join('');
-  const cat = ev.cat || 'nvda';
-  return `<div class="fd">
-    <div class="fd-head">
-      <span class="cat-tag ${esc(cat)}">${CAT_TXT[cat] || '公司动态'}</span>
-      <span class="fd-title">${esc(ev.title)}</span>
-    </div>
-    <div class="fd-meta">${esc(ev.date)} · ${esc(ev.place)} · <a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.src)} ↗</a></div>
-    ${sigs ? `<ul class="fd-sigs">${sigs}</ul>` : ''}
-    ${imgs ? `<div class="fd-imgs">${imgs}</div>` : ''}
-  </div>`;
-}
-
-function streamItems(){
-  const evs = (DATA.events || []).map(e => ({...e, type: 'ev'}));
-  const ops = (DATA.opinions || []).map(o => ({...o, type: 'op'}));
-  return [...evs, ...ops].sort((a,b) => b.date.localeCompare(a.date));
-}
-
-function renderFeed(){
-  if(!DATA) return;
-  renderCatbar();
-  const all = streamItems();
-  const items = curCat === '全部' ? all : all.filter(it => catOf(it) === curCat);
-  const filtered = curCat !== '全部';
-  const shown = (!filtered && !sigExpanded) ? items.slice(0, INIT_EVENTS) : items;
-  let bar = '';
-  if(!filtered && items.length > INIT_EVENTS){
-    bar = `<div class="morebar"><button class="morebtn" id="sigMore">${sigExpanded ? '收起 ▴' : `展开全部 ${items.length - INIT_EVENTS} 条 ▾`}</button></div>`;
-  }
-  $('#feed').innerHTML = (shown.map(it => it.type === 'ev' ? eventCard(it) : opCard(it)).join('') || '<div class="empty">暂无该分类内容</div>') + bar;
-  const b = $('#sigMore');
-  if(b) b.onclick = () => { sigExpanded = !sigExpanded; renderFeed(); };
-}
-
-function renderCalendar(){
-  if(!DATA) return;
-  const tl = DATA.timeline || [];
-  // 以数据里的 today 为锚点；缺失则用本地日期
-  const todayStr = DATA.today || new Date().toISOString().slice(0,10);
-  const T = new Date(todayStr + 'T12:00:00');
-  const fmt = d => d.toISOString().slice(0,10);
-  // 近 30 天：从 T-30 到 T；前面用空白补齐到周一，保持表头对齐
-  const cutoff = new Date(T); cutoff.setDate(T.getDate() - 30);
-  const start = new Date(cutoff);
-  const end = new Date(T);
-  // 有确切日期的条目按日期分组；未来条目与模糊时间的进"后续安排"
-  const byDate = {};
-  tl.forEach(t => {
-    if(/^\d{4}-\d{2}-\d{2}$/.test(t.date) && !t.future) (byDate[t.date] = byDate[t.date] || []).push(t);
-  });
-  // 星期表头
-  $('#calWd').innerHTML = ['一','二','三','四','五','六','日'].map(w => `<div class="cal-wd">${w}</div>`).join('');
-  if(!selDate || selDate > todayStr) selDate = todayStr;
-  // 网格：补齐 T-30 所在周的前置空白，使周一到周日对齐
-  const cells = [];
-  const pad = ((start.getDay() + 6) % 7);
-  for(let i = 0; i < pad; i++) cells.push('<div class="cal-cell" style="visibility:hidden"></div>');
-  for(let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)){
-    const ds = fmt(d);
-    const items = byDate[ds] || [];
-    const isToday = ds === todayStr;
-    const showM = d.getDate() === 1 || ds === fmt(start);
-    const chips = items.slice(0,3).map(t =>
-      `<div class="cal-chip past" title="${esc(t.ev)}">${esc(t.ev)}</div>`).join('');
-    const more = items.length > 3 ? `<div class="cal-more">+${items.length - 3}</div>` : '';
-    cells.push(`<div class="cal-cell${isToday ? ' today' : ''}${ds === selDate ? ' sel' : ''}" data-date="${ds}">
-      <div class="cal-dn">${d.getDate()}${showM ? `<span class="cal-m">${d.getMonth()+1}月</span>` : ''}</div>
-      ${chips}${more}
-    </div>`);
-  }
-  $('#calGrid').innerHTML = cells.join('');
-  $('#calRange').textContent = `${fmt(cutoff).slice(5).replace('-','/')} — ${fmt(end).slice(5).replace('-','/')}`;
-  // 选中日详情
-  const selItems = byDate[selDate] || [];
-  const wk = ['日','一','二','三','四','五','六'][new Date(selDate + 'T12:00:00').getDay()];
-  $('#calDetail').innerHTML = `<div class="cd-title">${selDate} · 周${wk}${selDate === todayStr ? '（今天）' : ''}${selItems.length ? '' : ' · 无记录'}</div>` +
-    selItems.map(t => `<div class="cd-item">
-      <div class="cd-ev">${esc(t.ev)}${t.future ? '<span style="font-size:10px;color:var(--amber);margin-left:6px">预测</span>' : ''}</div>
-      ${t.who ? `<div class="cd-who">人物：${esc(t.who)}</div>` : ''}
-      ${t.place ? `<div class="cd-p">地点：${esc(t.place)}</div>` : ''}
-      ${t.note ? `<div class="cd-note">${esc(t.note)}</div>` : ''}
-    </div>`).join('');
-  // 点击选日
-  $('#calGrid').onclick = e => {
-    const c = e.target.closest('.cal-cell');
-    if(c && c.dataset.date){ selDate = c.dataset.date; renderCalendar(); }
-  };
-  $('#calToday').onclick = () => { selDate = todayStr; renderCalendar(); };
-  // 后续安排：未来确切日期 + 模糊时间
-  const isFuzzy = t => !/^\d{4}-\d{2}-\d{2}$/.test(t.date);
-  const tbd = tl.filter(t => t.future || isFuzzy(t))
-    .sort((a,b) => (isFuzzy(a) ? '9999' : a.date).localeCompare(isFuzzy(b) ? '9999' : b.date));
-  $('#tbdList').innerHTML = tbd.map(t => `<div class="tbd-item">
-      <div class="cd-ev">${esc(t.ev)}<span style="font-size:10px;color:var(--amber);margin-left:6px">${esc(t.date)}${/^\d{4}-\d{2}-\d{2}$/.test(t.date) ? ' · 已定档' : ''}</span></div>
-      ${t.who ? `<div class="cd-who">人物：${esc(t.who)}</div>` : ''}
-      ${t.place ? `<div class="cd-p">地点：${esc(t.place)}</div>` : ''}
-      ${t.note ? `<div class="cd-note">${esc(t.note)}</div>` : ''}
-    </div>`).join('') || '<div class="empty">暂无</div>';
-}
-
-function renderChrome(){
-  const auto = DATA && DATA.mode === 'auto';
-  const badge = $('#modeBadge');
-  badge.style.display = '';
-  badge.textContent = auto ? '实时数据' : '演示数据';
-  badge.classList.toggle('demo', !auto);
-  $('#upd').textContent = `数据更新：${DATA && DATA.updatedAt ? DATA.updatedAt : '--'}`;
-  $('#disc').innerHTML = auto
-    ? '<b>声明：</b>本页由自动任务每日抓取黄仁勋公开动态自动更新。<b>信息流仅收录客观新闻事实</b>（黄仁勋可溯源发言、英伟达官方动态、媒体报道的事实）；<b>观点流</b>为大V、媒体与卖方机构对事实的解读，仅代表发言者自身立场，不构成投资建议。文中公司/人物信息以官方披露为准。'
-    : '<b>声明：</b>本页为产品演示版，内容均为示例数据，不构成投资建议。';
-}
-
 <script id="radar-data" type="application/json">{
   "mode": "auto",
-  "today": "2026-10-26",
-  "updatedAt": "2026-10-26 12:46",
+  "today": "2026-10-27",
+  "updatedAt": "2026-10-27 01:25",
   "events": [
+    {
+      "id": "ev20261026a",
+      "date": "2026-10-26",
+      "type": "mt",
+      "cat": "nvda",
+      "src": "CNBC / 路透社",
+      "title": "SpaceX 用一份五年期租约锁定约 400 亿美元 Vera Rubin：史上最大 GPU 融资",
+      "place": "美国（SpaceX 选定数据中心）；纽约（Apollo）",
+      "url": "https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html",
+      "images": [
+        "https://image.cnbcfm.com/api/v1/image/108433898-1792439982335-gettyimages-2299248528-wm020115_ej7axcme.jpeg?v=1792440027&w=1920&h=1080"
+      ],
+      "signals": [
+        "10/26 SpaceX 披露：已就约 400 亿美元主融资租赁协议签署有约束力承诺函。阿波罗（Apollo）管理的实体出资购买 GPU 与数据中心设备，再租给 SpaceX；Apollo 称这是「史上最大规模 GPU 融资」",
+        "设备是英伟达下一代 Vera Rubin，用于 SpaceX 的地面算力建设（Super Intelligence 板块）；分批交付，每批对应独立租约，租期约 5 至 5.25 年，租金按季预付",
+        "租金结构：每期一般支付该批次融资本金的 1/20，加上未偿余额的固定年利率和部分持续费用；固定利率在定价时确定，尚未披露。全部租约本金支付合计约 400 亿美元",
+        "主协议预计 2026 年底前完成签署（尚需满足交割条件），租约自 2027 年上半年芯片交付起启动",
+        "牵头方为阿波罗与高盛（高盛任独家结构设计顾问），贝莱德、高盛资产管理、KKR 顾问账户作锚定投资人",
+        "马斯克 10/25（周日）先在 X 上说这笔 400 亿美元「已关闭」，强调 SpaceX 是投资级、有星链与发射收入；并称债务市场对「除 AI 数据中心外没有实质收入」的公司「基本关上门」，200 多家新云会大面积倒闭和整合",
+        "SpaceX CFO Bret Johnsen：SI 基础设施投资回收期「不到一年」；Q4 资本开支预计 350 亿至 400 亿美元。Q3 营收 145.8 亿美元（同比 +161%），其中 SI 板块 75.6 亿美元"
+      ],
+      "note": "交易主体是 SpaceX 与 Apollo，英伟达未单独公告。「承诺函签署于 10/24」为新浪/快科技口径，CNBC 与路透只写周一披露。Q3 营收与 Q4 capex 出自 SpaceX 10/20 财报及电话会。"
+    },
+    {
+      "id": "ev20261026b",
+      "date": "2026-10-26",
+      "type": "mt",
+      "cat": "nvda",
+      "src": "CNBC / 路透社",
+      "title": "Meta 要募最高 950 亿美元搞 AI，英伟达、AMD、博通表态合计认购最多 50 亿",
+      "place": "美国·加州门洛帕克（Meta 总部）",
+      "url": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
+      "images": [
+        "https://image.cnbcfm.com/api/v1/image/108039168-1745940414655-108039168-17272881332024-09-25t181332z_2097001546_rc2u7aaih91n_rtrmadp_0_meta-platforms-virtual-reality.jpg?v=1745940424&w=1920&h=1080"
+      ],
+      "signals": [
+        "10/26 Meta 公告：先启动约 350 亿美元公开增发（约 225 亿美元 A 类普通股 + 约 125 亿美元 A 系列强制可转换优先股存托股，涉 2.5 亿股），并计划在 C 类无投票权股开始交易后再做最高约 600 亿美元的市价增发，合计上限约 950 亿美元",
+        "英伟达、AMD、博通已表达意向，按与其他投资者相同条件合计认购最多 50 亿美元 A 类普通股；意向不具约束力",
+        "600 亿美元的市价增发计划预计不早于 2027 年一季度启动，Meta 尚未就该计划签署任何协议，时间、规模、条款均未定",
+        "背景：Meta 2026 年资本开支指引 1350 亿至 1450 亿美元（下限从 1300 亿上调）；Q3 营收 646 亿美元、同比 +26%，自由现金流 -21.2 亿美元，十多年来首次转负；未来支出承诺约 8250 亿美元",
+        "Meta 称募资用于 AI 基础设施与「个人超级智能」，并强调投资已有回报：用户参与度、广告表现、变现能力。摩根士丹利与高盛为联席牵头簿记管理人"
+      ],
+      "note": "950 亿美元是上限口径，不是已募金额。芯片供应商给最大客户注资引发的「循环融资」讨论已单列观点 op20261026b。"
+    },
+    {
+      "id": "ev20261026c",
+      "date": "2026-10-26",
+      "type": "mt",
+      "cat": "nvda",
+      "src": "美国 SEC · Anthropic S-1（第一财经 / 界面新闻 解读）",
+      "title": "Anthropic 交表：十年至少 5180 亿美元算力承诺，其中最多 1205 亿买 SpaceXAI 的英伟达 GPU",
+      "place": "美国·旧金山（Anthropic）",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "images": [],
+      "signals": [
+        "10/26 Anthropic 向 SEC 公开递交 S-1，拟在纳斯达克上市、代码 ANT；发行股数与价格区间未定",
+        "招股书：未来十年在云服务、算力与基础设施上至少承诺支出 5180 亿美元，其中约八成不可取消，或不论实际用量都要付",
+        "与 SpaceXAI 的协议：2029 年前最高支出 1205 亿美元，购买英伟达 GPU 算力；全部容量交付后月支出约 31 亿美元",
+        "其他算力合同：Nscale 最高约 446 亿美元、Lambda 约 413 亿美元；另与博通签五年约 1612 亿美元设备租赁（用于谷歌 TPU 算力），与 AMD 的硬件协议若买满承诺容量支出将超 200 亿美元",
+        "对云厂商的长期承诺：谷歌约 1145 亿美元（2026 年 4 月至 2033 年 7 月）、亚马逊 1100 亿美元、微软 449 亿美元（草案口径 314 亿美元，公开版上调）",
+        "财务：2026 年上半年营收 162.86 亿美元（上年同期 11.63 亿）；净亏损 807.48 亿美元，其中约 723.88 亿来自可转债等金融工具公允价值重估的非现金费用；上半年算力与基础设施支出 89.45 亿美元",
+        "风险因素点名台积电：先进制程集中在台湾，地震、地缘、贸易限制、电网中断都可能中断供应，「关键投入受限会限制我们锁定足够算力的能力」"
+      ],
+      "note": "1205 亿、5180 亿均为「最高/至少」承诺口径，不是已发生支出。上市时间与估值（市场讨论 1.5 万亿至 2 万亿美元）公司未定价，属媒体与市场讨论；谷歌承诺额另有 1111 亿美元口径，与 1145 亿存在差异，以 S-1 原文为准待复核。"
+    },
     {
       "id": "ev20261024b",
       "date": "2026-10-24",
@@ -5424,9 +5335,55 @@ function renderChrome(){
       "ev": "RTX Spark 全球发布活动 · 六城巡展",
       "note": "英伟达 10/13 在 X 官宣，围绕新款 Windows PC 举办全球发布活动，首批六站；10/15 官网博客《Be There for the Beginning》公布具体安排（时间均为当地时间）：旧金山 Best Buy（1717 Harrison 街，10:00–12:00，iJustine 到场、免票先到先得）、柏林 XPERION at Saturn（Alexanderplatz 3，19:00–22:30，需报名）、中国台北 Muse Garden（No. 88 Yanchang Road，演示、音乐与 AI 社区交流，购物与社交延续至 22:15，需报名）、北京京东 MALL 双井店（广渠路 31 号，19:00 签到、20:00 开场、21:30 结束，微信报名）、伊斯坦布尔 Vatan Bilgisayar Topkapı（现场入场、无需预约）、首尔 COEX 东大厅（19:00 体验、20:00 游戏与创作者节目、21:30 结束，无需预约）。同期上线 #ShareYourSpark 线上活动，讲述自己第一台 Windows PC 的故事可参与抽奖，奖品为一台黄仁勋签名版华硕 ProArt P14 RTX Spark 笔记本。官方另引述 Tom’s Hardware、TrustedReviews、Microcenter、Tom’s Guide、Creative Bloq 等媒体上手评价，以及 Artificial Analysis 的本地 AI 独立测试。详见事件 ev20261013d / ev20261013h",
       "future": true
+    },
+    {
+      "date": "2027 年上半年",
+      "place": "美国（SpaceX 选定的数据中心）",
+      "who": "马斯克（SpaceX CEO）、Bret Johnsen（SpaceX CFO）、Apollo 管理的租赁实体",
+      "ev": "SpaceX × Apollo 约 400 亿美元 GPU 融资租赁首批交付、租约启动",
+      "note": "10/26 披露的主融资租赁协议：Apollo 购英伟达 Vera Rubin GPU 及相关设备再租给 SpaceX，各批租期约 5 至 5.25 年，租金按季预付，本金支付合计约 400 亿美元；主协议预计 2026 年底前签署，设备 2027 年上半年起分批交付。详见事件 ev20261026a",
+      "future": true
     }
   ],
   "opinions": [
+    {
+      "id": "op20261026a",
+      "date": "2026-10-26",
+      "cat": "sellside",
+      "author": "摩根士丹利（主题研报，智通财经转述）",
+      "stance": "看多",
+      "title": "大摩把美国数据中心 2026—28 年净缺电上调到 38GW，半导体首选仍是英伟达",
+      "quotes": [
+        "把 2026—28 年美国数据中心净电力缺口从 33GW 上调至 38GW；对应电力需求从 97GW 上调到 116GW",
+        "缺口并非无解，但方案各有约束：表后涡轮机与发动机（低/中/高 6/22/38GW）、Bloom Energy 燃料电池 5/6/8GW、在运核电站同址建数据中心 1/3/8GW、改造既有通电机房场址 11/19/27GW、美国需求向亚太溢出 5/6/8GW；概率加权后美国本土净缺口 60/43/23GW",
+        "约三分之一的缺口不是市场共识——不少投资者认为企业会「创造性地找到绕过瓶颈的办法」，并拿供应链订单依然强劲当佐证",
+        "电力缺口下 ASIC 可能相对 GPU 失份额；半导体最看好英伟达与博通，理由是保守的指引、芯片投放的可见度、美国以外的地域扩张，以及英伟达更高的每瓦 token 产出",
+        "若建设出现暂停，扰动最可能出现在牛鞭效应的末端：存储、光模块这些靠短缺定价支撑利润的环节，以及熊市情形下可能被超额下单的电源管理与模拟器件"
+      ],
+      "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-10-26/doc-iniwqpfh2394634.shtml",
+      "src": "智通财经（新浪财经转载）",
+      "related": [
+        "ev20261022e"
+      ]
+    },
+    {
+      "id": "op20261026b",
+      "date": "2026-10-26",
+      "cat": "media",
+      "author": "路透社（Reuters，Meta 融资报道）",
+      "stance": "审慎",
+      "title": "芯片厂掏钱买最大客户的股票，AI 的「循环融资」又被摆上台面",
+      "quotes": [
+        "Their funding interest adds to concerns about an increasingly circular flow of capital in the AI industry, as chip suppliers help finance the expansion of one of their biggest customers.",
+        "路透的意思是：供应商的钱进了客户的融资盘子，客户拿这笔钱继续买供应商的芯片，需求到底有多少是独立产生的，就开始打折扣",
+        "同一篇里给的另一面是 Meta 的现金流：Q3 自由现金流 -21.2 亿美元，十多年来首次转负，2026 年资本开支指引 1350 亿至 1450 亿美元"
+      ],
+      "url": "https://www.straitstimes.com/business/meta-eyes-record-us95-billion-equity-raise-to-fund-ai-expansion",
+      "src": "路透社（海峡时报转载）",
+      "related": [
+        "ev20261026b"
+      ]
+    },
     {
       "id": "op20261024b",
       "date": "2026-10-24",
@@ -6526,6 +6483,160 @@ function renderChrome(){
     }
   ]
 }</script>
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const CAT_TXT = {jensen:'公开采访', xtweet:'X原贴', nvnews:'官网发布', nvda:'公司动态', kol:'大V观点', media:'媒体观点', sellside:'卖方研报', 'media-op':'媒体观点'};
+const OP_CAT_CLS = {kol:'kol', sellside:'sellside', media:'media-op'};
+let sigExpanded = false;
+const INIT_EVENTS = 5;
+let DATA = null, selDate = null, curCat = '全部';
+
+function catOf(item){ return item.type === 'op' ? (item.cat || 'kol') : (item.cat || 'nvda'); }
+
+function renderCatbar(){
+  const items = streamItems();
+  const counts = {全部: items.length};
+  items.forEach(it => { const c = catOf(it); counts[c] = (counts[c] || 0) + 1; });
+  const order = ['全部','xtweet','jensen','nvnews','nvda','media','kol','sellside'];
+  $('#catbar').innerHTML = order.map(c =>
+    `<button class="cattab${curCat === c ? ' on' : ''}" data-cat="${c}">${c === '全部' ? '全部' : CAT_TXT[c]}<span class="n">${counts[c] || 0}</span></button>`).join('');
+  document.querySelectorAll('.cattab').forEach(b => b.onclick = () => { curCat = b.dataset.cat; renderFeed(); });
+}
+
+function stanceCls(s){ return s === '看多' ? 'bull' : s === '看空' ? 'bear' : s === '审慎' ? 'caution' : 'neutral'; }
+
+function opCard(o){
+  return `<div class="fd op-fd">
+    <div class="fd-head">
+      <span class="cat-tag ${OP_CAT_CLS[o.cat] || esc(o.cat)}">${CAT_TXT[o.cat] || (o.cat === 'media' ? '媒体评论' : '观点')}</span>
+      <span class="op-author">${esc(o.author)}</span>
+    </div>
+    <div class="fd-title">${esc(o.title)}</div>
+    <div class="op-q-wrap">
+      <span class="stance ${stanceCls(o.stance)}">${esc(o.stance || '解读')}</span>
+      ${(o.quotes || []).map(q => `<span class="op-q">${esc(q)}</span>`).join('')}
+    </div>
+    <div class="fd-meta">观点发表：${esc(o.date)} · <a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.src)} ↗</a></div>
+  </div>`;
+}
+
+function eventCard(ev){
+  const sigs = (ev.signals || []).map(t => `<li>${esc(t)}</li>`).join('');
+  const imgs = (ev.images || []).map((u, i) =>
+    `<img src="${esc(u)}" alt="" loading="lazy" referrerpolicy="no-referrer" onclick="showImg(this.src)" onerror="this.style.display='none'">`).join('');
+  const cat = ev.cat || 'nvda';
+  return `<div class="fd">
+    <div class="fd-head">
+      <span class="cat-tag ${esc(cat)}">${CAT_TXT[cat] || '公司动态'}</span>
+      <span class="fd-title">${esc(ev.title)}</span>
+    </div>
+    <div class="fd-meta">${esc(ev.date)} · ${esc(ev.place)} · <a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.src)} ↗</a></div>
+    ${sigs ? `<ul class="fd-sigs">${sigs}</ul>` : ''}
+    ${imgs ? `<div class="fd-imgs">${imgs}</div>` : ''}
+  </div>`;
+}
+
+function streamItems(){
+  const evs = (DATA.events || []).map(e => ({...e, type: 'ev'}));
+  const ops = (DATA.opinions || []).map(o => ({...o, type: 'op'}));
+  return [...evs, ...ops].sort((a,b) => b.date.localeCompare(a.date));
+}
+
+function renderFeed(){
+  if(!DATA) return;
+  renderCatbar();
+  const all = streamItems();
+  const items = curCat === '全部' ? all : all.filter(it => catOf(it) === curCat);
+  const filtered = curCat !== '全部';
+  const shown = (!filtered && !sigExpanded) ? items.slice(0, INIT_EVENTS) : items;
+  let bar = '';
+  if(!filtered && items.length > INIT_EVENTS){
+    bar = `<div class="morebar"><button class="morebtn" id="sigMore">${sigExpanded ? '收起 ▴' : `展开全部 ${items.length - INIT_EVENTS} 条 ▾`}</button></div>`;
+  }
+  $('#feed').innerHTML = (shown.map(it => it.type === 'ev' ? eventCard(it) : opCard(it)).join('') || '<div class="empty">暂无该分类内容</div>') + bar;
+  const b = $('#sigMore');
+  if(b) b.onclick = () => { sigExpanded = !sigExpanded; renderFeed(); };
+}
+
+function renderCalendar(){
+  if(!DATA) return;
+  const tl = DATA.timeline || [];
+  // 以数据里的 today 为锚点；缺失则用本地日期
+  const todayStr = DATA.today || new Date().toISOString().slice(0,10);
+  const T = new Date(todayStr + 'T12:00:00');
+  const fmt = d => d.toISOString().slice(0,10);
+  // 近 30 天：从 T-30 到 T；前面用空白补齐到周一，保持表头对齐
+  const cutoff = new Date(T); cutoff.setDate(T.getDate() - 30);
+  const start = new Date(cutoff);
+  const end = new Date(T);
+  // 有确切日期的条目按日期分组；未来条目与模糊时间的进"后续安排"
+  const byDate = {};
+  tl.forEach(t => {
+    if(/^\d{4}-\d{2}-\d{2}$/.test(t.date) && !t.future) (byDate[t.date] = byDate[t.date] || []).push(t);
+  });
+  // 星期表头
+  $('#calWd').innerHTML = ['一','二','三','四','五','六','日'].map(w => `<div class="cal-wd">${w}</div>`).join('');
+  if(!selDate || selDate > todayStr) selDate = todayStr;
+  // 网格：补齐 T-30 所在周的前置空白，使周一到周日对齐
+  const cells = [];
+  const pad = ((start.getDay() + 6) % 7);
+  for(let i = 0; i < pad; i++) cells.push('<div class="cal-cell" style="visibility:hidden"></div>');
+  for(let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)){
+    const ds = fmt(d);
+    const items = byDate[ds] || [];
+    const isToday = ds === todayStr;
+    const showM = d.getDate() === 1 || ds === fmt(start);
+    const chips = items.slice(0,3).map(t =>
+      `<div class="cal-chip past" title="${esc(t.ev)}">${esc(t.ev)}</div>`).join('');
+    const more = items.length > 3 ? `<div class="cal-more">+${items.length - 3}</div>` : '';
+    cells.push(`<div class="cal-cell${isToday ? ' today' : ''}${ds === selDate ? ' sel' : ''}" data-date="${ds}">
+      <div class="cal-dn">${d.getDate()}${showM ? `<span class="cal-m">${d.getMonth()+1}月</span>` : ''}</div>
+      ${chips}${more}
+    </div>`);
+  }
+  $('#calGrid').innerHTML = cells.join('');
+  $('#calRange').textContent = `${fmt(cutoff).slice(5).replace('-','/')} — ${fmt(end).slice(5).replace('-','/')}`;
+  // 选中日详情
+  const selItems = byDate[selDate] || [];
+  const wk = ['日','一','二','三','四','五','六'][new Date(selDate + 'T12:00:00').getDay()];
+  $('#calDetail').innerHTML = `<div class="cd-title">${selDate} · 周${wk}${selDate === todayStr ? '（今天）' : ''}${selItems.length ? '' : ' · 无记录'}</div>` +
+    selItems.map(t => `<div class="cd-item">
+      <div class="cd-ev">${esc(t.ev)}${t.future ? '<span style="font-size:10px;color:var(--amber);margin-left:6px">预测</span>' : ''}</div>
+      ${t.who ? `<div class="cd-who">人物：${esc(t.who)}</div>` : ''}
+      ${t.place ? `<div class="cd-p">地点：${esc(t.place)}</div>` : ''}
+      ${t.note ? `<div class="cd-note">${esc(t.note)}</div>` : ''}
+    </div>`).join('');
+  // 点击选日
+  $('#calGrid').onclick = e => {
+    const c = e.target.closest('.cal-cell');
+    if(c && c.dataset.date){ selDate = c.dataset.date; renderCalendar(); }
+  };
+  $('#calToday').onclick = () => { selDate = todayStr; renderCalendar(); };
+  // 后续安排：未来确切日期 + 模糊时间
+  const isFuzzy = t => !/^\d{4}-\d{2}-\d{2}$/.test(t.date);
+  const tbd = tl.filter(t => t.future || isFuzzy(t))
+    .sort((a,b) => (isFuzzy(a) ? '9999' : a.date).localeCompare(isFuzzy(b) ? '9999' : b.date));
+  $('#tbdList').innerHTML = tbd.map(t => `<div class="tbd-item">
+      <div class="cd-ev">${esc(t.ev)}<span style="font-size:10px;color:var(--amber);margin-left:6px">${esc(t.date)}${/^\d{4}-\d{2}-\d{2}$/.test(t.date) ? ' · 已定档' : ''}</span></div>
+      ${t.who ? `<div class="cd-who">人物：${esc(t.who)}</div>` : ''}
+      ${t.place ? `<div class="cd-p">地点：${esc(t.place)}</div>` : ''}
+      ${t.note ? `<div class="cd-note">${esc(t.note)}</div>` : ''}
+    </div>`).join('') || '<div class="empty">暂无</div>';
+}
+
+function renderChrome(){
+  const auto = DATA && DATA.mode === 'auto';
+  const badge = $('#modeBadge');
+  badge.style.display = '';
+  badge.textContent = auto ? '实时数据' : '演示数据';
+  badge.classList.toggle('demo', !auto);
+  $('#upd').textContent = `数据更新：${DATA && DATA.updatedAt ? DATA.updatedAt : '--'}`;
+  $('#disc').innerHTML = auto
+    ? '<b>声明：</b>本页由自动任务每日抓取黄仁勋公开动态自动更新。<b>信息流仅收录客观新闻事实</b>（黄仁勋可溯源发言、英伟达官方动态、媒体报道的事实）；<b>观点流</b>为大V、媒体与卖方机构对事实的解读，仅代表发言者自身立场，不构成投资建议。文中公司/人物信息以官方披露为准。'
+    : '<b>声明：</b>本页为产品演示版，内容均为示例数据，不构成投资建议。';
+}
+
 (function boot(){
   try{
     const d = JSON.parse(document.getElementById('radar-data').textContent);
@@ -6534,7 +6645,10 @@ function renderChrome(){
     window.__DATA_MODE__ = d.mode || 'auto';
   }catch(e){
     window.__DATA_MODE__ = 'error';
-    const f=document.getElementById('feed'); if(f) f.innerHTML='<div class="empty">数据加载失败：'+e.message+'</div>';
+    $('#feed').innerHTML = `<div class="empty">数据加载失败：${esc(e.message)}</div>`;
+    $('#calDetail').innerHTML = '<div class="empty">--</div>';
+    $('#tbdList').innerHTML = '';
+    $('#upd').textContent = '数据更新：失败';
   }
   renderChrome();
   if(DATA){ renderFeed(); renderCalendar(); }
