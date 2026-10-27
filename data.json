@@ -1,8 +1,53 @@
 {
   "mode": "auto",
-  "today": "2026-10-27",
-  "updatedAt": "2026-10-27 13:22",
+  "today": "2026-10-28",
+  "updatedAt": "2026-10-28 01:35",
   "events": [
+    {
+      "id": "ev20261027a",
+      "date": "2026-10-27",
+      "type": "mt",
+      "cat": "nvnews",
+      "src": "英伟达新闻室（nvidianews.nvidia.com）",
+      "title": "英伟达 × 甲骨文：OCI 超级集群要铺到多吉瓦，Vera Rubin NVL72 与 Vera CPU 当场 GA",
+      "place": "美国·拉斯维加斯（Oracle AI World 2026）",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure",
+      "images": [
+        "https://iprsoftwaremedia.com/219/files/202610/504a33442ba2c6832992b7ea1255ccc2/6adfdd4c3d6332394404e329_oracle-nvidia/oracle-nvidia_0a5d2559-28eb-4cf3-bd23-0f249074bf5b-prv.jpg?v=0a5d2559-28eb-4cf3-bd23-0f249074bf5b"
+      ],
+      "signals": [
+        "10/27 在拉斯维加斯 Oracle AI World，甲骨文与英伟达宣布计划把 OCI 超级集群里的 Vera Rubin NVL72 系统扩到「多吉瓦」规模，理由是训练、推理与智能体应用的需求在涨",
+        "同一批产品当场落地：Vera Rubin NVL72 与 Vera CPU 已在 OCI 上全面可用（GA）。官方给出的分工是 GPU 吃前沿模型的训练与推理，CPU 接手智能体在两次模型调用之间干的活——执行工具、测试代码、检索数据",
+        "OCI Kubernetes Engine 允许 CPU 与 GPU 独立扩缩容，官方称这样能减少闲置容量；Oracle Acceleron 提供硬件级隔离，专门跑不受信任的 AI 生成代码",
+        "现有底座是 GB200 与 GB300 NVL72。网络侧为 Oracle Acceleron 加 Spectrum-X 以太网（Spectrum-6 交换机）与 BlueField-4 DPU，单个机架 72 颗 GPU 走 NVLink，跨集群的多平面网络可扩到「数十万颗 GPU」",
+        "计划中的 HGX Rubin NVL8 走 x86：8 颗 Rubin GPU 经 NVLink 互联，配两颗 64 核 Intel Xeon 6、4TB DDR5 内存、6.4 Tbps RDMA 网络",
+        "OpenAI 是现成案例：在得州阿比林，OpenAI 已在 OCI 超级集群上训练并服务 GPT-6 Astra，用了超过 10 万颗英伟达 Blackwell GPU；OpenAI 算力 CTO Uday Ruddarraju 称正把 Vera 搬进 OCI 生产环境，支撑快速增长的智能体沙箱负载",
+        "英伟达超大规模与高性能计算副总裁 Ian Buck 原话：「AI 工厂必须高效、耐用、可互换——持续交付高效算力、靠软件迭代保持有用、随需求变化服务不同模型与负载」"
+      ],
+      "note": "官方只写「多吉瓦（multi-gigawatt）」，没有给出具体吉瓦数、时间表、选址和金额。Oracle 侧同步发布的博客另称 Vera CPU 首批部署 15 万颗、今年四季度在部分区域上线、Vera Rubin 每瓦推理吞吐最高为 Blackwell 的 30 倍、训练性能 4 倍——这几项均为 Oracle 口径（经 unite.ai、TSNMedia 转述），nvidia.com 原文未见，待核验。中文转载（财联社 10/28 00:33）晚于官宣日，date 仍取 10/27。"
+    },
+    {
+      "id": "ev20261027b",
+      "date": "2026-10-27",
+      "type": "mt",
+      "cat": "nvnews",
+      "src": "英伟达新闻室（nvidianews.nvidia.com）",
+      "title": "英伟达掏 30 亿美元买 Meta 股票，换 Muse 全栈优化与 Vera Rubin 扩容",
+      "place": "美国·圣克拉拉（英伟达总部发布）",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth",
+      "images": [
+        "https://iprsoftwaremedia.com/219/files/202610/e94f1653d286c13260a76fb1b9084960/6ae01b2d3d6332b69004e23d_meta_and_nvidia/meta_and_nvidia_1b0c7d28-ee2e-401f-84ac-795e5ac88591-prv.png?v=1b0c7d28-ee2e-401f-84ac-795e5ac88591"
+      ],
+      "signals": [
+        "10/27 英伟达与 Meta 宣布扩大在 Muse 及 Muse 系列模型上的合作，目标是提升推理与训练性能、改善总体拥有成本，理由是市场对可用智能体的需求在涨",
+        "英伟达将向 Meta 本轮股权发行投资 30 亿美元（官方措辞为拟投资，含交割条件）。Meta 同日把本轮融资规模提到 375 亿美元：A 类普通股发行从 225 亿上调到 250 亿，加上 125 亿美元强制可转换优先股存托凭证",
+        "Meta 将扩大部署 Vera Rubin 与 Vera CPU，用于下一代 AI 智能体，冲「每瓦性能最大化」；同时上 Spectrum-X 以太网与 BlueField-4，提升网络效率与吞吐",
+        "双方还在评估在 OpenShell 参考架构上合作：OpenShell 负责安全部署，Sentry 负责监控智能体行为，并处理结构化、非结构化与图数据",
+        "黄仁勋原话：「AI 智能体代表一种新的计算范式——能理解我们的目标、推理、使用工具、替我们把事做完」「这改变了我们使用计算机的方式，从操作应用程序转向与智能体协作」",
+        "扎克伯格原话：「Muse 是我们把个人超级智能带给每个人的方式」；官方称 Muse 模型与智能体跑在英伟达基础设施上，发布后取得前沿级基准表现、消费者下载量快速攀升"
+      ],
+      "note": "375 亿美元（250 亿普通股 + 125 亿优先股存托凭证）为中央社引路透、金融界据两家公司公告的口径，nvidia.com 原文只写 30 亿美元投资。与 ev20261026b（Meta 950 亿美元募资计划，英伟达/AMD/博通合计认购最多 50 亿）同源不同步：本条为英伟达官方确认 30 亿美元、且扩大到 Muse 合作，属新增进展，不构成对旧条目的覆盖。"
+    },
     {
       "id": "ev20261026d",
       "date": "2026-10-26",
@@ -5215,6 +5260,27 @@
     }
   ],
   "opinions": [
+    {
+      "id": "op20261027b",
+      "date": "2026-10-27",
+      "cat": "media",
+      "author": "第一财经 彭海斌",
+      "stance": "审慎",
+      "title": "第一财经：黄仁勋帮不了欧洲 AI——不是技术不够强，是强到没人跟他对打",
+      "quotes": [
+        "开篇引黄仁勋在 GTC 柏林的原话：「要想成为 AI 经济的一部分，不能只做 AI 的消费者，而是要成为 AI 的生产者。」",
+        "核心论点：英伟达交付给欧洲的是集成化的全栈 AI 工厂（GPU 硬件、CUDA-X 库、模型），不是单颗高性能芯片；欧洲企业即便接受，也只能在应用层做文章，芯片、库、模型层无力参与构建",
+        "「英伟达的能力如此突出，以至于欧洲几乎没有任何企业与之正面竞争」——对照美国有 AMD、英特尔与云厂商自研芯片，中国在进口限制下长出华为、寒武纪、沐曦的本土算力生态，欧洲缺少同台竞技者，市场竞争这一推动技术进步的力量缺席",
+        "大模型同理：欧洲代表性模型企业是法国的 Mistral AI，但「目前没有获得全球认可的迹象」；欧洲职场环境与人才储备也不利于快速迭代",
+        "资金面：黄仁勋表示近期将再向欧洲追加 20 亿美元投资，此前已投 80 亿美元，涉及法、德、英等多国十余家乃至数十家企业，单家分到的钱不多，且多落在医疗健康、商业软件、机器人等英伟达产品的应用场景里",
+        "结论：欧洲最好的办法仍是拥抱美中技术、在应用层突破，同时别过度监管——「如黄仁勋所说，如果一个产业都没有发展起来，那也就没有什么可监管的了」"
+      ],
+      "url": "https://www.shobserver.com/staticsg/res/html/web/newsDetail.html?id=1201959",
+      "src": "第一财经（上观新闻转载全文）",
+      "related": [
+        "ev20261021a"
+      ]
+    },
     {
       "id": "op20261027a",
       "date": "2026-10-27",
